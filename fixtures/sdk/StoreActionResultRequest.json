@@ -1,0 +1,59 @@
+{
+  "schema": "StoreActionResultRequest",
+  "description": "POST /v1/store-actions: what a store action did on the device.",
+  "valid": [
+    {
+      "name": "accepts a refund request from a card",
+      "value": {
+        "clientId": "5b3f8e2a-9c1d-4e7f-8a6b-2d4c6e8f0a1b",
+        "action": "request_refund",
+        "result": "refund_requested",
+        "cardId": "card_1",
+        "messageId": "msg_1"
+      }
+    },
+    {
+      "name": "accepts a plan change with the product's name",
+      "value": {
+        "clientId": "5b3f8e2a-9c1d-4e7f-8a6b-2d4c6e8f0a1c",
+        "action": "manage_subscriptions",
+        "result": "plan_changed",
+        "productName": "Clockwise Pro, yearly"
+      }
+    },
+    {
+      "name": "accepts a restore that found nothing",
+      "value": {
+        "clientId": "5b3f8e2a-9c1d-4e7f-8a6b-2d4c6e8f0a1d",
+        "action": "restore_purchases",
+        "result": "nothing_to_restore"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unknown result",
+      "value": {
+        "clientId": "5b3f8e2a-9c1d-4e7f-8a6b-2d4c6e8f0a1b",
+        "action": "request_refund",
+        "result": "refunded"
+      }
+    },
+    {
+      "name": "rejects a missing clientId",
+      "value": {
+        "action": "restore_purchases",
+        "result": "purchases_restored"
+      }
+    },
+    {
+      "name": "rejects a product name over 100 code points",
+      "value": {
+        "clientId": "5b3f8e2a-9c1d-4e7f-8a6b-2d4c6e8f0a1b",
+        "action": "redeem_code",
+        "result": "code_redeemed",
+        "productName": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    }
+  ]
+}

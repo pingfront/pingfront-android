@@ -1,0 +1,98 @@
+{
+  "schema": "CreateSessionResponse",
+  "description": "POST /v1/sessions response. SDKs adopt installId.",
+  "valid": [
+    {
+      "name": "returns the registered installId, which SDKs must adopt",
+      "value": {
+        "accessToken": "t",
+        "accessExpiresAt": "2026-10-30T18:00:00Z",
+        "accessExpiresIn": 3600,
+        "installSecret": "is_x",
+        "person": {
+          "id": "per_1",
+          "level": "guest"
+        },
+        "storeAccountToken": "1b4e28ba-2fa1-41d2-883f-0016d3cca427",
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10"
+      },
+      "expect": {
+        "accessToken": "t",
+        "accessExpiresAt": "2026-10-30T18:00:00Z",
+        "accessExpiresIn": 3600,
+        "installSecret": "is_x",
+        "person": {
+          "id": "per_1",
+          "level": "guest"
+        },
+        "storeAccountToken": "1b4e28ba-2fa1-41d2-883f-0016d3cca427",
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "testDevice": false
+      }
+    },
+    {
+      "name": "reports an identity problem",
+      "value": {
+        "accessToken": "t",
+        "accessExpiresAt": "2026-10-30T18:00:00Z",
+        "accessExpiresIn": 3600,
+        "installSecret": "is_x",
+        "person": {
+          "id": "per_1",
+          "level": "guest"
+        },
+        "storeAccountToken": "1b4e28ba-2fa1-41d2-883f-0016d3cca427",
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "identityProblem": "token_expired",
+        "testDevice": true
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "requires installId",
+      "value": {
+        "accessToken": "t",
+        "accessExpiresAt": "2026-10-30T18:00:00Z",
+        "accessExpiresIn": 3600,
+        "installSecret": "is_x",
+        "person": {
+          "id": "per_1",
+          "level": "guest"
+        },
+        "storeAccountToken": "1b4e28ba-2fa1-41d2-883f-0016d3cca427"
+      }
+    },
+    {
+      "name": "requires a positive accessExpiresIn",
+      "value": {
+        "accessToken": "t",
+        "accessExpiresAt": "2026-10-30T18:00:00Z",
+        "accessExpiresIn": 0,
+        "installSecret": "is_x",
+        "person": {
+          "id": "per_1",
+          "level": "guest"
+        },
+        "storeAccountToken": "1b4e28ba-2fa1-41d2-883f-0016d3cca427",
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10"
+      }
+    },
+    {
+      "name": "rejects an unknown identityProblem",
+      "value": {
+        "accessToken": "t",
+        "accessExpiresAt": "2026-10-30T18:00:00Z",
+        "accessExpiresIn": 3600,
+        "installSecret": "is_x",
+        "person": {
+          "id": "per_1",
+          "level": "guest"
+        },
+        "storeAccountToken": "1b4e28ba-2fa1-41d2-883f-0016d3cca427",
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "identityProblem": "nope"
+      }
+    }
+  ]
+}

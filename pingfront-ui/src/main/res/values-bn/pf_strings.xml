@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">মেসেজ</string>
+    <string name="pf_send">পাঠান</string>
+    <string name="pf_add_photo">ফটো যোগ করুন</string>
+    <string name="pf_add_photo_or_report">ফটো যোগ করুন বা বাগ রিপোর্ট করুন</string>
+    <string name="pf_photos">ফটো</string>
+    <string name="pf_report_bug">বাগ রিপোর্ট করুন</string>
+    <string name="pf_close_chat">চ্যাট বন্ধ করুন</string>
+    <string name="pf_delivered">ডেলিভার হয়েছে</string>
+    <string name="pf_read">পড়া হয়েছে</string>
+    <string name="pf_not_delivered">ডেলিভার হয়নি</string>
+    <string name="pf_delete">মুছুন</string>
+    <string name="pf_sending">পাঠানো হচ্ছে…</string>
+    <string name="pf_ai">AI</string>
+    <string name="pf_assistant">অ্যাসিস্ট্যান্ট</string>
+    <string name="pf_the_team">টিম</string>
+    <string name="pf_team_title">%1$s টিম</string>
+    <string name="pf_messaged_you_first">%1$s আপনাকে প্রথমে মেসেজ করেছেন</string>
+    <string name="pf_wrote_first">%1$s আপনাকে প্রথমে লিখেছেন।</string>
+    <string name="pf_why_message">আপনি কেন এই মেসেজ পেলেন</string>
+    <string name="pf_reply_if_you_like">চাইলে উত্তর দিন, না হলে এড়িয়ে যান।</string>
+    <string name="pf_ask_person">কোনো মানুষের সঙ্গে কথা বলুন</string>
+    <string name="pf_ask_person_message">অনুগ্রহ করে, আমি কোনো মানুষের সঙ্গে কথা বলতে চাই।</string>
+    <string name="pf_typing">%1$s টাইপ করছেন</string>
+    <string name="pf_jump_latest">সর্বশেষ মেসেজে যান</string>
+    <string name="pf_load_earlier">আগের মেসেজ লোড করুন</string>
+    <string name="pf_loading_earlier">আগের মেসেজ লোড হচ্ছে</string>
+    <string name="pf_today">আজ %1$s</string>
+    <string name="pf_yesterday">গতকাল %1$s</string>
+    <string name="pf_local_time">%2$s-এর স্থানীয় সময় %1$s</string>
+    <string name="pf_welcome_body">প্রশ্ন, বাগ বা আইডিয়া: যাঁরা %1$s বানিয়েছেন, তাঁরা প্রতিটি মেসেজ পড়েন এবং এখানেই উত্তর দেন।</string>
+    <string name="pf_topic_billing">বিলিং নিয়ে জিজ্ঞাসা করুন</string>
+    <string name="pf_topic_bug">বাগ রিপোর্ট করুন</string>
+    <string name="pf_topic_idea">আইডিয়া শেয়ার করুন</string>
+    <string name="pf_topic_question">প্রশ্ন করুন</string>
+    <string name="pf_topic_account">আমার অ্যাকাউন্টে সাহায্য</string>
+    <string name="pf_topic_feedback">ফিডব্যাক দিন</string>
+    <string name="pf_topic_restore">কেনাকাটা রিস্টোর করুন</string>
+    <string name="pf_topic_privacy">গোপনীয়তা নিয়ে জিজ্ঞাসা করুন</string>
+    <string name="pf_topic_other">অন্য কিছু</string>
+    <string name="pf_offline">আপনি অফলাইনে আছেন। আবার অনলাইনে এলে মেসেজ পাঠানো হবে।</string>
+    <string name="pf_unreachable">এই মুহূর্তে চ্যাটে পৌঁছানো যাচ্ছে না। চ্যাট ফিরে এলে মেসেজ পাঠানো হবে।</string>
+    <string name="pf_couldnt_load">কথোপকথন লোড করা যায়নি</string>
+    <string name="pf_try_again">আবার চেষ্টা করুন</string>
+    <string name="pf_setup_problem">সেটআপে সমস্যা</string>
+    <string name="pf_debug_only">শুধু ডিবাগ বিল্ডে দেখানো হয়।</string>
+    <string name="pf_chat_unavailable">চ্যাট এখন উপলব্ধ নেই।</string>
+    <string name="pf_draft_look">ড্রাফট ডিজাইন</string>
+    <string name="pf_send_again_in">%1$s পরে আবার পাঠাতে পারবেন।</string>
+    <string name="pf_sending_paused">কিছুক্ষণের জন্য পাঠানো বন্ধ আছে। পরে আবার চেষ্টা করুন।</string>
+    <string name="pf_photos_again_in">%1$s পরে আবার ফটো পাঠানো যাবে। টেক্সট এখনও পাঠানো যাচ্ছে।</string>
+    <string name="pf_photos_paused">কিছুক্ষণের জন্য ফটো পাঠানো বন্ধ আছে। টেক্সট এখনও পাঠানো যাচ্ছে।</string>
+    <string name="pf_blocked">আপনি এই চ্যাটে মেসেজ পাঠাতে পারবেন না।</string>
+    <string name="pf_paused">এই চ্যাট এখন সাময়িকভাবে বন্ধ আছে।</string>
+    <string name="pf_verification_required">টিমকে মেসেজ পাঠাতে অ্যাপে সাইন ইন করুন।</string>
+    <string name="pf_enjoying">%1$s কেমন লাগছে?</string>
+    <string name="pf_review_helps">আপনার রিভিউ অন্যদের %1$s খুঁজে পেতে সাহায্য করে।</string>
+    <string name="pf_includes_screenshot">এতে একটি স্ক্রিনশট এবং সাম্প্রতিক লগ আছে।</string>
+    <string name="pf_price_year">প্রতি বছর %1$s</string>
+    <string name="pf_price_month">প্রতি মাসে %1$s</string>
+    <string name="pf_price_week">প্রতি সপ্তাহে %1$s</string>
+    <string name="pf_first_month_free">%1$s, প্রথম মাস ফ্রি</string>
+    <string name="pf_first_week_free">%1$s, প্রথম সপ্তাহ ফ্রি</string>
+    <string name="pf_thanks_rating">রেটিং দেওয়ার জন্য ধন্যবাদ।</string>
+    <string name="pf_show_original">মূল লেখা দেখুন</string>
+    <string name="pf_show_translation">অনুবাদ দেখুন</string>
+    <string name="pf_unknown_content">এই মেসেজ দেখতে অ্যাপের নতুন ভার্সন লাগবে।</string>
+    <string name="pf_remove_photo">ফটো %1$d সরান</string>
+    <string name="pf_photo">ফটো</string>
+    <string name="pf_photo_removed">ফটো সরানো হয়েছে</string>
+    <string name="pf_what_went_wrong">কী সমস্যা হয়েছে?</string>
+    <string name="pf_send_report">রিপোর্ট পাঠান</string>
+    <string name="pf_cancel">বাতিল করুন</string>
+    <string name="pf_draw_hint">সমস্যাটি দেখাতে স্ক্রিনশটের উপর আঁকুন। সাম্প্রতিক লগ এবং ডিভাইসের অবস্থা সংযুক্ত করা হয়।</string>
+    <string name="pf_include_screenshot">স্ক্রিনশট যোগ করুন</string>
+    <string name="pf_clear_marks">চিহ্ন মুছুন</string>
+    <string name="pf_screenshot">স্ক্রিনশট</string>
+    <string name="pf_you">আপনি: %1$s</string>
+    <string name="pf_waiting_connection">কানেকশনের অপেক্ষায়</string>
+    <string name="pf_topic_gift">গিফট নিয়ে জিজ্ঞাসা করুন</string>
+    <string name="pf_pending_photo">ফটো পাঠানোর অপেক্ষায়</string>
+    <string name="pf_current_plan">বর্তমান প্ল্যান</string>
+    <string name="pf_share">শেয়ার করুন</string>
+    <string name="pf_close">বন্ধ করুন</string>
+    <string name="pf_open_photo">ফটো খুলুন</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%2$d-এর মধ্যে %1$d স্টার</item>
+        <item quantity="other">%2$d-এর মধ্যে %1$d স্টার</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$dটি নতুন মেসেজ</item>
+        <item quantity="other">%1$dটি নতুন মেসেজ</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"বিলিং নিয়ে আমার একটি প্রশ্ন আছে: "</string>
+    <string name="pf_start_idea">"আমার একটি আইডিয়া আছে: "</string>
+    <string name="pf_start_question">"আমার একটি প্রশ্ন আছে: "</string>
+    <string name="pf_start_account">"আমার অ্যাকাউন্টে সাহায্য দরকার: "</string>
+    <string name="pf_start_feedback">"আমার ফিডব্যাক: "</string>
+    <string name="pf_start_restore">"আমার কেনাকাটা রিস্টোর করা যায়নি: "</string>
+    <string name="pf_start_privacy">"গোপনীয়তা নিয়ে আমার একটি প্রশ্ন আছে: "</string>
+    <string name="pf_start_gift">"গিফট নিয়ে আমার একটি প্রশ্ন আছে: "</string>
+    <string name="pf_retrying">এখনও পাঠানো হয়নি। শীঘ্রই আবার চেষ্টা করা হবে।</string>
+    <string name="pf_opens_browser">আপনার ব্রাউজারে খোলে</string>
+    <string name="pf_opens_store">Google Play খোলে</string>
+    <string name="pf_reply_expectation">সাধারণত এক দিনের মধ্যে উত্তর দেন</string>
+    <string name="pf_after_first">%1$s। আপনি এটি বন্ধ করতে পারেন, উত্তর এখানেই থাকবে।</string>
+    <string name="pf_after_first_plain">আপনি এটি বন্ধ করতে পারেন, উত্তর এখানেই থাকবে।</string>
+    <string name="pf_turn_on_notifications">নোটিফিকেশন চালু করুন</string>
+    <string name="pf_assistant_mark">অ্যাসিস্ট্যান্ট</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">%1$dটি ফটো আপলোড হচ্ছে</item>
+        <item quantity="other">%1$dটি ফটো আপলোড হচ্ছে</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">আপনার সাবস্ক্রিপশন</string>
+    <string name="pf_store_manage_detail">আপনার প্ল্যান, পেমেন্টের পদ্ধতি বা রিনিউয়াল বদলান।</string>
+    <string name="pf_store_manage_button">সাবস্ক্রিপশন ম্যানেজ করুন</string>
+    <string name="pf_store_billing_title">পেমেন্ট সম্পন্ন হয়নি</string>
+    <string name="pf_store_billing_detail">আপনার সাবস্ক্রিপশন চালু রাখতে পেমেন্টের পদ্ধতি আপডেট করুন।</string>
+    <string name="pf_store_billing_button">পেমেন্টের পদ্ধতি আপডেট করুন</string>
+    <string name="pf_store_refund_title">রিফান্ডের অনুরোধ করুন</string>
+    <string name="pf_store_refund_detail">রিফান্ডের বিষয়টি Google Play দেখে। অর্ডারের ইতিহাসে অর্ডারটি খুঁজুন।</string>
+    <string name="pf_store_refund_button">অর্ডারের ইতিহাস খুলুন</string>
+    <string name="pf_store_redeem_title">একটি কোড রিডিম করুন</string>
+    <string name="pf_store_redeem_detail">Google Play-তে আপনার কোড লিখুন।</string>
+    <string name="pf_store_redeem_button">কোড রিডিম করুন</string>
+    <string name="pf_store_restore_title">কেনাকাটা রিস্টোর করুন</string>
+    <string name="pf_store_restore_detail">এই অ্যাকাউন্টের কেনাকাটা Google Play-তে খুঁজে দেখে।</string>
+    <string name="pf_store_restore_button">কেনাকাটা রিস্টোর করুন</string>
+    <string name="pf_store_receipt_restored">কেনাকাটা রিস্টোর হয়েছে</string>
+    <string name="pf_store_receipt_nothing">রিস্টোর করার মতো কোনো কেনাকাটা নেই</string>
+    <string name="pf_store_receipt_up_to_date">কেনাকাটা আপ-টু-ডেট আছে</string>
+    <string name="pf_store_receipt_updated">সাবস্ক্রিপশন আপডেট হয়েছে</string>
+    <string name="pf_store_unavailable">Google Play-তে কানেক্ট করা যায়নি। পরে আবার চেষ্টা করুন।</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s ফ্রি</string>
+    <string name="pf_phase_for">%2$s-এর জন্য %1$s</string>
+    <string name="pf_phase_then">%1$s, তারপর %2$s</string>
+    <string name="pf_change_now">এটি এখনই আপনার বর্তমান প্ল্যানের জায়গা নেবে। বাকি সময়ের জন্য ক্রেডিট দেওয়া হবে।</string>
+    <string name="pf_change_at_renewal">আপনার বর্তমান প্ল্যান রিনিউ হলে শুরু হবে।</string>
+    <string name="pf_waiting_for_payment">পেমেন্টের অপেক্ষায়</string>
+    <string name="pf_pending_detail">পেমেন্ট সম্পন্ন হলেই আপনার প্ল্যান শুরু হবে।</string>
+    <string name="pf_plan_renews">%1$s %2$s তারিখে রিনিউ হবে</string>
+    <string name="pf_plan_renews_auto">%1$s নিজে থেকে রিনিউ হবে</string>
+    <string name="pf_plan_ends">%1$s %2$s তারিখে শেষ হবে</string>
+    <string name="pf_plan_wont_renew">%1$s রিনিউ হবে না</string>
+    <string name="pf_plan_ended">%1$s %2$s তারিখে শেষ হয়েছে</string>
+    <string name="pf_plan_ended_undated">%1$s শেষ হয়ে গেছে</string>
+    <string name="pf_plan_issue_by">পেমেন্টে সমস্যা: %1$s-এর মধ্যে আপডেট করুন</string>
+    <string name="pf_plan_issue">পেমেন্টে সমস্যা: পেমেন্টের পদ্ধতি আপডেট করুন</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d দিন</item>
+        <item quantity="other">%d দিন</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d সপ্তাহ</item>
+        <item quantity="other">%d সপ্তাহ</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d মাস</item>
+        <item quantity="other">%d মাস</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d বছর</item>
+        <item quantity="other">%d বছর</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">ফটো তুলুন</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">%dটি অক্ষর বাকি</item>
+        <item quantity="other">%dটি অক্ষর বাকি</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">সীমার চেয়ে %dটি অক্ষর বেশি</item>
+        <item quantity="other">সীমার চেয়ে %dটি অক্ষর বেশি</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">pingfront-এর চ্যাট</string>
+    <string name="pf_plan_test_purchase">%1$s (পরীক্ষামূলক কেনাকাটা)</string>
+    <string name="pf_held_chat_back">এখনও পাঠানো হয়নি। চ্যাট ফিরে এলে পাঠানো হবে।</string>
+    <string name="pf_held_sign_in">এখনও পাঠানো হয়নি। সাইন ইন করার পরে পাঠানো হবে।</string>
+    <string name="pf_offer_replaced">এর বদলে নতুন অফার এসেছে</string>
+    <string name="pf_offer_ended">এই অফারটি আর পাওয়া যাচ্ছে না।</string>
+</resources>

@@ -1,0 +1,212 @@
+{
+  "schema": "LookStateResponse",
+  "description": "GET /dash/v1/apps/{appId}/look.",
+  "valid": [
+    {
+      "name": "revision 0 with no draft",
+      "value": {
+        "published": {
+          "revision": 0,
+          "publishedAt": "2026-10-30T18:00:00.000Z",
+          "publishedBy": "pingfront",
+          "note": "Defaults",
+          "look": {
+            "theme": {},
+            "header": {},
+            "welcome": {},
+            "topics": [],
+            "composer": {},
+            "messages": {}
+          }
+        },
+        "draft": null,
+        "hostLook": null,
+        "hostLookSource": null,
+        "hostLookInstallsNeeded": 10,
+        "languages": [
+          {
+            "code": "en",
+            "people": 2
+          }
+        ],
+        "testDevices": []
+      }
+    },
+    {
+      "name": "host look agreed by 12 installs of 2.4",
+      "value": {
+        "published": {
+          "revision": 0,
+          "publishedAt": "2026-10-30T18:00:00.000Z",
+          "publishedBy": "pingfront",
+          "note": "Defaults",
+          "look": {
+            "theme": {},
+            "header": {},
+            "welcome": {},
+            "topics": [],
+            "composer": {},
+            "messages": {}
+          }
+        },
+        "draft": null,
+        "hostLook": {
+          "appName": "Clockwise",
+          "accent": {
+            "light": "#0E7C86",
+            "dark": "#3FC1C9"
+          }
+        },
+        "hostLookSource": {
+          "kind": "installs",
+          "appVersion": "2.4",
+          "reportedAt": "2026-10-30T18:00:00.000Z",
+          "installs": 12
+        },
+        "hostLookInstallsNeeded": 10,
+        "languages": [
+          {
+            "code": "en",
+            "people": 2
+          }
+        ],
+        "testDevices": []
+      }
+    },
+    {
+      "name": "host look from a test device",
+      "value": {
+        "published": {
+          "revision": 0,
+          "publishedAt": "2026-10-30T18:00:00.000Z",
+          "publishedBy": "pingfront",
+          "note": "Defaults",
+          "look": {
+            "theme": {},
+            "header": {},
+            "welcome": {},
+            "topics": [],
+            "composer": {},
+            "messages": {}
+          }
+        },
+        "draft": null,
+        "hostLook": {
+          "appName": "Clockwise",
+          "accent": {
+            "light": "#0E7C86",
+            "dark": "#3FC1C9"
+          }
+        },
+        "hostLookSource": {
+          "kind": "test_device",
+          "appVersion": "2.5",
+          "reportedAt": "2026-10-31T09:00:00.000Z"
+        },
+        "hostLookInstallsNeeded": 10,
+        "languages": [
+          {
+            "code": "en",
+            "people": 2
+          }
+        ],
+        "testDevices": []
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "draft must be an object or null",
+      "value": {
+        "published": {
+          "revision": 0,
+          "publishedAt": "2026-10-30T18:00:00Z",
+          "publishedBy": "x",
+          "look": {
+            "theme": {},
+            "header": {},
+            "welcome": {},
+            "topics": [],
+            "composer": {},
+            "messages": {}
+          }
+        },
+        "draft": "none",
+        "hostLook": null,
+        "hostLookSource": null,
+        "hostLookInstallsNeeded": 10,
+        "languages": [],
+        "testDevices": []
+      }
+    },
+    {
+      "name": "hostLookSource needs the app version",
+      "value": {
+        "published": {
+          "revision": 0,
+          "publishedAt": "2026-10-30T18:00:00.000Z",
+          "publishedBy": "pingfront",
+          "note": "Defaults",
+          "look": {
+            "theme": {},
+            "header": {},
+            "welcome": {},
+            "topics": [],
+            "composer": {},
+            "messages": {}
+          }
+        },
+        "draft": null,
+        "hostLook": {
+          "appName": "Clockwise",
+          "accent": {
+            "light": "#0E7C86",
+            "dark": "#3FC1C9"
+          }
+        },
+        "hostLookSource": {
+          "kind": "installs",
+          "reportedAt": "2026-10-30T18:00:00.000Z",
+          "installs": 12
+        },
+        "hostLookInstallsNeeded": 10,
+        "languages": [
+          {
+            "code": "en",
+            "people": 2
+          }
+        ],
+        "testDevices": []
+      }
+    },
+    {
+      "name": "hostLookInstallsNeeded is required",
+      "value": {
+        "published": {
+          "revision": 0,
+          "publishedAt": "2026-10-30T18:00:00.000Z",
+          "publishedBy": "pingfront",
+          "note": "Defaults",
+          "look": {
+            "theme": {},
+            "header": {},
+            "welcome": {},
+            "topics": [],
+            "composer": {},
+            "messages": {}
+          }
+        },
+        "draft": null,
+        "hostLook": null,
+        "hostLookSource": null,
+        "languages": [
+          {
+            "code": "en",
+            "people": 2
+          }
+        ],
+        "testDevices": []
+      }
+    }
+  ]
+}

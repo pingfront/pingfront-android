@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application>
+        <!-- Zero-line setup: reads <meta-data android:name="pingfront.app_key"> at startup. No network. -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="dev.pingfront.internal.android.PingFrontInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <!-- Where pingfront notification taps land. Not exported: only this app's own notifications can
+             start it, so the pf_* payload is trusted here and nowhere else. -->
+        <activity
+            android:name="dev.pingfront.internal.android.PushTapActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:noHistory="true"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+</manifest>

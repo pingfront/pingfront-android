@@ -1,0 +1,17 @@
+{
+  "schema": "CardResult",
+  "description": "What the person did with a card: a choice or rating, or whether a tap opened it (outcome, from opened and failed reports).",
+  "valid": [
+    { "name": "a choice", "value": { "at": "2026-11-06T10:00:00.000Z", "choiceId": "works" } },
+    { "name": "a rating", "value": { "at": "2026-11-06T10:00:00.000Z", "rating": 4 } },
+    { "name": "a link card that opened", "value": { "at": "2026-11-06T10:00:00.000Z", "outcome": "opened" } },
+    { "name": "a link card that didn't open, with why", "value": { "at": "2026-11-06T10:00:00.000Z", "outcome": "failed", "failure": "unknown_screen" } }
+  ],
+  "invalid": [
+    { "name": "rejects a result without at", "value": { "outcome": "opened" } },
+    { "name": "rejects an unknown failure reason", "value": { "at": "2026-11-06T10:00:00.000Z", "outcome": "failed", "failure": "crashed" } }
+  ],
+  "unknown": [
+    { "name": "an outcome a newer server sends decodes as unknown", "value": { "at": "2026-11-06T10:00:00.000Z", "outcome": "dismissed" } }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "ListenedMomentsResponse",
+  "description": "GET /v1/moments/listened.",
+  "valid": [
+    {
+      "name": "lists names and store events",
+      "value": {
+        "names": [
+          "opened_plans"
+        ],
+        "storeEvents": [
+          "trial_started"
+        ]
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an invalid moment name",
+      "value": {
+        "names": [
+          "Bad Name"
+        ],
+        "storeEvents": []
+      }
+    }
+  ]
+}

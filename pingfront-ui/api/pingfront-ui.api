@@ -1,0 +1,90 @@
+public final class dev/pingfront/ui/ChatUi : dev/pingfront/PingFrontModule {
+	public static final field $stable I
+	public static final field INSTANCE Ldev/pingfront/ui/ChatUi;
+	public fun install (Ldev/pingfront/ModuleContext;)V
+}
+
+public final class dev/pingfront/ui/PingFrontChatActivity : androidx/activity/ComponentActivity {
+	public static final field $stable I
+	public fun <init> ()V
+	public fun finish ()V
+}
+
+public final class dev/pingfront/ui/PingFrontChatDefaults {
+	public static final field $stable I
+	public static final field INSTANCE Ldev/pingfront/ui/PingFrontChatDefaults;
+	public final fun getWindowInsets (Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/layout/WindowInsets;
+}
+
+public final class dev/pingfront/ui/PingFrontChatKt {
+	public static final fun PingFrontChat (Landroidx/compose/ui/Modifier;Ldev/pingfront/look/ChatTopic;Lkotlin/jvm/functions/Function0;Landroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/runtime/Composer;II)V
+	public static final fun PingFrontChatSheet (Ldev/pingfront/ui/PingFrontChatState;Landroidx/compose/runtime/Composer;I)V
+	public static final fun PingFrontChatSheet (ZLkotlin/jvm/functions/Function0;Ldev/pingfront/look/ChatTopic;Landroidx/compose/runtime/Composer;II)V
+	public static final fun rememberPingFrontChatState (Landroidx/compose/runtime/Composer;I)Ldev/pingfront/ui/PingFrontChatState;
+}
+
+public final class dev/pingfront/ui/PingFrontChatState {
+	public static final field $stable I
+	public final fun close ()V
+	public final fun getTopic ()Ldev/pingfront/look/ChatTopic;
+	public final fun isVisible ()Z
+	public final fun open (Ldev/pingfront/look/ChatTopic;)V
+	public static synthetic fun open$default (Ldev/pingfront/ui/PingFrontChatState;Ldev/pingfront/look/ChatTopic;ILjava/lang/Object;)V
+}
+
+public final class dev/pingfront/ui/PingFrontChatView : android/widget/FrameLayout {
+	public static final field $stable I
+	public fun <init> (Landroid/content/Context;)V
+	public fun <init> (Landroid/content/Context;Landroid/util/AttributeSet;)V
+	public fun <init> (Landroid/content/Context;Landroid/util/AttributeSet;I)V
+	public synthetic fun <init> (Landroid/content/Context;Landroid/util/AttributeSet;IILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun disposeComposition ()V
+	public final fun getActivityResultRegistryOwner ()Landroidx/activity/result/ActivityResultRegistryOwner;
+	public final fun getInsets ()Ldev/pingfront/ui/PingFrontChatView$Insets;
+	public final fun getOnClose ()Lkotlin/jvm/functions/Function0;
+	public final fun getTopic ()Ldev/pingfront/look/ChatTopic;
+	public fun onVisibilityAggregated (Z)V
+	public final fun setActivityResultRegistryOwner (Landroidx/activity/result/ActivityResultRegistryOwner;)V
+	public fun setId (I)V
+	public final fun setInsets (Ldev/pingfront/ui/PingFrontChatView$Insets;)V
+	public final fun setOnClose (Lkotlin/jvm/functions/Function0;)V
+	public final fun setTopic (Ldev/pingfront/look/ChatTopic;)V
+	public final fun setViewCompositionStrategy (Landroidx/compose/ui/platform/ViewCompositionStrategy;)V
+}
+
+public abstract interface class dev/pingfront/ui/PingFrontChatView$Insets {
+}
+
+public final class dev/pingfront/ui/PingFrontChatView$Insets$None : dev/pingfront/ui/PingFrontChatView$Insets {
+	public static final field $stable I
+	public static final field INSTANCE Ldev/pingfront/ui/PingFrontChatView$Insets$None;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ui/PingFrontChatView$Insets$Padding : dev/pingfront/ui/PingFrontChatView$Insets {
+	public static final field $stable I
+	public fun <init> (IIII)V
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBottom ()I
+	public final fun getLeft ()I
+	public final fun getRight ()I
+	public final fun getTop ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ui/PingFrontChatView$Insets$SafeDrawing : dev/pingfront/ui/PingFrontChatView$Insets {
+	public static final field $stable I
+	public static final field INSTANCE Ldev/pingfront/ui/PingFrontChatView$Insets$SafeDrawing;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ui/ThemeKt {
+	public static final fun PingFrontColor--OWjLjI (JJ)Ldev/pingfront/model/PingFrontColor;
+	public static final fun toPingFrontColor-8_81llA (J)Ldev/pingfront/model/PingFrontColor;
+}
+

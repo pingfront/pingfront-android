@@ -1,0 +1,55 @@
+{
+  "schema": "OfferSignatureResponse",
+  "description": "POST /v1/offers/signature response: a compact JWS for promotionalOffer(_:compactJWS:) plus the legacy keyId/nonce/timestamp/signature.",
+  "valid": [
+    {
+      "name": "both signature formats",
+      "value": {
+        "productId": "pro.yearly",
+        "offerId": "yearly_40",
+        "appAccountToken": "e621e1f8-c36c-495a-93fc-0c247a3e6e5f",
+        "jws": "eyJhbGciOiJFUzI1NiIsImtpZCI6IklBUDEyMzQ1NjciLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJwcm9tb3Rpb25hbC1vZmZlciJ9.c2lnbmF0dXJl",
+        "legacy": {
+          "keyId": "IAP1234567",
+          "nonce": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+          "timestamp": 1793534400000,
+          "signature": "MEUCIQDexample"
+        },
+        "expiresAt": "2026-11-01T12:00:00.000Z"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "needs the jws",
+      "value": {
+        "productId": "pro.yearly",
+        "offerId": "yearly_40",
+        "appAccountToken": "e621e1f8-c36c-495a-93fc-0c247a3e6e5f",
+        "legacy": {
+          "keyId": "IAP1234567",
+          "nonce": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+          "timestamp": 1,
+          "signature": "x"
+        },
+        "expiresAt": "2026-11-01T12:00:00.000Z"
+      }
+    },
+    {
+      "name": "a timestamp must be an integer",
+      "value": {
+        "productId": "p",
+        "offerId": "o",
+        "appAccountToken": "e621e1f8-c36c-495a-93fc-0c247a3e6e5f",
+        "jws": "a.b.c",
+        "legacy": {
+          "keyId": "k",
+          "nonce": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
+          "timestamp": "now",
+          "signature": "x"
+        },
+        "expiresAt": "2026-11-01T12:00:00.000Z"
+      }
+    }
+  ]
+}

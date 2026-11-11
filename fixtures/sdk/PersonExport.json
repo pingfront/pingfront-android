@@ -1,0 +1,1126 @@
+{
+  "schema": "PersonExport",
+  "description": "GET /v1/me/export (exportMyData()) and GET /dash/v1/people/{id}/export. notes appear only in the team's export.",
+  "valid": [
+    {
+      "name": "a verified person with a thread, a moment, a store event and a play",
+      "value": {
+        "format": "pingfront.person.v1",
+        "exportedAt": "2026-10-31T09:41:00.000Z",
+        "app": {
+          "id": "app_1",
+          "name": "Clockwise"
+        },
+        "person": {
+          "profile": {
+            "id": "per_1",
+            "level": "verified",
+            "userId": "u_42",
+            "name": "Riley",
+            "email": "riley@example.com",
+            "traits": {
+              "plan": "pro"
+            },
+            "blocked": false,
+            "firstSeenAt": "2026-10-31T09:41:00.000Z",
+            "lastSeenAt": "2026-10-31T09:41:00.000Z"
+          },
+          "devices": [
+            {
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "model": "iPhone17,1",
+              "os": "iOS 26.1",
+              "appVersion": "2.3.1",
+              "appBuild": "231",
+              "sdk": "pingfront-ios/1.2.0",
+              "locale": "en_CA",
+              "timeZone": "America/Toronto",
+              "pushRegistered": true,
+              "testDevice": false,
+              "firstSeenAt": "2026-10-31T09:41:00.000Z",
+              "lastSeenAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "thread": {
+            "id": "thr_1",
+            "status": "resolved",
+            "archived": false,
+            "startedBy": "person",
+            "createdAt": "2026-10-31T09:41:00.000Z",
+            "lastMessageAt": "2026-10-31T09:41:00.000Z",
+            "messages": [
+              {
+                "id": "msg_1",
+                "seq": 1,
+                "author": {
+                  "kind": "person"
+                },
+                "parts": [
+                  {
+                    "type": "text",
+                    "text": "The timer stopped when I locked my phone."
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              },
+              {
+                "id": "msg_2",
+                "seq": 2,
+                "author": {
+                  "kind": "team",
+                  "id": "mem_1",
+                  "name": "Maya"
+                },
+                "parts": [
+                  {
+                    "type": "image",
+                    "attachmentId": "att_1",
+                    "width": 1170,
+                    "height": 2532,
+                    "removed": true
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              }
+            ]
+          },
+          "moments": [
+            {
+              "name": "paywall_closed",
+              "props": {
+                "plan": "annual",
+                "seconds": 12
+              },
+              "outcome": "delivered",
+              "occurredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "storeEvents": [
+            {
+              "id": "se_1",
+              "event": "trial_started",
+              "source": "appstore",
+              "productId": "pro.annual",
+              "at": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "plays": [
+            {
+              "playId": "play_1",
+              "playName": "Paywall closed",
+              "arm": "treated",
+              "status": "delivered",
+              "triggeredAt": "2026-10-31T09:41:00.000Z",
+              "deliveredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "detail": {
+            "id": "per_1",
+            "appId": "app_1",
+            "level": "named",
+            "displayName": "Person 1",
+            "platforms": [
+              "ios"
+            ],
+            "userId": "user1",
+            "traits": {},
+            "firstSeenAt": "2026-10-30T18:00:00.000Z",
+            "blocked": false,
+            "devices": [
+              {
+                "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+                "platform": "ios",
+                "model": "iPhone18,1",
+                "os": "iOS 27.1",
+                "appVersion": "1.0 (1)",
+                "sdk": "pingfront-ios 1.0.0",
+                "push": "off",
+                "lastSeenAt": "2026-10-30T18:00:00.000Z"
+              }
+            ]
+          },
+          "activity": [
+            {
+              "id": "act_1",
+              "kind": "session",
+              "at": "2026-10-31T09:40:00.000Z",
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "appVersion": "2.3.1"
+            },
+            {
+              "id": "mom_1",
+              "kind": "moment",
+              "at": "2026-10-31T09:41:00.000Z",
+              "moment": "paywall_closed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "a guest who never wrote (thread null)",
+      "value": {
+        "format": "pingfront.person.v1",
+        "exportedAt": "2026-10-31T09:41:00.000Z",
+        "app": {
+          "id": "app_1",
+          "name": "Clockwise"
+        },
+        "person": {
+          "profile": {
+            "id": "per_2",
+            "level": "guest",
+            "traits": {},
+            "blocked": false,
+            "firstSeenAt": "2026-10-31T09:41:00.000Z",
+            "lastSeenAt": "2026-10-31T09:41:00.000Z"
+          },
+          "devices": [],
+          "thread": null,
+          "moments": [],
+          "storeEvents": [],
+          "plays": [],
+          "detail": {
+            "id": "per_1",
+            "appId": "app_1",
+            "level": "named",
+            "displayName": "Person 1",
+            "platforms": [
+              "ios"
+            ],
+            "userId": "user1",
+            "traits": {},
+            "firstSeenAt": "2026-10-30T18:00:00.000Z",
+            "blocked": false,
+            "devices": [
+              {
+                "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+                "platform": "ios",
+                "model": "iPhone18,1",
+                "os": "iOS 27.1",
+                "appVersion": "1.0 (1)",
+                "sdk": "pingfront-ios 1.0.0",
+                "push": "off",
+                "lastSeenAt": "2026-10-30T18:00:00.000Z"
+              }
+            ]
+          },
+          "activity": [
+            {
+              "id": "act_1",
+              "kind": "session",
+              "at": "2026-10-31T09:40:00.000Z",
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "appVersion": "2.3.1"
+            },
+            {
+              "id": "mom_1",
+              "kind": "moment",
+              "at": "2026-10-31T09:41:00.000Z",
+              "moment": "paywall_closed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "the team's export adds internal notes",
+      "value": {
+        "format": "pingfront.person.v1",
+        "exportedAt": "2026-10-31T09:41:00.000Z",
+        "app": {
+          "id": "app_1",
+          "name": "Clockwise"
+        },
+        "person": {
+          "profile": {
+            "id": "per_1",
+            "level": "verified",
+            "userId": "u_42",
+            "name": "Riley",
+            "email": "riley@example.com",
+            "traits": {
+              "plan": "pro"
+            },
+            "blocked": false,
+            "firstSeenAt": "2026-10-31T09:41:00.000Z",
+            "lastSeenAt": "2026-10-31T09:41:00.000Z"
+          },
+          "devices": [
+            {
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "model": "iPhone17,1",
+              "os": "iOS 26.1",
+              "appVersion": "2.3.1",
+              "appBuild": "231",
+              "sdk": "pingfront-ios/1.2.0",
+              "locale": "en_CA",
+              "timeZone": "America/Toronto",
+              "pushRegistered": true,
+              "testDevice": false,
+              "firstSeenAt": "2026-10-31T09:41:00.000Z",
+              "lastSeenAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "thread": {
+            "id": "thr_1",
+            "status": "resolved",
+            "archived": false,
+            "startedBy": "person",
+            "createdAt": "2026-10-31T09:41:00.000Z",
+            "lastMessageAt": "2026-10-31T09:41:00.000Z",
+            "messages": [
+              {
+                "id": "msg_1",
+                "seq": 1,
+                "author": {
+                  "kind": "person"
+                },
+                "parts": [
+                  {
+                    "type": "text",
+                    "text": "The timer stopped when I locked my phone."
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              },
+              {
+                "id": "msg_2",
+                "seq": 2,
+                "author": {
+                  "kind": "team",
+                  "id": "mem_1",
+                  "name": "Maya"
+                },
+                "parts": [
+                  {
+                    "type": "image",
+                    "attachmentId": "att_1",
+                    "width": 1170,
+                    "height": 2532,
+                    "removed": true
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              }
+            ]
+          },
+          "moments": [
+            {
+              "name": "paywall_closed",
+              "props": {
+                "plan": "annual",
+                "seconds": 12
+              },
+              "outcome": "delivered",
+              "occurredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "storeEvents": [
+            {
+              "id": "se_1",
+              "event": "trial_started",
+              "source": "appstore",
+              "productId": "pro.annual",
+              "at": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "plays": [
+            {
+              "playId": "play_1",
+              "playName": "Paywall closed",
+              "arm": "treated",
+              "status": "delivered",
+              "triggeredAt": "2026-10-31T09:41:00.000Z",
+              "deliveredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "notes": [
+            {
+              "id": "note_1",
+              "threadId": "thr_1",
+              "author": {
+                "id": "mem_1",
+                "name": "Maya"
+              },
+              "text": "Known iOS 26 timer bug.",
+              "createdAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "detail": {
+            "id": "per_1",
+            "appId": "app_1",
+            "level": "named",
+            "displayName": "Person 1",
+            "platforms": [
+              "ios"
+            ],
+            "userId": "user1",
+            "traits": {},
+            "firstSeenAt": "2026-10-30T18:00:00.000Z",
+            "blocked": false,
+            "devices": [
+              {
+                "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+                "platform": "ios",
+                "model": "iPhone18,1",
+                "os": "iOS 27.1",
+                "appVersion": "1.0 (1)",
+                "sdk": "pingfront-ios 1.0.0",
+                "push": "off",
+                "lastSeenAt": "2026-10-30T18:00:00.000Z"
+              }
+            ]
+          },
+          "activity": [
+            {
+              "id": "act_1",
+              "kind": "session",
+              "at": "2026-10-31T09:40:00.000Z",
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "appVersion": "2.3.1"
+            },
+            {
+              "id": "mom_1",
+              "kind": "moment",
+              "at": "2026-10-31T09:41:00.000Z",
+              "moment": "paywall_closed"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects another format version",
+      "value": {
+        "format": "pingfront.person.v2",
+        "exportedAt": "2026-10-31T09:41:00.000Z",
+        "app": {
+          "id": "app_1",
+          "name": "Clockwise"
+        },
+        "person": {
+          "profile": {
+            "id": "per_1",
+            "level": "verified",
+            "userId": "u_42",
+            "name": "Riley",
+            "email": "riley@example.com",
+            "traits": {
+              "plan": "pro"
+            },
+            "blocked": false,
+            "firstSeenAt": "2026-10-31T09:41:00.000Z",
+            "lastSeenAt": "2026-10-31T09:41:00.000Z"
+          },
+          "devices": [
+            {
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "model": "iPhone17,1",
+              "os": "iOS 26.1",
+              "appVersion": "2.3.1",
+              "appBuild": "231",
+              "sdk": "pingfront-ios/1.2.0",
+              "locale": "en_CA",
+              "timeZone": "America/Toronto",
+              "pushRegistered": true,
+              "testDevice": false,
+              "firstSeenAt": "2026-10-31T09:41:00.000Z",
+              "lastSeenAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "thread": {
+            "id": "thr_1",
+            "status": "resolved",
+            "archived": false,
+            "startedBy": "person",
+            "createdAt": "2026-10-31T09:41:00.000Z",
+            "lastMessageAt": "2026-10-31T09:41:00.000Z",
+            "messages": [
+              {
+                "id": "msg_1",
+                "seq": 1,
+                "author": {
+                  "kind": "person"
+                },
+                "parts": [
+                  {
+                    "type": "text",
+                    "text": "The timer stopped when I locked my phone."
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              },
+              {
+                "id": "msg_2",
+                "seq": 2,
+                "author": {
+                  "kind": "team",
+                  "id": "mem_1",
+                  "name": "Maya"
+                },
+                "parts": [
+                  {
+                    "type": "image",
+                    "attachmentId": "att_1",
+                    "width": 1170,
+                    "height": 2532,
+                    "removed": true
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              }
+            ]
+          },
+          "moments": [
+            {
+              "name": "paywall_closed",
+              "props": {
+                "plan": "annual",
+                "seconds": 12
+              },
+              "outcome": "delivered",
+              "occurredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "storeEvents": [
+            {
+              "id": "se_1",
+              "event": "trial_started",
+              "source": "appstore",
+              "productId": "pro.annual",
+              "at": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "plays": [
+            {
+              "playId": "play_1",
+              "playName": "Paywall closed",
+              "arm": "treated",
+              "status": "delivered",
+              "triggeredAt": "2026-10-31T09:41:00.000Z",
+              "deliveredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "detail": {
+            "id": "per_1",
+            "appId": "app_1",
+            "level": "named",
+            "displayName": "Person 1",
+            "platforms": [
+              "ios"
+            ],
+            "userId": "user1",
+            "traits": {},
+            "firstSeenAt": "2026-10-30T18:00:00.000Z",
+            "blocked": false,
+            "devices": [
+              {
+                "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+                "platform": "ios",
+                "model": "iPhone18,1",
+                "os": "iOS 27.1",
+                "appVersion": "1.0 (1)",
+                "sdk": "pingfront-ios 1.0.0",
+                "push": "off",
+                "lastSeenAt": "2026-10-30T18:00:00.000Z"
+              }
+            ]
+          },
+          "activity": [
+            {
+              "id": "act_1",
+              "kind": "session",
+              "at": "2026-10-31T09:40:00.000Z",
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "appVersion": "2.3.1"
+            },
+            {
+              "id": "mom_1",
+              "kind": "moment",
+              "at": "2026-10-31T09:41:00.000Z",
+              "moment": "paywall_closed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "requires thread (null when there is none)",
+      "value": {
+        "format": "pingfront.person.v1",
+        "exportedAt": "2026-10-31T09:41:00.000Z",
+        "app": {
+          "id": "app_1",
+          "name": "Clockwise"
+        },
+        "person": {
+          "profile": {
+            "id": "per_1",
+            "level": "verified",
+            "userId": "u_42",
+            "name": "Riley",
+            "email": "riley@example.com",
+            "traits": {
+              "plan": "pro"
+            },
+            "blocked": false,
+            "firstSeenAt": "2026-10-31T09:41:00.000Z",
+            "lastSeenAt": "2026-10-31T09:41:00.000Z"
+          },
+          "devices": [
+            {
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "model": "iPhone17,1",
+              "os": "iOS 26.1",
+              "appVersion": "2.3.1",
+              "appBuild": "231",
+              "sdk": "pingfront-ios/1.2.0",
+              "locale": "en_CA",
+              "timeZone": "America/Toronto",
+              "pushRegistered": true,
+              "testDevice": false,
+              "firstSeenAt": "2026-10-31T09:41:00.000Z",
+              "lastSeenAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "moments": [
+            {
+              "name": "paywall_closed",
+              "props": {
+                "plan": "annual",
+                "seconds": 12
+              },
+              "outcome": "delivered",
+              "occurredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "storeEvents": [
+            {
+              "id": "se_1",
+              "event": "trial_started",
+              "source": "appstore",
+              "productId": "pro.annual",
+              "at": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "plays": [
+            {
+              "playId": "play_1",
+              "playName": "Paywall closed",
+              "arm": "treated",
+              "status": "delivered",
+              "triggeredAt": "2026-10-31T09:41:00.000Z",
+              "deliveredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "detail": {
+            "id": "per_1",
+            "appId": "app_1",
+            "level": "named",
+            "displayName": "Person 1",
+            "platforms": [
+              "ios"
+            ],
+            "userId": "user1",
+            "traits": {},
+            "firstSeenAt": "2026-10-30T18:00:00.000Z",
+            "blocked": false,
+            "devices": [
+              {
+                "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+                "platform": "ios",
+                "model": "iPhone18,1",
+                "os": "iOS 27.1",
+                "appVersion": "1.0 (1)",
+                "sdk": "pingfront-ios 1.0.0",
+                "push": "off",
+                "lastSeenAt": "2026-10-30T18:00:00.000Z"
+              }
+            ]
+          },
+          "activity": [
+            {
+              "id": "act_1",
+              "kind": "session",
+              "at": "2026-10-31T09:40:00.000Z",
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "appVersion": "2.3.1"
+            },
+            {
+              "id": "mom_1",
+              "kind": "moment",
+              "at": "2026-10-31T09:41:00.000Z",
+              "moment": "paywall_closed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "rejects an unknown play arm",
+      "value": {
+        "format": "pingfront.person.v1",
+        "exportedAt": "2026-10-31T09:41:00.000Z",
+        "app": {
+          "id": "app_1",
+          "name": "Clockwise"
+        },
+        "person": {
+          "profile": {
+            "id": "per_1",
+            "level": "verified",
+            "userId": "u_42",
+            "name": "Riley",
+            "email": "riley@example.com",
+            "traits": {
+              "plan": "pro"
+            },
+            "blocked": false,
+            "firstSeenAt": "2026-10-31T09:41:00.000Z",
+            "lastSeenAt": "2026-10-31T09:41:00.000Z"
+          },
+          "devices": [
+            {
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "model": "iPhone17,1",
+              "os": "iOS 26.1",
+              "appVersion": "2.3.1",
+              "appBuild": "231",
+              "sdk": "pingfront-ios/1.2.0",
+              "locale": "en_CA",
+              "timeZone": "America/Toronto",
+              "pushRegistered": true,
+              "testDevice": false,
+              "firstSeenAt": "2026-10-31T09:41:00.000Z",
+              "lastSeenAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "thread": {
+            "id": "thr_1",
+            "status": "resolved",
+            "archived": false,
+            "startedBy": "person",
+            "createdAt": "2026-10-31T09:41:00.000Z",
+            "lastMessageAt": "2026-10-31T09:41:00.000Z",
+            "messages": [
+              {
+                "id": "msg_1",
+                "seq": 1,
+                "author": {
+                  "kind": "person"
+                },
+                "parts": [
+                  {
+                    "type": "text",
+                    "text": "The timer stopped when I locked my phone."
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              },
+              {
+                "id": "msg_2",
+                "seq": 2,
+                "author": {
+                  "kind": "team",
+                  "id": "mem_1",
+                  "name": "Maya"
+                },
+                "parts": [
+                  {
+                    "type": "image",
+                    "attachmentId": "att_1",
+                    "width": 1170,
+                    "height": 2532,
+                    "removed": true
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              }
+            ]
+          },
+          "moments": [
+            {
+              "name": "paywall_closed",
+              "props": {
+                "plan": "annual",
+                "seconds": 12
+              },
+              "outcome": "delivered",
+              "occurredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "storeEvents": [
+            {
+              "id": "se_1",
+              "event": "trial_started",
+              "source": "appstore",
+              "productId": "pro.annual",
+              "at": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "plays": [
+            {
+              "playId": "play_1",
+              "playName": "Paywall closed",
+              "arm": "control",
+              "status": "delivered",
+              "triggeredAt": "2026-10-31T09:41:00.000Z",
+              "deliveredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "detail": {
+            "id": "per_1",
+            "appId": "app_1",
+            "level": "named",
+            "displayName": "Person 1",
+            "platforms": [
+              "ios"
+            ],
+            "userId": "user1",
+            "traits": {},
+            "firstSeenAt": "2026-10-30T18:00:00.000Z",
+            "blocked": false,
+            "devices": [
+              {
+                "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+                "platform": "ios",
+                "model": "iPhone18,1",
+                "os": "iOS 27.1",
+                "appVersion": "1.0 (1)",
+                "sdk": "pingfront-ios 1.0.0",
+                "push": "off",
+                "lastSeenAt": "2026-10-30T18:00:00.000Z"
+              }
+            ]
+          },
+          "activity": [
+            {
+              "id": "act_1",
+              "kind": "session",
+              "at": "2026-10-31T09:40:00.000Z",
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "appVersion": "2.3.1"
+            },
+            {
+              "id": "mom_1",
+              "kind": "moment",
+              "at": "2026-10-31T09:41:00.000Z",
+              "moment": "paywall_closed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "devices say whether push is registered",
+      "value": {
+        "format": "pingfront.person.v1",
+        "exportedAt": "2026-10-31T09:41:00.000Z",
+        "app": {
+          "id": "app_1",
+          "name": "Clockwise"
+        },
+        "person": {
+          "profile": {
+            "id": "per_1",
+            "level": "verified",
+            "userId": "u_42",
+            "name": "Riley",
+            "email": "riley@example.com",
+            "traits": {
+              "plan": "pro"
+            },
+            "blocked": false,
+            "firstSeenAt": "2026-10-31T09:41:00.000Z",
+            "lastSeenAt": "2026-10-31T09:41:00.000Z"
+          },
+          "devices": [
+            {
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "model": "iPhone17,1",
+              "os": "iOS 26.1",
+              "appVersion": "2.3.1",
+              "appBuild": "231",
+              "sdk": "pingfront-ios/1.2.0",
+              "locale": "en_CA",
+              "timeZone": "America/Toronto",
+              "testDevice": false,
+              "firstSeenAt": "2026-10-31T09:41:00.000Z",
+              "lastSeenAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "thread": {
+            "id": "thr_1",
+            "status": "resolved",
+            "archived": false,
+            "startedBy": "person",
+            "createdAt": "2026-10-31T09:41:00.000Z",
+            "lastMessageAt": "2026-10-31T09:41:00.000Z",
+            "messages": [
+              {
+                "id": "msg_1",
+                "seq": 1,
+                "author": {
+                  "kind": "person"
+                },
+                "parts": [
+                  {
+                    "type": "text",
+                    "text": "The timer stopped when I locked my phone."
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              },
+              {
+                "id": "msg_2",
+                "seq": 2,
+                "author": {
+                  "kind": "team",
+                  "id": "mem_1",
+                  "name": "Maya"
+                },
+                "parts": [
+                  {
+                    "type": "image",
+                    "attachmentId": "att_1",
+                    "width": 1170,
+                    "height": 2532,
+                    "removed": true
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              }
+            ]
+          },
+          "moments": [
+            {
+              "name": "paywall_closed",
+              "props": {
+                "plan": "annual",
+                "seconds": 12
+              },
+              "outcome": "delivered",
+              "occurredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "storeEvents": [
+            {
+              "id": "se_1",
+              "event": "trial_started",
+              "source": "appstore",
+              "productId": "pro.annual",
+              "at": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "plays": [
+            {
+              "playId": "play_1",
+              "playName": "Paywall closed",
+              "arm": "treated",
+              "status": "delivered",
+              "triggeredAt": "2026-10-31T09:41:00.000Z",
+              "deliveredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "detail": {
+            "id": "per_1",
+            "appId": "app_1",
+            "level": "named",
+            "displayName": "Person 1",
+            "platforms": [
+              "ios"
+            ],
+            "userId": "user1",
+            "traits": {},
+            "firstSeenAt": "2026-10-30T18:00:00.000Z",
+            "blocked": false,
+            "devices": [
+              {
+                "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+                "platform": "ios",
+                "model": "iPhone18,1",
+                "os": "iOS 27.1",
+                "appVersion": "1.0 (1)",
+                "sdk": "pingfront-ios 1.0.0",
+                "push": "off",
+                "lastSeenAt": "2026-10-30T18:00:00.000Z"
+              }
+            ]
+          },
+          "activity": [
+            {
+              "id": "act_1",
+              "kind": "session",
+              "at": "2026-10-31T09:40:00.000Z",
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "appVersion": "2.3.1"
+            },
+            {
+              "id": "mom_1",
+              "kind": "moment",
+              "at": "2026-10-31T09:41:00.000Z",
+              "moment": "paywall_closed"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "requires the activity timeline",
+      "value": {
+        "format": "pingfront.person.v1",
+        "exportedAt": "2026-10-31T09:41:00.000Z",
+        "app": {
+          "id": "app_1",
+          "name": "Clockwise"
+        },
+        "person": {
+          "profile": {
+            "id": "per_1",
+            "level": "verified",
+            "userId": "u_42",
+            "name": "Riley",
+            "email": "riley@example.com",
+            "traits": {
+              "plan": "pro"
+            },
+            "blocked": false,
+            "firstSeenAt": "2026-10-31T09:41:00.000Z",
+            "lastSeenAt": "2026-10-31T09:41:00.000Z"
+          },
+          "devices": [
+            {
+              "installId": "6f1c9a3e-2b7d-4c1e-9a5f-0e8d7c6b5a41",
+              "platform": "ios",
+              "model": "iPhone17,1",
+              "os": "iOS 26.1",
+              "appVersion": "2.3.1",
+              "appBuild": "231",
+              "sdk": "pingfront-ios/1.2.0",
+              "locale": "en_CA",
+              "timeZone": "America/Toronto",
+              "pushRegistered": true,
+              "testDevice": false,
+              "firstSeenAt": "2026-10-31T09:41:00.000Z",
+              "lastSeenAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "thread": {
+            "id": "thr_1",
+            "status": "resolved",
+            "archived": false,
+            "startedBy": "person",
+            "createdAt": "2026-10-31T09:41:00.000Z",
+            "lastMessageAt": "2026-10-31T09:41:00.000Z",
+            "messages": [
+              {
+                "id": "msg_1",
+                "seq": 1,
+                "author": {
+                  "kind": "person"
+                },
+                "parts": [
+                  {
+                    "type": "text",
+                    "text": "The timer stopped when I locked my phone."
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              },
+              {
+                "id": "msg_2",
+                "seq": 2,
+                "author": {
+                  "kind": "team",
+                  "id": "mem_1",
+                  "name": "Maya"
+                },
+                "parts": [
+                  {
+                    "type": "image",
+                    "attachmentId": "att_1",
+                    "width": 1170,
+                    "height": 2532,
+                    "removed": true
+                  }
+                ],
+                "createdAt": "2026-10-31T09:41:00.000Z"
+              }
+            ]
+          },
+          "moments": [
+            {
+              "name": "paywall_closed",
+              "props": {
+                "plan": "annual",
+                "seconds": 12
+              },
+              "outcome": "delivered",
+              "occurredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "storeEvents": [
+            {
+              "id": "se_1",
+              "event": "trial_started",
+              "source": "appstore",
+              "productId": "pro.annual",
+              "at": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "plays": [
+            {
+              "playId": "play_1",
+              "playName": "Paywall closed",
+              "arm": "treated",
+              "status": "delivered",
+              "triggeredAt": "2026-10-31T09:41:00.000Z",
+              "deliveredAt": "2026-10-31T09:41:00.000Z"
+            }
+          ],
+          "detail": {
+            "id": "per_1",
+            "appId": "app_1",
+            "level": "named",
+            "displayName": "Person 1",
+            "platforms": [
+              "ios"
+            ],
+            "userId": "user1",
+            "traits": {},
+            "firstSeenAt": "2026-10-30T18:00:00.000Z",
+            "blocked": false,
+            "devices": [
+              {
+                "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+                "platform": "ios",
+                "model": "iPhone18,1",
+                "os": "iOS 27.1",
+                "appVersion": "1.0 (1)",
+                "sdk": "pingfront-ios 1.0.0",
+                "push": "off",
+                "lastSeenAt": "2026-10-30T18:00:00.000Z"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

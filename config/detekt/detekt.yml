@@ -1,0 +1,171 @@
+# Strict detekt on top of the default config (buildUponDefaultConfig = true). Zero issues, no baseline.
+config:
+  validation: true
+  warningsAsErrors: true
+
+complexity:
+  LongMethod:
+    active: true
+    allowedLines: 90
+    ignoreAnnotated: ['Composable', 'Test']
+  LargeClass:
+    active: true
+    allowedLines: 800
+  ComplexCondition:
+    active: true
+    allowedConditions: 4
+  CyclomaticComplexMethod:
+    active: true
+    allowedComplexity: 18
+    ignoreAnnotated: ['Composable']
+    ignoreSimpleWhenEntries: true
+  LongParameterList:
+    active: true
+    allowedFunctionParameters: 9
+    allowedConstructorParameters: 12
+    ignoreDefaultParameters: true
+    ignoreAnnotated: ['Composable']
+  TooManyFunctions:
+    active: false
+  NestedBlockDepth:
+    active: true
+    allowedDepth: 5
+
+coroutines:
+  GlobalCoroutineUsage:
+    active: true
+  InjectDispatcher:
+    active: true
+    dispatcherNames: ['IO', 'Default', 'Unconfined', 'Main']
+  SuspendFunWithFlowReturnType:
+    active: true
+  SleepInsteadOfDelay:
+    active: true
+  RedundantSuspendModifier:
+    active: true
+
+exceptions:
+  TooGenericExceptionCaught:
+    active: true
+  SwallowedException:
+    active: true
+    allowedExceptionNameRegex: '_|(ignore|expected).*'
+    ignoredExceptionTypes:
+      - CancellationException
+      - NameNotFoundException
+      - ReflectiveOperationException
+      - ActivityNotFoundException
+      - SecurityException
+  PrintStackTrace:
+    active: true
+  TooGenericExceptionThrown:
+    active: true
+
+potential-bugs:
+  UnsafeCallOnNullableType:
+    active: true
+  UnsafeCast:
+    active: true
+  ImplicitDefaultLocale:
+    active: false
+
+style:
+  MagicNumber:
+    active: true
+    excludes: ['**/test/**', '**/testFixtures/**', '**/debug/**']
+    ignoreNumbers: ['-1', '0', '1', '2', '3', '4', '8', '10', '16', '60', '100', '1000']
+    ignorePropertyDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+    ignoreNamedArgument: true
+    ignoreEnums: true
+    ignoreAnnotated: ['Composable']
+    ignoreExtensionFunctions: true
+  ForbiddenImport:
+    active: true
+    forbiddenImports:
+      - value: 'kotlinx.coroutines.GlobalScope'
+        reason: 'Use the SDK-owned scope.'
+      - value: 'kotlinx.coroutines.runBlocking'
+        reason: 'Never block in library code.'
+  ForbiddenMethodCall:
+    active: true
+    methods:
+      - value: 'java.lang.System.currentTimeMillis'
+        reason: 'Use the injected TimeSource.'
+      - value: 'java.lang.Thread.sleep'
+        reason: 'Use delay.'
+      - value: 'java.util.Date.<init>'
+        reason: 'Use the injected TimeSource.'
+      - value: 'kotlinx.coroutines.runBlocking'
+        reason: 'Never block in library code.'
+  UnusedPrivateProperty:
+    active: true
+  ReturnCount:
+    active: false
+  LoopWithTooManyJumpStatements:
+    active: true
+    maxJumpCount: 3
+  ThrowsCount:
+    active: false
+  MaxLineLength:
+    active: true
+    maxLineLength: 160
+    excludeCommentStatements: true
+  WildcardImport:
+    active: true
+  DestructuringDeclarationWithTooManyEntries:
+    active: true
+    maxDestructuringEntries: 3
+  UseCheckOrError:
+    active: true
+  FunctionOnlyReturningConstant:
+    active: true
+  ForbiddenComment:
+    active: false
+
+comments:
+  UndocumentedPublicClass:
+    active: true
+    excludes: ['**/test/**', '**/testFixtures/**']
+  UndocumentedPublicFunction:
+    active: true
+    excludes: ['**/test/**', '**/testFixtures/**']
+  UndocumentedPublicProperty:
+    active: false
+
+naming:
+  FunctionNaming:
+    active: true
+    ignoreAnnotated: ['Composable', 'Test']
+  TopLevelPropertyNaming:
+    active: true
+  MatchingDeclarationName:
+    active: false
+
+Compose:
+  ComposableNaming:
+    active: true
+  ModifierMissing:
+    active: true
+    checkModifiersForVisibility: only_public
+  ModifierWithoutDefault:
+    active: true
+  ModifierReused:
+    active: true
+  RememberMissing:
+    active: true
+  # Replaced by the Compose compiler stability configuration (pingfront-ui/compose-stability.conf),
+  # which makes Kotlin collections and the SDK's immutable models stable for real.
+  UnstableCollections:
+    active: false
+  MutableParams:
+    active: true
+  ParameterOrder:
+    active: false
+  CompositionLocalAllowlist:
+    active: true
+    allowedCompositionLocals: ['LocalChatTheme', 'LocalChatPreview', 'LocalSupersededOffers']
+  ViewModelForwarding:
+    active: false
+  PreviewPublic:
+    active: false

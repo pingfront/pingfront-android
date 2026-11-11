@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">மெசேஜ்</string>
+    <string name="pf_send">அனுப்பவும்</string>
+    <string name="pf_add_photo">படத்தைச் சேர்க்கவும்</string>
+    <string name="pf_add_photo_or_report">படத்தைச் சேர்க்கவும் அல்லது பிழையைப் புகாரளிக்கவும்</string>
+    <string name="pf_photos">படங்கள்</string>
+    <string name="pf_report_bug">பிழையைப் புகாரளிக்கவும்</string>
+    <string name="pf_close_chat">சாட்டை மூடவும்</string>
+    <string name="pf_delivered">டெலிவரி செய்யப்பட்டது</string>
+    <string name="pf_read">படிக்கப்பட்டது</string>
+    <string name="pf_not_delivered">டெலிவரி செய்யப்படவில்லை</string>
+    <string name="pf_delete">நீக்கவும்</string>
+    <string name="pf_sending">அனுப்பப்படுகிறது…</string>
+    <string name="pf_ai">AI</string>
+    <string name="pf_assistant">அசிஸ்டண்ட்</string>
+    <string name="pf_the_team">குழு</string>
+    <string name="pf_team_title">%1$s குழு</string>
+    <string name="pf_messaged_you_first">%1$s உங்களுக்கு முதலில் மெசேஜ் அனுப்பினார்</string>
+    <string name="pf_wrote_first">%1$s உங்களுக்கு முதலில் எழுதினார்.</string>
+    <string name="pf_why_message">இந்த மெசேஜ் உங்களுக்கு ஏன் வந்தது</string>
+    <string name="pf_reply_if_you_like">விரும்பினால் பதிலளிக்கவும், இல்லையெனில் இதைப் புறக்கணிக்கவும்.</string>
+    <string name="pf_ask_person">ஒரு நபரிடம் பேசவும்</string>
+    <string name="pf_ask_person_message">தயவுசெய்து, நான் ஒரு நபரிடம் நேரடியாகப் பேச விரும்புகிறேன்.</string>
+    <string name="pf_typing">%1$s டைப் செய்கிறார்</string>
+    <string name="pf_jump_latest">சமீபத்திய மெசேஜுக்குச் செல்லவும்</string>
+    <string name="pf_load_earlier">முந்தைய மெசேஜ்களை ஏற்றவும்</string>
+    <string name="pf_loading_earlier">முந்தைய மெசேஜ்கள் ஏற்றப்படுகின்றன</string>
+    <string name="pf_today">இன்று %1$s</string>
+    <string name="pf_yesterday">நேற்று %1$s</string>
+    <string name="pf_local_time">%2$s இருக்கும் இடத்தில் இப்போது %1$s</string>
+    <string name="pf_welcome_body">கேள்விகள், பிழைகள், யோசனைகள்: %1$s ஆப்ஸை உருவாக்கியவர்கள் ஒவ்வொரு மெசேஜையும் படித்து இங்கேயே பதிலளிப்பார்கள்.</string>
+    <string name="pf_topic_billing">பில்லிங் பற்றிக் கேட்கவும்</string>
+    <string name="pf_topic_bug">பிழையைப் புகாரளிக்கவும்</string>
+    <string name="pf_topic_idea">யோசனையைப் பகிரவும்</string>
+    <string name="pf_topic_question">கேள்வி கேட்கவும்</string>
+    <string name="pf_topic_account">என் கணக்கில் உதவி தேவை</string>
+    <string name="pf_topic_feedback">கருத்தைத் தெரிவிக்கவும்</string>
+    <string name="pf_topic_restore">வாங்குதல்களை மீட்டெடுக்கவும்</string>
+    <string name="pf_topic_privacy">தனியுரிமை பற்றிக் கேட்கவும்</string>
+    <string name="pf_topic_other">வேறு ஏதாவது</string>
+    <string name="pf_offline">நீங்கள் ஆஃப்லைனில் இருக்கிறீர்கள். மீண்டும் ஆன்லைனுக்கு வந்ததும் மெசேஜ்கள் அனுப்பப்படும்.</string>
+    <string name="pf_unreachable">இப்போது அரட்டையை அணுக முடியவில்லை. அது திரும்பியதும் செய்திகள் அனுப்பப்படும்.</string>
+    <string name="pf_couldnt_load">உரையாடலை ஏற்ற முடியவில்லை</string>
+    <string name="pf_try_again">மீண்டும் முயலவும்</string>
+    <string name="pf_setup_problem">அமைப்பில் சிக்கல்</string>
+    <string name="pf_debug_only">டீபக் பில்டுகளில் மட்டுமே காட்டப்படும்.</string>
+    <string name="pf_chat_unavailable">சாட் இப்போது கிடைக்கவில்லை.</string>
+    <string name="pf_draft_look">வரைவு தோற்றம்</string>
+    <string name="pf_send_again_in">%1$s கழித்து மீண்டும் அனுப்பலாம்.</string>
+    <string name="pf_sending_paused">அனுப்புவது சிறிது நேரத்துக்கு இடைநிறுத்தப்பட்டுள்ளது. பிறகு மீண்டும் முயலவும்.</string>
+    <string name="pf_photos_again_in">%1$s கழித்து மீண்டும் படங்களை அனுப்பலாம். உரை இப்போதும் அனுப்பப்படும்.</string>
+    <string name="pf_photos_paused">படங்கள் அனுப்புவது சிறிது நேரத்துக்கு இடைநிறுத்தப்பட்டுள்ளது. உரை இப்போதும் அனுப்பப்படும்.</string>
+    <string name="pf_blocked">இந்த சாட்டில் உங்களால் மெசேஜ் அனுப்ப முடியாது.</string>
+    <string name="pf_paused">இந்த சாட் தற்போது இடைநிறுத்தப்பட்டுள்ளது.</string>
+    <string name="pf_verification_required">குழுவுக்கு மெசேஜ் அனுப்ப, ஆப்ஸில் உள்நுழையவும்.</string>
+    <string name="pf_enjoying">%1$s பிடித்திருக்கிறதா?</string>
+    <string name="pf_review_helps">உங்கள் மதிப்பாய்வு, மற்றவர்கள் %1$s ஆப்ஸைக் கண்டறிய உதவும்.</string>
+    <string name="pf_includes_screenshot">ஸ்கிரீன்ஷாட்டும் சமீபத்திய லாகுகளும் சேர்க்கப்படும்.</string>
+    <string name="pf_price_year">ஆண்டுக்கு %1$s</string>
+    <string name="pf_price_month">மாதத்துக்கு %1$s</string>
+    <string name="pf_price_week">வாரத்துக்கு %1$s</string>
+    <string name="pf_first_month_free">%1$s, முதல் மாதம் இலவசம்</string>
+    <string name="pf_first_week_free">%1$s, முதல் வாரம் இலவசம்</string>
+    <string name="pf_thanks_rating">மதிப்பிட்டதற்கு நன்றி.</string>
+    <string name="pf_show_original">அசலைக் காட்டவும்</string>
+    <string name="pf_show_translation">மொழிபெயர்ப்பைக் காட்டவும்</string>
+    <string name="pf_unknown_content">இந்த மெசேஜைப் பார்க்க ஆப்ஸின் புதிய பதிப்பு தேவை.</string>
+    <string name="pf_remove_photo">படம் %1$d-ஐ அகற்றவும்</string>
+    <string name="pf_photo">படம்</string>
+    <string name="pf_photo_removed">படம் அகற்றப்பட்டது</string>
+    <string name="pf_what_went_wrong">என்ன தவறு நடந்தது?</string>
+    <string name="pf_send_report">புகாரை அனுப்பவும்</string>
+    <string name="pf_cancel">ரத்துசெய்யவும்</string>
+    <string name="pf_draw_hint">சிக்கலைச் சுட்டிக்காட்ட ஸ்கிரீன்ஷாட்டில் வரையவும். சமீபத்திய லாகுகளும் சாதன நிலையும் இணைக்கப்படும்.</string>
+    <string name="pf_include_screenshot">ஸ்கிரீன்ஷாட்டைச் சேர்க்கவும்</string>
+    <string name="pf_clear_marks">குறிகளை அழிக்கவும்</string>
+    <string name="pf_screenshot">ஸ்கிரீன்ஷாட்</string>
+    <string name="pf_you">நீங்கள்: %1$s</string>
+    <string name="pf_waiting_connection">இணைப்புக்காகக் காத்திருக்கிறது</string>
+    <string name="pf_topic_gift">பரிசுகள் பற்றிக் கேட்கவும்</string>
+    <string name="pf_pending_photo">படம் அனுப்பக் காத்திருக்கிறது</string>
+    <string name="pf_current_plan">தற்போதைய திட்டம்</string>
+    <string name="pf_share">பகிரவும்</string>
+    <string name="pf_close">மூடவும்</string>
+    <string name="pf_open_photo">படத்தைத் திறக்கவும்</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%2$d நட்சத்திரத்தில் %1$d</item>
+        <item quantity="other">%2$d நட்சத்திரங்களில் %1$d</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d புதிய மெசேஜ்</item>
+        <item quantity="other">%1$d புதிய மெசேஜ்கள்</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"பில்லிங் பற்றி எனக்கு ஒரு கேள்வி: "</string>
+    <string name="pf_start_idea">"எனக்கு ஒரு யோசனை: "</string>
+    <string name="pf_start_question">"எனக்கு ஒரு கேள்வி: "</string>
+    <string name="pf_start_account">"என் கணக்கில் எனக்கு உதவி தேவை: "</string>
+    <string name="pf_start_feedback">"என் கருத்து: "</string>
+    <string name="pf_start_restore">"என் வாங்குதல்களை மீட்டெடுக்க முடியவில்லை: "</string>
+    <string name="pf_start_privacy">"தனியுரிமை பற்றி எனக்கு ஒரு கேள்வி: "</string>
+    <string name="pf_start_gift">"பரிசுகள் பற்றி எனக்கு ஒரு கேள்வி: "</string>
+    <string name="pf_retrying">இன்னும் அனுப்பப்படவில்லை. விரைவில் மீண்டும் முயற்சிக்கப்படும்.</string>
+    <string name="pf_opens_browser">உங்கள் பிரவுசரில் திறக்கும்</string>
+    <string name="pf_opens_store">Google Play-ஐத் திறக்கும்</string>
+    <string name="pf_reply_expectation">வழக்கமாக ஒரு நாளுக்குள் பதிலளிப்பார்கள்</string>
+    <string name="pf_after_first">%1$s. இதை மூடலாம், பதில் இங்கேயே காத்திருக்கும்.</string>
+    <string name="pf_after_first_plain">இதை மூடலாம், பதில் இங்கேயே காத்திருக்கும்.</string>
+    <string name="pf_turn_on_notifications">அறிவிப்புகளை இயக்கவும்</string>
+    <string name="pf_assistant_mark">அசிஸ்டண்ட்</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">%1$d படம் பதிவேற்றப்படுகிறது</item>
+        <item quantity="other">%1$d படங்கள் பதிவேற்றப்படுகின்றன</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">உங்கள் சந்தா</string>
+    <string name="pf_store_manage_detail">உங்கள் திட்டம், பேமெண்ட் முறை அல்லது புதுப்பித்தலை மாற்றவும்.</string>
+    <string name="pf_store_manage_button">சந்தாவை நிர்வகிக்கவும்</string>
+    <string name="pf_store_billing_title">பேமெண்ட் தோல்வியடைந்தது</string>
+    <string name="pf_store_billing_detail">உங்கள் சந்தாவைத் தொடர பேமெண்ட் முறையைப் புதுப்பிக்கவும்.</string>
+    <string name="pf_store_billing_button">பேமெண்ட் முறையைப் புதுப்பிக்கவும்</string>
+    <string name="pf_store_refund_title">ரீஃபண்டைக் கோரவும்</string>
+    <string name="pf_store_refund_detail">ரீஃபண்டுகளை Google Play கையாளுகிறது. ஆர்டர் வரலாற்றில் அந்த ஆர்டரைக் கண்டறியவும்.</string>
+    <string name="pf_store_refund_button">ஆர்டர் வரலாற்றைத் திறக்கவும்</string>
+    <string name="pf_store_redeem_title">ஒரு குறியீட்டைப் பயன்படுத்தவும்</string>
+    <string name="pf_store_redeem_detail">உங்கள் குறியீட்டை Google Play-இல் உள்ளிடவும்.</string>
+    <string name="pf_store_redeem_button">குறியீட்டைப் பயன்படுத்தவும்</string>
+    <string name="pf_store_restore_title">வாங்குதல்களை மீட்டெடுக்கவும்</string>
+    <string name="pf_store_restore_detail">இந்தக் கணக்கில் உள்ள வாங்குதல்களை Google Play-இல் சரிபார்க்கும்.</string>
+    <string name="pf_store_restore_button">வாங்குதல்களை மீட்டெடுக்கவும்</string>
+    <string name="pf_store_receipt_restored">வாங்குதல்கள் மீட்டெடுக்கப்பட்டன</string>
+    <string name="pf_store_receipt_nothing">மீட்டெடுக்க வாங்குதல்கள் எதுவும் இல்லை</string>
+    <string name="pf_store_receipt_up_to_date">வாங்குதல்கள் புதுப்பித்த நிலையில் உள்ளன</string>
+    <string name="pf_store_receipt_updated">சந்தா புதுப்பிக்கப்பட்டது</string>
+    <string name="pf_store_unavailable">Google Play-ஐ அணுக முடியவில்லை. பிறகு மீண்டும் முயலவும்.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s இலவசம்</string>
+    <string name="pf_phase_for">%2$s-க்கு %1$s</string>
+    <string name="pf_phase_then">%1$s, அதன் பிறகு %2$s</string>
+    <string name="pf_change_now">இது உங்கள் தற்போதைய திட்டத்தை இப்போதே மாற்றும். பயன்படுத்தாத காலத்துக்கான தொகை வரவு வைக்கப்படும்.</string>
+    <string name="pf_change_at_renewal">உங்கள் தற்போதைய திட்டம் புதுப்பிக்கப்படும்போது தொடங்கும்.</string>
+    <string name="pf_waiting_for_payment">பேமெண்ட்டுக்காகக் காத்திருக்கிறது</string>
+    <string name="pf_pending_detail">பேமெண்ட் முடிந்ததும் உங்கள் திட்டம் தொடங்கும்.</string>
+    <string name="pf_plan_renews">%1$s, %2$s அன்று புதுப்பிக்கப்படும்</string>
+    <string name="pf_plan_renews_auto">%1$s தானாகவே புதுப்பிக்கப்படும்</string>
+    <string name="pf_plan_ends">%1$s, %2$s அன்று முடிவடையும்</string>
+    <string name="pf_plan_wont_renew">%1$s புதுப்பிக்கப்படாது</string>
+    <string name="pf_plan_ended">%1$s, %2$s அன்று முடிவடைந்தது</string>
+    <string name="pf_plan_ended_undated">%1$s முடிவடைந்தது</string>
+    <string name="pf_plan_issue_by">பேமெண்ட்டில் சிக்கல்: %1$s-க்குள் புதுப்பிக்கவும்</string>
+    <string name="pf_plan_issue">பேமெண்ட்டில் சிக்கல்: பேமெண்ட் முறையைப் புதுப்பிக்கவும்</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d நாள்</item>
+        <item quantity="other">%d நாட்கள்</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d வாரம்</item>
+        <item quantity="other">%d வாரங்கள்</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d மாதம்</item>
+        <item quantity="other">%d மாதங்கள்</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d ஆண்டு</item>
+        <item quantity="other">%d ஆண்டுகள்</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">படம் எடுக்கவும்</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">%d எழுத்து மீதமுள்ளது</item>
+        <item quantity="other">%d எழுத்துகள் மீதமுள்ளன</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">வரம்பை விட %d எழுத்து அதிகம்</item>
+        <item quantity="other">வரம்பை விட %d எழுத்துகள் அதிகம்</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">pingfront வழங்கும் சாட்</string>
+    <string name="pf_plan_test_purchase">%1$s (சோதனை வாங்குதல்)</string>
+    <string name="pf_held_chat_back">இன்னும் அனுப்பப்படவில்லை. அரட்டை மீண்டும் வந்ததும் அனுப்பப்படும்.</string>
+    <string name="pf_held_sign_in">இன்னும் அனுப்பப்படவில்லை. நீங்கள் உள்நுழைந்ததும் அனுப்பப்படும்.</string>
+    <string name="pf_offer_replaced">புதிய சலுகையால் மாற்றப்பட்டது</string>
+    <string name="pf_offer_ended">இந்தச் சலுகை இனி கிடைக்காது.</string>
+</resources>

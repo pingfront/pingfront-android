@@ -1,0 +1,1 @@
+-keep class dev.pingfront.push.PingFrontMessagingService { <init>(); }

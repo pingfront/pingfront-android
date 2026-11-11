@@ -1,0 +1,116 @@
+{
+  "schema": "OfferSlot",
+  "description": "An offer the app can show; products default to [].",
+  "valid": [
+    {
+      "name": "fills an empty product list",
+      "value": {
+        "id": "winback.v2",
+        "title": "Come back",
+        "kind": "winback",
+        "available": false
+      },
+      "expect": {
+        "id": "winback.v2",
+        "title": "Come back",
+        "kind": "winback",
+        "available": false,
+        "products": []
+      }
+    },
+    {
+      "name": "a RevenueCat offering reported by the adapter",
+      "value": {
+        "id": "default",
+        "title": "Clockwise Pro",
+        "kind": "standard",
+        "available": true,
+        "source": "revenuecat",
+        "products": [
+          {
+            "id": "pro.yearly",
+            "price": "$29.99",
+            "period": "P1Y",
+            "trial": "P1W"
+          }
+        ]
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an id with spaces",
+      "value": {
+        "id": "a b",
+        "title": "x",
+        "kind": "standard",
+        "available": true
+      }
+    },
+    {
+      "name": "rejects more than 10 products",
+      "value": {
+        "id": "a",
+        "title": "x",
+        "kind": "standard",
+        "available": true,
+        "products": [
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          },
+          {
+            "id": "p",
+            "price": "$1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "an unknown source is not sent",
+      "value": {
+        "id": "default",
+        "title": "Pro",
+        "kind": "standard",
+        "available": true,
+        "source": "stripe"
+      }
+    }
+  ]
+}

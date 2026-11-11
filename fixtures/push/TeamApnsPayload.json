@@ -1,0 +1,191 @@
+{
+  "schema": "TeamApnsPayload",
+  "description": "APNs payloads to the native team app: a generic localized alert, the encrypted preview in pf.content, and the silent badge and read kinds.",
+  "valid": [
+    {
+      "name": "a person's message, preview encrypted",
+      "value": {
+        "aps": {
+          "alert": {
+            "title-loc-key": "push.fallback.title",
+            "loc-key": "push.fallback.body.message"
+          },
+          "badge": 4,
+          "sound": "default",
+          "thread-id": "thr_8Kq",
+          "category": "pf.thread",
+          "mutable-content": 1,
+          "interruption-level": "active",
+          "relevance-score": 0.8,
+          "target-content-id": "thr_8Kq"
+        },
+        "pf": {
+          "v": 1,
+          "kind": "message",
+          "orgId": "org_dev",
+          "appId": "app_1",
+          "threadId": "thr_8Kq",
+          "messageId": "msg_77",
+          "deviceId": "mdv_3",
+          "keyVersion": 1,
+          "badge": 4,
+          "content": "oKGio6SlpqeoqaqrnToKD3_6Lp0WDPO_Ylj6_DHVnI_3lwYJ8WdUpFOJBnSwAi6Lw0dxB33faKdqEfSQNH5kZECydRo4fDF88BjgkMDV6ApChZeUm5KMOPimqdTtQovIqqLyWpodW7rB8iL66qTbNJotrbe8q2Mi9ueDYUByW4yuUOljHu3yhscwnDmEZZJF8XCwJQF0z7o_eqKCuOCXX4_qyrzT_Y3F9eVJFJDWPVSfkP5GnXC_SEZAOg"
+        }
+      }
+    },
+    {
+      "name": "preview off: no content, the generic alert only",
+      "value": {
+        "aps": {
+          "alert": {
+            "title-loc-key": "push.fallback.title",
+            "loc-key": "push.fallback.body.message"
+          },
+          "badge": 4,
+          "thread-id": "thr_8Kq",
+          "category": "pf.thread.mine",
+          "mutable-content": 1,
+          "interruption-level": "passive",
+          "relevance-score": 0.2
+        },
+        "pf": {
+          "v": 1,
+          "kind": "message",
+          "orgId": "org_dev",
+          "appId": "app_1",
+          "threadId": "thr_8Kq",
+          "messageId": "msg_77",
+          "deviceId": "mdv_3",
+          "badge": 4
+        }
+      }
+    },
+    {
+      "name": "an assignment is time-sensitive",
+      "value": {
+        "aps": {
+          "alert": {
+            "title-loc-key": "push.fallback.title",
+            "loc-key": "push.fallback.body.assigned"
+          },
+          "badge": 5,
+          "sound": "default",
+          "thread-id": "thr_8Kq",
+          "category": "pf.thread.mine",
+          "mutable-content": 1,
+          "interruption-level": "time-sensitive",
+          "relevance-score": 1
+        },
+        "pf": {
+          "v": 1,
+          "kind": "assigned",
+          "orgId": "org_dev",
+          "appId": "app_1",
+          "threadId": "thr_8Kq",
+          "deviceId": "mdv_3",
+          "keyVersion": 1,
+          "badge": 5,
+          "content": "oKGio6SlpqeoqaqrnToKD3_6Lp0WDPO_Ylj6_DHVnI_3lwYJ8WdUpFOJBnSwAi6Lw0dxB33faKdqEfSQNH5kZECydRo4fDF88BjgkMDV6ApChZeUm5KMOPimqdTtQovIqqLyWpodW7rB8iL66qTbNJotrbe8q2Mi9ueDYUByW4yuUOljHu3yhscwnDmEZZJF8XCwJQF0z7o_eqKCuOCXX4_qyrzT_Y3F9eVJFJDWPVSfkP5GnXC_SEZAOg"
+        }
+      }
+    },
+    {
+      "name": "badge: only a badge, nothing shows",
+      "value": {
+        "aps": {
+          "badge": 2
+        },
+        "pf": {
+          "v": 1,
+          "kind": "badge",
+          "deviceId": "mdv_3",
+          "badge": 2
+        }
+      }
+    },
+    {
+      "name": "read: a background push naming the thread",
+      "value": {
+        "aps": {
+          "content-available": 1
+        },
+        "pf": {
+          "v": 1,
+          "kind": "read",
+          "orgId": "org_dev",
+          "appId": "app_1",
+          "threadId": "thr_8Kq",
+          "deviceId": "mdv_3",
+          "badge": 3
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "version 2 is a different payload",
+      "value": {
+        "aps": {},
+        "pf": {
+          "v": 2,
+          "kind": "message",
+          "deviceId": "mdv_3"
+        }
+      }
+    },
+    {
+      "name": "the alert is loc-keys, never plain text",
+      "value": {
+        "aps": {
+          "alert": {
+            "title": "Ayşe",
+            "body": "Hi"
+          }
+        },
+        "pf": {
+          "v": 1,
+          "kind": "message",
+          "deviceId": "mdv_3"
+        }
+      }
+    },
+    {
+      "name": "content is base64url",
+      "value": {
+        "aps": {},
+        "pf": {
+          "v": 1,
+          "kind": "message",
+          "deviceId": "mdv_3",
+          "content": "not base64url! not base64url! not base64url!"
+        }
+      }
+    },
+    {
+      "name": "relevance is 0 to 1",
+      "value": {
+        "aps": {
+          "relevance-score": 2
+        },
+        "pf": {
+          "v": 1,
+          "kind": "message",
+          "deviceId": "mdv_3"
+        }
+      }
+    }
+  ],
+  "unknown": [
+    {
+      "name": "a kind added later",
+      "value": {
+        "aps": {},
+        "pf": {
+          "v": 1,
+          "kind": "shift_started",
+          "deviceId": "mdv_3"
+        }
+      }
+    }
+  ]
+}

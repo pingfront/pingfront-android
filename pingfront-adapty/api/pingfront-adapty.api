@@ -1,0 +1,5 @@
+public final class dev/pingfront/adapty/Adapty {
+	public static final field INSTANCE Ldev/pingfront/adapty/Adapty;
+	public final fun invoke ([Ljava/lang/String;)Ldev/pingfront/PingFrontModule;
+}
+

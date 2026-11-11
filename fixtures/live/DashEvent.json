@@ -1,0 +1,130 @@
+{
+  "schema": "DashEvent",
+  "description": "Dashboard live frames on /dash/v1/live.",
+  "valid": [
+    {
+      "name": "typing in a thread",
+      "value": {
+        "type": "typing",
+        "threadId": "thr_1",
+        "on": false
+      }
+    },
+    {
+      "name": "health changed",
+      "value": {
+        "type": "health",
+        "appId": "app_1"
+      }
+    },
+    {
+      "name": "person read",
+      "value": {
+        "type": "person_read",
+        "threadId": "thr_1",
+        "upToSeq": 3
+      }
+    },
+    {
+      "name": "the AI teammate handed a thread off",
+      "value": {
+        "type": "ai",
+        "kind": "handoff",
+        "appId": "app_1",
+        "threadId": "thr_1",
+        "reason": "asked_for_person"
+      }
+    },
+    {
+      "name": "the AI teammate paused at the budget",
+      "value": {
+        "type": "ai",
+        "kind": "paused",
+        "appId": "app_1"
+      }
+    },
+    {
+      "name": "assigned: Mara assigned a thread to Sam",
+      "value": {
+        "type": "assigned",
+        "appId": "app_1",
+        "threadId": "thr_1",
+        "assignee": {
+          "id": "mem_1",
+          "name": "Sam"
+        },
+        "by": {
+          "id": "mem_2",
+          "name": "Mara"
+        },
+        "personName": "Jonas Weber",
+        "auto": false
+      }
+    },
+    {
+      "name": "assigned: unassigned",
+      "value": {
+        "type": "assigned",
+        "appId": "app_1",
+        "threadId": "thr_1",
+        "assignee": null,
+        "by": {
+          "id": "mem_2",
+          "name": "Mara"
+        }
+      }
+    },
+    {
+      "name": "the member-wide socket names each event's org",
+      "value": {
+        "type": "typing",
+        "orgId": "org_2",
+        "threadId": "thr_1",
+        "on": true
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unknown event",
+      "value": {
+        "type": "nope"
+      }
+    },
+    {
+      "name": "rejects an AI event of an unknown kind",
+      "value": {
+        "type": "ai",
+        "kind": "tired",
+        "appId": "app_1"
+      }
+    },
+    {
+      "name": "rejects an unknown hand-off reason",
+      "value": {
+        "type": "ai",
+        "kind": "handoff",
+        "appId": "app_1",
+        "threadId": "thr_1",
+        "reason": "bored"
+      }
+    },
+    {
+      "name": "rejects assigned without assignee",
+      "value": {
+        "type": "assigned",
+        "appId": "app_1",
+        "threadId": "thr_1"
+      }
+    },
+    {
+      "name": "orgId is an id",
+      "value": {
+        "type": "typing",
+        "orgId": "",
+        "threadId": "thr_1",
+        "on": true
+      }
+    }
+  ]
+}

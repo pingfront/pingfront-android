@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Only the photo the person chose to share, written when they tap Share and deleted when the viewer next opens. -->
+    <cache-path name="pingfront_share" path="pingfront-share/" />
+    <!-- A photo the person takes with the camera from the composer, deleted when the next one is taken. -->
+    <cache-path name="pingfront_camera" path="pingfront-camera/" />
+</paths>

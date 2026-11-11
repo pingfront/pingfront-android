@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Mesaj</string>
+    <string name="pf_send">Trimiteți</string>
+    <string name="pf_add_photo">Adăugați o fotografie</string>
+    <string name="pf_add_photo_or_report">Adăugați o fotografie sau raportați o eroare</string>
+    <string name="pf_photos">Fotografii</string>
+    <string name="pf_report_bug">Raportați o eroare</string>
+    <string name="pf_close_chat">Închideți chatul</string>
+    <string name="pf_delivered">Livrat</string>
+    <string name="pf_read">Citit</string>
+    <string name="pf_not_delivered">Nelivrat</string>
+    <string name="pf_delete">Ștergeți</string>
+    <string name="pf_sending">Se trimite…</string>
+    <string name="pf_ai">IA</string>
+    <string name="pf_assistant">Asistent</string>
+    <string name="pf_the_team">Echipa</string>
+    <string name="pf_team_title">Echipa %1$s</string>
+    <string name="pf_messaged_you_first">%1$s v-a scris mai întâi</string>
+    <string name="pf_wrote_first">%1$s v-a scris mai întâi.</string>
+    <string name="pf_why_message">De ce ați primit acest mesaj</string>
+    <string name="pf_reply_if_you_like">Răspundeți dacă doriți sau ignorați-l.</string>
+    <string name="pf_ask_person">Vorbiți cu un om</string>
+    <string name="pf_ask_person_message">Aș dori să vorbesc cu un om, vă rog.</string>
+    <string name="pf_typing">%1$s scrie</string>
+    <string name="pf_jump_latest">Salt la cele mai recente</string>
+    <string name="pf_load_earlier">Încărcați mesajele anterioare</string>
+    <string name="pf_loading_earlier">Se încarcă mesajele anterioare</string>
+    <string name="pf_today">Azi, %1$s</string>
+    <string name="pf_yesterday">Ieri, %1$s</string>
+    <string name="pf_local_time">Pentru %2$s este ora %1$s</string>
+    <string name="pf_welcome_body">Întrebări, erori sau idei: cei care fac %1$s citesc fiecare mesaj și răspund aici.</string>
+    <string name="pf_topic_billing">Întrebați despre facturare</string>
+    <string name="pf_topic_bug">Raportați o eroare</string>
+    <string name="pf_topic_idea">Propuneți o idee</string>
+    <string name="pf_topic_question">Puneți o întrebare</string>
+    <string name="pf_topic_account">Ajutor cu contul meu</string>
+    <string name="pf_topic_feedback">Trimiteți feedback</string>
+    <string name="pf_topic_restore">Restabiliți achizițiile</string>
+    <string name="pf_topic_privacy">Întrebați despre confidențialitate</string>
+    <string name="pf_topic_other">Altceva</string>
+    <string name="pf_offline">Sunteți offline. Mesajele se vor trimite când reveniți online.</string>
+    <string name="pf_unreachable">Chatul nu poate fi accesat acum. Mesajele vor fi trimise când revine.</string>
+    <string name="pf_couldnt_load">Conversația nu s-a putut încărca</string>
+    <string name="pf_try_again">Încercați din nou</string>
+    <string name="pf_setup_problem">Problemă de configurare</string>
+    <string name="pf_debug_only">Afișat doar în versiunile de depanare.</string>
+    <string name="pf_chat_unavailable">Chatul nu este disponibil momentan.</string>
+    <string name="pf_draft_look">Aspect de schiță</string>
+    <string name="pf_send_again_in">Puteți trimite din nou peste %1$s.</string>
+    <string name="pf_sending_paused">Trimiterea este întreruptă temporar. Încercați din nou mai târziu.</string>
+    <string name="pf_photos_again_in">Puteți trimite din nou fotografii peste %1$s. Textul se trimite în continuare.</string>
+    <string name="pf_photos_paused">Trimiterea fotografiilor este întreruptă temporar. Textul se trimite în continuare.</string>
+    <string name="pf_blocked">Nu puteți trimite mesaje în acest chat.</string>
+    <string name="pf_paused">Acest chat este întrerupt deocamdată.</string>
+    <string name="pf_verification_required">Conectați-vă în aplicație ca să-i scrieți echipei.</string>
+    <string name="pf_enjoying">Vă place %1$s?</string>
+    <string name="pf_review_helps">Recenzia dvs. îi ajută pe alții să descopere %1$s.</string>
+    <string name="pf_includes_screenshot">Include o captură de ecran și jurnalele recente.</string>
+    <string name="pf_price_year">%1$s pe an</string>
+    <string name="pf_price_month">%1$s pe lună</string>
+    <string name="pf_price_week">%1$s pe săptămână</string>
+    <string name="pf_first_month_free">%1$s, prima lună gratuită</string>
+    <string name="pf_first_week_free">%1$s, prima săptămână gratuită</string>
+    <string name="pf_thanks_rating">Vă mulțumim pentru evaluare.</string>
+    <string name="pf_show_original">Afișați originalul</string>
+    <string name="pf_show_translation">Afișați traducerea</string>
+    <string name="pf_unknown_content">Pentru acest mesaj aveți nevoie de o versiune mai nouă a aplicației.</string>
+    <string name="pf_remove_photo">Eliminați fotografia %1$d</string>
+    <string name="pf_photo">Fotografie</string>
+    <string name="pf_photo_removed">Fotografie eliminată</string>
+    <string name="pf_what_went_wrong">Ce nu a funcționat?</string>
+    <string name="pf_send_report">Trimiteți raportul</string>
+    <string name="pf_cancel">Anulați</string>
+    <string name="pf_draw_hint">Desenați pe captura de ecran ca să arătați problema. Jurnalele recente și starea dispozitivului sunt atașate.</string>
+    <string name="pf_include_screenshot">Includeți captura de ecran</string>
+    <string name="pf_clear_marks">Ștergeți marcajele</string>
+    <string name="pf_screenshot">Captură de ecran</string>
+    <string name="pf_you">Dvs.: %1$s</string>
+    <string name="pf_waiting_connection">Se așteaptă conexiunea</string>
+    <string name="pf_topic_gift">Întrebați despre cadouri</string>
+    <string name="pf_pending_photo">Fotografie în așteptare</string>
+    <string name="pf_current_plan">Planul actual</string>
+    <string name="pf_share">Distribuiți</string>
+    <string name="pf_close">Închideți</string>
+    <string name="pf_open_photo">Deschideți fotografia</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%1$d din %2$d stea</item>
+        <item quantity="few">%1$d din %2$d stele</item>
+        <item quantity="other">%1$d din %2$d de stele</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d mesaj nou</item>
+        <item quantity="few">%1$d mesaje noi</item>
+        <item quantity="other">%1$d de mesaje noi</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Am o întrebare despre facturare: "</string>
+    <string name="pf_start_idea">"Am o idee: "</string>
+    <string name="pf_start_question">"Am o întrebare: "</string>
+    <string name="pf_start_account">"Am nevoie de ajutor cu contul meu: "</string>
+    <string name="pf_start_feedback">"Câteva impresii: "</string>
+    <string name="pf_start_restore">"Nu am reușit să-mi restabilesc achizițiile: "</string>
+    <string name="pf_start_privacy">"Am o întrebare despre confidențialitate: "</string>
+    <string name="pf_start_gift">"Am o întrebare despre cadouri: "</string>
+    <string name="pf_retrying">Încă nu s-a trimis. Se reîncearcă în curând.</string>
+    <string name="pf_opens_browser">Se deschide în browser</string>
+    <string name="pf_opens_store">Deschide Google Play</string>
+    <string name="pf_reply_expectation">De obicei răspund în decurs de o zi</string>
+    <string name="pf_after_first">%1$s. Puteți închide chatul, răspunsul vă așteaptă aici.</string>
+    <string name="pf_after_first_plain">Puteți închide chatul, răspunsul vă așteaptă aici.</string>
+    <string name="pf_turn_on_notifications">Activați notificările</string>
+    <string name="pf_assistant_mark">Asistent</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">Se încarcă %1$d fotografie</item>
+        <item quantity="few">Se încarcă %1$d fotografii</item>
+        <item quantity="other">Se încarcă %1$d de fotografii</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Abonamentul dvs.</string>
+    <string name="pf_store_manage_detail">Schimbați planul, metoda de plată sau reînnoirea.</string>
+    <string name="pf_store_manage_button">Gestionați abonamentul</string>
+    <string name="pf_store_billing_title">Plata nu a reușit</string>
+    <string name="pf_store_billing_detail">Actualizați metoda de plată pentru a vă păstra abonamentul.</string>
+    <string name="pf_store_billing_button">Actualizați metoda de plată</string>
+    <string name="pf_store_refund_title">Solicitați o rambursare</string>
+    <string name="pf_store_refund_detail">Rambursările sunt gestionate de Google Play. Găsiți comanda în istoricul comenzilor.</string>
+    <string name="pf_store_refund_button">Deschideți istoricul comenzilor</string>
+    <string name="pf_store_redeem_title">Valorificați un cod</string>
+    <string name="pf_store_redeem_detail">Introduceți codul în Google Play.</string>
+    <string name="pf_store_redeem_button">Valorificați codul</string>
+    <string name="pf_store_restore_title">Restabiliți achizițiile</string>
+    <string name="pf_store_restore_detail">Caută în Google Play achizițiile din acest cont.</string>
+    <string name="pf_store_restore_button">Restabiliți achizițiile</string>
+    <string name="pf_store_receipt_restored">Achiziții restabilite</string>
+    <string name="pf_store_receipt_nothing">Nu există achiziții de restabilit</string>
+    <string name="pf_store_receipt_up_to_date">Achizițiile sunt la zi</string>
+    <string name="pf_store_receipt_updated">Abonament actualizat</string>
+    <string name="pf_store_unavailable">Nu s-a putut accesa Google Play. Încercați din nou mai târziu.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s gratuit</string>
+    <string name="pf_phase_for">%1$s timp de %2$s</string>
+    <string name="pf_phase_then">%1$s, apoi %2$s</string>
+    <string name="pf_change_now">Înlocuiește acum planul actual. Timpul neutilizat este creditat.</string>
+    <string name="pf_change_at_renewal">Începe când se reînnoiește planul actual.</string>
+    <string name="pf_waiting_for_payment">Se așteaptă plata</string>
+    <string name="pf_pending_detail">Planul dvs. începe după ce plata este efectuată.</string>
+    <string name="pf_plan_renews">%1$s se reînnoiește pe %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s se reînnoiește automat</string>
+    <string name="pf_plan_ends">%1$s se încheie pe %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s nu se va reînnoi</string>
+    <string name="pf_plan_ended">%1$s s-a încheiat pe %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s s-a încheiat</string>
+    <string name="pf_plan_issue_by">Problemă de plată: actualizați până la %1$s</string>
+    <string name="pf_plan_issue">Problemă de plată: actualizați metoda de plată</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d zi</item>
+        <item quantity="few">%d zile</item>
+        <item quantity="other">%d de zile</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d săptămână</item>
+        <item quantity="few">%d săptămâni</item>
+        <item quantity="other">%d de săptămâni</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d lună</item>
+        <item quantity="few">%d luni</item>
+        <item quantity="other">%d de luni</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d an</item>
+        <item quantity="few">%d ani</item>
+        <item quantity="other">%d de ani</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Faceți o fotografie</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">A mai rămas %d caracter</item>
+        <item quantity="few">Au mai rămas %d caractere</item>
+        <item quantity="other">Au mai rămas %d de caractere</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d caracter peste limită</item>
+        <item quantity="few">%d caractere peste limită</item>
+        <item quantity="other">%d de caractere peste limită</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Chat oferit de pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (achiziție de test)</string>
+    <string name="pf_held_chat_back">Încă nu s-a trimis. Va fi trimis când chatul revine.</string>
+    <string name="pf_held_sign_in">Încă nu s-a trimis. Va fi trimis după ce vă conectați.</string>
+    <string name="pf_offer_replaced">Înlocuită de o ofertă mai nouă</string>
+    <string name="pf_offer_ended">Această ofertă nu mai este disponibilă.</string>
+</resources>

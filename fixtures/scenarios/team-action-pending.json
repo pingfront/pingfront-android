@@ -1,0 +1,53 @@
+{
+  "scenario": "team-action-pending",
+  "description": "A team action sent while the app was closed arrives on the next session through GET /v1/team-actions. The SDK emits it once as a teamAction event; the host app's complete() acks it, and a repeated ack (a retry after a lost answer) is a harmless 204.",
+  "given": {
+    "accessToken": "at_ok",
+    "emitted": []
+  },
+  "action": "A session starts (or the live socket reconnects); the host app calls complete() on the emitted action.",
+  "steps": [
+    {
+      "name": "the pending actions, oldest first",
+      "request": {
+        "operation": "GET /v1/team-actions",
+        "path": "/v1/team-actions",
+        "headers": { "Authorization": "Bearer at_ok" }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "actions": [
+            { "id": "tar_1", "actionId": "repair_sync", "name": "Repair bank sync", "fields": {}, "ackRequired": true, "createdAt": "2026-11-01T10:00:00Z", "expiresAt": "2026-11-08T10:00:00Z" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "complete() acks it",
+      "request": {
+        "operation": "POST /v1/team-actions/{id}/ack",
+        "path": "/v1/team-actions/tar_1/ack",
+        "headers": { "Authorization": "Bearer at_ok" },
+        "body": { "ok": true }
+      },
+      "response": { "transport": "lost" },
+      "server": { "status": 204 }
+    },
+    {
+      "name": "the queued ack is retried; the server answers 204 again",
+      "request": {
+        "operation": "POST /v1/team-actions/{id}/ack",
+        "path": "/v1/team-actions/tar_1/ack",
+        "headers": { "Authorization": "Bearer at_ok" },
+        "body": { "ok": true }
+      },
+      "response": { "status": 204 }
+    }
+  ],
+  "then": {
+    "requests": 3,
+    "emitted": [ "tar_1" ],
+    "surfaced": "the host app received one teamAction event for tar_1, not two"
+  }
+}

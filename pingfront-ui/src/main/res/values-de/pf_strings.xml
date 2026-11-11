@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Nachricht</string>
+    <string name="pf_send">Senden</string>
+    <string name="pf_add_photo">Foto hinzufügen</string>
+    <string name="pf_add_photo_or_report">Foto hinzufügen oder Fehler melden</string>
+    <string name="pf_photos">Fotos</string>
+    <string name="pf_report_bug">Fehler melden</string>
+    <string name="pf_close_chat">Chat schließen</string>
+    <string name="pf_delivered">Zugestellt</string>
+    <string name="pf_read">Gelesen</string>
+    <string name="pf_not_delivered">Nicht zugestellt</string>
+    <string name="pf_delete">Löschen</string>
+    <string name="pf_sending">Wird gesendet…</string>
+    <string name="pf_ai">KI</string>
+    <string name="pf_assistant">Assistent</string>
+    <string name="pf_the_team">Das Team</string>
+    <string name="pf_team_title">Das %1$s-Team</string>
+    <string name="pf_messaged_you_first">%1$s hat dir zuerst geschrieben</string>
+    <string name="pf_wrote_first">%1$s hat dir zuerst geschrieben.</string>
+    <string name="pf_why_message">Warum du diese Nachricht bekommen hast</string>
+    <string name="pf_reply_if_you_like">Antworte, wenn du magst, oder ignoriere sie.</string>
+    <string name="pf_ask_person">Mit einem Menschen sprechen</string>
+    <string name="pf_ask_person_message">Ich möchte bitte mit einem Menschen sprechen.</string>
+    <string name="pf_typing">%1$s schreibt</string>
+    <string name="pf_jump_latest">Zur neuesten Nachricht</string>
+    <string name="pf_load_earlier">Frühere Nachrichten laden</string>
+    <string name="pf_loading_earlier">Frühere Nachrichten werden geladen</string>
+    <string name="pf_today">Heute %1$s</string>
+    <string name="pf_yesterday">Gestern %1$s</string>
+    <string name="pf_local_time">Bei %2$s ist es %1$s</string>
+    <string name="pf_welcome_body">Fragen, Fehler oder Ideen: Die Menschen hinter %1$s lesen jede Nachricht und antworten hier.</string>
+    <string name="pf_topic_billing">Frage zur Abrechnung</string>
+    <string name="pf_topic_bug">Fehler melden</string>
+    <string name="pf_topic_idea">Idee teilen</string>
+    <string name="pf_topic_question">Eine Frage stellen</string>
+    <string name="pf_topic_account">Hilfe zu meinem Konto</string>
+    <string name="pf_topic_feedback">Feedback senden</string>
+    <string name="pf_topic_restore">Käufe wiederherstellen</string>
+    <string name="pf_topic_privacy">Frage zum Datenschutz</string>
+    <string name="pf_topic_other">Etwas anderes</string>
+    <string name="pf_offline">Du bist offline. Nachrichten werden gesendet, sobald du wieder online bist.</string>
+    <string name="pf_unreachable">Der Chat ist gerade nicht erreichbar. Nachrichten werden gesendet, sobald er wieder da ist.</string>
+    <string name="pf_couldnt_load">Die Unterhaltung konnte nicht geladen werden</string>
+    <string name="pf_try_again">Erneut versuchen</string>
+    <string name="pf_setup_problem">Einrichtungsproblem</string>
+    <string name="pf_debug_only">Nur in Debug-Builds sichtbar.</string>
+    <string name="pf_chat_unavailable">Der Chat ist gerade nicht verfügbar.</string>
+    <string name="pf_draft_look">Entwurf</string>
+    <string name="pf_send_again_in">Du kannst in %1$s wieder senden.</string>
+    <string name="pf_sending_paused">Das Senden ist vorübergehend pausiert. Versuche es später noch einmal.</string>
+    <string name="pf_photos_again_in">Fotos kannst du in %1$s wieder senden, Text schon jetzt.</string>
+    <string name="pf_photos_paused">Fotos sind gerade pausiert. Text kannst du weiterhin senden.</string>
+    <string name="pf_blocked">Du kannst in diesem Chat keine Nachrichten senden.</string>
+    <string name="pf_paused">Dieser Chat ist vorerst pausiert.</string>
+    <string name="pf_verification_required">Melde dich in der App an, um dem Team zu schreiben.</string>
+    <string name="pf_enjoying">Gefällt dir %1$s?</string>
+    <string name="pf_review_helps">Deine Bewertung hilft anderen, %1$s zu finden.</string>
+    <string name="pf_includes_screenshot">Mit Screenshot und aktuellen Logs.</string>
+    <string name="pf_price_year">%1$s pro Jahr</string>
+    <string name="pf_price_month">%1$s pro Monat</string>
+    <string name="pf_price_week">%1$s pro Woche</string>
+    <string name="pf_first_month_free">%1$s, erster Monat gratis</string>
+    <string name="pf_first_week_free">%1$s, erste Woche gratis</string>
+    <string name="pf_thanks_rating">Danke für deine Bewertung.</string>
+    <string name="pf_show_original">Original anzeigen</string>
+    <string name="pf_show_translation">Übersetzung anzeigen</string>
+    <string name="pf_unknown_content">Für diese Nachricht brauchst du eine neuere Version der App.</string>
+    <string name="pf_remove_photo">Foto %1$d entfernen</string>
+    <string name="pf_photo">Foto</string>
+    <string name="pf_photo_removed">Foto entfernt</string>
+    <string name="pf_what_went_wrong">Was ist schiefgelaufen?</string>
+    <string name="pf_send_report">Bericht senden</string>
+    <string name="pf_cancel">Abbrechen</string>
+    <string name="pf_draw_hint">Zeichne auf den Screenshot, um das Problem zu zeigen. Aktuelle Logs und der Gerätestatus werden angehängt.</string>
+    <string name="pf_include_screenshot">Screenshot anhängen</string>
+    <string name="pf_clear_marks">Markierungen löschen</string>
+    <string name="pf_screenshot">Screenshot</string>
+    <string name="pf_you">Du: %1$s</string>
+    <string name="pf_waiting_connection">Warten auf Verbindung</string>
+    <string name="pf_topic_gift">Frage zu Geschenken</string>
+    <string name="pf_pending_photo">Foto wartet auf Versand</string>
+    <string name="pf_current_plan">Aktueller Tarif</string>
+    <string name="pf_share">Teilen</string>
+    <string name="pf_close">Schließen</string>
+    <string name="pf_open_photo">Foto öffnen</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%1$d von %2$d Stern</item>
+        <item quantity="other">%1$d von %2$d Sternen</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d neue Nachricht</item>
+        <item quantity="other">%1$d neue Nachrichten</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Ich habe eine Frage zur Abrechnung: "</string>
+    <string name="pf_start_idea">"Ich habe eine Idee: "</string>
+    <string name="pf_start_question">"Ich habe eine Frage: "</string>
+    <string name="pf_start_account">"Ich brauche Hilfe bei meinem Konto: "</string>
+    <string name="pf_start_feedback">"Mein Feedback: "</string>
+    <string name="pf_start_restore">"Meine Käufe ließen sich nicht wiederherstellen: "</string>
+    <string name="pf_start_privacy">"Ich habe eine Frage zum Datenschutz: "</string>
+    <string name="pf_start_gift">"Ich habe eine Frage zu Geschenken: "</string>
+    <string name="pf_retrying">Noch nicht gesendet. Wird gleich noch einmal versucht.</string>
+    <string name="pf_opens_browser">Öffnet sich im Browser</string>
+    <string name="pf_opens_store">Öffnet Google Play</string>
+    <string name="pf_reply_expectation">Antwortet meist innerhalb eines Tages</string>
+    <string name="pf_after_first">%1$s. Du kannst den Chat schließen, die Antwort wartet hier.</string>
+    <string name="pf_after_first_plain">Du kannst den Chat schließen, die Antwort wartet hier.</string>
+    <string name="pf_turn_on_notifications">Benachrichtigungen aktivieren</string>
+    <string name="pf_assistant_mark">Assistent</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">%1$d Foto wird hochgeladen</item>
+        <item quantity="other">%1$d Fotos werden hochgeladen</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Dein Abo</string>
+    <string name="pf_store_manage_detail">Ändere Tarif, Zahlungsmethode oder Verlängerung.</string>
+    <string name="pf_store_manage_button">Abo verwalten</string>
+    <string name="pf_store_billing_title">Zahlung nicht durchgegangen</string>
+    <string name="pf_store_billing_detail">Aktualisiere deine Zahlungsmethode, um dein Abo zu behalten.</string>
+    <string name="pf_store_billing_button">Zahlungsmethode aktualisieren</string>
+    <string name="pf_store_refund_title">Rückerstattung anfordern</string>
+    <string name="pf_store_refund_detail">Erstattungen laufen über Google Play. Du findest die Bestellung in deinem Bestellverlauf.</string>
+    <string name="pf_store_refund_button">Bestellverlauf öffnen</string>
+    <string name="pf_store_redeem_title">Einen Code einlösen</string>
+    <string name="pf_store_redeem_detail">Gib deinen Code in Google Play ein.</string>
+    <string name="pf_store_redeem_button">Code einlösen</string>
+    <string name="pf_store_restore_title">Käufe wiederherstellen</string>
+    <string name="pf_store_restore_detail">Sucht in Google Play nach Käufen mit diesem Konto.</string>
+    <string name="pf_store_restore_button">Käufe wiederherstellen</string>
+    <string name="pf_store_receipt_restored">Käufe wiederhergestellt</string>
+    <string name="pf_store_receipt_nothing">Keine Käufe zum Wiederherstellen</string>
+    <string name="pf_store_receipt_up_to_date">Käufe sind aktuell</string>
+    <string name="pf_store_receipt_updated">Abo aktualisiert</string>
+    <string name="pf_store_unavailable">Google Play ist nicht erreichbar. Versuche es später noch einmal.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s kostenlos</string>
+    <string name="pf_phase_for">%1$s für %2$s</string>
+    <string name="pf_phase_then">%1$s, danach %2$s</string>
+    <string name="pf_change_now">Ersetzt deinen aktuellen Tarif sofort. Ungenutzte Zeit wird angerechnet.</string>
+    <string name="pf_change_at_renewal">Beginnt, wenn sich dein aktueller Tarif verlängert.</string>
+    <string name="pf_waiting_for_payment">Warten auf Zahlung</string>
+    <string name="pf_pending_detail">Dein Tarif startet, sobald die Zahlung eingegangen ist.</string>
+    <string name="pf_plan_renews">%1$s verlängert sich am %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s verlängert sich automatisch</string>
+    <string name="pf_plan_ends">%1$s endet am %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s verlängert sich nicht</string>
+    <string name="pf_plan_ended">%1$s endete am %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s ist beendet</string>
+    <string name="pf_plan_issue_by">Zahlungsproblem: bis %1$s aktualisieren</string>
+    <string name="pf_plan_issue">Zahlungsproblem: aktualisiere deine Zahlungsmethode</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d Tag</item>
+        <item quantity="other">%d Tage</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d Woche</item>
+        <item quantity="other">%d Wochen</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d Monat</item>
+        <item quantity="other">%d Monate</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d Jahr</item>
+        <item quantity="other">%d Jahre</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Foto aufnehmen</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">Noch %d Zeichen</item>
+        <item quantity="other">Noch %d Zeichen</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d Zeichen über dem Limit</item>
+        <item quantity="other">%d Zeichen über dem Limit</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Chat von pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (Testkauf)</string>
+    <string name="pf_held_chat_back">Noch nicht gesendet. Wird gesendet, sobald der Chat wieder da ist.</string>
+    <string name="pf_held_sign_in">Noch nicht gesendet. Wird gesendet, sobald du dich anmeldest.</string>
+    <string name="pf_offer_replaced">Durch ein neueres Angebot ersetzt</string>
+    <string name="pf_offer_ended">Dieses Angebot ist nicht mehr verfügbar.</string>
+</resources>

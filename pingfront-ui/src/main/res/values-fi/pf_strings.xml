@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Viesti</string>
+    <string name="pf_send">Lähetä</string>
+    <string name="pf_add_photo">Lisää kuva</string>
+    <string name="pf_add_photo_or_report">Lisää kuva tai ilmoita virheestä</string>
+    <string name="pf_photos">Kuvat</string>
+    <string name="pf_report_bug">Ilmoita virheestä</string>
+    <string name="pf_close_chat">Sulje chat</string>
+    <string name="pf_delivered">Toimitettu</string>
+    <string name="pf_read">Luettu</string>
+    <string name="pf_not_delivered">Ei toimitettu</string>
+    <string name="pf_delete">Poista</string>
+    <string name="pf_sending">Lähetetään…</string>
+    <string name="pf_ai">AI</string>
+    <string name="pf_assistant">Avustaja</string>
+    <string name="pf_the_team">Tiimi</string>
+    <string name="pf_team_title">%1$s-tiimi</string>
+    <string name="pf_messaged_you_first">%1$s kirjoitti sinulle ensin</string>
+    <string name="pf_wrote_first">%1$s kirjoitti sinulle ensin.</string>
+    <string name="pf_why_message">Miksi sait tämän viestin</string>
+    <string name="pf_reply_if_you_like">Voit vastata, jos haluat, tai jättää viestin huomiotta.</string>
+    <string name="pf_ask_person">Puhu ihmisen kanssa</string>
+    <string name="pf_ask_person_message">Haluaisin puhua ihmisen kanssa.</string>
+    <string name="pf_typing">%1$s kirjoittaa</string>
+    <string name="pf_jump_latest">Siirry uusimpaan</string>
+    <string name="pf_load_earlier">Lataa aiemmat viestit</string>
+    <string name="pf_loading_earlier">Ladataan aiempia viestejä</string>
+    <string name="pf_today">Tänään %1$s</string>
+    <string name="pf_yesterday">Eilen %1$s</string>
+    <string name="pf_local_time">%2$s: kello on nyt %1$s</string>
+    <string name="pf_welcome_body">Kysymykset, virheet tai ideat: sovelluksen %1$s tekijät lukevat jokaisen viestin ja vastaavat tähän.</string>
+    <string name="pf_topic_billing">Kysy maksuista</string>
+    <string name="pf_topic_bug">Ilmoita virheestä</string>
+    <string name="pf_topic_idea">Jaa idea</string>
+    <string name="pf_topic_question">Esitä kysymys</string>
+    <string name="pf_topic_account">Apua tilini kanssa</string>
+    <string name="pf_topic_feedback">Lähetä palautetta</string>
+    <string name="pf_topic_restore">Palauta ostokset</string>
+    <string name="pf_topic_privacy">Kysy tietosuojasta</string>
+    <string name="pf_topic_other">Jotain muuta</string>
+    <string name="pf_offline">Olet offline-tilassa. Viestit lähetetään, kun yhteys palaa.</string>
+    <string name="pf_unreachable">Keskusteluun ei saada nyt yhteyttä. Viestit lähtevät, kun se palaa.</string>
+    <string name="pf_couldnt_load">Keskustelua ei voitu ladata</string>
+    <string name="pf_try_again">Yritä uudelleen</string>
+    <string name="pf_setup_problem">Määritysongelma</string>
+    <string name="pf_debug_only">Näkyy vain debug-versioissa.</string>
+    <string name="pf_chat_unavailable">Chat ei ole nyt käytettävissä.</string>
+    <string name="pf_draft_look">Luonnosnäkymä</string>
+    <string name="pf_send_again_in">Voit lähettää uudelleen, kun %1$s on kulunut.</string>
+    <string name="pf_sending_paused">Lähettäminen on hetken tauolla. Yritä myöhemmin uudelleen.</string>
+    <string name="pf_photos_again_in">Kuvia voi lähettää taas, kun %1$s on kulunut. Tekstiä voi lähettää edelleen.</string>
+    <string name="pf_photos_paused">Kuvien lähetys on hetken tauolla. Tekstiä voi lähettää edelleen.</string>
+    <string name="pf_blocked">Et voi lähettää viestejä tässä chatissa.</string>
+    <string name="pf_paused">Tämä chat on toistaiseksi tauolla.</string>
+    <string name="pf_verification_required">Kirjaudu sovellukseen, niin voit lähettää viestin tiimille.</string>
+    <string name="pf_enjoying">Pidätkö sovelluksesta %1$s?</string>
+    <string name="pf_review_helps">Arviosi auttaa muita löytämään sovelluksen %1$s.</string>
+    <string name="pf_includes_screenshot">Mukana kuvakaappaus ja viimeisimmät lokit.</string>
+    <string name="pf_price_year">%1$s vuodessa</string>
+    <string name="pf_price_month">%1$s kuukaudessa</string>
+    <string name="pf_price_week">%1$s viikossa</string>
+    <string name="pf_first_month_free">%1$s, ensimmäinen kuukausi ilmaiseksi</string>
+    <string name="pf_first_week_free">%1$s, ensimmäinen viikko ilmaiseksi</string>
+    <string name="pf_thanks_rating">Kiitos arviostasi.</string>
+    <string name="pf_show_original">Näytä alkuperäinen</string>
+    <string name="pf_show_translation">Näytä käännös</string>
+    <string name="pf_unknown_content">Tämä viesti vaatii sovelluksen uudemman version.</string>
+    <string name="pf_remove_photo">Poista kuva %1$d</string>
+    <string name="pf_photo">Kuva</string>
+    <string name="pf_photo_removed">Kuva poistettu</string>
+    <string name="pf_what_went_wrong">Mikä meni vikaan?</string>
+    <string name="pf_send_report">Lähetä ilmoitus</string>
+    <string name="pf_cancel">Peruuta</string>
+    <string name="pf_draw_hint">Näytä ongelma piirtämällä kuvakaappaukseen. Viimeisimmät lokit ja laitteen tila liitetään mukaan.</string>
+    <string name="pf_include_screenshot">Liitä kuvakaappaus</string>
+    <string name="pf_clear_marks">Poista merkinnät</string>
+    <string name="pf_screenshot">Kuvakaappaus</string>
+    <string name="pf_you">Sinä: %1$s</string>
+    <string name="pf_waiting_connection">Odotetaan yhteyttä</string>
+    <string name="pf_topic_gift">Kysy lahjoista</string>
+    <string name="pf_pending_photo">Kuva odottaa lähetystä</string>
+    <string name="pf_current_plan">Nykyinen tilaus</string>
+    <string name="pf_share">Jaa</string>
+    <string name="pf_close">Sulje</string>
+    <string name="pf_open_photo">Avaa kuva</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%1$d/%2$d tähti</item>
+        <item quantity="other">%1$d/%2$d tähteä</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d uusi viesti</item>
+        <item quantity="other">%1$d uutta viestiä</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Minulla on kysymys maksuista: "</string>
+    <string name="pf_start_idea">"Minulla on idea: "</string>
+    <string name="pf_start_question">"Minulla on kysymys: "</string>
+    <string name="pf_start_account">"Tarvitsen apua tilini kanssa: "</string>
+    <string name="pf_start_feedback">"Palautetta: "</string>
+    <string name="pf_start_restore">"Ostosteni palauttaminen ei onnistunut: "</string>
+    <string name="pf_start_privacy">"Minulla on kysymys tietosuojasta: "</string>
+    <string name="pf_start_gift">"Minulla on kysymys lahjoista: "</string>
+    <string name="pf_retrying">Ei vielä lähetetty. Yritetään pian uudelleen.</string>
+    <string name="pf_opens_browser">Avautuu selaimessa</string>
+    <string name="pf_opens_store">Avaa Google Playn</string>
+    <string name="pf_reply_expectation">Vastaa yleensä vuorokauden sisällä</string>
+    <string name="pf_after_first">%1$s. Voit sulkea chatin, vastaus odottaa täällä.</string>
+    <string name="pf_after_first_plain">Voit sulkea chatin, vastaus odottaa täällä.</string>
+    <string name="pf_turn_on_notifications">Ota ilmoitukset käyttöön</string>
+    <string name="pf_assistant_mark">Avustaja</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">Ladataan %1$d kuva</item>
+        <item quantity="other">Ladataan %1$d kuvaa</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Tilauksesi</string>
+    <string name="pf_store_manage_detail">Muuta tilausta, maksutapaa tai uusiutumista.</string>
+    <string name="pf_store_manage_button">Hallinnoi tilausta</string>
+    <string name="pf_store_billing_title">Maksu ei mennyt läpi</string>
+    <string name="pf_store_billing_detail">Päivitä maksutapasi, niin tilauksesi jatkuu.</string>
+    <string name="pf_store_billing_button">Päivitä maksutapa</string>
+    <string name="pf_store_refund_title">Pyydä hyvitystä</string>
+    <string name="pf_store_refund_detail">Google Play käsittelee hyvitykset. Löydät tilauksen tilaushistoriastasi.</string>
+    <string name="pf_store_refund_button">Avaa tilaushistoria</string>
+    <string name="pf_store_redeem_title">Koodin lunastus</string>
+    <string name="pf_store_redeem_detail">Anna koodisi Google Playssa.</string>
+    <string name="pf_store_redeem_button">Lunasta koodi</string>
+    <string name="pf_store_restore_title">Palauta ostokset</string>
+    <string name="pf_store_restore_detail">Hakee tämän tilin ostokset Google Playsta.</string>
+    <string name="pf_store_restore_button">Palauta ostokset</string>
+    <string name="pf_store_receipt_restored">Ostokset palautettu</string>
+    <string name="pf_store_receipt_nothing">Ei palautettavia ostoksia</string>
+    <string name="pf_store_receipt_up_to_date">Ostokset ovat ajan tasalla</string>
+    <string name="pf_store_receipt_updated">Tilaus päivitetty</string>
+    <string name="pf_store_unavailable">Google Playhin ei saatu yhteyttä. Yritä myöhemmin uudelleen.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s ilmaiseksi</string>
+    <string name="pf_phase_for">%1$s (%2$s)</string>
+    <string name="pf_phase_then">%1$s, sen jälkeen %2$s</string>
+    <string name="pf_change_now">Korvaa nykyisen tilauksesi heti. Käyttämätön aika hyvitetään.</string>
+    <string name="pf_change_at_renewal">Alkaa, kun nykyinen tilauksesi uusiutuu.</string>
+    <string name="pf_waiting_for_payment">Odotetaan maksua</string>
+    <string name="pf_pending_detail">Tilauksesi alkaa, kun maksu on mennyt läpi.</string>
+    <string name="pf_plan_renews">%1$s uusiutuu %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s uusiutuu automaattisesti</string>
+    <string name="pf_plan_ends">%1$s päättyy %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s ei uusiudu</string>
+    <string name="pf_plan_ended">%1$s päättyi %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s on päättynyt</string>
+    <string name="pf_plan_issue_by">Maksuongelma: päivitä viimeistään %1$s</string>
+    <string name="pf_plan_issue">Maksuongelma: päivitä maksutapasi</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d päivä</item>
+        <item quantity="other">%d päivää</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d viikko</item>
+        <item quantity="other">%d viikkoa</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d kuukausi</item>
+        <item quantity="other">%d kuukautta</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d vuosi</item>
+        <item quantity="other">%d vuotta</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Ota kuva</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">%d merkki jäljellä</item>
+        <item quantity="other">%d merkkiä jäljellä</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d merkki liikaa</item>
+        <item quantity="other">%d merkkiä liikaa</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Chatin tarjoaa pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (testiosto)</string>
+    <string name="pf_held_chat_back">Ei vielä lähetetty. Lähetetään, kun keskustelu palaa.</string>
+    <string name="pf_held_sign_in">Ei vielä lähetetty. Lähetetään, kun kirjaudut sisään.</string>
+    <string name="pf_offer_replaced">Korvattu uudemmalla tarjouksella</string>
+    <string name="pf_offer_ended">Tämä tarjous ei ole enää saatavilla.</string>
+</resources>

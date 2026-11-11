@@ -1,0 +1,18 @@
+{
+  "schema": "DashClientEvent",
+  "description": "Client frames on /dash/v1/live.",
+  "valid": [
+    {
+      "name": "active",
+      "value": {
+        "type": "active"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "needs a type",
+      "value": {}
+    }
+  ]
+}

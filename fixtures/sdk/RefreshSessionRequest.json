@@ -1,0 +1,46 @@
+{
+  "schema": "RefreshSessionRequest",
+  "description": "POST /v1/sessions/refresh body. device is a partial Device.",
+  "valid": [
+    {
+      "name": "carries a partial device",
+      "value": {
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "installSecret": "is_x",
+        "device": {
+          "timeZone": "Asia/Tokyo",
+          "app": {
+            "version": "2.0",
+            "build": "20",
+            "bundleId": "b"
+          }
+        }
+      }
+    },
+    {
+      "name": "device is optional",
+      "value": {
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "installSecret": "is_x"
+      }
+    },
+    {
+      "name": "a partial device needs no field at all, not even platform",
+      "value": {
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "installSecret": "is_x",
+        "device": {
+          "timeZone": "Europe/Paris"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "requires installSecret",
+      "value": {
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10"
+      }
+    }
+  ]
+}

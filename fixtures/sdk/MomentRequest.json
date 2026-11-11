@@ -1,0 +1,109 @@
+{
+  "schema": "MomentRequest",
+  "description": "POST /v1/moments body. At most 20 props; store fields are typed separately.",
+  "valid": [
+    {
+      "name": "carries typed store fields separately",
+      "value": {
+        "name": "trial_cancelled",
+        "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "store": {
+          "productId": "pro_yearly",
+          "originalTransactionId": "2000001",
+          "price": "29.99",
+          "currency": "USD"
+        }
+      }
+    },
+    {
+      "name": "accepts 20 props of string, number and boolean",
+      "value": {
+        "name": "paywall_closed",
+        "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "props": {
+          "p0": 0,
+          "p1": "v1",
+          "p2": true,
+          "p3": 3,
+          "p4": "v4",
+          "p5": true,
+          "p6": 6,
+          "p7": "v7",
+          "p8": true,
+          "p9": 9,
+          "p10": "v10",
+          "p11": true,
+          "p12": 12,
+          "p13": "v13",
+          "p14": true,
+          "p15": 15,
+          "p16": "v16",
+          "p17": true,
+          "p18": 18,
+          "p19": "v19"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "caps moment props at 20",
+      "value": {
+        "name": "paywall_closed",
+        "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "props": {
+          "p0": 0,
+          "p1": 1,
+          "p2": 2,
+          "p3": 3,
+          "p4": 4,
+          "p5": 5,
+          "p6": 6,
+          "p7": 7,
+          "p8": 8,
+          "p9": 9,
+          "p10": 10,
+          "p11": 11,
+          "p12": 12,
+          "p13": 13,
+          "p14": 14,
+          "p15": 15,
+          "p16": 16,
+          "p17": 17,
+          "p18": 18,
+          "p19": 19,
+          "p20": 20
+        }
+      }
+    },
+    {
+      "name": "rejects an uppercase moment name",
+      "value": {
+        "name": "Paywall",
+        "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10"
+      }
+    },
+    {
+      "name": "rejects a store price that is not a decimal string",
+      "value": {
+        "name": "subscription_started",
+        "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "store": {
+          "productId": "p",
+          "price": "9,99"
+        }
+      }
+    },
+    {
+      "name": "rejects a currency that is not 3 letters",
+      "value": {
+        "name": "subscription_started",
+        "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "store": {
+          "productId": "p",
+          "currency": "EURO"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "schema": "CreateSessionRequest",
+  "description": "POST /v1/sessions body. A new install's first one carries no device.context: the app's switches (collect) arrive with its answer, and no group goes out before they are known.",
+  "valid": [
+    {
+      "name": "accepts a lazy session request",
+      "value": {
+        "device": {
+          "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+          "platform": "ios",
+          "sdk": {
+            "name": "pingfront-ios",
+            "version": "1.0.0"
+          },
+          "app": {
+            "version": "1.0",
+            "build": "1",
+            "bundleId": "com.example.clockwise"
+          },
+          "os": "iOS 27.1",
+          "model": "iPhone18,1",
+          "locale": "en_GB",
+          "language": "en",
+          "timeZone": "Europe/Istanbul"
+        },
+        "reason": "chat_opened"
+      }
+    },
+    {
+      "name": "lets a known install re-register only with its installSecret",
+      "value": {
+        "device": {
+          "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+          "platform": "ios",
+          "sdk": {
+            "name": "pingfront-ios",
+            "version": "1.0.0"
+          },
+          "app": {
+            "version": "1.0",
+            "build": "1",
+            "bundleId": "com.example.clockwise"
+          },
+          "os": "iOS 27.1",
+          "model": "iPhone18,1",
+          "locale": "en_GB",
+          "language": "en",
+          "timeZone": "Europe/Istanbul"
+        },
+        "reason": "prepare",
+        "installSecret": "is_abc"
+      },
+      "expect": {
+        "device": {
+          "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+          "platform": "ios",
+          "sdk": {
+            "name": "pingfront-ios",
+            "version": "1.0.0"
+          },
+          "app": {
+            "version": "1.0",
+            "build": "1",
+            "bundleId": "com.example.clockwise"
+          },
+          "os": "iOS 27.1",
+          "model": "iPhone18,1",
+          "locale": "en_GB",
+          "language": "en",
+          "timeZone": "Europe/Istanbul"
+        },
+        "reason": "prepare",
+        "installSecret": "is_abc"
+      }
+    },
+    {
+      "name": "carries identity, traits, entitlement, offers and hostLook",
+      "value": {
+        "device": {
+          "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+          "platform": "ios",
+          "sdk": {
+            "name": "pingfront-ios",
+            "version": "1.0.0"
+          },
+          "app": {
+            "version": "1.0",
+            "build": "1",
+            "bundleId": "com.example.clockwise"
+          },
+          "os": "iOS 27.1",
+          "model": "iPhone18,1",
+          "locale": "en_GB",
+          "language": "en",
+          "timeZone": "Europe/Istanbul"
+        },
+        "reason": "moment",
+        "identity": {
+          "userId": "u_42",
+          "name": "Ayşe",
+          "email": "ayse@example.com",
+          "token": "a.b.c"
+        },
+        "traits": {
+          "plan": "pro"
+        },
+        "entitlement": {
+          "state": "trial",
+          "productId": "pro.yearly",
+          "renewsAt": "2026-11-02T10:00:00Z",
+          "source": "storekit"
+        },
+        "offers": [
+          {
+            "id": "yearly_intro",
+            "title": "Pro",
+            "kind": "standard",
+            "available": true
+          }
+        ],
+        "hostLook": {
+          "appName": "Clockwise",
+          "accent": {
+            "light": "#3550E6",
+            "dark": "#7D91FF"
+          },
+          "font": "custom"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unknown reason",
+      "value": {
+        "device": {
+          "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+          "platform": "ios",
+          "sdk": {
+            "name": "pingfront-ios",
+            "version": "1.0.0"
+          },
+          "app": {
+            "version": "1.0",
+            "build": "1",
+            "bundleId": "com.example.clockwise"
+          },
+          "os": "iOS 27.1",
+          "model": "iPhone18,1",
+          "locale": "en_GB",
+          "language": "en",
+          "timeZone": "Europe/Istanbul"
+        },
+        "reason": "launch"
+      }
+    },
+    {
+      "name": "rejects an installId that is not a UUID",
+      "value": {
+        "device": {
+          "installId": "nope",
+          "platform": "ios",
+          "sdk": {
+            "name": "pingfront-ios",
+            "version": "1.0.0"
+          },
+          "app": {
+            "version": "1.0",
+            "build": "1",
+            "bundleId": "com.example.clockwise"
+          },
+          "os": "iOS 27.1",
+          "model": "iPhone18,1",
+          "locale": "en_GB",
+          "language": "en",
+          "timeZone": "Europe/Istanbul"
+        },
+        "reason": "chat_opened"
+      }
+    },
+    {
+      "name": "rejects a malformed identity email",
+      "value": {
+        "device": {
+          "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+          "platform": "ios",
+          "sdk": {
+            "name": "pingfront-ios",
+            "version": "1.0.0"
+          },
+          "app": {
+            "version": "1.0",
+            "build": "1",
+            "bundleId": "com.example.clockwise"
+          },
+          "os": "iOS 27.1",
+          "model": "iPhone18,1",
+          "locale": "en_GB",
+          "language": "en",
+          "timeZone": "Europe/Istanbul"
+        },
+        "reason": "prepare",
+        "identity": {
+          "userId": "u",
+          "email": "not an email"
+        }
+      }
+    },
+    {
+      "name": "rejects an empty userId",
+      "value": {
+        "device": {
+          "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+          "platform": "ios",
+          "sdk": {
+            "name": "pingfront-ios",
+            "version": "1.0.0"
+          },
+          "app": {
+            "version": "1.0",
+            "build": "1",
+            "bundleId": "com.example.clockwise"
+          },
+          "os": "iOS 27.1",
+          "model": "iPhone18,1",
+          "locale": "en_GB",
+          "language": "en",
+          "timeZone": "Europe/Istanbul"
+        },
+        "reason": "prepare",
+        "identity": {
+          "userId": ""
+        }
+      }
+    },
+    {
+      "name": "rejects an unknown platform",
+      "value": {
+        "device": {
+          "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+          "platform": "tvos",
+          "sdk": {
+            "name": "pingfront-ios",
+            "version": "1.0.0"
+          },
+          "app": {
+            "version": "1.0",
+            "build": "1",
+            "bundleId": "com.example.clockwise"
+          },
+          "os": "iOS 27.1",
+          "model": "iPhone18,1",
+          "locale": "en_GB",
+          "language": "en",
+          "timeZone": "Europe/Istanbul"
+        },
+        "reason": "prepare"
+      }
+    }
+  ]
+}

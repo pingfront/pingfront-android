@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Melding</string>
+    <string name="pf_send">Send</string>
+    <string name="pf_add_photo">Legg til bilde</string>
+    <string name="pf_add_photo_or_report">Legg til bilde eller rapporter en feil</string>
+    <string name="pf_photos">Bilder</string>
+    <string name="pf_report_bug">Rapporter en feil</string>
+    <string name="pf_close_chat">Lukk chatten</string>
+    <string name="pf_delivered">Levert</string>
+    <string name="pf_read">Lest</string>
+    <string name="pf_not_delivered">Ikke levert</string>
+    <string name="pf_delete">Slett</string>
+    <string name="pf_sending">Sender…</string>
+    <string name="pf_ai">KI</string>
+    <string name="pf_assistant">Assistent</string>
+    <string name="pf_the_team">Teamet</string>
+    <string name="pf_team_title">%1$s-teamet</string>
+    <string name="pf_messaged_you_first">%1$s skrev til deg først</string>
+    <string name="pf_wrote_first">%1$s skrev til deg først.</string>
+    <string name="pf_why_message">Derfor fikk du denne meldingen</string>
+    <string name="pf_reply_if_you_like">Svar hvis du vil, eller la være.</string>
+    <string name="pf_ask_person">Snakk med et menneske</string>
+    <string name="pf_ask_person_message">Jeg vil gjerne snakke med et menneske.</string>
+    <string name="pf_typing">%1$s skriver</string>
+    <string name="pf_jump_latest">Gå til nyeste</string>
+    <string name="pf_load_earlier">Last inn tidligere meldinger</string>
+    <string name="pf_loading_earlier">Laster inn tidligere meldinger</string>
+    <string name="pf_today">I dag %1$s</string>
+    <string name="pf_yesterday">I går %1$s</string>
+    <string name="pf_local_time">Klokken er %1$s hos %2$s</string>
+    <string name="pf_welcome_body">Spørsmål, feil eller ideer: de som lager %1$s, leser hver melding og svarer her.</string>
+    <string name="pf_topic_billing">Spør om betaling</string>
+    <string name="pf_topic_bug">Rapporter en feil</string>
+    <string name="pf_topic_idea">Del en idé</string>
+    <string name="pf_topic_question">Still et spørsmål</string>
+    <string name="pf_topic_account">Få hjelp med kontoen min</string>
+    <string name="pf_topic_feedback">Send tilbakemelding</string>
+    <string name="pf_topic_restore">Gjenopprett kjøp</string>
+    <string name="pf_topic_privacy">Spør om personvern</string>
+    <string name="pf_topic_other">Noe annet</string>
+    <string name="pf_offline">Du er frakoblet. Meldinger sendes når du er på nett igjen.</string>
+    <string name="pf_unreachable">Chatten kan ikke nås akkurat nå. Meldinger sendes når den er tilbake.</string>
+    <string name="pf_couldnt_load">Kunne ikke laste inn samtalen</string>
+    <string name="pf_try_again">Prøv igjen</string>
+    <string name="pf_setup_problem">Konfigurasjonsproblem</string>
+    <string name="pf_debug_only">Vises bare i feilsøkingsversjoner.</string>
+    <string name="pf_chat_unavailable">Chatten er ikke tilgjengelig akkurat nå.</string>
+    <string name="pf_draft_look">Utkastvisning</string>
+    <string name="pf_send_again_in">Du kan sende igjen om %1$s.</string>
+    <string name="pf_sending_paused">Sending er satt på pause en stund. Prøv igjen senere.</string>
+    <string name="pf_photos_again_in">Bilder kan sendes igjen om %1$s. Tekst sendes fortsatt.</string>
+    <string name="pf_photos_paused">Bilder er satt på pause en stund. Tekst sendes fortsatt.</string>
+    <string name="pf_blocked">Du kan ikke sende meldinger i denne chatten.</string>
+    <string name="pf_paused">Chatten er satt på pause foreløpig.</string>
+    <string name="pf_verification_required">Logg på appen for å skrive til teamet.</string>
+    <string name="pf_enjoying">Liker du %1$s?</string>
+    <string name="pf_review_helps">Anmeldelsen din hjelper andre med å finne %1$s.</string>
+    <string name="pf_includes_screenshot">Med skjermbilde og nylige logger.</string>
+    <string name="pf_price_year">%1$s per år</string>
+    <string name="pf_price_month">%1$s per måned</string>
+    <string name="pf_price_week">%1$s per uke</string>
+    <string name="pf_first_month_free">%1$s, første måned gratis</string>
+    <string name="pf_first_week_free">%1$s, første uke gratis</string>
+    <string name="pf_thanks_rating">Takk for vurderingen.</string>
+    <string name="pf_show_original">Vis original</string>
+    <string name="pf_show_translation">Vis oversettelse</string>
+    <string name="pf_unknown_content">Denne meldingen krever en nyere versjon av appen.</string>
+    <string name="pf_remove_photo">Fjern bilde %1$d</string>
+    <string name="pf_photo">Bilde</string>
+    <string name="pf_photo_removed">Bildet er fjernet</string>
+    <string name="pf_what_went_wrong">Hva gikk galt?</string>
+    <string name="pf_send_report">Send rapport</string>
+    <string name="pf_cancel">Avbryt</string>
+    <string name="pf_draw_hint">Tegn på skjermbildet for å vise problemet. Nylige logger og enhetsstatus legges ved.</string>
+    <string name="pf_include_screenshot">Legg ved skjermbilde</string>
+    <string name="pf_clear_marks">Fjern markeringer</string>
+    <string name="pf_screenshot">Skjermbilde</string>
+    <string name="pf_you">Deg: %1$s</string>
+    <string name="pf_waiting_connection">Venter på tilkobling</string>
+    <string name="pf_topic_gift">Spør om gaver</string>
+    <string name="pf_pending_photo">Bildet venter på å bli sendt</string>
+    <string name="pf_current_plan">Nåværende abonnement</string>
+    <string name="pf_share">Del</string>
+    <string name="pf_close">Lukk</string>
+    <string name="pf_open_photo">Åpne bilde</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%1$d av %2$d stjerne</item>
+        <item quantity="other">%1$d av %2$d stjerner</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d ny melding</item>
+        <item quantity="other">%1$d nye meldinger</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Jeg har et spørsmål om betaling: "</string>
+    <string name="pf_start_idea">"Jeg har en idé: "</string>
+    <string name="pf_start_question">"Jeg har et spørsmål: "</string>
+    <string name="pf_start_account">"Jeg trenger hjelp med kontoen min: "</string>
+    <string name="pf_start_feedback">"Litt tilbakemelding: "</string>
+    <string name="pf_start_restore">"Jeg fikk ikke gjenopprettet kjøpene mine: "</string>
+    <string name="pf_start_privacy">"Jeg har et spørsmål om personvern: "</string>
+    <string name="pf_start_gift">"Jeg har et spørsmål om gaver: "</string>
+    <string name="pf_retrying">Ikke sendt ennå. Prøver igjen snart.</string>
+    <string name="pf_opens_browser">Åpnes i nettleseren</string>
+    <string name="pf_opens_store">Åpner Google Play</string>
+    <string name="pf_reply_expectation">Svarer vanligvis innen en dag</string>
+    <string name="pf_after_first">%1$s. Du kan lukke chatten, svaret venter her.</string>
+    <string name="pf_after_first_plain">Du kan lukke chatten, svaret venter her.</string>
+    <string name="pf_turn_on_notifications">Slå på varsler</string>
+    <string name="pf_assistant_mark">Assistent</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">Laster opp %1$d bilde</item>
+        <item quantity="other">Laster opp %1$d bilder</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Abonnementet ditt</string>
+    <string name="pf_store_manage_detail">Bytt abonnement, betalingsmåte eller fornyelse.</string>
+    <string name="pf_store_manage_button">Administrer abonnement</string>
+    <string name="pf_store_billing_title">Betalingen gikk ikke gjennom</string>
+    <string name="pf_store_billing_detail">Oppdater betalingsmåten for å beholde abonnementet.</string>
+    <string name="pf_store_billing_button">Oppdater betalingsmåte</string>
+    <string name="pf_store_refund_title">Be om refusjon</string>
+    <string name="pf_store_refund_detail">Google Play håndterer refusjoner. Finn bestillingen i bestillingsloggen din.</string>
+    <string name="pf_store_refund_button">Åpne bestillingsloggen</string>
+    <string name="pf_store_redeem_title">Løs inn en kode</string>
+    <string name="pf_store_redeem_detail">Skriv inn koden i Google Play.</string>
+    <string name="pf_store_redeem_button">Løs inn kode</string>
+    <string name="pf_store_restore_title">Gjenopprett kjøp</string>
+    <string name="pf_store_restore_detail">Ser etter kjøp på denne kontoen i Google Play.</string>
+    <string name="pf_store_restore_button">Gjenopprett kjøp</string>
+    <string name="pf_store_receipt_restored">Kjøp gjenopprettet</string>
+    <string name="pf_store_receipt_nothing">Ingen kjøp å gjenopprette</string>
+    <string name="pf_store_receipt_up_to_date">Kjøpene er oppdatert</string>
+    <string name="pf_store_receipt_updated">Abonnementet er oppdatert</string>
+    <string name="pf_store_unavailable">Kunne ikke nå Google Play. Prøv igjen senere.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s gratis</string>
+    <string name="pf_phase_for">%1$s i %2$s</string>
+    <string name="pf_phase_then">%1$s, deretter %2$s</string>
+    <string name="pf_change_now">Erstatter det nåværende abonnementet ditt med en gang. Ubrukt tid godskrives.</string>
+    <string name="pf_change_at_renewal">Starter når det nåværende abonnementet ditt fornyes.</string>
+    <string name="pf_waiting_for_payment">Venter på betaling</string>
+    <string name="pf_pending_detail">Planen din starter så snart betalingen har gått gjennom.</string>
+    <string name="pf_plan_renews">%1$s fornyes %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s fornyes automatisk</string>
+    <string name="pf_plan_ends">%1$s avsluttes %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s fornyes ikke</string>
+    <string name="pf_plan_ended">%1$s ble avsluttet %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s er avsluttet</string>
+    <string name="pf_plan_issue_by">Betalingsproblem: oppdater innen %1$s</string>
+    <string name="pf_plan_issue">Betalingsproblem: oppdater betalingsmåten din</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d dag</item>
+        <item quantity="other">%d dager</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d uke</item>
+        <item quantity="other">%d uker</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d måned</item>
+        <item quantity="other">%d måneder</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d år</item>
+        <item quantity="other">%d år</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Ta bilde</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">%d tegn igjen</item>
+        <item quantity="other">%d tegn igjen</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d tegn over grensen</item>
+        <item quantity="other">%d tegn over grensen</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Chat fra pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (testkjøp)</string>
+    <string name="pf_held_chat_back">Ikke sendt ennå. Den sendes når chatten er tilbake.</string>
+    <string name="pf_held_sign_in">Ikke sendt ennå. Den sendes når du logger på.</string>
+    <string name="pf_offer_replaced">Erstattet av et nyere tilbud</string>
+    <string name="pf_offer_ended">Dette tilbudet er ikke lenger tilgjengelig.</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Which number of pf_stars ("%1$d of %2$d stars") picks the plural form: the one the noun agrees with in the
+        language's wording. 2, the total, as in "1 of 5 stars"; languages whose noun follows the rating
+        ("1 étoile sur 5") set 1. iOS's catalog and the web's packs follow the same rule (scripts/locales-check.mjs).
+    -->
+    <integer name="pf_stars_plural_on">2</integer>
+</resources>

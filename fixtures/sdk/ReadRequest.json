@@ -1,0 +1,20 @@
+{
+  "schema": "ReadRequest",
+  "description": "POST /v1/thread/read body.",
+  "valid": [
+    {
+      "name": "moves the cursor",
+      "value": {
+        "upToSeq": 3
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects a negative seq",
+      "value": {
+        "upToSeq": -1
+      }
+    }
+  ]
+}

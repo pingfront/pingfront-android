@@ -1,0 +1,65 @@
+{
+  "schema": "UpdateMeResponse",
+  "description": "PATCH /v1/me response; rejected[] defaults to [].",
+  "valid": [
+    {
+      "name": "reports rejected PATCH fields instead of failing the whole update",
+      "value": {
+        "person": {
+          "id": "per_1",
+          "level": "named"
+        },
+        "rejected": [
+          {
+            "field": "traits",
+            "code": "too_many",
+            "message": "At most 30 traits"
+          }
+        ]
+      }
+    },
+    {
+      "name": "defaults rejected to an empty list",
+      "value": {
+        "person": {
+          "id": "per_1",
+          "level": "named"
+        }
+      },
+      "expect": {
+        "person": {
+          "id": "per_1",
+          "level": "named"
+        },
+        "rejected": []
+      }
+    },
+    {
+      "name": "PATCH /me answers 200 and lists a verified-user switch in rejected[]",
+      "value": {
+        "person": {
+          "id": "per_1",
+          "level": "verified"
+        },
+        "rejected": [
+          {
+            "field": "identity",
+            "code": "identity_user_mismatch",
+            "message": "This device is signed in as a different verified user. Call logout() before identifying another user."
+          }
+        ]
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unknown person level",
+      "value": {
+        "person": {
+          "id": "per_1",
+          "level": "admin"
+        }
+      }
+    }
+  ]
+}

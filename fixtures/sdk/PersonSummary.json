@@ -1,0 +1,46 @@
+{
+  "schema": "PersonSummary",
+  "description": "The session's own person (create, refresh, PATCH /v1/me). entitlement is the plan from normalized store events, for the chat's plan status line; absent until a store event was recorded.",
+  "valid": [
+    {
+      "name": "a guest with no store events yet",
+      "value": {
+        "id": "per_1",
+        "level": "guest"
+      }
+    },
+    {
+      "name": "a verified person with a plan in grace",
+      "value": {
+        "id": "per_2",
+        "level": "verified",
+        "name": "Ada",
+        "entitlement": {
+          "state": "grace",
+          "productId": "pro.monthly",
+          "expiresAt": "2026-10-30T09:00:00.000Z",
+          "gracePeriodEndsAt": "2026-11-03T09:00:00.000Z",
+          "source": "revenuecat"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "needs a level",
+      "value": {
+        "id": "per_1"
+      }
+    },
+    {
+      "name": "an unknown plan state is never sent by the server",
+      "value": {
+        "id": "per_1",
+        "level": "guest",
+        "entitlement": {
+          "state": "paused"
+        }
+      }
+    }
+  ]
+}

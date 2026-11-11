@@ -1,0 +1,97 @@
+{
+  "schema": "ApnsPayload",
+  "description": "APNs payload: aps plus the versioned pingfront object.",
+  "valid": [
+    {
+      "name": "defines versioned push payloads for APNs",
+      "value": {
+        "aps": {
+          "alert": {
+            "title": "Deniz",
+            "body": "Hi"
+          },
+          "thread-id": "thr_1"
+        },
+        "pingfront": {
+          "v": 1,
+          "kind": "ping",
+          "appId": "app_1",
+          "threadId": "thr_1"
+        }
+      }
+    },
+    {
+      "name": "sets the badge when appBadge is on",
+      "value": {
+        "aps": {
+          "alert": {
+            "title": "Deniz",
+            "body": "Hi"
+          },
+          "badge": 3,
+          "sound": "default",
+          "thread-id": "thr_1",
+          "mutable-content": 1
+        },
+        "pingfront": {
+          "v": 1,
+          "kind": "message",
+          "appId": "app_1",
+          "threadId": "thr_1",
+          "messageId": "msg_1",
+          "unread": 3
+        }
+      }
+    },
+    {
+      "name": "a config push is silent: content-available only, no alert",
+      "value": {
+        "aps": {
+          "content-available": 1
+        },
+        "pingfront": {
+          "v": 1,
+          "kind": "config",
+          "appId": "app_1"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects payload version 2",
+      "value": {
+        "aps": {},
+        "pingfront": {
+          "v": 2,
+          "kind": "ping",
+          "appId": "app_1"
+        }
+      }
+    },
+    {
+      "name": "rejects an unknown push kind",
+      "value": {
+        "aps": {},
+        "pingfront": {
+          "v": 1,
+          "kind": "promo",
+          "appId": "app_1"
+        }
+      }
+    },
+    {
+      "name": "rejects a content-available other than 1",
+      "value": {
+        "aps": {
+          "content-available": 0
+        },
+        "pingfront": {
+          "v": 1,
+          "kind": "config",
+          "appId": "app_1"
+        }
+      }
+    }
+  ]
+}

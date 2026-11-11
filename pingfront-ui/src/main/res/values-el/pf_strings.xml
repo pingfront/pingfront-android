@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Μήνυμα</string>
+    <string name="pf_send">Αποστολή</string>
+    <string name="pf_add_photo">Προσθήκη φωτογραφίας</string>
+    <string name="pf_add_photo_or_report">Προσθήκη φωτογραφίας ή αναφορά σφάλματος</string>
+    <string name="pf_photos">Φωτογραφίες</string>
+    <string name="pf_report_bug">Αναφορά σφάλματος</string>
+    <string name="pf_close_chat">Κλείσιμο συνομιλίας</string>
+    <string name="pf_delivered">Παραδόθηκε</string>
+    <string name="pf_read">Διαβάστηκε</string>
+    <string name="pf_not_delivered">Δεν παραδόθηκε</string>
+    <string name="pf_delete">Διαγραφή</string>
+    <string name="pf_sending">Αποστολή…</string>
+    <string name="pf_ai">ΤΝ</string>
+    <string name="pf_assistant">Βοηθός</string>
+    <string name="pf_the_team">Η ομάδα</string>
+    <string name="pf_team_title">Ομάδα %1$s</string>
+    <string name="pf_messaged_you_first">%1$s σας έστειλε μήνυμα πρώτα</string>
+    <string name="pf_wrote_first">%1$s σας έγραψε πρώτα.</string>
+    <string name="pf_why_message">Γιατί λάβατε αυτό το μήνυμα</string>
+    <string name="pf_reply_if_you_like">Μπορείτε να απαντήσετε ή να το αγνοήσετε.</string>
+    <string name="pf_ask_person">Συνομιλία με άνθρωπο</string>
+    <string name="pf_ask_person_message">Θα ήθελα να μιλήσω με έναν άνθρωπο, παρακαλώ.</string>
+    <string name="pf_typing">%1$s πληκτρολογεί</string>
+    <string name="pf_jump_latest">Μετάβαση στα πιο πρόσφατα</string>
+    <string name="pf_load_earlier">Φόρτωση παλαιότερων μηνυμάτων</string>
+    <string name="pf_loading_earlier">Φορτώνονται παλαιότερα μηνύματα</string>
+    <string name="pf_today">Σήμερα %1$s</string>
+    <string name="pf_yesterday">Χθες %1$s</string>
+    <string name="pf_local_time">%2$s: τοπική ώρα %1$s</string>
+    <string name="pf_welcome_body">Ερωτήσεις, σφάλματα ή ιδέες: οι άνθρωποι που φτιάχνουν την εφαρμογή %1$s διαβάζουν κάθε μήνυμα και απαντούν εδώ.</string>
+    <string name="pf_topic_billing">Ερώτηση για χρεώσεις</string>
+    <string name="pf_topic_bug">Αναφορά σφάλματος</string>
+    <string name="pf_topic_idea">Πρόταση ιδέας</string>
+    <string name="pf_topic_question">Υποβολή ερώτησης</string>
+    <string name="pf_topic_account">Βοήθεια με τον λογαριασμό μου</string>
+    <string name="pf_topic_feedback">Αποστολή σχολίων</string>
+    <string name="pf_topic_restore">Επαναφορά αγορών</string>
+    <string name="pf_topic_privacy">Ερώτηση για το απόρρητο</string>
+    <string name="pf_topic_other">Κάτι άλλο</string>
+    <string name="pf_offline">Είστε εκτός σύνδεσης. Τα μηνύματα θα σταλούν όταν συνδεθείτε ξανά.</string>
+    <string name="pf_unreachable">Η συνομιλία δεν είναι διαθέσιμη αυτή τη στιγμή. Τα μηνύματα θα σταλούν μόλις επανέλθει.</string>
+    <string name="pf_couldnt_load">Δεν ήταν δυνατή η φόρτωση της συνομιλίας</string>
+    <string name="pf_try_again">Δοκιμάστε ξανά</string>
+    <string name="pf_setup_problem">Πρόβλημα ρύθμισης</string>
+    <string name="pf_debug_only">Εμφανίζεται μόνο σε εκδόσεις εντοπισμού σφαλμάτων.</string>
+    <string name="pf_chat_unavailable">Η συνομιλία δεν είναι διαθέσιμη αυτή τη στιγμή.</string>
+    <string name="pf_draft_look">Πρόχειρη εμφάνιση</string>
+    <string name="pf_send_again_in">Μπορείτε να στείλετε ξανά σε %1$s.</string>
+    <string name="pf_sending_paused">Η αποστολή έχει διακοπεί προσωρινά. Δοκιμάστε ξανά αργότερα.</string>
+    <string name="pf_photos_again_in">Θα μπορείτε να στείλετε ξανά φωτογραφίες σε %1$s. Το κείμενο αποστέλλεται κανονικά.</string>
+    <string name="pf_photos_paused">Η αποστολή φωτογραφιών έχει διακοπεί προσωρινά. Το κείμενο αποστέλλεται κανονικά.</string>
+    <string name="pf_blocked">Δεν μπορείτε να στέλνετε μηνύματα σε αυτή τη συνομιλία.</string>
+    <string name="pf_paused">Αυτή η συνομιλία έχει τεθεί προσωρινά σε παύση.</string>
+    <string name="pf_verification_required">Συνδεθείτε στην εφαρμογή για να στείλετε μήνυμα στην ομάδα.</string>
+    <string name="pf_enjoying">Σας αρέσει η εφαρμογή %1$s;</string>
+    <string name="pf_review_helps">Η κριτική σας βοηθά άλλους να βρουν την εφαρμογή %1$s.</string>
+    <string name="pf_includes_screenshot">Περιλαμβάνει στιγμιότυπο οθόνης και πρόσφατα αρχεία καταγραφής.</string>
+    <string name="pf_price_year">%1$s τον χρόνο</string>
+    <string name="pf_price_month">%1$s τον μήνα</string>
+    <string name="pf_price_week">%1$s την εβδομάδα</string>
+    <string name="pf_first_month_free">%1$s, ο πρώτος μήνας δωρεάν</string>
+    <string name="pf_first_week_free">%1$s, η πρώτη εβδομάδα δωρεάν</string>
+    <string name="pf_thanks_rating">Ευχαριστούμε για τη βαθμολογία σας.</string>
+    <string name="pf_show_original">Εμφάνιση πρωτοτύπου</string>
+    <string name="pf_show_translation">Εμφάνιση μετάφρασης</string>
+    <string name="pf_unknown_content">Για αυτό το μήνυμα χρειάζεται νεότερη έκδοση της εφαρμογής.</string>
+    <string name="pf_remove_photo">Αφαίρεση φωτογραφίας %1$d</string>
+    <string name="pf_photo">Φωτογραφία</string>
+    <string name="pf_photo_removed">Η φωτογραφία αφαιρέθηκε</string>
+    <string name="pf_what_went_wrong">Τι πήγε στραβά;</string>
+    <string name="pf_send_report">Αποστολή αναφοράς</string>
+    <string name="pf_cancel">Ακύρωση</string>
+    <string name="pf_draw_hint">Σχεδιάστε πάνω στο στιγμιότυπο οθόνης για να δείξετε το πρόβλημα. Επισυνάπτονται πρόσφατα αρχεία καταγραφής και η κατάσταση της συσκευής.</string>
+    <string name="pf_include_screenshot">Επισύναψη στιγμιότυπου οθόνης</string>
+    <string name="pf_clear_marks">Διαγραφή σημαδιών</string>
+    <string name="pf_screenshot">Στιγμιότυπο οθόνης</string>
+    <string name="pf_you">Εσείς: %1$s</string>
+    <string name="pf_waiting_connection">Αναμονή για σύνδεση</string>
+    <string name="pf_topic_gift">Ερώτηση για δώρα</string>
+    <string name="pf_pending_photo">Η φωτογραφία περιμένει να σταλεί</string>
+    <string name="pf_current_plan">Τρέχον πρόγραμμα</string>
+    <string name="pf_share">Κοινοποίηση</string>
+    <string name="pf_close">Κλείσιμο</string>
+    <string name="pf_open_photo">Άνοιγμα φωτογραφίας</string>
+    <plurals name="pf_stars">
+        <item quantity="one">Βαθμολογία: %1$d από %2$d</item>
+        <item quantity="other">Βαθμολογία: %1$d από %2$d</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d νέο μήνυμα</item>
+        <item quantity="other">%1$d νέα μηνύματα</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Έχω μια ερώτηση για τις χρεώσεις: "</string>
+    <string name="pf_start_idea">"Έχω μια ιδέα: "</string>
+    <string name="pf_start_question">"Έχω μια ερώτηση: "</string>
+    <string name="pf_start_account">"Χρειάζομαι βοήθεια με τον λογαριασμό μου: "</string>
+    <string name="pf_start_feedback">"Μερικά σχόλια: "</string>
+    <string name="pf_start_restore">"Δεν μπόρεσα να επαναφέρω τις αγορές μου: "</string>
+    <string name="pf_start_privacy">"Έχω μια ερώτηση για το απόρρητο: "</string>
+    <string name="pf_start_gift">"Έχω μια ερώτηση για τα δώρα: "</string>
+    <string name="pf_retrying">Δεν στάλθηκε ακόμα. Θα γίνει νέα προσπάθεια σύντομα.</string>
+    <string name="pf_opens_browser">Ανοίγει στο πρόγραμμα περιήγησης</string>
+    <string name="pf_opens_store">Ανοίγει το Google Play</string>
+    <string name="pf_reply_expectation">Συνήθως απαντούν μέσα σε μία ημέρα</string>
+    <string name="pf_after_first">%1$s. Μπορείτε να κλείσετε τη συνομιλία· η απάντηση θα σας περιμένει εδώ.</string>
+    <string name="pf_after_first_plain">Μπορείτε να κλείσετε τη συνομιλία· η απάντηση θα σας περιμένει εδώ.</string>
+    <string name="pf_turn_on_notifications">Ενεργοποίηση ειδοποιήσεων</string>
+    <string name="pf_assistant_mark">Βοηθός</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">Μεταφόρτωση %1$d φωτογραφίας</item>
+        <item quantity="other">Μεταφόρτωση %1$d φωτογραφιών</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Η συνδρομή σας</string>
+    <string name="pf_store_manage_detail">Αλλάξτε το πρόγραμμα, τον τρόπο πληρωμής ή την ανανέωση.</string>
+    <string name="pf_store_manage_button">Διαχείριση συνδρομής</string>
+    <string name="pf_store_billing_title">Η πληρωμή δεν ολοκληρώθηκε</string>
+    <string name="pf_store_billing_detail">Ενημερώστε τον τρόπο πληρωμής για να διατηρήσετε τη συνδρομή σας.</string>
+    <string name="pf_store_billing_button">Ενημέρωση τρόπου πληρωμής</string>
+    <string name="pf_store_refund_title">Αίτημα επιστροφής χρημάτων</string>
+    <string name="pf_store_refund_detail">Τις επιστροφές χρημάτων τις χειρίζεται το Google Play. Βρείτε την παραγγελία στο ιστορικό παραγγελιών.</string>
+    <string name="pf_store_refund_button">Άνοιγμα ιστορικού παραγγελιών</string>
+    <string name="pf_store_redeem_title">Εξαργυρώστε έναν κωδικό</string>
+    <string name="pf_store_redeem_detail">Εισαγάγετε τον κωδικό σας στο Google Play.</string>
+    <string name="pf_store_redeem_button">Εξαργύρωση κωδικού</string>
+    <string name="pf_store_restore_title">Επαναφορά αγορών</string>
+    <string name="pf_store_restore_detail">Ελέγχει το Google Play για αγορές σε αυτόν τον λογαριασμό.</string>
+    <string name="pf_store_restore_button">Επαναφορά αγορών</string>
+    <string name="pf_store_receipt_restored">Οι αγορές επαναφέρθηκαν</string>
+    <string name="pf_store_receipt_nothing">Δεν υπάρχουν αγορές για επαναφορά</string>
+    <string name="pf_store_receipt_up_to_date">Οι αγορές είναι ενημερωμένες</string>
+    <string name="pf_store_receipt_updated">Η συνδρομή ενημερώθηκε</string>
+    <string name="pf_store_unavailable">Δεν ήταν δυνατή η σύνδεση με το Google Play. Δοκιμάστε ξανά αργότερα.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s δωρεάν</string>
+    <string name="pf_phase_for">%1$s για %2$s</string>
+    <string name="pf_phase_then">%1$s, έπειτα %2$s</string>
+    <string name="pf_change_now">Αντικαθιστά αμέσως το τρέχον πρόγραμμά σας. Ο χρόνος που δεν χρησιμοποιήσατε πιστώνεται.</string>
+    <string name="pf_change_at_renewal">Ξεκινά όταν ανανεωθεί το τρέχον πρόγραμμά σας.</string>
+    <string name="pf_waiting_for_payment">Αναμονή πληρωμής</string>
+    <string name="pf_pending_detail">Το πρόγραμμά σας ξεκινά μόλις ολοκληρωθεί η πληρωμή.</string>
+    <string name="pf_plan_renews">%1$s: ανανέωση %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s: αυτόματη ανανέωση</string>
+    <string name="pf_plan_ends">%1$s: λήξη %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s: χωρίς ανανέωση</string>
+    <string name="pf_plan_ended">%1$s: έληξε %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s: έληξε</string>
+    <string name="pf_plan_issue_by">Πρόβλημα πληρωμής: ενημερώστε έως %1$s</string>
+    <string name="pf_plan_issue">Πρόβλημα πληρωμής: ενημερώστε τον τρόπο πληρωμής</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d ημέρα</item>
+        <item quantity="other">%d ημέρες</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d εβδομάδα</item>
+        <item quantity="other">%d εβδομάδες</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d μήνα</item>
+        <item quantity="other">%d μήνες</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d χρόνο</item>
+        <item quantity="other">%d χρόνια</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Λήψη φωτογραφίας</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">Απομένει %d χαρακτήρας</item>
+        <item quantity="other">Απομένουν %d χαρακτήρες</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d χαρακτήρας πάνω από το όριο</item>
+        <item quantity="other">%d χαρακτήρες πάνω από το όριο</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Συνομιλία μέσω pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (δοκιμαστική αγορά)</string>
+    <string name="pf_held_chat_back">Δεν στάλθηκε ακόμα. Θα σταλεί όταν επιστρέψει η συνομιλία.</string>
+    <string name="pf_held_sign_in">Δεν στάλθηκε ακόμα. Θα σταλεί μόλις συνδεθείτε.</string>
+    <string name="pf_offer_replaced">Αντικαταστάθηκε από νεότερη προσφορά</string>
+    <string name="pf_offer_ended">Αυτή η προσφορά δεν είναι πλέον διαθέσιμη.</string>
+</resources>

@@ -1,0 +1,45 @@
+{
+  "schema": "TeamActionPayload",
+  "description": "What the host app gets (SDK event, GET /v1/team-actions, webhook).",
+  "valid": [
+    {
+      "name": "a custom action",
+      "value": {
+        "id": "tar_1",
+        "actionId": "repair_sync",
+        "name": "Repair bank sync",
+        "fields": {},
+        "ackRequired": true,
+        "createdAt": "2026-10-31T10:00:00.000Z",
+        "expiresAt": "2026-11-07T10:00:00.000Z"
+      }
+    },
+    {
+      "name": "a built-in",
+      "value": {
+        "id": "tar_1",
+        "actionId": "extend_trial",
+        "name": "Extend trial",
+        "fields": {},
+        "ackRequired": true,
+        "createdAt": "2026-10-31T10:00:00.000Z",
+        "expiresAt": "2026-11-07T10:00:00.000Z",
+        "days": 7,
+        "until": "2026-11-07T10:00:00.000Z"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects a missing ackRequired",
+      "value": {
+        "id": "tar_1",
+        "actionId": "repair_sync",
+        "name": "Repair bank sync",
+        "fields": {},
+        "createdAt": "2026-10-31T10:00:00.000Z",
+        "expiresAt": "2026-11-07T10:00:00.000Z"
+      }
+    }
+  ]
+}

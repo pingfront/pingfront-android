@@ -1,0 +1,79 @@
+{
+  "scenario": "thread-reset",
+  "description": "A thread call carrying an old PF-Thread-Rev (the thread was merged across devices) answers 409 thread_reset. The SDK drops its message cache, keeps the draft and the outbox, reloads GET /v1/thread without the header, and sends the new rev from then on.",
+  "given": {
+    "accessToken": "at_ok",
+    "thread": { "id": "thr_old", "rev": 2, "messages": [ { "id": "msg_1", "seq": 1 } ] },
+    "draft": "half-typed",
+    "outbox": [ { "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10", "text": "are you there?" } ]
+  },
+  "action": "Load older messages (GET /v1/thread/messages?before=1).",
+  "steps": [
+    {
+      "name": "the old revision is refused",
+      "request": {
+        "operation": "GET /v1/thread/messages",
+        "path": "/v1/thread/messages?before=1",
+        "headers": { "Authorization": "Bearer at_ok", "PF-Thread-Rev": "2" }
+      },
+      "response": {
+        "status": 409,
+        "headers": { "PF-Thread-Rev": "3" },
+        "body": {
+          "error": {
+            "code": "thread_reset",
+            "message": "The thread changed (for example it was merged across devices). Drop the local cache and reload GET /v1/thread.",
+            "docs": "https://pingfront.sh/docs/errors#thread_reset"
+          }
+        }
+      }
+    },
+    {
+      "name": "a fresh load, without the old revision",
+      "request": {
+        "operation": "GET /v1/thread",
+        "path": "/v1/thread",
+        "headers": { "Authorization": "Bearer at_ok" },
+        "absentHeaders": [ "PF-Thread-Rev" ]
+      },
+      "response": {
+        "status": 200,
+        "headers": { "PF-Thread-Rev": "3" },
+        "body": {
+          "thread": { "id": "thr_1", "status": "open", "lastSeq": 2, "readSeq": 2, "teamReadSeq": 2, "unread": 0, "rev": 3 },
+          "messages": [
+            { "id": "msg_a", "seq": 1, "author": { "kind": "person" }, "createdAt": "2026-11-01T09:00:00Z", "parts": [ { "type": "text", "text": "from my phone" } ] },
+            { "id": "msg_b", "seq": 2, "author": { "kind": "person" }, "createdAt": "2026-11-01T09:05:00Z", "parts": [ { "type": "text", "text": "from my tablet" } ] }
+          ],
+          "hasOlder": false,
+          "team": [],
+          "policy": { "canSend": true }
+        }
+      }
+    },
+    {
+      "name": "the kept outbox sends with the new revision",
+      "request": {
+        "operation": "POST /v1/thread/messages",
+        "path": "/v1/thread/messages",
+        "headers": { "Authorization": "Bearer at_ok", "PF-Thread-Rev": "3" },
+        "body": { "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10", "text": "are you there?" }
+      },
+      "response": {
+        "status": 201,
+        "headers": { "PF-Thread-Rev": "3" },
+        "body": {
+          "threadId": "thr_1",
+          "message": { "id": "msg_c", "seq": 3, "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10", "author": { "kind": "person" }, "createdAt": "2026-11-02T12:00:00Z", "parts": [ { "type": "text", "text": "are you there?" } ] }
+        }
+      }
+    }
+  ],
+  "then": {
+    "requests": 3,
+    "thread": { "id": "thr_1", "rev": 3, "messageIds": [ "msg_a", "msg_b", "msg_c" ] },
+    "draft": "half-typed",
+    "outbox": [],
+    "surfaced": "nothing: no error banner; the list redraws from the new thread"
+  }
+}

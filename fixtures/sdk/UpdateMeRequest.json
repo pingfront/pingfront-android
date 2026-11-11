@@ -1,0 +1,54 @@
+{
+  "schema": "UpdateMeRequest",
+  "description": "PATCH /v1/me body (every field optional).",
+  "valid": [
+    {
+      "name": "accepts an empty patch",
+      "value": {}
+    },
+    {
+      "name": "clears the push token with null",
+      "value": {
+        "push": null
+      }
+    },
+    {
+      "name": "registers an APNs token",
+      "value": {
+        "push": {
+          "provider": "apns",
+          "token": "abc",
+          "environment": "sandbox"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unknown entitlement state",
+      "value": {
+        "entitlement": {
+          "state": "bogus"
+        }
+      }
+    },
+    {
+      "name": "rejects an unknown push provider",
+      "value": {
+        "push": {
+          "provider": "sms",
+          "token": "x"
+        }
+      }
+    },
+    {
+      "name": "rejects an empty push token",
+      "value": {
+        "push": {
+          "provider": "apns",
+          "token": ""
+        }
+      }
+    }
+  ]
+}

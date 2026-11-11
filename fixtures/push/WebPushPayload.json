@@ -1,0 +1,16 @@
+{
+  "schema": "WebPushPayload",
+  "description": "The JSON inside a web push to the dashboard's service worker (after RFC 8291 decryption).",
+  "valid": [
+    {
+      "name": "a new message",
+      "value": { "v": 1, "kind": "message", "title": "Riley (Clockwise)", "body": "The timer stops when I lock the phone", "url": "/apps/app_1/inbox/thr_1", "tag": "message-thr_1", "sound": true, "appId": "app_1", "threadId": "thr_1" }
+    },
+    { "name": "a silent test", "value": { "v": 1, "kind": "test", "title": "pingfront", "body": "Notifications work on this device.", "url": "/", "tag": "test", "sound": false } }
+  ],
+  "invalid": [
+    { "name": "rejects an absolute url", "value": { "v": 1, "kind": "test", "title": "t", "body": "b", "url": "https://evil.example/", "tag": "t", "sound": true } },
+    { "name": "rejects another version", "value": { "v": 2, "kind": "test", "title": "t", "body": "b", "url": "/", "tag": "t", "sound": true } },
+    { "name": "rejects a missing sound flag", "value": { "v": 1, "kind": "test", "title": "t", "body": "b", "url": "/", "tag": "t" } }
+  ]
+}

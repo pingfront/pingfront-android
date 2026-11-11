@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Mesaj</string>
+    <string name="pf_send">Gönder</string>
+    <string name="pf_add_photo">Fotoğraf ekle</string>
+    <string name="pf_add_photo_or_report">Fotoğraf ekle veya hata bildir</string>
+    <string name="pf_photos">Fotoğraflar</string>
+    <string name="pf_report_bug">Hata bildir</string>
+    <string name="pf_close_chat">Sohbeti kapat</string>
+    <string name="pf_delivered">Teslim edildi</string>
+    <string name="pf_read">Okundu</string>
+    <string name="pf_not_delivered">Teslim edilmedi</string>
+    <string name="pf_delete">Sil</string>
+    <string name="pf_sending">Gönderiliyor…</string>
+    <string name="pf_ai">YZ</string>
+    <string name="pf_assistant">Asistan</string>
+    <string name="pf_the_team">Ekip</string>
+    <string name="pf_team_title">%1$s ekibi</string>
+    <string name="pf_messaged_you_first">%1$s sana ilk yazdı</string>
+    <string name="pf_wrote_first">%1$s sana ilk yazdı.</string>
+    <string name="pf_why_message">Bu mesajı neden aldın</string>
+    <string name="pf_reply_if_you_like">İstersen yanıtla, istersen görmezden gel.</string>
+    <string name="pf_ask_person">Bir insanla konuş</string>
+    <string name="pf_ask_person_message">Gerçek bir kişiyle konuşabilir miyim?</string>
+    <string name="pf_typing">%1$s yazıyor</string>
+    <string name="pf_jump_latest">En yeniye git</string>
+    <string name="pf_load_earlier">Önceki mesajları yükle</string>
+    <string name="pf_loading_earlier">Önceki mesajlar yükleniyor</string>
+    <string name="pf_today">Bugün %1$s</string>
+    <string name="pf_yesterday">Dün %1$s</string>
+    <string name="pf_local_time">%2$s tarafında saat %1$s</string>
+    <string name="pf_welcome_body">Soru, hata ya da fikir: %1$s uygulamasını yapanlar her mesajı okur ve burada yanıtlar.</string>
+    <string name="pf_topic_billing">Ödeme hakkında sor</string>
+    <string name="pf_topic_bug">Hata bildir</string>
+    <string name="pf_topic_idea">Bir fikir paylaş</string>
+    <string name="pf_topic_question">Bir soru sor</string>
+    <string name="pf_topic_account">Hesabımla ilgili yardım al</string>
+    <string name="pf_topic_feedback">Geri bildirim gönder</string>
+    <string name="pf_topic_restore">Satın alımları geri yükle</string>
+    <string name="pf_topic_privacy">Gizlilik hakkında sor</string>
+    <string name="pf_topic_other">Başka bir şey</string>
+    <string name="pf_offline">Çevrimdışısın. Mesajlar yeniden bağlandığında gönderilecek.</string>
+    <string name="pf_unreachable">Sohbete şu anda ulaşılamıyor. Mesajlar sohbet geri gelince gönderilecek.</string>
+    <string name="pf_couldnt_load">Sohbet yüklenemedi</string>
+    <string name="pf_try_again">Tekrar dene</string>
+    <string name="pf_setup_problem">Kurulum sorunu</string>
+    <string name="pf_debug_only">Yalnızca hata ayıklama derlemelerinde görünür.</string>
+    <string name="pf_chat_unavailable">Sohbet şu anda kullanılamıyor.</string>
+    <string name="pf_draft_look">Taslak görünüm</string>
+    <string name="pf_send_again_in">%1$s sonra yeniden gönderebilirsin.</string>
+    <string name="pf_sending_paused">Gönderim bir süreliğine duraklatıldı. Daha sonra tekrar dene.</string>
+    <string name="pf_photos_again_in">Fotoğraflar %1$s sonra yeniden gönderilebilir. Metin gönderilmeye devam eder.</string>
+    <string name="pf_photos_paused">Fotoğraf gönderimi bir süreliğine duraklatıldı. Metin gönderilmeye devam eder.</string>
+    <string name="pf_blocked">Bu sohbette mesaj gönderemezsin.</string>
+    <string name="pf_paused">Bu sohbet şimdilik duraklatıldı.</string>
+    <string name="pf_verification_required">Ekibe yazmak için uygulamada oturum aç.</string>
+    <string name="pf_enjoying">%1$s hoşuna gidiyor mu?</string>
+    <string name="pf_review_helps">Yorumun, başkalarının %1$s uygulamasını bulmasına yardım eder.</string>
+    <string name="pf_includes_screenshot">Ekran görüntüsü ve son kayıtlar eklenir.</string>
+    <string name="pf_price_year">Yıllık %1$s</string>
+    <string name="pf_price_month">Aylık %1$s</string>
+    <string name="pf_price_week">Haftalık %1$s</string>
+    <string name="pf_first_month_free">%1$s, ilk ay ücretsiz</string>
+    <string name="pf_first_week_free">%1$s, ilk hafta ücretsiz</string>
+    <string name="pf_thanks_rating">Puanın için teşekkürler.</string>
+    <string name="pf_show_original">Orijinali göster</string>
+    <string name="pf_show_translation">Çeviriyi göster</string>
+    <string name="pf_unknown_content">Bu mesaj için uygulamanın daha yeni bir sürümü gerekiyor.</string>
+    <string name="pf_remove_photo">%1$d. fotoğrafı kaldır</string>
+    <string name="pf_photo">Fotoğraf</string>
+    <string name="pf_photo_removed">Fotoğraf kaldırıldı</string>
+    <string name="pf_what_went_wrong">Ne ters gitti?</string>
+    <string name="pf_send_report">Raporu gönder</string>
+    <string name="pf_cancel">İptal</string>
+    <string name="pf_draw_hint">Sorunu göstermek için ekran görüntüsünün üzerine çiz. Son kayıtlar ve cihaz durumu eklenir.</string>
+    <string name="pf_include_screenshot">Ekran görüntüsünü ekle</string>
+    <string name="pf_clear_marks">İşaretleri sil</string>
+    <string name="pf_screenshot">Ekran görüntüsü</string>
+    <string name="pf_you">Sen: %1$s</string>
+    <string name="pf_waiting_connection">Bağlantı bekleniyor</string>
+    <string name="pf_topic_gift">Hediyeler hakkında sor</string>
+    <string name="pf_pending_photo">Gönderilmeyi bekleyen fotoğraf</string>
+    <string name="pf_current_plan">Mevcut plan</string>
+    <string name="pf_share">Paylaş</string>
+    <string name="pf_close">Kapat</string>
+    <string name="pf_open_photo">Fotoğrafı aç</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%2$d üzerinden %1$d yıldız</item>
+        <item quantity="other">%2$d üzerinden %1$d yıldız</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d yeni mesaj</item>
+        <item quantity="other">%1$d yeni mesaj</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Ödeme hakkında bir sorum var: "</string>
+    <string name="pf_start_idea">"Bir fikrim var: "</string>
+    <string name="pf_start_question">"Bir sorum var: "</string>
+    <string name="pf_start_account">"Hesabımla ilgili yardıma ihtiyacım var: "</string>
+    <string name="pf_start_feedback">"Geri bildirimim: "</string>
+    <string name="pf_start_restore">"Satın aldıklarımı geri yükleyemedim: "</string>
+    <string name="pf_start_privacy">"Gizlilikle ilgili bir sorum var: "</string>
+    <string name="pf_start_gift">"Hediyeler hakkında bir sorum var: "</string>
+    <string name="pf_retrying">Henüz gönderilmedi. Birazdan yeniden denenecek.</string>
+    <string name="pf_opens_browser">Tarayıcıda açılır</string>
+    <string name="pf_opens_store">Google Play\'i açar</string>
+    <string name="pf_reply_expectation">Genelde bir gün içinde yanıt verir</string>
+    <string name="pf_after_first">%1$s. Burayı kapatabilirsin, yanıt burada seni bekler.</string>
+    <string name="pf_after_first_plain">Burayı kapatabilirsin, yanıt burada seni bekler.</string>
+    <string name="pf_turn_on_notifications">Bildirimleri aç</string>
+    <string name="pf_assistant_mark">Asistan</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">%1$d fotoğraf yükleniyor</item>
+        <item quantity="other">%1$d fotoğraf yükleniyor</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Aboneliğin</string>
+    <string name="pf_store_manage_detail">Planını, ödeme yöntemini veya yenilemeyi değiştir.</string>
+    <string name="pf_store_manage_button">Aboneliği yönet</string>
+    <string name="pf_store_billing_title">Ödeme alınamadı</string>
+    <string name="pf_store_billing_detail">Aboneliğini sürdürmek için ödeme yöntemini güncelle.</string>
+    <string name="pf_store_billing_button">Ödeme yöntemini güncelle</string>
+    <string name="pf_store_refund_title">İade iste</string>
+    <string name="pf_store_refund_detail">İadeleri Google Play yönetir. Siparişi sipariş geçmişinde bulabilirsin.</string>
+    <string name="pf_store_refund_button">Sipariş geçmişini aç</string>
+    <string name="pf_store_redeem_title">Kod kullan</string>
+    <string name="pf_store_redeem_detail">Kodunu Google Play\'de gir.</string>
+    <string name="pf_store_redeem_button">Kodu kullan</string>
+    <string name="pf_store_restore_title">Satın alımları geri yükle</string>
+    <string name="pf_store_restore_detail">Bu hesaptaki satın alımlar için Google Play\'i kontrol eder.</string>
+    <string name="pf_store_restore_button">Satın alımları geri yükle</string>
+    <string name="pf_store_receipt_restored">Satın alımlar geri yüklendi</string>
+    <string name="pf_store_receipt_nothing">Geri yüklenecek satın alım yok</string>
+    <string name="pf_store_receipt_up_to_date">Satın alımlar güncel</string>
+    <string name="pf_store_receipt_updated">Abonelik güncellendi</string>
+    <string name="pf_store_unavailable">Google Play\'e ulaşılamadı. Daha sonra tekrar dene.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s ücretsiz</string>
+    <string name="pf_phase_for">%2$s boyunca %1$s</string>
+    <string name="pf_phase_then">%1$s, sonra %2$s</string>
+    <string name="pf_change_now">Mevcut planının yerini hemen alır. Kullanılmayan süre mahsup edilir.</string>
+    <string name="pf_change_at_renewal">Mevcut planın yenilendiğinde başlar.</string>
+    <string name="pf_waiting_for_payment">Ödeme bekleniyor</string>
+    <string name="pf_pending_detail">Planın ödeme tamamlanınca başlar.</string>
+    <string name="pf_plan_renews">%1$s %2$s tarihinde yenilenir</string>
+    <string name="pf_plan_renews_auto">%1$s otomatik yenilenir</string>
+    <string name="pf_plan_ends">%1$s %2$s tarihinde sona erer</string>
+    <string name="pf_plan_wont_renew">%1$s yenilenmeyecek</string>
+    <string name="pf_plan_ended">%1$s %2$s tarihinde sona erdi</string>
+    <string name="pf_plan_ended_undated">%1$s sona erdi</string>
+    <string name="pf_plan_issue_by">Ödeme sorunu: %1$s tarihine kadar güncelle</string>
+    <string name="pf_plan_issue">Ödeme sorunu: ödeme yöntemini güncelle</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d hafta</item>
+        <item quantity="other">%d hafta</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d ay</item>
+        <item quantity="other">%d ay</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d yıl</item>
+        <item quantity="other">%d yıl</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Fotoğraf çek</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">%d karakter kaldı</item>
+        <item quantity="other">%d karakter kaldı</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">Sınır %d karakter aşıldı</item>
+        <item quantity="other">Sınır %d karakter aşıldı</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Sohbet altyapısı: pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (test satın alımı)</string>
+    <string name="pf_held_chat_back">Henüz gönderilmedi. Sohbet geri gelince gönderilecek.</string>
+    <string name="pf_held_sign_in">Henüz gönderilmedi. Oturum açınca gönderilecek.</string>
+    <string name="pf_offer_replaced">Daha yeni bir teklifle değiştirildi</string>
+    <string name="pf_offer_ended">Bu teklif artık geçerli değil.</string>
+</resources>

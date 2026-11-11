@@ -1,0 +1,125 @@
+{
+  "description": "The link-card URL rule (the protocol, \"Link card URLs\"). Remove ASCII tab, line feed and carriage return anywhere, trim whitespace and control characters from both ends, then read the scheme (letters, digits, +, - and . after a first letter, up to the first colon) and compare it ignoring case. No scheme is refused; a scheme in refusedSchemes is refused; https, http and any other scheme (the app's own) pass. allowed[] must pass and refused[] must be refused by the server's check (links.CheckCardURL) and by every SDK before anything, the host's onLink included, sees the URL. Passing the rule doesn't mean something opens it: an SDK still reports cannot_open when nothing does.",
+  "refusedSchemes": [
+    "javascript",
+    "data",
+    "vbscript",
+    "file",
+    "blob",
+    "about",
+    "content",
+    "intent"
+  ],
+  "allowed": [
+    {
+      "name": "https",
+      "url": "https://example.com/help"
+    },
+    {
+      "name": "http",
+      "url": "http://example.com/help"
+    },
+    {
+      "name": "https in capitals",
+      "url": "HTTPS://EXAMPLE.COM/help"
+    },
+    {
+      "name": "the app's own scheme",
+      "url": "myapp://settings/sound"
+    },
+    {
+      "name": "the app's own scheme with a query",
+      "url": "clockwise-demo://plans?tab=yearly"
+    },
+    {
+      "name": "surrounding whitespace is trimmed",
+      "url": "  https://example.com/help \n"
+    },
+    {
+      "name": "leading control characters are trimmed",
+      "url": "\u0000\u001fmyapp://settings"
+    }
+  ],
+  "refused": [
+    {
+      "name": "javascript",
+      "url": "javascript:alert(1)"
+    },
+    {
+      "name": "javascript, mixed case",
+      "url": "JaVaScRiPt:alert(1)"
+    },
+    {
+      "name": "javascript after a space",
+      "url": " javascript:alert(1)"
+    },
+    {
+      "name": "javascript after a tab and a line feed",
+      "url": "\t\njavascript:alert(1)"
+    },
+    {
+      "name": "javascript after control characters",
+      "url": "\u0000\u0001\u001fJAVASCRIPT:alert(1)"
+    },
+    {
+      "name": "javascript after a no-break space",
+      "url": "\u00a0javascript:alert(1)"
+    },
+    {
+      "name": "javascript with a tab inside the scheme",
+      "url": "java\tscript:alert(1)"
+    },
+    {
+      "name": "javascript with a line feed inside the scheme",
+      "url": "java\nscript:alert(1)"
+    },
+    {
+      "name": "data",
+      "url": "data:text/html,<script>alert(1)</script>"
+    },
+    {
+      "name": "vbscript",
+      "url": "vbscript:msgbox(1)"
+    },
+    {
+      "name": "file",
+      "url": "file:///etc/passwd"
+    },
+    {
+      "name": "blob",
+      "url": "blob:https://example.com/1"
+    },
+    {
+      "name": "about",
+      "url": "about:blank"
+    },
+    {
+      "name": "content",
+      "url": "content://com.android.contacts/contacts"
+    },
+    {
+      "name": "intent",
+      "url": "intent://scan/#Intent;scheme=zxing;package=com.example;end"
+    },
+    {
+      "name": "intent in capitals",
+      "url": "INTENT://scan/#Intent;end"
+    },
+    {
+      "name": "no scheme",
+      "url": "example.com/help"
+    },
+    {
+      "name": "a path only",
+      "url": "/help"
+    },
+    {
+      "name": "empty",
+      "url": ""
+    },
+    {
+      "name": "whitespace only",
+      "url": " \t "
+    }
+  ]
+}

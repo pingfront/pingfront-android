@@ -1,0 +1,13 @@
+public final class dev/pingfront/superwall/Superwall {
+	public static final field INSTANCE Ldev/pingfront/superwall/Superwall;
+	public final fun invoke ([Ldev/pingfront/superwall/SuperwallPlacement;)Ldev/pingfront/PingFrontModule;
+}
+
+public final class dev/pingfront/superwall/SuperwallPlacement {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/pingfront/model/OfferSlot$Kind;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/pingfront/model/OfferSlot$Kind;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getKind ()Ldev/pingfront/model/OfferSlot$Kind;
+	public final fun getPlacement ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+}
+

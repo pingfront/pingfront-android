@@ -1,0 +1,38 @@
+{
+  "scenario": "card-action-retry",
+  "description": "A card action report whose answer was lost stays queued and is resent with the same clientId and body. The server recorded the first one, so the repeat answers 204 and records nothing new: the pick counts once.",
+  "given": {
+    "accessToken": "at_ok",
+    "thread": { "id": "thr_1", "rev": 1, "messages": [ { "id": "msg_c1", "seq": 1 } ] },
+    "cardActions": []
+  },
+  "action": "The person picks \"Yes please\" on the choices card card_c1 in msg_c1, then the connection drops before the answer arrives; the queue retries after its backoff.",
+  "steps": [
+    {
+      "name": "the report reaches the server, but its answer is lost",
+      "request": {
+        "operation": "POST /v1/thread/cards/{cardId}/act",
+        "path": "/v1/thread/cards/card_c1/act",
+        "headers": { "Authorization": "Bearer at_ok" },
+        "body": { "clientId": "4b6e1c2d-3f4a-4b5c-8d6e-7f8a9b0c1d2e", "messageId": "msg_c1", "action": "chosen", "choiceId": "yes" }
+      },
+      "response": { "transport": "lost" },
+      "server": { "status": 204 }
+    },
+    {
+      "name": "the retry carries the same clientId and body, and the repeat records nothing new",
+      "request": {
+        "operation": "POST /v1/thread/cards/{cardId}/act",
+        "path": "/v1/thread/cards/card_c1/act",
+        "headers": { "Authorization": "Bearer at_ok" },
+        "body": { "clientId": "4b6e1c2d-3f4a-4b5c-8d6e-7f8a9b0c1d2e", "messageId": "msg_c1", "action": "chosen", "choiceId": "yes" }
+      },
+      "response": { "status": 204 }
+    }
+  ],
+  "then": {
+    "requests": 2,
+    "cardActions": [],
+    "surfaced": "the card shows the pick at once (a local result) and never an error; the server counts the pick once"
+  }
+}

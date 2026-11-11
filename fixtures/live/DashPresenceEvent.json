@@ -1,0 +1,50 @@
+{
+  "schema": "DashEvent",
+  "description": "Dashboard live events added for presence and erase (thread_removed).",
+  "valid": [
+    {
+      "name": "presence: a person opened the chat",
+      "value": {
+        "type": "presence",
+        "appId": "app_1",
+        "personId": "per_1",
+        "inChat": true
+      }
+    },
+    {
+      "name": "thread_removed",
+      "value": {
+        "type": "thread_removed",
+        "appId": "app_1",
+        "threadId": "thr_1"
+      }
+    },
+    {
+      "name": "note",
+      "value": {
+        "type": "note",
+        "threadId": "thr_1",
+        "note": {
+          "id": "note_1",
+          "threadId": "thr_1",
+          "author": {
+            "id": "mem_1",
+            "name": "Mara"
+          },
+          "text": "Refunded via Apple last week.",
+          "createdAt": "2026-10-30T18:00:00.000Z"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects presence without inChat",
+      "value": {
+        "type": "presence",
+        "appId": "app_1",
+        "personId": "per_1"
+      }
+    }
+  ]
+}

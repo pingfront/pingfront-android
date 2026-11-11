@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">メッセージ</string>
+    <string name="pf_send">送信</string>
+    <string name="pf_add_photo">写真を追加</string>
+    <string name="pf_add_photo_or_report">写真を追加または不具合を報告</string>
+    <string name="pf_photos">写真</string>
+    <string name="pf_report_bug">不具合を報告</string>
+    <string name="pf_close_chat">チャットを閉じる</string>
+    <string name="pf_delivered">配信済み</string>
+    <string name="pf_read">既読</string>
+    <string name="pf_not_delivered">未配信</string>
+    <string name="pf_delete">削除</string>
+    <string name="pf_sending">送信中…</string>
+    <string name="pf_ai">AI</string>
+    <string name="pf_assistant">アシスタント</string>
+    <string name="pf_the_team">チーム</string>
+    <string name="pf_team_title">%1$sチーム</string>
+    <string name="pf_messaged_you_first">%1$sから先にメッセージが届きました</string>
+    <string name="pf_wrote_first">%1$sから先にメッセージが届きました。</string>
+    <string name="pf_why_message">このメッセージが届いた理由</string>
+    <string name="pf_reply_if_you_like">返信してもしなくても大丈夫です。</string>
+    <string name="pf_ask_person">担当者と話す</string>
+    <string name="pf_ask_person_message">担当者と話したいです。</string>
+    <string name="pf_typing">%1$sが入力中</string>
+    <string name="pf_jump_latest">最新へ移動</string>
+    <string name="pf_load_earlier">以前のメッセージを読み込む</string>
+    <string name="pf_loading_earlier">以前のメッセージを読み込み中</string>
+    <string name="pf_today">今日 %1$s</string>
+    <string name="pf_yesterday">昨日 %1$s</string>
+    <string name="pf_local_time">%2$sさんの現地時刻は%1$s</string>
+    <string name="pf_welcome_body">質問、不具合、アイデア：%1$sの開発者がすべてのメッセージを読み、ここで返信します。</string>
+    <string name="pf_topic_billing">請求について質問</string>
+    <string name="pf_topic_bug">不具合を報告</string>
+    <string name="pf_topic_idea">アイデアを送る</string>
+    <string name="pf_topic_question">質問する</string>
+    <string name="pf_topic_account">アカウントについて相談</string>
+    <string name="pf_topic_feedback">フィードバックを送る</string>
+    <string name="pf_topic_restore">購入を復元</string>
+    <string name="pf_topic_privacy">プライバシーについて質問</string>
+    <string name="pf_topic_other">その他</string>
+    <string name="pf_offline">オフラインです。オンラインに戻るとメッセージが送信されます。</string>
+    <string name="pf_unreachable">現在チャットに接続できません。復旧するとメッセージが送信されます。</string>
+    <string name="pf_couldnt_load">会話を読み込めませんでした</string>
+    <string name="pf_try_again">再試行</string>
+    <string name="pf_setup_problem">設定の問題</string>
+    <string name="pf_debug_only">デバッグビルドでのみ表示されます。</string>
+    <string name="pf_chat_unavailable">現在チャットは利用できません。</string>
+    <string name="pf_draft_look">下書きのデザイン</string>
+    <string name="pf_send_again_in">%1$s後に再び送信できます。</string>
+    <string name="pf_sending_paused">送信はしばらく停止中です。後でもう一度お試しください。</string>
+    <string name="pf_photos_again_in">写真は%1$s後に再び送信できます。テキストは送信できます。</string>
+    <string name="pf_photos_paused">写真の送信はしばらく停止中です。テキストは送信できます。</string>
+    <string name="pf_blocked">このチャットではメッセージを送信できません。</string>
+    <string name="pf_paused">このチャットは現在一時停止中です。</string>
+    <string name="pf_verification_required">チームにメッセージを送るには、アプリにサインインしてください。</string>
+    <string name="pf_enjoying">%1$sはいかがですか？</string>
+    <string name="pf_review_helps">レビューを書いていただくと、ほかの方が%1$sを見つけやすくなります。</string>
+    <string name="pf_includes_screenshot">スクリーンショットと最近のログが含まれます。</string>
+    <string name="pf_price_year">年額%1$s</string>
+    <string name="pf_price_month">月額%1$s</string>
+    <string name="pf_price_week">週額%1$s</string>
+    <string name="pf_first_month_free">%1$s、最初の1か月無料</string>
+    <string name="pf_first_week_free">%1$s、最初の1週間無料</string>
+    <string name="pf_thanks_rating">評価ありがとうございます。</string>
+    <string name="pf_show_original">原文を表示</string>
+    <string name="pf_show_translation">翻訳を表示</string>
+    <string name="pf_unknown_content">このメッセージを表示するにはアプリを更新してください。</string>
+    <string name="pf_remove_photo">写真%1$dを削除</string>
+    <string name="pf_photo">写真</string>
+    <string name="pf_photo_removed">削除された写真</string>
+    <string name="pf_what_went_wrong">どのような問題がありましたか？</string>
+    <string name="pf_send_report">報告を送信</string>
+    <string name="pf_cancel">キャンセル</string>
+    <string name="pf_draw_hint">スクリーンショットに描いて問題の場所を示してください。最近のログと端末の状態が添付されます。</string>
+    <string name="pf_include_screenshot">スクリーンショットを含める</string>
+    <string name="pf_clear_marks">マークを消去</string>
+    <string name="pf_screenshot">スクリーンショット</string>
+    <string name="pf_you">あなた：%1$s</string>
+    <string name="pf_waiting_connection">接続を待っています</string>
+    <string name="pf_topic_gift">ギフトについて質問</string>
+    <string name="pf_pending_photo">送信待ちの写真</string>
+    <string name="pf_current_plan">現在のプラン</string>
+    <string name="pf_share">共有</string>
+    <string name="pf_close">閉じる</string>
+    <string name="pf_open_photo">写真を開く</string>
+    <plurals name="pf_stars">
+        <item quantity="other">星%2$d個中%1$d個</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="other">新着メッセージ%1$d件</item>
+    </plurals>
+    <string name="pf_message_from">%1$s：%2$s</string>
+    <string name="pf_start_billing">請求について質問があります：</string>
+    <string name="pf_start_idea">アイデアがあります：</string>
+    <string name="pf_start_question">質問があります：</string>
+    <string name="pf_start_account">アカウントについてサポートが必要です：</string>
+    <string name="pf_start_feedback">フィードバックです：</string>
+    <string name="pf_start_restore">購入の復元ができませんでした：</string>
+    <string name="pf_start_privacy">プライバシーについて質問があります：</string>
+    <string name="pf_start_gift">ギフトについて質問があります：</string>
+    <string name="pf_retrying">まだ送信されていません。まもなく再試行します。</string>
+    <string name="pf_opens_browser">ブラウザで開きます</string>
+    <string name="pf_opens_store">Google Play を開きます</string>
+    <string name="pf_reply_expectation">通常1日以内に返信します</string>
+    <string name="pf_after_first">%1$s。閉じても大丈夫です。返信はここに届きます。</string>
+    <string name="pf_after_first_plain">閉じても大丈夫です。返信はここに届きます。</string>
+    <string name="pf_turn_on_notifications">通知をオンにする</string>
+    <string name="pf_assistant_mark">アシスタント</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="other">写真を%1$d枚アップロード中</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">サブスクリプション</string>
+    <string name="pf_store_manage_detail">プラン、お支払い方法、更新を変更できます。</string>
+    <string name="pf_store_manage_button">サブスクリプションを管理</string>
+    <string name="pf_store_billing_title">お支払いが完了しませんでした</string>
+    <string name="pf_store_billing_detail">サブスクリプションを継続するには、お支払い方法を更新してください。</string>
+    <string name="pf_store_billing_button">お支払い方法を更新</string>
+    <string name="pf_store_refund_title">返金をリクエスト</string>
+    <string name="pf_store_refund_detail">払い戻しは Google Play が扱います。注文履歴から注文を探してください。</string>
+    <string name="pf_store_refund_button">注文履歴を開く</string>
+    <string name="pf_store_redeem_title">コードの引き換え</string>
+    <string name="pf_store_redeem_detail">Google Play でコードを入力してください。</string>
+    <string name="pf_store_redeem_button">コードを使う</string>
+    <string name="pf_store_restore_title">購入を復元</string>
+    <string name="pf_store_restore_detail">このアカウントの購入を Google Play で確認します。</string>
+    <string name="pf_store_restore_button">購入を復元</string>
+    <string name="pf_store_receipt_restored">購入を復元しました</string>
+    <string name="pf_store_receipt_nothing">復元する購入はありません</string>
+    <string name="pf_store_receipt_up_to_date">購入は最新です</string>
+    <string name="pf_store_receipt_updated">定期購入を更新しました</string>
+    <string name="pf_store_unavailable">Google Play に接続できませんでした。しばらくしてからもう一度お試しください。</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s無料</string>
+    <string name="pf_phase_for">%2$sは%1$s</string>
+    <string name="pf_phase_then">%1$s、その後は%2$s</string>
+    <string name="pf_change_now">今すぐ現在のプランと置き換わります。未使用の期間は差し引かれます。</string>
+    <string name="pf_change_at_renewal">現在のプランの更新時に開始します。</string>
+    <string name="pf_waiting_for_payment">お支払いを待っています</string>
+    <string name="pf_pending_detail">お支払いが完了すると、プランが開始します。</string>
+    <string name="pf_plan_renews">%1$sは%2$sに更新されます</string>
+    <string name="pf_plan_renews_auto">%1$sは自動更新されます</string>
+    <string name="pf_plan_ends">%1$sは%2$sに終了します</string>
+    <string name="pf_plan_wont_renew">%1$sは更新されません</string>
+    <string name="pf_plan_ended">%1$sは%2$sに終了しました</string>
+    <string name="pf_plan_ended_undated">%1$sは終了しました</string>
+    <string name="pf_plan_issue_by">お支払いの問題：%1$sまでに更新してください</string>
+    <string name="pf_plan_issue">お支払いの問題：お支払い方法を更新してください</string>
+    <plurals name="pf_duration_day">
+        <item quantity="other">%d日間</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="other">%d週間</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="other">%dか月</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="other">%d年</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">写真を撮る</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="other">残り%d文字</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="other">上限を%d文字超えています</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">チャット提供：pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s（テスト購入）</string>
+    <string name="pf_held_chat_back">まだ送信されていません。チャットが再開されると送信されます。</string>
+    <string name="pf_held_sign_in">まだ送信されていません。サインインすると送信されます。</string>
+    <string name="pf_offer_replaced">新しいオファーに置き換えられました</string>
+    <string name="pf_offer_ended">このオファーは利用できなくなりました。</string>
+</resources>

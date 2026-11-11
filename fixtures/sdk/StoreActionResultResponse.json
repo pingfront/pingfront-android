@@ -1,0 +1,38 @@
+{
+  "schema": "StoreActionResultResponse",
+  "description": "POST /v1/store-actions' answer: the receipt, or null when none was written.",
+  "valid": [
+    {
+      "name": "parses the receipt message",
+      "value": {
+        "message": {
+          "id": "msg_9",
+          "seq": 7,
+          "author": {
+            "kind": "system"
+          },
+          "parts": [
+            {
+              "type": "receipt",
+              "action": "custom",
+              "text": "Refund requested"
+            }
+          ],
+          "createdAt": "2026-10-30T18:00:00.000Z"
+        }
+      }
+    },
+    {
+      "name": "parses no receipt",
+      "value": {
+        "message": null
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects a missing message",
+      "value": {}
+    }
+  ]
+}

@@ -1,0 +1,2815 @@
+public final class dev/pingfront/AppKey {
+	public static final field Companion Ldev/pingfront/AppKey$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Ldev/pingfront/AppKey$Mode;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMode ()Ldev/pingfront/AppKey$Mode;
+	public final fun getRawValue ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/AppKey$Companion {
+	public final fun parse-IoAF18A (Ljava/lang/String;)Ljava/lang/Object;
+	public final fun problem (Ljava/lang/String;)Ldev/pingfront/KeyProblem;
+}
+
+public final class dev/pingfront/AppKey$Mode : java/lang/Enum {
+	public static final field Live Ldev/pingfront/AppKey$Mode;
+	public static final field Test Ldev/pingfront/AppKey$Mode;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/AppKey$Mode;
+	public static fun values ()[Ldev/pingfront/AppKey$Mode;
+}
+
+public final class dev/pingfront/AppScreen {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/CardKind {
+	public static final field Companion Ldev/pingfront/CardKind$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Ldev/pingfront/CardKind;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/CardKind$Companion {
+	public final fun getChoices-cBHSnN4 ()Ljava/lang/String;
+	public final fun getLink-cBHSnN4 ()Ljava/lang/String;
+	public final fun getOffer-cBHSnN4 ()Ljava/lang/String;
+	public final fun getRating-cBHSnN4 ()Ljava/lang/String;
+	public final fun getReport-cBHSnN4 ()Ljava/lang/String;
+	public final fun getReview-cBHSnN4 ()Ljava/lang/String;
+	public final fun getStoreAction-cBHSnN4 ()Ljava/lang/String;
+	public final fun of-2n5_Hl4 (Ldev/pingfront/model/Card;)Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/ChatPresenter {
+	public abstract fun dismissChat ()V
+	public fun openLink (Ljava/lang/String;)Z
+	public abstract fun openUrl (Ljava/lang/String;)V
+	public abstract fun presentChat (Ldev/pingfront/look/ChatTopic;)V
+	public abstract fun presentSimpleReport (Ljava/lang/String;)V
+}
+
+public final class dev/pingfront/ChatPresenter$DefaultImpls {
+	public static fun openLink (Ldev/pingfront/ChatPresenter;Ljava/lang/String;)Z
+}
+
+public final class dev/pingfront/ConfigurationProblem {
+	public final fun component1 ()Ldev/pingfront/ConfigurationProblem$Kind;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Z
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDisablesSdk ()Z
+	public final fun getKind ()Ldev/pingfront/ConfigurationProblem$Kind;
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/ConfigurationProblem$Kind {
+}
+
+public final class dev/pingfront/ConfigurationProblem$Kind$AppPaused : dev/pingfront/ConfigurationProblem$Kind {
+	public static final field INSTANCE Ldev/pingfront/ConfigurationProblem$Kind$AppPaused;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ConfigurationProblem$Kind$InvalidKey : dev/pingfront/ConfigurationProblem$Kind {
+	public final fun component1 ()Ldev/pingfront/KeyProblem;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getProblem ()Ldev/pingfront/KeyProblem;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ConfigurationProblem$Kind$MissingKey : dev/pingfront/ConfigurationProblem$Kind {
+	public static final field INSTANCE Ldev/pingfront/ConfigurationProblem$Kind$MissingKey;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ConfigurationProblem$Kind$Option : dev/pingfront/ConfigurationProblem$Kind {
+	public static final field INSTANCE Ldev/pingfront/ConfigurationProblem$Kind$Option;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ConfigurationProblem$Kind$UnknownKey : dev/pingfront/ConfigurationProblem$Kind {
+	public static final field INSTANCE Ldev/pingfront/ConfigurationProblem$Kind$UnknownKey;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/EntitlementSource {
+	public abstract fun entitlementUpdates ()Lkotlinx/coroutines/flow/Flow;
+}
+
+public final class dev/pingfront/ErrorCode {
+	public static final field Companion Ldev/pingfront/ErrorCode$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Ldev/pingfront/ErrorCode;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getRaw ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ErrorCode$Companion {
+	public final fun getAppPaused-k7wmnEA ()Ljava/lang/String;
+	public final fun getBlocked-k7wmnEA ()Ljava/lang/String;
+	public final fun getConflict-k7wmnEA ()Ljava/lang/String;
+	public final fun getForbidden-k7wmnEA ()Ljava/lang/String;
+	public final fun getIdentityUserMismatch-k7wmnEA ()Ljava/lang/String;
+	public final fun getInvalidAppKey-k7wmnEA ()Ljava/lang/String;
+	public final fun getInvalidRequest-k7wmnEA ()Ljava/lang/String;
+	public final fun getNotFound-k7wmnEA ()Ljava/lang/String;
+	public final fun getRateLimited-k7wmnEA ()Ljava/lang/String;
+	public final fun getSessionRevoked-k7wmnEA ()Ljava/lang/String;
+	public final fun getThreadReset-k7wmnEA ()Ljava/lang/String;
+	public final fun getTooLarge-k7wmnEA ()Ljava/lang/String;
+	public final fun getUnauthorized-k7wmnEA ()Ljava/lang/String;
+	public final fun getUnavailable-k7wmnEA ()Ljava/lang/String;
+	public final fun getUploadIncomplete-k7wmnEA ()Ljava/lang/String;
+	public final fun getVerificationRequired-k7wmnEA ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/FieldError {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMessage ()Ljava/lang/String;
+	public final fun getPath ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/IdentityToken {
+	public static final synthetic fun box-impl (Ljava/lang/String;)Ldev/pingfront/IdentityToken;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getJwt ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public abstract interface annotation class dev/pingfront/InternalPingFrontApi : java/lang/annotation/Annotation {
+}
+
+public final class dev/pingfront/KeyProblem : java/lang/Enum {
+	public static final field BadCharacters Ldev/pingfront/KeyProblem;
+	public static final field ChecksumMismatch Ldev/pingfront/KeyProblem;
+	public static final field Empty Ldev/pingfront/KeyProblem;
+	public static final field Whitespace Ldev/pingfront/KeyProblem;
+	public static final field WrongLength Ldev/pingfront/KeyProblem;
+	public static final field WrongPrefix Ldev/pingfront/KeyProblem;
+	public final fun getCode ()Ljava/lang/String;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public final fun getMessage ()Ljava/lang/String;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/KeyProblem;
+	public static fun values ()[Ldev/pingfront/KeyProblem;
+}
+
+public final class dev/pingfront/LogEntry {
+	public final fun component1 ()Ldev/pingfront/LogLevel;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCategory ()Ljava/lang/String;
+	public final fun getLevel ()Ldev/pingfront/LogLevel;
+	public final fun getMessage ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/LogHandler {
+	public abstract fun log (Ldev/pingfront/LogEntry;)V
+}
+
+public final class dev/pingfront/LogLevel : java/lang/Enum {
+	public static final field Debug Ldev/pingfront/LogLevel;
+	public static final field Error Ldev/pingfront/LogLevel;
+	public static final field Info Ldev/pingfront/LogLevel;
+	public static final field Off Ldev/pingfront/LogLevel;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/LogLevel;
+	public static fun values ()[Ldev/pingfront/LogLevel;
+}
+
+public final class dev/pingfront/ModuleContext {
+	public final fun addEntitlementSource (Ldev/pingfront/EntitlementSource;)V
+	public final fun addOfferSource (Ldev/pingfront/OfferSource;)V
+	public final fun currentActivity ()Landroid/app/Activity;
+	public final fun getApplicationContext ()Landroid/content/Context;
+	public final fun getIoDispatcher ()Lkotlinx/coroutines/CoroutineDispatcher;
+	public final fun getMainDispatcher ()Lkotlinx/coroutines/CoroutineDispatcher;
+	public final fun getScope ()Lkotlinx/coroutines/CoroutineScope;
+	public final fun setChatPresenter (Ldev/pingfront/ChatPresenter;)V
+	public final fun setHostApp (Ljava/lang/String;Ldev/pingfront/model/PingFrontColor;[B)V
+	public final fun setOfferHandler (Ldev/pingfront/OfferHandler;)V
+	public final fun setOfferPricer (Ldev/pingfront/OfferPricer;)V
+	public final fun setPaymentFixer (Ldev/pingfront/PaymentFixer;)V
+	public final fun setPurchaseRefresher (Ldev/pingfront/PurchaseRefresher;)V
+	public final fun setPushTokenSource (Ldev/pingfront/PushTokenSource;)V
+	public final fun setReportContextProvider (Ldev/pingfront/ReportContextProvider;)V
+	public final fun setReportPresenter (Ldev/pingfront/ReportPresenter;)V
+	public final fun setReviewRequester (Ldev/pingfront/ReviewRequester;)V
+}
+
+public abstract interface class dev/pingfront/MomentResult {
+}
+
+public final class dev/pingfront/MomentResult$Delivered : dev/pingfront/MomentResult {
+	public static final field INSTANCE Ldev/pingfront/MomentResult$Delivered;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/MomentResult$Failed : dev/pingfront/MomentResult {
+	public final fun component1 ()Ldev/pingfront/PingFrontException;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getError ()Ldev/pingfront/PingFrontException;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/MomentResult$HeldOut : dev/pingfront/MomentResult {
+	public static final field INSTANCE Ldev/pingfront/MomentResult$HeldOut;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/MomentResult$Ignored : dev/pingfront/MomentResult {
+	public static final field INSTANCE Ldev/pingfront/MomentResult$Ignored;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/MomentResult$InvalidName : dev/pingfront/MomentResult {
+	public static final field INSTANCE Ldev/pingfront/MomentResult$InvalidName;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/MomentResult$NotListened : dev/pingfront/MomentResult {
+	public static final field INSTANCE Ldev/pingfront/MomentResult$NotListened;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/MomentResult$OpenRequested : dev/pingfront/MomentResult {
+	public final fun component1 ()Z
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getPresented ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/MomentResult$Scheduled : dev/pingfront/MomentResult {
+	public static final field INSTANCE Ldev/pingfront/MomentResult$Scheduled;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/OfferFailure {
+	public static final field Companion Ldev/pingfront/OfferFailure$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Ldev/pingfront/OfferFailure;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getCode ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/OfferFailure$Companion {
+	public final fun getBillingUnavailable-iqJIcpE ()Ljava/lang/String;
+	public final fun getInProgress-iqJIcpE ()Ljava/lang/String;
+	public final fun getNoActivity-iqJIcpE ()Ljava/lang/String;
+	public final fun getProductNotFound-iqJIcpE ()Ljava/lang/String;
+	public final fun getStoreError-iqJIcpE ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/OfferHandler {
+	public abstract fun handle (Ldev/pingfront/OfferRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class dev/pingfront/OfferOutcome {
+}
+
+public final class dev/pingfront/OfferOutcome$Cancelled : dev/pingfront/OfferOutcome {
+	public static final field INSTANCE Ldev/pingfront/OfferOutcome$Cancelled;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/OfferOutcome$Failed : dev/pingfront/OfferOutcome {
+	public synthetic fun <init> (Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy-CVrwGZw (Ljava/lang/String;)Ldev/pingfront/OfferOutcome$Failed;
+	public static synthetic fun copy-CVrwGZw$default (Ldev/pingfront/OfferOutcome$Failed;Ljava/lang/String;ILjava/lang/Object;)Ldev/pingfront/OfferOutcome$Failed;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getFailure-iqJIcpE ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/OfferOutcome$Pending : dev/pingfront/OfferOutcome {
+	public static final field INSTANCE Ldev/pingfront/OfferOutcome$Pending;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/OfferOutcome$Purchased : dev/pingfront/OfferOutcome {
+	public static final field INSTANCE Ldev/pingfront/OfferOutcome$Purchased;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/OfferOutcome$Unavailable : dev/pingfront/OfferOutcome {
+	public static final field INSTANCE Ldev/pingfront/OfferOutcome$Unavailable;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/OfferPrice {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/pingfront/PlanChange;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/pingfront/PlanChange;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/pingfront/PlanChange;)Ldev/pingfront/OfferPrice;
+	public static synthetic fun copy$default (Ldev/pingfront/OfferPrice;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ldev/pingfront/PlanChange;ILjava/lang/Object;)Ldev/pingfront/OfferPrice;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getChange ()Ldev/pingfront/PlanChange;
+	public final fun getPeriod ()Ljava/lang/String;
+	public final fun getPhases ()Ljava/util/List;
+	public final fun getPrice ()Ljava/lang/String;
+	public final fun getRegularPrice ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/OfferPricer {
+	public abstract fun price (Ldev/pingfront/model/StoreOffer;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public fun price (Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/pingfront/OfferPricer$DefaultImpls {
+	public static fun price (Ldev/pingfront/OfferPricer;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/pingfront/OfferRequest {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ldev/pingfront/model/OfferSlot;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ldev/pingfront/model/StoreOffer;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCardId ()Ljava/lang/String;
+	public final fun getMessageId ()Ljava/lang/String;
+	public final fun getOfferId ()Ljava/lang/String;
+	public final fun getSlot ()Ldev/pingfront/model/OfferSlot;
+	public final fun getStoreOffer ()Ldev/pingfront/model/StoreOffer;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/OfferSource {
+	public abstract fun offers (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/pingfront/OpenedCard {
+	public final fun component1-cBHSnN4 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCardId ()Ljava/lang/String;
+	public final fun getKind-cBHSnN4 ()Ljava/lang/String;
+	public final fun getMessageId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PaymentFix : java/lang/Enum {
+	public static final field Dismissed Ldev/pingfront/PaymentFix;
+	public static final field NothingToShow Ldev/pingfront/PaymentFix;
+	public static final field Updated Ldev/pingfront/PaymentFix;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/PaymentFix;
+	public static fun values ()[Ldev/pingfront/PaymentFix;
+}
+
+public abstract interface class dev/pingfront/PaymentFixer {
+	public abstract fun showPaymentFix (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/pingfront/PingFront {
+	public static final field INSTANCE Ldev/pingfront/PingFront;
+	public static final fun closeChat ()V
+	public final fun closeChatAndWait (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static final fun configure (Landroid/content/Context;)V
+	public static final fun configure (Landroid/content/Context;Ljava/lang/String;)V
+	public static final fun configure (Landroid/content/Context;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+	public static synthetic fun configure$default (Landroid/content/Context;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)V
+	public final fun eraseMyData (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun exportMyData (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun getConfigurationProblem ()Lkotlinx/coroutines/flow/StateFlow;
+	public final fun getConversation ()Ldev/pingfront/conversation/Conversation;
+	public final fun getEvents ()Lkotlinx/coroutines/flow/Flow;
+	public final fun getLanguage ()Ljava/lang/String;
+	public final fun getLook ()Lkotlinx/coroutines/flow/StateFlow;
+	public final fun getOnLink ()Lkotlin/jvm/functions/Function2;
+	public final fun getOnOffer ()Lkotlin/jvm/functions/Function1;
+	public final fun getOnScreen ()Lkotlin/jvm/functions/Function2;
+	public final fun getPerson ()Lkotlinx/coroutines/flow/StateFlow;
+	public final fun getTeamActions ()Lkotlinx/coroutines/flow/Flow;
+	public final fun getUnreadCount ()Lkotlinx/coroutines/flow/StateFlow;
+	public final fun getUsesAppBadge ()Z
+	public static final fun handle (Landroid/content/Intent;)Z
+	public static final fun handle (Landroid/net/Uri;)Z
+	public static final fun handlePush (Ljava/util/Map;)Z
+	public static final fun identify (Ljava/lang/String;)V
+	public static final fun identify (Ljava/lang/String;Ljava/lang/String;)V
+	public static final fun identify (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public static synthetic fun identify$default (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
+	public static final fun identifyWithToken (Ljava/lang/String;)V
+	public final fun isChatVisible ()Lkotlinx/coroutines/flow/StateFlow;
+	public final fun isConfigured ()Lkotlinx/coroutines/flow/StateFlow;
+	public static final fun isPingFrontPush (Ljava/util/Map;)Z
+	public final fun isTestDevice ()Lkotlinx/coroutines/flow/StateFlow;
+	public static final fun logout ()V
+	public final fun moment (Ljava/lang/String;Ljava/util/Map;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun moment$default (Ldev/pingfront/PingFront;Ljava/lang/String;Ljava/util/Map;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public static final fun openChat ()V
+	public static final fun openChat (Ldev/pingfront/look/ChatTopic;)V
+	public static synthetic fun openChat$default (Ldev/pingfront/look/ChatTopic;ILjava/lang/Object;)V
+	public static final fun openPush (Ljava/util/Map;)Z
+	public static final fun openReport ()V
+	public static final fun openReport (Ljava/lang/String;)V
+	public static synthetic fun openReport$default (Ljava/lang/String;ILjava/lang/Object;)V
+	public final fun prepare (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun registerScreens (Ljava/util/List;)V
+	public final fun reportBug (Ljava/lang/String;[BLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static synthetic fun reportBug$default (Ldev/pingfront/PingFront;Ljava/lang/String;[BLkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+	public final fun selfCheck (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public static final fun setEntitlement (Ldev/pingfront/model/Entitlement;)V
+	public final fun setLanguage (Ljava/lang/String;)V
+	public static final fun setOffers (Ljava/util/List;)V
+	public final fun setOnLink (Lkotlin/jvm/functions/Function2;)V
+	public final fun setOnOffer (Lkotlin/jvm/functions/Function1;)V
+	public final fun setOnScreen (Lkotlin/jvm/functions/Function2;)V
+	public static final fun setPushToken (Ljava/lang/String;)V
+	public static final fun setTraits (Ljava/util/Map;)V
+	public final fun storeAccountToken (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/pingfront/PingFrontConfig {
+	public fun <init> ()V
+	public final fun appearance (Lkotlin/jvm/functions/Function1;)V
+	public final fun getAppearance ()Ldev/pingfront/look/ChatAppearance;
+	public final fun getBaseUrl ()Ljava/lang/String;
+	public final fun getLanguage ()Ljava/lang/String;
+	public final fun getLogHandler ()Ldev/pingfront/LogHandler;
+	public final fun getLogLevel ()Ldev/pingfront/LogLevel;
+	public final fun getModules ()Ljava/util/List;
+	public final fun getPresentsChatForMoments ()Z
+	public final fun setBaseUrl (Ljava/lang/String;)V
+	public final fun setLanguage (Ljava/lang/String;)V
+	public final fun setLogHandler (Ldev/pingfront/LogHandler;)V
+	public final fun setLogLevel (Ldev/pingfront/LogLevel;)V
+	public final fun setPresentsChatForMoments (Z)V
+	public final fun topics (Ljava/util/List;)V
+	public final fun topics ([Ldev/pingfront/look/ChatTopic;)V
+	public final fun use ([Ldev/pingfront/PingFrontModule;)V
+}
+
+public abstract interface annotation class dev/pingfront/PingFrontDsl : java/lang/annotation/Annotation {
+}
+
+public abstract interface class dev/pingfront/PingFrontEvent {
+}
+
+public final class dev/pingfront/PingFrontEvent$CardOpened : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()Ldev/pingfront/OpenedCard;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCard ()Ldev/pingfront/OpenedCard;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$ChatClosed : dev/pingfront/PingFrontEvent {
+	public static final field INSTANCE Ldev/pingfront/PingFrontEvent$ChatClosed;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$ChatOpened : dev/pingfront/PingFrontEvent {
+	public static final field INSTANCE Ldev/pingfront/PingFrontEvent$ChatOpened;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$ConfigurationProblemFound : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()Ldev/pingfront/ConfigurationProblem;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getProblem ()Ldev/pingfront/ConfigurationProblem;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$IdentityProblemReported : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()Ldev/pingfront/model/IdentityProblem;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getProblem ()Ldev/pingfront/model/IdentityProblem;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$LookChanged : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()I
+	public final fun component2 ()Z
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDraft ()Z
+	public final fun getRevision ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$MessageReceived : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()Ldev/pingfront/ReceivedMessage;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMessage ()Ldev/pingfront/ReceivedMessage;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$MessageSent : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()Ldev/pingfront/SentMessage;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMessage ()Ldev/pingfront/SentMessage;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$OfferCompleted : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()Ldev/pingfront/OfferRequest;
+	public final fun component2 ()Ldev/pingfront/OfferOutcome;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getOutcome ()Ldev/pingfront/OfferOutcome;
+	public final fun getRequest ()Ldev/pingfront/OfferRequest;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$OfferRequested : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()Ldev/pingfront/OfferRequest;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getRequest ()Ldev/pingfront/OfferRequest;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$ReportSent : dev/pingfront/PingFrontEvent {
+	public static final field INSTANCE Ldev/pingfront/PingFrontEvent$ReportSent;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$SessionRevoked : dev/pingfront/PingFrontEvent {
+	public static final field INSTANCE Ldev/pingfront/PingFrontEvent$SessionRevoked;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$SessionStarted : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()Ldev/pingfront/model/PersonSummary;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getPerson ()Ldev/pingfront/model/PersonSummary;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontEvent$UnreadChanged : dev/pingfront/PingFrontEvent {
+	public final fun component1 ()I
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCount ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract class dev/pingfront/PingFrontException : java/lang/Exception {
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getCode-7ZUJ2DI ()Ljava/lang/String;
+	public final fun getLogDescription ()Ljava/lang/String;
+	public final fun isOffline ()Z
+	public final fun isTransient ()Z
+}
+
+public final class dev/pingfront/PingFrontException$CoolingDown : dev/pingfront/PingFrontException {
+	public synthetic fun <init> (Ljava/lang/String;JLkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getRemaining-UwyO8pc ()J
+	public final fun getScope-8F7fVxE ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/PingFrontException$InvalidInput : dev/pingfront/PingFrontException {
+	public fun <init> (Ljava/lang/String;)V
+}
+
+public final class dev/pingfront/PingFrontException$InvalidKey : dev/pingfront/PingFrontException {
+	public fun <init> (Ldev/pingfront/KeyProblem;)V
+	public final fun getProblem ()Ldev/pingfront/KeyProblem;
+}
+
+public final class dev/pingfront/PingFrontException$InvalidResponse : dev/pingfront/PingFrontException {
+	public fun <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+}
+
+public final class dev/pingfront/PingFrontException$Network : dev/pingfront/PingFrontException {
+	public fun <init> (ZLjava/lang/Throwable;)V
+	public synthetic fun <init> (ZLjava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun getOffline ()Z
+}
+
+public final class dev/pingfront/PingFrontException$NotConfigured : dev/pingfront/PingFrontException {
+	public fun <init> ()V
+}
+
+public final class dev/pingfront/PingFrontException$Server : dev/pingfront/PingFrontException {
+	public fun <init> (Ldev/pingfront/ServerError;)V
+	public final fun getError ()Ldev/pingfront/ServerError;
+}
+
+public final class dev/pingfront/PingFrontException$SessionChanged : dev/pingfront/PingFrontException {
+	public fun <init> ()V
+}
+
+public final class dev/pingfront/PingFrontException$StorageUnavailable : dev/pingfront/PingFrontException {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/Throwable;)V
+	public synthetic fun <init> (Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+}
+
+public final class dev/pingfront/PingFrontInstance$Companion {
+	public final fun detached ()Ldev/pingfront/PingFrontInstance;
+}
+
+public abstract class dev/pingfront/PingFrontModule {
+	public fun <init> (Ljava/lang/String;)V
+	public final fun getId ()Ljava/lang/String;
+	public abstract fun install (Ldev/pingfront/ModuleContext;)V
+}
+
+public final class dev/pingfront/PlanChange : java/lang/Enum {
+	public static final field AtRenewal Ldev/pingfront/PlanChange;
+	public static final field Now Ldev/pingfront/PlanChange;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/PlanChange;
+	public static fun values ()[Ldev/pingfront/PlanChange;
+}
+
+public final class dev/pingfront/PricePhase {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Z)V
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Z)Ldev/pingfront/PricePhase;
+	public static synthetic fun copy$default (Ldev/pingfront/PricePhase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZILjava/lang/Object;)Ldev/pingfront/PricePhase;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCycles ()Ljava/lang/Integer;
+	public final fun getFree ()Z
+	public final fun getPeriod ()Ljava/lang/String;
+	public final fun getPrice ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/PurchaseRefresher {
+	public abstract fun refresh (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/pingfront/PushPayload$Companion {
+	public final fun parse (Ljava/util/Map;)Ldev/pingfront/PushPayload;
+}
+
+public final class dev/pingfront/PushPayload$Companion$Keys {
+	public static final field APP_ID Ljava/lang/String;
+	public static final field BODY Ljava/lang/String;
+	public static final field INSTANCE Ldev/pingfront/PushPayload$Companion$Keys;
+	public static final field KIND Ljava/lang/String;
+	public static final field MESSAGE_ID Ljava/lang/String;
+	public static final field THREAD_ID Ljava/lang/String;
+	public static final field TITLE Ljava/lang/String;
+	public static final field UNREAD Ljava/lang/String;
+	public static final field VERSION Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/PushTokenSource {
+	public abstract fun currentToken (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/pingfront/RateScope {
+	public static final field Companion Ldev/pingfront/RateScope$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Ldev/pingfront/RateScope;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getCode ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/RateScope$Companion {
+	public final fun getExports-8F7fVxE ()Ljava/lang/String;
+	public final fun getLive-8F7fVxE ()Ljava/lang/String;
+	public final fun getMessages-8F7fVxE ()Ljava/lang/String;
+	public final fun getMoments-8F7fVxE ()Ljava/lang/String;
+	public final fun getSessions-8F7fVxE ()Ljava/lang/String;
+	public final fun getUploads-8F7fVxE ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ReceivedMessage {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Z
+	public final fun component5 ()Z
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAuthorName ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getPreview ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun isAi ()Z
+	public final fun isPing ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ReportContext {
+	public fun <init> ()V
+	public fun <init> (Ljava/lang/String;Ljava/util/Map;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/util/Map;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy (Ljava/lang/String;Ljava/util/Map;)Ldev/pingfront/ReportContext;
+	public static synthetic fun copy$default (Ldev/pingfront/ReportContext;Ljava/lang/String;Ljava/util/Map;ILjava/lang/Object;)Ldev/pingfront/ReportContext;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getLogTail ()Ljava/lang/String;
+	public final fun getState ()Ljava/util/Map;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/ReportContextProvider {
+	public abstract fun reportContext (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public abstract interface class dev/pingfront/ReportPresenter {
+	public abstract fun presentReport (Ljava/lang/String;)V
+}
+
+public abstract interface class dev/pingfront/ReviewRequester {
+	public abstract fun requestReview (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+}
+
+public final class dev/pingfront/SentMessage {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun component4 ()Z
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getPhotoCount ()I
+	public final fun getRepliesToPing ()Z
+	public final fun getTextLength ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/ServerError {
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/net/URI;Lkotlin/time/Duration;Ljava/lang/String;Ljava/util/List;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (ILjava/lang/String;Ljava/lang/String;Ljava/net/URI;Lkotlin/time/Duration;Ljava/lang/String;Ljava/util/List;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy-mEulLIE (ILjava/lang/String;Ljava/lang/String;Ljava/net/URI;Lkotlin/time/Duration;Ljava/lang/String;Ljava/util/List;)Ldev/pingfront/ServerError;
+	public static synthetic fun copy-mEulLIE$default (Ldev/pingfront/ServerError;ILjava/lang/String;Ljava/lang/String;Ljava/net/URI;Lkotlin/time/Duration;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)Ldev/pingfront/ServerError;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCode-k7wmnEA ()Ljava/lang/String;
+	public final fun getDocs ()Ljava/net/URI;
+	public final fun getFields ()Ljava/util/List;
+	public final fun getMessage ()Ljava/lang/String;
+	public final fun getRetryAfter-FghU774 ()Lkotlin/time/Duration;
+	public final fun getScope-jNW1q1Y ()Ljava/lang/String;
+	public final fun getStatus ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/SetupCheckResult {
+	public static final field Companion Ldev/pingfront/SetupCheckResult$Companion;
+	public final fun component1 ()Z
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAdvice ()Ljava/lang/String;
+	public final fun getCode ()Ljava/lang/String;
+	public final fun getLine ()Ljava/lang/String;
+	public final fun getPassed ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/SetupCheckResult$Companion {
+	public final fun getPass ()Ldev/pingfront/SetupCheckResult;
+}
+
+public final class dev/pingfront/StoreMomentProps {
+	public static final field Companion Ldev/pingfront/StoreMomentProps$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/pingfront/StoreMomentProps;
+	public static synthetic fun copy$default (Ldev/pingfront/StoreMomentProps;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/pingfront/StoreMomentProps;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCurrency ()Ljava/lang/String;
+	public final fun getOrderId ()Ljava/lang/String;
+	public final fun getOriginalTransactionId ()Ljava/lang/String;
+	public final fun getPrice ()Ljava/lang/String;
+	public final fun getProductId ()Ljava/lang/String;
+	public final fun getPurchaseToken ()Ljava/lang/String;
+	public final fun getSignedTransaction ()Ljava/lang/String;
+	public final fun getTransactionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/StoreMomentProps$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/StoreMomentProps$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/StoreMomentProps;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/StoreMomentProps;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/StoreMomentProps$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/StorePurchases {
+	public fun <init> (Ldev/pingfront/model/Entitlement;Ljava/util/Set;)V
+	public synthetic fun <init> (Ldev/pingfront/model/Entitlement;Ljava/util/Set;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy (Ldev/pingfront/model/Entitlement;Ljava/util/Set;)Ldev/pingfront/StorePurchases;
+	public static synthetic fun copy$default (Ldev/pingfront/StorePurchases;Ldev/pingfront/model/Entitlement;Ljava/util/Set;ILjava/lang/Object;)Ldev/pingfront/StorePurchases;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEntitlement ()Ldev/pingfront/model/Entitlement;
+	public final fun getPendingProducts ()Ljava/util/Set;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/TeamAction {
+	public final fun complete ()V
+	public final fun fail (Ljava/lang/String;)V
+	public final fun getAckRequired ()Z
+	public final fun getActionId ()Ljava/lang/String;
+	public final fun getCreatedAt ()Ljava/time/Instant;
+	public final fun getDays ()Ljava/lang/Integer;
+	public final fun getExpiresAt ()Ljava/time/Instant;
+	public final fun getFields ()Ljava/util/Map;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public final fun getUntil ()Ljava/time/Instant;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/Conversation {
+	public final fun choose (Ldev/pingfront/model/ChoiceOption;Ldev/pingfront/model/Card$Choices;Ldev/pingfront/model/Message;)V
+	public final fun consumeInsertion ()V
+	public final fun cooldownRemaining-wPPGmUM (Ljava/lang/String;)Lkotlin/time/Duration;
+	public final fun discard (Ldev/pingfront/conversation/PendingMessage;)V
+	public final fun getComposerInsertion ()Lkotlinx/coroutines/flow/StateFlow;
+	public final fun getDraft ()Lkotlinx/coroutines/flow/StateFlow;
+	public final fun getState ()Lkotlinx/coroutines/flow/StateFlow;
+	public final fun loadOlder ()V
+	public final fun markRead ()V
+	public final fun open (Ldev/pingfront/model/Card;Ldev/pingfront/model/Message;)V
+	public final fun photoData (Ldev/pingfront/conversation/PendingMessage$Photo;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun rate (ILdev/pingfront/model/Card$Rating;Ldev/pingfront/model/Message;)V
+	public final fun refreshedUrl (Ldev/pingfront/model/MessagePart$Image;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun reload (Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+	public final fun retry (Ldev/pingfront/conversation/PendingMessage;)V
+	public final fun send (Ljava/lang/String;Ljava/util/List;)V
+	public static synthetic fun send$default (Ldev/pingfront/conversation/Conversation;Ljava/lang/String;Ljava/util/List;ILjava/lang/Object;)V
+	public final fun setTyping (Z)V
+	public final fun updateDraft (Ljava/lang/String;)V
+}
+
+public abstract interface class dev/pingfront/conversation/ConversationPhase {
+}
+
+public final class dev/pingfront/conversation/ConversationPhase$Failed : dev/pingfront/conversation/ConversationPhase {
+	public final fun component1 ()Z
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getOffline ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/ConversationPhase$Idle : dev/pingfront/conversation/ConversationPhase {
+	public static final field INSTANCE Ldev/pingfront/conversation/ConversationPhase$Idle;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/ConversationPhase$Loading : dev/pingfront/conversation/ConversationPhase {
+	public static final field INSTANCE Ldev/pingfront/conversation/ConversationPhase$Loading;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/ConversationPhase$Ready : dev/pingfront/conversation/ConversationPhase {
+	public static final field INSTANCE Ldev/pingfront/conversation/ConversationPhase$Ready;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/ConversationState {
+	public fun <init> ()V
+	public final fun component1 ()Ldev/pingfront/conversation/ConversationPhase;
+	public final fun component10 ()Ldev/pingfront/conversation/TypingIndicator;
+	public final fun component11 ()Ldev/pingfront/conversation/LiveState;
+	public final fun component13 ()I
+	public final fun component15 ()Ljava/util/Map;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Ljava/util/List;
+	public final fun component4 ()Z
+	public final fun component5 ()Z
+	public final fun component6 ()Ljava/util/List;
+	public final fun component7 ()Ljava/lang/String;
+	public final fun component8 ()Ldev/pingfront/model/SendPolicy;
+	public final fun component9 ()Ldev/pingfront/model/ThreadStatus;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCoolingDown ()Ljava/util/Set;
+	public final fun getHasOlder ()Z
+	public final fun getLive ()Ldev/pingfront/conversation/LiveState;
+	public final fun getMessages ()Ljava/util/List;
+	public final fun getPending ()Ljava/util/List;
+	public final fun getPhase ()Ldev/pingfront/conversation/ConversationPhase;
+	public final fun getPolicy ()Ldev/pingfront/model/SendPolicy;
+	public final fun getReplyExpectation ()Ljava/lang/String;
+	public final fun getStatus ()Ldev/pingfront/model/ThreadStatus;
+	public final fun getStoreReceipts ()Ljava/util/Map;
+	public final fun getTeam ()Ljava/util/List;
+	public final fun getTeamReadSeq ()I
+	public final fun getTimeline ()Ljava/util/List;
+	public final fun getTyping ()Ldev/pingfront/conversation/TypingIndicator;
+	public fun hashCode ()I
+	public final fun isEmpty ()Z
+	public final fun isLoadingOlder ()Z
+	public final fun isOffline ()Z
+	public final fun isServerUnreachable ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/conversation/LiveState {
+}
+
+public final class dev/pingfront/conversation/LiveState$Connecting : dev/pingfront/conversation/LiveState {
+	public static final field INSTANCE Ldev/pingfront/conversation/LiveState$Connecting;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/LiveState$Live : dev/pingfront/conversation/LiveState {
+	public static final field INSTANCE Ldev/pingfront/conversation/LiveState$Live;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/LiveState$Stopped : dev/pingfront/conversation/LiveState {
+	public static final field INSTANCE Ldev/pingfront/conversation/LiveState$Stopped;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/LiveState$Waiting : dev/pingfront/conversation/LiveState {
+	public final fun component1-UwyO8pc ()J
+	public final fun component2 ()Z
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getOffline ()Z
+	public final fun getRetryIn-UwyO8pc ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/PendingMessage {
+	public static final field Companion Ldev/pingfront/conversation/PendingMessage$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/util/List;
+	public final fun component4 ()Ljava/time/Instant;
+	public final fun component5 ()I
+	public final fun component6 ()Ldev/pingfront/conversation/PendingMessage$State;
+	public final fun component7 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAttempts ()I
+	public final fun getClientId ()Ljava/lang/String;
+	public final fun getCreatedAt ()Ljava/time/Instant;
+	public final fun getFailure ()Ljava/lang/String;
+	public final fun getHeldFor-rCcg6WU ()Ljava/lang/String;
+	public final fun getPhotos ()Ljava/util/List;
+	public final fun getState ()Ldev/pingfront/conversation/PendingMessage$State;
+	public final fun getText ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun isHeld ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/conversation/PendingMessage$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/conversation/PendingMessage$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/conversation/PendingMessage;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/conversation/PendingMessage;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/conversation/PendingMessage$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/conversation/PendingMessage$Photo {
+	public static final field Companion Ldev/pingfront/conversation/PendingMessage$Photo$Companion;
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun component4 ()I
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAttachmentId ()Ljava/lang/String;
+	public final fun getBytes ()I
+	public final fun getHeight ()I
+	public final fun getSha256 ()Ljava/lang/String;
+	public final fun getWidth ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/conversation/PendingMessage$Photo$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/conversation/PendingMessage$Photo$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/conversation/PendingMessage$Photo;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/conversation/PendingMessage$Photo;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/conversation/PendingMessage$Photo$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/conversation/PendingMessage$State : java/lang/Enum {
+	public static final field Failed Ldev/pingfront/conversation/PendingMessage$State;
+	public static final field Queued Ldev/pingfront/conversation/PendingMessage$State;
+	public static final field Sending Ldev/pingfront/conversation/PendingMessage$State;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/conversation/PendingMessage$State;
+	public static fun values ()[Ldev/pingfront/conversation/PendingMessage$State;
+}
+
+public final class dev/pingfront/conversation/StoreReceipt : java/lang/Enum {
+	public static final field NothingToRestore Ldev/pingfront/conversation/StoreReceipt;
+	public static final field Restored Ldev/pingfront/conversation/StoreReceipt;
+	public static final field Unavailable Ldev/pingfront/conversation/StoreReceipt;
+	public static final field UpToDate Ldev/pingfront/conversation/StoreReceipt;
+	public static final field Updated Ldev/pingfront/conversation/StoreReceipt;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/conversation/StoreReceipt;
+	public static fun values ()[Ldev/pingfront/conversation/StoreReceipt;
+}
+
+public final class dev/pingfront/conversation/TimelineItem {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component10 ()Z
+	public final fun component2 ()Ldev/pingfront/conversation/TimelineItem$Content;
+	public final fun component3 ()Ldev/pingfront/conversation/TimelineItem$Side;
+	public final fun component4 ()Z
+	public final fun component5 ()Z
+	public final fun component6 ()Z
+	public final fun component7 ()Z
+	public final fun component8 ()Ljava/lang/String;
+	public final fun component9 ()Ljava/time/Instant;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAuthorName ()Ljava/lang/String;
+	public final fun getContent ()Ldev/pingfront/conversation/TimelineItem$Content;
+	public final fun getDate ()Ljava/time/Instant;
+	public final fun getEndsGroup ()Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getSide ()Ldev/pingfront/conversation/TimelineItem$Side;
+	public final fun getStartsGroup ()Z
+	public final fun getStartsPing ()Z
+	public final fun getStartsTimeSection ()Z
+	public fun hashCode ()I
+	public final fun isAi ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public abstract interface class dev/pingfront/conversation/TimelineItem$Content {
+}
+
+public final class dev/pingfront/conversation/TimelineItem$Content$Delivered : dev/pingfront/conversation/TimelineItem$Content {
+	public final fun component1 ()Ldev/pingfront/model/Message;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMessage ()Ldev/pingfront/model/Message;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/TimelineItem$Content$Pending : dev/pingfront/conversation/TimelineItem$Content {
+	public final fun component1 ()Ldev/pingfront/conversation/PendingMessage;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMessage ()Ldev/pingfront/conversation/PendingMessage;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/conversation/TimelineItem$Side : java/lang/Enum {
+	public static final field Person Ldev/pingfront/conversation/TimelineItem$Side;
+	public static final field System Ldev/pingfront/conversation/TimelineItem$Side;
+	public static final field Team Ldev/pingfront/conversation/TimelineItem$Side;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/conversation/TimelineItem$Side;
+	public static fun values ()[Ldev/pingfront/conversation/TimelineItem$Side;
+}
+
+public final class dev/pingfront/conversation/TypingIndicator {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Z
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public final fun isAi ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/internal/android/PingFrontInitializer : androidx/startup/Initializer {
+	public fun <init> ()V
+	public synthetic fun create (Landroid/content/Context;)Ljava/lang/Object;
+	public fun create (Landroid/content/Context;)V
+	public fun dependencies ()Ljava/util/List;
+}
+
+public final class dev/pingfront/look/ChatAppearance {
+	public fun <init> ()V
+	public final fun getAccent ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getAiName ()Ljava/lang/String;
+	public final fun getBackground ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getComposerPlaceholder ()Ljava/lang/String;
+	public final fun getCorners ()Ldev/pingfront/model/Corners;
+	public final fun getDensity ()Ldev/pingfront/model/Density;
+	public final fun getFont ()Ldev/pingfront/model/FontStyle;
+	public final fun getHeaderMemberId ()Ljava/lang/String;
+	public final fun getHeaderStyle ()Ldev/pingfront/model/HeaderStyle;
+	public final fun getHeaderTitle ()Ljava/lang/String;
+	public final fun getPhotos ()Ljava/lang/Boolean;
+	public final fun getReplyExpectation ()Ljava/lang/String;
+	public final fun getReports ()Ljava/lang/Boolean;
+	public final fun getScheme ()Ldev/pingfront/model/ColorScheme;
+	public final fun getShowAvatars ()Ljava/lang/Boolean;
+	public final fun getShowLocalTime ()Ljava/lang/Boolean;
+	public final fun getShowNames ()Ljava/lang/Boolean;
+	public final fun getShowReplyExpectation ()Ljava/lang/Boolean;
+	public final fun getShowWelcomeFaces ()Ljava/lang/Boolean;
+	public final fun getTeamBubble ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getTimestamps ()Ldev/pingfront/model/Timestamps;
+	public final fun getUseDynamicColor ()Z
+	public final fun getWelcomeBody ()Ljava/lang/String;
+	public final fun getWelcomeTitle ()Ljava/lang/String;
+	public final fun setAccent (Ldev/pingfront/model/PingFrontColor;)V
+	public final fun setAiName (Ljava/lang/String;)V
+	public final fun setBackground (Ldev/pingfront/model/PingFrontColor;)V
+	public final fun setComposerPlaceholder (Ljava/lang/String;)V
+	public final fun setCorners (Ldev/pingfront/model/Corners;)V
+	public final fun setDensity (Ldev/pingfront/model/Density;)V
+	public final fun setFont (Ldev/pingfront/model/FontStyle;)V
+	public final fun setHeaderMemberId (Ljava/lang/String;)V
+	public final fun setHeaderStyle (Ldev/pingfront/model/HeaderStyle;)V
+	public final fun setHeaderTitle (Ljava/lang/String;)V
+	public final fun setPhotos (Ljava/lang/Boolean;)V
+	public final fun setReplyExpectation (Ljava/lang/String;)V
+	public final fun setReports (Ljava/lang/Boolean;)V
+	public final fun setScheme (Ldev/pingfront/model/ColorScheme;)V
+	public final fun setShowAvatars (Ljava/lang/Boolean;)V
+	public final fun setShowLocalTime (Ljava/lang/Boolean;)V
+	public final fun setShowNames (Ljava/lang/Boolean;)V
+	public final fun setShowReplyExpectation (Ljava/lang/Boolean;)V
+	public final fun setShowWelcomeFaces (Ljava/lang/Boolean;)V
+	public final fun setTeamBubble (Ldev/pingfront/model/PingFrontColor;)V
+	public final fun setTimestamps (Ldev/pingfront/model/Timestamps;)V
+	public final fun setUseDynamicColor (Z)V
+	public final fun setWelcomeBody (Ljava/lang/String;)V
+	public final fun setWelcomeTitle (Ljava/lang/String;)V
+}
+
+public final class dev/pingfront/look/ChatTopic {
+	public static final field Companion Ldev/pingfront/look/ChatTopic$Companion;
+	public fun <init> (Ljava/lang/String;Ldev/pingfront/model/LocalizedText;Ldev/pingfront/model/TopicSymbol;Ldev/pingfront/model/LocalizedText;)V
+	public synthetic fun <init> (Ljava/lang/String;Ldev/pingfront/model/LocalizedText;Ldev/pingfront/model/TopicSymbol;Ldev/pingfront/model/LocalizedText;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/pingfront/model/TopicSymbol;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/pingfront/model/TopicSymbol;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy (Ljava/lang/String;Ldev/pingfront/model/LocalizedText;Ldev/pingfront/model/TopicSymbol;Ldev/pingfront/model/LocalizedText;)Ldev/pingfront/look/ChatTopic;
+	public static synthetic fun copy$default (Ldev/pingfront/look/ChatTopic;Ljava/lang/String;Ldev/pingfront/model/LocalizedText;Ldev/pingfront/model/TopicSymbol;Ldev/pingfront/model/LocalizedText;ILjava/lang/Object;)Ldev/pingfront/look/ChatTopic;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getLabel ()Ldev/pingfront/model/LocalizedText;
+	public final fun getPrefill ()Ldev/pingfront/model/LocalizedText;
+	public final fun getSymbol ()Ldev/pingfront/model/TopicSymbol;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/look/ChatTopic$Companion {
+	public final fun getAccount ()Ldev/pingfront/look/ChatTopic;
+	public final fun getBilling ()Ldev/pingfront/look/ChatTopic;
+	public final fun getBug ()Ldev/pingfront/look/ChatTopic;
+	public final fun getDefaults ()Ljava/util/List;
+	public final fun getFeedback ()Ldev/pingfront/look/ChatTopic;
+	public final fun getGift ()Ldev/pingfront/look/ChatTopic;
+	public final fun getIdea ()Ldev/pingfront/look/ChatTopic;
+	public final fun getPrivacy ()Ldev/pingfront/look/ChatTopic;
+	public final fun getQuestion ()Ldev/pingfront/look/ChatTopic;
+	public final fun getRestore ()Ldev/pingfront/look/ChatTopic;
+}
+
+public final class dev/pingfront/look/PngImage {
+	public fun <init> ([B)V
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBytes ()[B
+	public fun hashCode ()I
+}
+
+public final class dev/pingfront/look/ResolvedLook {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component10 ()Ldev/pingfront/model/ColorScheme;
+	public final fun component11 ()Ldev/pingfront/model/FontStyle;
+	public final fun component12 ()Ldev/pingfront/model/Corners;
+	public final fun component13 ()Ldev/pingfront/model/Density;
+	public final fun component14 ()Ldev/pingfront/model/HeaderStyle;
+	public final fun component15 ()Ljava/lang/String;
+	public final fun component16 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component17 ()Z
+	public final fun component18 ()Z
+	public final fun component19 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component20 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component21 ()Z
+	public final fun component22 ()Ljava/util/List;
+	public final fun component23 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component24 ()Z
+	public final fun component25 ()Z
+	public final fun component26 ()Z
+	public final fun component27 ()Z
+	public final fun component28 ()Ldev/pingfront/model/Timestamps;
+	public final fun component29 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component3 ()Ldev/pingfront/look/PngImage;
+	public final fun component30 ()Ljava/lang/String;
+	public final fun component31 ()Ljava/util/List;
+	public final fun component32 ()Z
+	public final fun component33 ()I
+	public final fun component4 ()Ldev/pingfront/model/PingFrontColor;
+	public final fun component5 ()Ldev/pingfront/model/PingFrontColor;
+	public final fun component6 ()Ldev/pingfront/model/PingFrontColor;
+	public final fun component7 ()Ldev/pingfront/model/PingFrontColor;
+	public final fun component8 ()Ldev/pingfront/model/PingFrontColor;
+	public final fun component9 ()Ldev/pingfront/model/PingFrontColor;
+	public static synthetic fun copy$pingfront_core$default (Ldev/pingfront/look/ResolvedLook;Ljava/lang/String;Ljava/lang/String;Ldev/pingfront/look/PngImage;Ldev/pingfront/model/PingFrontColor;Ldev/pingfront/model/PingFrontColor;Ldev/pingfront/model/PingFrontColor;Ldev/pingfront/model/PingFrontColor;Ldev/pingfront/model/PingFrontColor;Ldev/pingfront/model/PingFrontColor;Ldev/pingfront/model/ColorScheme;Ldev/pingfront/model/FontStyle;Ldev/pingfront/model/Corners;Ldev/pingfront/model/Density;Ldev/pingfront/model/HeaderStyle;Ljava/lang/String;Ldev/pingfront/model/LocalizedText;ZZLdev/pingfront/model/LocalizedText;Ldev/pingfront/model/LocalizedText;ZLjava/util/List;Ldev/pingfront/model/LocalizedText;ZZZZLdev/pingfront/model/Timestamps;Ldev/pingfront/model/LocalizedText;Ljava/lang/String;Ljava/util/List;ZIIILjava/lang/Object;)Ldev/pingfront/look/ResolvedLook;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAccent ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getAiName ()Ljava/lang/String;
+	public final fun getAppIcon ()Ldev/pingfront/look/PngImage;
+	public final fun getAppIconUrl ()Ljava/lang/String;
+	public final fun getAppName ()Ljava/lang/String;
+	public final fun getBackground ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getBubbleRadius ()I
+	public final fun getCardRadius ()I
+	public final fun getComposerPlaceholder ()Ldev/pingfront/model/LocalizedText;
+	public final fun getCorners ()Ldev/pingfront/model/Corners;
+	public final fun getDensity ()Ldev/pingfront/model/Density;
+	public final fun getFont ()Ldev/pingfront/model/FontStyle;
+	public final fun getHeaderMemberId ()Ljava/lang/String;
+	public final fun getHeaderStyle ()Ldev/pingfront/model/HeaderStyle;
+	public final fun getHeaderTitle ()Ldev/pingfront/model/LocalizedText;
+	public final fun getMuted ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getOnAccent ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getPhotos ()Z
+	public final fun getReplyExpectation ()Ldev/pingfront/model/LocalizedText;
+	public final fun getReports ()Z
+	public final fun getRevision ()I
+	public final fun getScheme ()Ldev/pingfront/model/ColorScheme;
+	public final fun getShowAvatars ()Z
+	public final fun getShowLocalTime ()Z
+	public final fun getShowNames ()Z
+	public final fun getShowReplyExpectation ()Z
+	public final fun getShowWelcomeFaces ()Z
+	public final fun getTeam ()Ljava/util/List;
+	public final fun getTeamBubble ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getText ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getTimestamps ()Ldev/pingfront/model/Timestamps;
+	public final fun getTopics ()Ljava/util/List;
+	public final fun getWelcomeBody ()Ldev/pingfront/model/LocalizedText;
+	public final fun getWelcomeTitle ()Ldev/pingfront/model/LocalizedText;
+	public fun hashCode ()I
+	public final fun isDraft ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/Author {
+	public static final field Companion Ldev/pingfront/model/Author$Companion;
+	public final fun component1 ()Ldev/pingfront/model/Author$Kind;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAvatarUrl ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getKind ()Ldev/pingfront/model/Author$Kind;
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Author$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Author$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Author;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Author;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Author$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Author$Kind : java/lang/Enum {
+	public static final field Ai Ldev/pingfront/model/Author$Kind;
+	public static final field Companion Ldev/pingfront/model/Author$Kind$Companion;
+	public static final field Person Ldev/pingfront/model/Author$Kind;
+	public static final field System Ldev/pingfront/model/Author$Kind;
+	public static final field Team Ldev/pingfront/model/Author$Kind;
+	public static final field Unknown Ldev/pingfront/model/Author$Kind;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/Author$Kind;
+	public static fun values ()[Ldev/pingfront/model/Author$Kind;
+}
+
+public final class dev/pingfront/model/Author$Kind$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class dev/pingfront/model/Card {
+	public static final field Companion Ldev/pingfront/model/Card$Companion;
+	public abstract fun getId ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/Card$Choices : dev/pingfront/model/Card {
+	public static final field Companion Ldev/pingfront/model/Card$Choices$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/List;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getId ()Ljava/lang/String;
+	public final fun getOptions ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Card$Choices$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Card$Choices$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Card$Choices;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Card$Choices;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Choices$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Link : dev/pingfront/model/Card {
+	public static final field Companion Ldev/pingfront/model/Card$Link$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ldev/pingfront/model/LinkScreen;
+	public final fun component6 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getButton ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getSavedLinkId ()Ljava/lang/String;
+	public final fun getScreen ()Ldev/pingfront/model/LinkScreen;
+	public final fun getTitle ()Ljava/lang/String;
+	public final fun getUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Card$Link$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Card$Link$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Card$Link;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Card$Link;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Link$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Offer : dev/pingfront/model/Card {
+	public static final field Companion Ldev/pingfront/model/Card$Offer$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Ldev/pingfront/model/StoreOffer;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBody ()Ljava/lang/String;
+	public final fun getButton ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getOffer ()Ldev/pingfront/model/StoreOffer;
+	public final fun getOfferId ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Card$Offer$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Card$Offer$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Card$Offer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Card$Offer;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Offer$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Rating : dev/pingfront/model/Card {
+	public static final field Companion Ldev/pingfront/model/Card$Rating$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()I
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getId ()Ljava/lang/String;
+	public final fun getQuestion ()Ljava/lang/String;
+	public final fun getScale ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Card$Rating$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Card$Rating$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Card$Rating;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Card$Rating;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Rating$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Report : dev/pingfront/model/Card {
+	public static final field Companion Ldev/pingfront/model/Card$Report$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getButton ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Card$Report$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Card$Report$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Card$Report;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Card$Report;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Report$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Review : dev/pingfront/model/Card {
+	public static final field Companion Ldev/pingfront/model/Card$Review$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ldev/pingfront/model/ReviewMode;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getButton ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getMode ()Ldev/pingfront/model/ReviewMode;
+	public final fun getStoreUrl ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Card$Review$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Card$Review$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Card$Review;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Card$Review;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Review$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$StoreAction : dev/pingfront/model/Card {
+	public static final field Companion Ldev/pingfront/model/Card$StoreAction$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ldev/pingfront/model/Card$StoreAction$Action;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public final fun component6 ()Ljava/lang/String;
+	public final fun component7 ()Ljava/lang/String;
+	public final fun component8 ()Ljava/lang/String;
+	public final fun component9 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAction ()Ldev/pingfront/model/Card$StoreAction$Action;
+	public final fun getBody ()Ljava/lang/String;
+	public final fun getButton ()Ljava/lang/String;
+	public fun getId ()Ljava/lang/String;
+	public final fun getProductId ()Ljava/lang/String;
+	public final fun getStore ()Ljava/lang/String;
+	public final fun getSubscriptionGroupId ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public final fun getTransactionId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Card$StoreAction$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Card$StoreAction$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Card$StoreAction;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Card$StoreAction;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$StoreAction$Action : java/lang/Enum {
+	public static final field BillingIssue Ldev/pingfront/model/Card$StoreAction$Action;
+	public static final field Companion Ldev/pingfront/model/Card$StoreAction$Action$Companion;
+	public static final field ManageSubscriptions Ldev/pingfront/model/Card$StoreAction$Action;
+	public static final field RedeemCode Ldev/pingfront/model/Card$StoreAction$Action;
+	public static final field RequestRefund Ldev/pingfront/model/Card$StoreAction$Action;
+	public static final field RestorePurchases Ldev/pingfront/model/Card$StoreAction$Action;
+	public static final field Unknown Ldev/pingfront/model/Card$StoreAction$Action;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/Card$StoreAction$Action;
+	public static fun values ()[Ldev/pingfront/model/Card$StoreAction$Action;
+}
+
+public final class dev/pingfront/model/Card$StoreAction$Action$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$StoreAction$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Card$Unknown : dev/pingfront/model/Card {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getId ()Ljava/lang/String;
+	public final fun getKind ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/CardResult {
+	public static final field Companion Ldev/pingfront/model/CardResult$Companion;
+	public final fun component1 ()Ljava/time/Instant;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/Integer;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAt ()Ljava/time/Instant;
+	public final fun getChoiceId ()Ljava/lang/String;
+	public final fun getRating ()Ljava/lang/Integer;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/CardResult$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/CardResult$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/CardResult;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/CardResult;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/CardResult$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook {
+	public static final field Companion Ldev/pingfront/model/ChatLook$Companion;
+	public fun <init> ()V
+	public final fun component1 ()Ldev/pingfront/model/ChatLook$Theme;
+	public final fun component2 ()Ldev/pingfront/model/ChatLook$Header;
+	public final fun component3 ()Ldev/pingfront/model/ChatLook$Welcome;
+	public final fun component4 ()Ljava/util/List;
+	public final fun component5 ()Ldev/pingfront/model/ChatLook$Composer;
+	public final fun component6 ()Ldev/pingfront/model/ChatLook$Messages;
+	public final fun component7 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component8 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAiName ()Ljava/lang/String;
+	public final fun getComposer ()Ldev/pingfront/model/ChatLook$Composer;
+	public final fun getHeader ()Ldev/pingfront/model/ChatLook$Header;
+	public final fun getMessages ()Ldev/pingfront/model/ChatLook$Messages;
+	public final fun getReplyExpectation ()Ldev/pingfront/model/LocalizedText;
+	public final fun getTheme ()Ldev/pingfront/model/ChatLook$Theme;
+	public final fun getTopics ()Ljava/util/List;
+	public final fun getWelcome ()Ldev/pingfront/model/ChatLook$Welcome;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/ChatLook$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Composer {
+	public static final field Companion Ldev/pingfront/model/ChatLook$Composer$Companion;
+	public fun <init> ()V
+	public final fun component1 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component2 ()Ljava/lang/Boolean;
+	public final fun component3 ()Ljava/lang/Boolean;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getPhotos ()Ljava/lang/Boolean;
+	public final fun getPlaceholder ()Ldev/pingfront/model/LocalizedText;
+	public final fun getReports ()Ljava/lang/Boolean;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/ChatLook$Composer$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/ChatLook$Composer$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/ChatLook$Composer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/ChatLook$Composer;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Composer$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Header {
+	public static final field Companion Ldev/pingfront/model/ChatLook$Header$Companion;
+	public fun <init> ()V
+	public final fun component1 ()Ldev/pingfront/model/HeaderStyle;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component4 ()Ljava/lang/Boolean;
+	public final fun component5 ()Ljava/lang/Boolean;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getMemberId ()Ljava/lang/String;
+	public final fun getShowLocalTime ()Ljava/lang/Boolean;
+	public final fun getShowReplyExpectation ()Ljava/lang/Boolean;
+	public final fun getStyle ()Ldev/pingfront/model/HeaderStyle;
+	public final fun getTitle ()Ldev/pingfront/model/LocalizedText;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/ChatLook$Header$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/ChatLook$Header$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/ChatLook$Header;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/ChatLook$Header;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Header$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Messages {
+	public static final field Companion Ldev/pingfront/model/ChatLook$Messages$Companion;
+	public fun <init> ()V
+	public final fun component1 ()Ljava/lang/Boolean;
+	public final fun component2 ()Ljava/lang/Boolean;
+	public final fun component3 ()Ldev/pingfront/model/Timestamps;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getShowAvatars ()Ljava/lang/Boolean;
+	public final fun getShowNames ()Ljava/lang/Boolean;
+	public final fun getTimestamps ()Ldev/pingfront/model/Timestamps;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/ChatLook$Messages$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/ChatLook$Messages$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/ChatLook$Messages;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/ChatLook$Messages;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Messages$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Theme {
+	public static final field Companion Ldev/pingfront/model/ChatLook$Theme$Companion;
+	public fun <init> ()V
+	public final fun component1 ()Ldev/pingfront/model/PingFrontColor;
+	public final fun component2 ()Ldev/pingfront/model/PingFrontColor;
+	public final fun component3 ()Ldev/pingfront/model/PingFrontColor;
+	public final fun component4 ()Ldev/pingfront/model/ColorScheme;
+	public final fun component5 ()Ldev/pingfront/model/FontStyle;
+	public final fun component6 ()Ldev/pingfront/model/Corners;
+	public final fun component7 ()Ldev/pingfront/model/Density;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAccent ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getBackground ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getCorners ()Ldev/pingfront/model/Corners;
+	public final fun getDensity ()Ldev/pingfront/model/Density;
+	public final fun getFont ()Ldev/pingfront/model/FontStyle;
+	public final fun getScheme ()Ldev/pingfront/model/ColorScheme;
+	public final fun getTeamBubble ()Ldev/pingfront/model/PingFrontColor;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/ChatLook$Theme$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/ChatLook$Theme$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/ChatLook$Theme;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/ChatLook$Theme;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Theme$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Topic {
+	public static final field Companion Ldev/pingfront/model/ChatLook$Topic$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component3 ()Ldev/pingfront/model/TopicSymbol;
+	public final fun component4 ()Ldev/pingfront/model/LocalizedText;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getLabel ()Ldev/pingfront/model/LocalizedText;
+	public final fun getPrefill ()Ldev/pingfront/model/LocalizedText;
+	public final fun getSymbol ()Ldev/pingfront/model/TopicSymbol;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/ChatLook$Topic$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/ChatLook$Topic$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/ChatLook$Topic;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/ChatLook$Topic;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Topic$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Welcome {
+	public static final field Companion Ldev/pingfront/model/ChatLook$Welcome$Companion;
+	public fun <init> ()V
+	public final fun component1 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component2 ()Ldev/pingfront/model/LocalizedText;
+	public final fun component3 ()Ljava/lang/Boolean;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBody ()Ldev/pingfront/model/LocalizedText;
+	public final fun getShowFaces ()Ljava/lang/Boolean;
+	public final fun getTitle ()Ldev/pingfront/model/LocalizedText;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/ChatLook$Welcome$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/ChatLook$Welcome$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/ChatLook$Welcome;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/ChatLook$Welcome;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChatLook$Welcome$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChoiceOption {
+	public static final field Companion Ldev/pingfront/model/ChoiceOption$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getLabel ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/ChoiceOption$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/ChoiceOption$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/ChoiceOption;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/ChoiceOption;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ChoiceOption$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ColorScheme : java/lang/Enum {
+	public static final field Auto Ldev/pingfront/model/ColorScheme;
+	public static final field Companion Ldev/pingfront/model/ColorScheme$Companion;
+	public static final field Dark Ldev/pingfront/model/ColorScheme;
+	public static final field Light Ldev/pingfront/model/ColorScheme;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/ColorScheme;
+	public static fun values ()[Ldev/pingfront/model/ColorScheme;
+}
+
+public final class dev/pingfront/model/ColorScheme$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Corners : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/Corners$Companion;
+	public static final field Round Ldev/pingfront/model/Corners;
+	public static final field Soft Ldev/pingfront/model/Corners;
+	public static final field Square Ldev/pingfront/model/Corners;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/Corners;
+	public static fun values ()[Ldev/pingfront/model/Corners;
+}
+
+public final class dev/pingfront/model/Corners$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Density : java/lang/Enum {
+	public static final field Comfortable Ldev/pingfront/model/Density;
+	public static final field Compact Ldev/pingfront/model/Density;
+	public static final field Companion Ldev/pingfront/model/Density$Companion;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/Density;
+	public static fun values ()[Ldev/pingfront/model/Density;
+}
+
+public final class dev/pingfront/model/Density$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Entitlement {
+	public static final field Companion Ldev/pingfront/model/Entitlement$Companion;
+	public synthetic fun <init> (Ldev/pingfront/model/Entitlement$State;Ljava/lang/String;Ljava/time/Instant;Ljava/lang/String;Ljava/time/Instant;Ljava/time/Instant;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ldev/pingfront/model/Entitlement$State;Ljava/lang/String;Ljava/time/Instant;Ljava/lang/String;Ljava/time/Instant;Ljava/time/Instant;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy-rINbHm8 (Ldev/pingfront/model/Entitlement$State;Ljava/lang/String;Ljava/time/Instant;Ljava/lang/String;Ljava/time/Instant;Ljava/time/Instant;Ljava/lang/String;)Ldev/pingfront/model/Entitlement;
+	public static synthetic fun copy-rINbHm8$default (Ldev/pingfront/model/Entitlement;Ldev/pingfront/model/Entitlement$State;Ljava/lang/String;Ljava/time/Instant;Ljava/lang/String;Ljava/time/Instant;Ljava/time/Instant;Ljava/lang/String;ILjava/lang/Object;)Ldev/pingfront/model/Entitlement;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEnvironment ()Ljava/lang/String;
+	public final fun getExpiresAt ()Ljava/time/Instant;
+	public final fun getGracePeriodEndsAt ()Ljava/time/Instant;
+	public final fun getProductId ()Ljava/lang/String;
+	public final fun getRenewsAt ()Ljava/time/Instant;
+	public final fun getSource-njOX7CQ ()Ljava/lang/String;
+	public final fun getState ()Ldev/pingfront/model/Entitlement$State;
+	public fun hashCode ()I
+	public final fun isTestPurchase ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Entitlement$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Entitlement$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Entitlement;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Entitlement;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Entitlement$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Entitlement$Source {
+	public static final field Companion Ldev/pingfront/model/Entitlement$Source$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Ldev/pingfront/model/Entitlement$Source;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getCode ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/Entitlement$Source$Companion {
+	public final fun getAdapty-hJLNhIw ()Ljava/lang/String;
+	public final fun getApp-hJLNhIw ()Ljava/lang/String;
+	public final fun getPlay-hJLNhIw ()Ljava/lang/String;
+	public final fun getRevenueCat-hJLNhIw ()Ljava/lang/String;
+	public final fun getStoreKit-hJLNhIw ()Ljava/lang/String;
+	public final fun getStripe-hJLNhIw ()Ljava/lang/String;
+	public final fun getSuperwall-hJLNhIw ()Ljava/lang/String;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Entitlement$State : java/lang/Enum {
+	public static final field Active Ldev/pingfront/model/Entitlement$State;
+	public static final field BillingRetry Ldev/pingfront/model/Entitlement$State;
+	public static final field Cancelled Ldev/pingfront/model/Entitlement$State;
+	public static final field Companion Ldev/pingfront/model/Entitlement$State$Companion;
+	public static final field Expired Ldev/pingfront/model/Entitlement$State;
+	public static final field Grace Ldev/pingfront/model/Entitlement$State;
+	public static final field Lifetime Ldev/pingfront/model/Entitlement$State;
+	public static final field None Ldev/pingfront/model/Entitlement$State;
+	public static final field Trial Ldev/pingfront/model/Entitlement$State;
+	public static final field Unknown Ldev/pingfront/model/Entitlement$State;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/Entitlement$State;
+	public static fun values ()[Ldev/pingfront/model/Entitlement$State;
+}
+
+public final class dev/pingfront/model/Entitlement$State$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/FontStyle : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/FontStyle$Companion;
+	public static final field Rounded Ldev/pingfront/model/FontStyle;
+	public static final field Serif Ldev/pingfront/model/FontStyle;
+	public static final field System Ldev/pingfront/model/FontStyle;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/FontStyle;
+	public static fun values ()[Ldev/pingfront/model/FontStyle;
+}
+
+public final class dev/pingfront/model/FontStyle$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/HeaderStyle : java/lang/Enum {
+	public static final field App Ldev/pingfront/model/HeaderStyle;
+	public static final field Companion Ldev/pingfront/model/HeaderStyle$Companion;
+	public static final field Person Ldev/pingfront/model/HeaderStyle;
+	public static final field Team Ldev/pingfront/model/HeaderStyle;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/HeaderStyle;
+	public static fun values ()[Ldev/pingfront/model/HeaderStyle;
+}
+
+public final class dev/pingfront/model/HeaderStyle$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/IdentityProblem : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/IdentityProblem$Companion;
+	public static final field TokenExpired Ldev/pingfront/model/IdentityProblem;
+	public static final field TokenInvalid Ldev/pingfront/model/IdentityProblem;
+	public static final field Unknown Ldev/pingfront/model/IdentityProblem;
+	public static final field UserMismatch Ldev/pingfront/model/IdentityProblem;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/IdentityProblem;
+	public static fun values ()[Ldev/pingfront/model/IdentityProblem;
+}
+
+public final class dev/pingfront/model/IdentityProblem$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/LinkScreen {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/Map;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getParams ()Ljava/util/Map;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/LinkScreen$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/LinkScreen$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/LinkScreen;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/LinkScreen;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/LocalizedText {
+	public static final field Companion Ldev/pingfront/model/LocalizedText$Companion;
+	public fun <init> (Ljava/util/Map;)V
+	public final fun copy (Ljava/util/Map;)Ldev/pingfront/model/LocalizedText;
+	public static synthetic fun copy$default (Ldev/pingfront/model/LocalizedText;Ljava/util/Map;ILjava/lang/Object;)Ldev/pingfront/model/LocalizedText;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getValues ()Ljava/util/Map;
+	public fun hashCode ()I
+	public final fun resolve (Ljava/lang/String;)Ljava/lang/String;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/LocalizedText$Companion {
+	public final fun of (Ljava/lang/String;)Ldev/pingfront/model/LocalizedText;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/LookKt {
+	public static final fun PingFrontColor (JJ)Ldev/pingfront/model/PingFrontColor;
+	public static final fun PingFrontColor (Ljava/lang/String;Ljava/lang/String;)Ldev/pingfront/model/PingFrontColor;
+	public static synthetic fun PingFrontColor$default (JJILjava/lang/Object;)Ldev/pingfront/model/PingFrontColor;
+	public static synthetic fun PingFrontColor$default (Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/pingfront/model/PingFrontColor;
+}
+
+public final class dev/pingfront/model/Message {
+	public static final field Companion Ldev/pingfront/model/Message$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()I
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ldev/pingfront/model/Author;
+	public final fun component5 ()Ljava/util/List;
+	public final fun component6 ()Ljava/time/Instant;
+	public final fun component7 ()Ldev/pingfront/model/PingOrigin;
+	public final fun component8 ()Ljava/lang/String;
+	public final fun component9 ()Ldev/pingfront/model/Translation;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAuthor ()Ldev/pingfront/model/Author;
+	public final fun getClientId ()Ljava/lang/String;
+	public final fun getCreatedAt ()Ljava/time/Instant;
+	public final fun getFallback ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getParts ()Ljava/util/List;
+	public final fun getPing ()Ldev/pingfront/model/PingOrigin;
+	public final fun getPlainText ()Ljava/lang/String;
+	public final fun getSeq ()I
+	public final fun getTranslation ()Ldev/pingfront/model/Translation;
+	public fun hashCode ()I
+	public final fun isFromPerson ()Z
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/Message$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/Message$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/Message;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/Message;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Message$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class dev/pingfront/model/MessagePart {
+	public static final field Companion Ldev/pingfront/model/MessagePart$Companion;
+}
+
+public final class dev/pingfront/model/MessagePart$CardPart : dev/pingfront/model/MessagePart {
+	public static final field Companion Ldev/pingfront/model/MessagePart$CardPart$Companion;
+	public final fun component1 ()Ldev/pingfront/model/Card;
+	public final fun component2 ()Ldev/pingfront/model/CardResult;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCard ()Ldev/pingfront/model/Card;
+	public final fun getResult ()Ldev/pingfront/model/CardResult;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/MessagePart$CardPart$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/MessagePart$CardPart$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/MessagePart$CardPart;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/MessagePart$CardPart;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/MessagePart$CardPart$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/MessagePart$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/MessagePart$Image : dev/pingfront/model/MessagePart {
+	public static final field Companion Ldev/pingfront/model/MessagePart$Image$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()I
+	public final fun component3 ()I
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Z
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAttachmentId ()Ljava/lang/String;
+	public final fun getHeight ()I
+	public final fun getRemoved ()Z
+	public final fun getUrl ()Ljava/lang/String;
+	public final fun getWidth ()I
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/MessagePart$Image$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/MessagePart$Image$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/MessagePart$Image;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/MessagePart$Image;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/MessagePart$Image$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/MessagePart$Receipt : dev/pingfront/model/MessagePart {
+	public static final field Companion Ldev/pingfront/model/MessagePart$Receipt$Companion;
+	public final fun component1 ()Ldev/pingfront/model/ReceiptAction;
+	public final fun component2 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAction ()Ldev/pingfront/model/ReceiptAction;
+	public final fun getText ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/MessagePart$Receipt$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/MessagePart$Receipt$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/MessagePart$Receipt;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/MessagePart$Receipt;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/MessagePart$Receipt$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/MessagePart$Text : dev/pingfront/model/MessagePart {
+	public final fun component1 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getText ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/MessagePart$Unknown : dev/pingfront/model/MessagePart {
+	public final fun component1 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getType ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/OfferSlot {
+	public static final field Companion Ldev/pingfront/model/OfferSlot$Companion;
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/pingfront/model/OfferSlot$Kind;ZLjava/util/List;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ldev/pingfront/model/OfferSlot$Kind;ZLjava/util/List;Ljava/lang/String;Lkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy-LHEslkc (Ljava/lang/String;Ljava/lang/String;Ldev/pingfront/model/OfferSlot$Kind;ZLjava/util/List;Ljava/lang/String;)Ldev/pingfront/model/OfferSlot;
+	public static synthetic fun copy-LHEslkc$default (Ldev/pingfront/model/OfferSlot;Ljava/lang/String;Ljava/lang/String;Ldev/pingfront/model/OfferSlot$Kind;ZLjava/util/List;Ljava/lang/String;ILjava/lang/Object;)Ldev/pingfront/model/OfferSlot;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAvailable ()Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getKind ()Ldev/pingfront/model/OfferSlot$Kind;
+	public final fun getProducts ()Ljava/util/List;
+	public final fun getSource-rMZkqQs ()Ljava/lang/String;
+	public final fun getTitle ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/OfferSlot$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/OfferSlot$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/OfferSlot;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/OfferSlot;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/OfferSlot$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/OfferSlot$Kind : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/OfferSlot$Kind$Companion;
+	public static final field Discount Ldev/pingfront/model/OfferSlot$Kind;
+	public static final field Standard Ldev/pingfront/model/OfferSlot$Kind;
+	public static final field Winback Ldev/pingfront/model/OfferSlot$Kind;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/OfferSlot$Kind;
+	public static fun values ()[Ldev/pingfront/model/OfferSlot$Kind;
+}
+
+public final class dev/pingfront/model/OfferSlot$Kind$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/OfferSlot$Product {
+	public static final field Companion Ldev/pingfront/model/OfferSlot$Product$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public synthetic fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ldev/pingfront/model/OfferSlot$Product;
+	public static synthetic fun copy$default (Ldev/pingfront/model/OfferSlot$Product;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ldev/pingfront/model/OfferSlot$Product;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()Ljava/lang/String;
+	public final fun getPeriod ()Ljava/lang/String;
+	public final fun getPrice ()Ljava/lang/String;
+	public final fun getTrial ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/OfferSlot$Product$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/OfferSlot$Product$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/OfferSlot$Product;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/OfferSlot$Product;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/OfferSlot$Product$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/OfferSlot$Source {
+	public static final field Companion Ldev/pingfront/model/OfferSlot$Source$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Ldev/pingfront/model/OfferSlot$Source;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getCode ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/OfferSlot$Source$Companion {
+	public final fun getAdapty-j7cAQaA ()Ljava/lang/String;
+	public final fun getApp-j7cAQaA ()Ljava/lang/String;
+	public final fun getPlay-j7cAQaA ()Ljava/lang/String;
+	public final fun getRevenueCat-j7cAQaA ()Ljava/lang/String;
+	public final fun getStoreKit-j7cAQaA ()Ljava/lang/String;
+	public final fun getSuperwall-j7cAQaA ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/PersonSummary {
+	public static final field Companion Ldev/pingfront/model/PersonSummary$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ldev/pingfront/model/PersonSummary$Level;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ldev/pingfront/model/Entitlement;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getEntitlement ()Ldev/pingfront/model/Entitlement;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getLevel ()Ldev/pingfront/model/PersonSummary$Level;
+	public final fun getName ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/PersonSummary$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/PersonSummary$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/PersonSummary;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/PersonSummary;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PersonSummary$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PersonSummary$Level : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/PersonSummary$Level$Companion;
+	public static final field Guest Ldev/pingfront/model/PersonSummary$Level;
+	public static final field Named Ldev/pingfront/model/PersonSummary$Level;
+	public static final field Unknown Ldev/pingfront/model/PersonSummary$Level;
+	public static final field Verified Ldev/pingfront/model/PersonSummary$Level;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/PersonSummary$Level;
+	public static fun values ()[Ldev/pingfront/model/PersonSummary$Level;
+}
+
+public final class dev/pingfront/model/PersonSummary$Level$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PingFrontColor {
+	public static final field Companion Ldev/pingfront/model/PingFrontColor$Companion;
+	public fun <init> (Ldev/pingfront/model/RgbColor;Ldev/pingfront/model/RgbColor;)V
+	public final fun copy (Ldev/pingfront/model/RgbColor;Ldev/pingfront/model/RgbColor;)Ldev/pingfront/model/PingFrontColor;
+	public static synthetic fun copy$default (Ldev/pingfront/model/PingFrontColor;Ldev/pingfront/model/RgbColor;Ldev/pingfront/model/RgbColor;ILjava/lang/Object;)Ldev/pingfront/model/PingFrontColor;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getDark ()Ldev/pingfront/model/RgbColor;
+	public final fun getLight ()Ldev/pingfront/model/RgbColor;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+	public final fun value (Z)Ldev/pingfront/model/RgbColor;
+}
+
+public final synthetic class dev/pingfront/model/PingFrontColor$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/PingFrontColor$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/PingFrontColor;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/PingFrontColor;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PingFrontColor$Companion {
+	public final fun getBlue ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getGreen ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getOrange ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getPink ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getPurple ()Ldev/pingfront/model/PingFrontColor;
+	public final fun getTeal ()Ldev/pingfront/model/PingFrontColor;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PingOrigin {
+	public static final field Companion Ldev/pingfront/model/PingOrigin$Companion;
+	public final fun component1 ()Ldev/pingfront/model/PingOrigin$Kind;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ldev/pingfront/model/PingReason;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getExplanation ()Ljava/lang/String;
+	public final fun getKind ()Ldev/pingfront/model/PingOrigin$Kind;
+	public final fun getPlayId ()Ljava/lang/String;
+	public final fun getReason ()Ldev/pingfront/model/PingReason;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/PingOrigin$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/PingOrigin$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/PingOrigin;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/PingOrigin;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PingOrigin$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PingOrigin$Kind : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/PingOrigin$Kind$Companion;
+	public static final field Manual Ldev/pingfront/model/PingOrigin$Kind;
+	public static final field Play Ldev/pingfront/model/PingOrigin$Kind;
+	public static final field Unknown Ldev/pingfront/model/PingOrigin$Kind;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/PingOrigin$Kind;
+	public static fun values ()[Ldev/pingfront/model/PingOrigin$Kind;
+}
+
+public final class dev/pingfront/model/PingOrigin$Kind$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PingReason {
+	public static final field Companion Ldev/pingfront/model/PingReason$Companion;
+	public final fun component1 ()Ldev/pingfront/model/PingReason$Code;
+	public final fun component2 ()Ljava/util/Map;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCode ()Ldev/pingfront/model/PingReason$Code;
+	public final fun getParams ()Ljava/util/Map;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/PingReason$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/PingReason$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/PingReason;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/PingReason;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PingReason$Code : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/PingReason$Code$Companion;
+	public static final field Manual Ldev/pingfront/model/PingReason$Code;
+	public static final field Moment Ldev/pingfront/model/PingReason$Code;
+	public static final field Scheduled Ldev/pingfront/model/PingReason$Code;
+	public static final field StoreEvent Ldev/pingfront/model/PingReason$Code;
+	public static final field Unknown Ldev/pingfront/model/PingReason$Code;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/PingReason$Code;
+	public static fun values ()[Ldev/pingfront/model/PingReason$Code;
+}
+
+public final class dev/pingfront/model/PingReason$Code$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/PingReason$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ReceiptAction : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/ReceiptAction$Companion;
+	public static final field Custom Ldev/pingfront/model/ReceiptAction;
+	public static final field DataExported Ldev/pingfront/model/ReceiptAction;
+	public static final field HandedOff Ldev/pingfront/model/ReceiptAction;
+	public static final field PromoGranted Ldev/pingfront/model/ReceiptAction;
+	public static final field PurchasesRestored Ldev/pingfront/model/ReceiptAction;
+	public static final field ReportFiled Ldev/pingfront/model/ReceiptAction;
+	public static final field TrialExtended Ldev/pingfront/model/ReceiptAction;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/ReceiptAction;
+	public static fun values ()[Ldev/pingfront/model/ReceiptAction;
+}
+
+public final class dev/pingfront/model/ReceiptAction$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ReviewMode : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/ReviewMode$Companion;
+	public static final field NativePrompt Ldev/pingfront/model/ReviewMode;
+	public static final field StorePage Ldev/pingfront/model/ReviewMode;
+	public static final field Unknown Ldev/pingfront/model/ReviewMode;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/ReviewMode;
+	public static fun values ()[Ldev/pingfront/model/ReviewMode;
+}
+
+public final class dev/pingfront/model/ReviewMode$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/RgbColor {
+	public static final field Companion Ldev/pingfront/model/RgbColor$Companion;
+	public fun <init> (DDD)V
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getArgb ()I
+	public final fun getBlue ()D
+	public final fun getGreen ()D
+	public final fun getHex ()Ljava/lang/String;
+	public final fun getLuminance ()D
+	public final fun getRed ()D
+	public fun hashCode ()I
+	public final fun mixed (Ldev/pingfront/model/RgbColor;D)Ldev/pingfront/model/RgbColor;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/RgbColor$Companion {
+	public final fun argb (I)Ldev/pingfront/model/RgbColor;
+	public final fun contrast (Ldev/pingfront/model/RgbColor;Ldev/pingfront/model/RgbColor;)D
+	public final fun getBlack ()Ldev/pingfront/model/RgbColor;
+	public final fun getWhite ()Ldev/pingfront/model/RgbColor;
+	public final fun hex (Ljava/lang/String;)Ldev/pingfront/model/RgbColor;
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public abstract interface class dev/pingfront/model/SendPolicy {
+	public static final field Companion Ldev/pingfront/model/SendPolicy$Companion;
+	public fun getCanSend ()Z
+}
+
+public final class dev/pingfront/model/SendPolicy$Closed : dev/pingfront/model/SendPolicy {
+	public final fun component1-XQQG4g0 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getCanSend ()Z
+	public final fun getReason-XQQG4g0 ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/SendPolicy$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/SendPolicy$DefaultImpls {
+	public static fun getCanSend (Ldev/pingfront/model/SendPolicy;)Z
+}
+
+public final class dev/pingfront/model/SendPolicy$Open : dev/pingfront/model/SendPolicy {
+	public static final field INSTANCE Ldev/pingfront/model/SendPolicy$Open;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getCanSend ()Z
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/SendPolicy$Reason {
+	public static final field Companion Ldev/pingfront/model/SendPolicy$Reason$Companion;
+	public static final synthetic fun box-impl (Ljava/lang/String;)Ldev/pingfront/model/SendPolicy$Reason;
+	public static fun constructor-impl (Ljava/lang/String;)Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public static fun equals-impl (Ljava/lang/String;Ljava/lang/Object;)Z
+	public static final fun equals-impl0 (Ljava/lang/String;Ljava/lang/String;)Z
+	public final fun getCode ()Ljava/lang/String;
+	public fun hashCode ()I
+	public static fun hashCode-impl (Ljava/lang/String;)I
+	public fun toString ()Ljava/lang/String;
+	public static fun toString-impl (Ljava/lang/String;)Ljava/lang/String;
+	public final synthetic fun unbox-impl ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/SendPolicy$Reason$Companion {
+	public final fun getAppPaused-XQQG4g0 ()Ljava/lang/String;
+	public final fun getBlocked-XQQG4g0 ()Ljava/lang/String;
+	public final fun getVerificationRequired-XQQG4g0 ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/StoreOffer {
+	public final fun component1 ()Ldev/pingfront/model/StoreOffer$Kind;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getBasePlanId ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getKind ()Ldev/pingfront/model/StoreOffer$Kind;
+	public final fun getOfferId ()Ljava/lang/String;
+	public final fun getProductId ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/StoreOffer$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/StoreOffer$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/StoreOffer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/StoreOffer;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/StoreOffer$Kind : java/lang/Enum {
+	public static final field Code Ldev/pingfront/model/StoreOffer$Kind;
+	public static final field Intro Ldev/pingfront/model/StoreOffer$Kind;
+	public static final field Promotional Ldev/pingfront/model/StoreOffer$Kind;
+	public static final field Unknown Ldev/pingfront/model/StoreOffer$Kind;
+	public static final field Winback Ldev/pingfront/model/StoreOffer$Kind;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/StoreOffer$Kind;
+	public static fun values ()[Ldev/pingfront/model/StoreOffer$Kind;
+}
+
+public final class dev/pingfront/model/TeamMember {
+	public static final field Companion Ldev/pingfront/model/TeamMember$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()Ljava/lang/String;
+	public final fun component4 ()Ljava/lang/String;
+	public final fun component5 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAvatarUrl ()Ljava/lang/String;
+	public final fun getId ()Ljava/lang/String;
+	public final fun getName ()Ljava/lang/String;
+	public final fun getRole ()Ljava/lang/String;
+	public final fun getTimeZone ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final synthetic class dev/pingfront/model/TeamMember$$serializer : kotlinx/serialization/internal/GeneratedSerializer {
+	public static final field INSTANCE Ldev/pingfront/model/TeamMember$$serializer;
+	public final fun childSerializers ()[Lkotlinx/serialization/KSerializer;
+	public final fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ldev/pingfront/model/TeamMember;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public final fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public final fun serialize (Lkotlinx/serialization/encoding/Encoder;Ldev/pingfront/model/TeamMember;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun typeParametersSerializers ()[Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/TeamMember$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/ThreadStatus : java/lang/Enum {
+	public static final field Companion Ldev/pingfront/model/ThreadStatus$Companion;
+	public static final field Open Ldev/pingfront/model/ThreadStatus;
+	public static final field Resolved Ldev/pingfront/model/ThreadStatus;
+	public static final field Unknown Ldev/pingfront/model/ThreadStatus;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/ThreadStatus;
+	public static fun values ()[Ldev/pingfront/model/ThreadStatus;
+}
+
+public final class dev/pingfront/model/ThreadStatus$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Timestamps : java/lang/Enum {
+	public static final field Always Ldev/pingfront/model/Timestamps;
+	public static final field Companion Ldev/pingfront/model/Timestamps$Companion;
+	public static final field Grouped Ldev/pingfront/model/Timestamps;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/Timestamps;
+	public static fun values ()[Ldev/pingfront/model/Timestamps;
+}
+
+public final class dev/pingfront/model/Timestamps$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/TopicSymbol : java/lang/Enum {
+	public static final field Account Ldev/pingfront/model/TopicSymbol;
+	public static final field Billing Ldev/pingfront/model/TopicSymbol;
+	public static final field Bug Ldev/pingfront/model/TopicSymbol;
+	public static final field Companion Ldev/pingfront/model/TopicSymbol$Companion;
+	public static final field Feedback Ldev/pingfront/model/TopicSymbol;
+	public static final field Gift Ldev/pingfront/model/TopicSymbol;
+	public static final field Idea Ldev/pingfront/model/TopicSymbol;
+	public static final field Other Ldev/pingfront/model/TopicSymbol;
+	public static final field Privacy Ldev/pingfront/model/TopicSymbol;
+	public static final field Question Ldev/pingfront/model/TopicSymbol;
+	public static final field Restore Ldev/pingfront/model/TopicSymbol;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Ldev/pingfront/model/TopicSymbol;
+	public static fun values ()[Ldev/pingfront/model/TopicSymbol;
+}
+
+public final class dev/pingfront/model/TopicSymbol$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+
+public final class dev/pingfront/model/Translation {
+	public static final field Companion Ldev/pingfront/model/Translation$Companion;
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/util/List;
+	public final fun component3 ()Ljava/lang/String;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getFrom ()Ljava/lang/String;
+	public final fun getLanguage ()Ljava/lang/String;
+	public final fun getTexts ()Ljava/util/List;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class dev/pingfront/model/Translation$Companion {
+	public final fun serializer ()Lkotlinx/serialization/KSerializer;
+}
+

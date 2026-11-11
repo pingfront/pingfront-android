@@ -1,0 +1,122 @@
+{
+  "schema": "DeviceContext",
+  "description": "Device.context and DevicePatch.context: optional context in buckets, sent only with requests the SDK makes anyway.",
+  "valid": [
+    {
+      "name": "accepts every group",
+      "value": {
+        "build": {
+          "installSource": "testflight",
+          "debuggable": false
+        },
+        "display": {
+          "screenClass": "compact",
+          "scale": 3,
+          "darkMode": true,
+          "textSize": "large",
+          "screenReader": false,
+          "reduceMotion": true,
+          "boldText": false,
+          "languages": [
+            "en-GB",
+            "de",
+            "tr"
+          ]
+        },
+        "connection": {
+          "network": "cellular",
+          "constrained": true,
+          "expensive": true,
+          "lowPower": false
+        },
+        "health": {
+          "freeStorage": "from_1_to_5gb",
+          "battery": 40,
+          "charging": false,
+          "thermal": "fair",
+          "memoryPressure": "normal"
+        },
+        "notifications": {
+          "authorization": "provisional"
+        }
+      }
+    },
+    {
+      "name": "accepts an empty context",
+      "value": {}
+    },
+    {
+      "name": "accepts an Android build from another store",
+      "value": {
+        "build": {
+          "installSource": "other_store",
+          "installer": "com.sec.android.app.samsungapps",
+          "debuggable": false
+        },
+        "notifications": {
+          "authorization": "authorized",
+          "channelEnabled": false
+        }
+      }
+    },
+    {
+      "name": "accepts a connection change alone",
+      "value": {
+        "connection": {
+          "network": "wifi",
+          "constrained": false,
+          "expensive": false,
+          "lowPower": true
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unbucketed storage value",
+      "value": {
+        "health": {
+          "freeStorage": "3.2GB"
+        }
+      }
+    },
+    {
+      "name": "rejects a battery level over 100",
+      "value": {
+        "health": {
+          "battery": 110
+        }
+      }
+    },
+    {
+      "name": "rejects more than three languages",
+      "value": {
+        "display": {
+          "languages": [
+            "en",
+            "de",
+            "fr",
+            "tr"
+          ]
+        }
+      }
+    },
+    {
+      "name": "rejects a scale under 1",
+      "value": {
+        "display": {
+          "scale": 0.5
+        }
+      }
+    },
+    {
+      "name": "rejects an installer that is not a package name",
+      "value": {
+        "build": {
+          "installSource": "other_store",
+          "installer": "not a package"
+        }
+      }
+    }
+  ]
+}

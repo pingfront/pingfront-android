@@ -1,0 +1,27 @@
+{
+  "schema": "TeamPushContent",
+  "description": "A worked example of TeamPushData.content: AES-256-GCM under the device's pushKey with additional data \"<deviceId>:<keyVersion>\" (UTF-8), sealed as base64url without padding of nonce (12 bytes) | ciphertext | tag (16 bytes). Encrypting vector.plaintext (exact UTF-8 bytes) with vector.key, vector.nonce and vector.aad gives vector.content; decrypting vector.content gives vector.plaintext, which decodes to valid[0].value. Any other additional data (another device or key version) must fail to decrypt. The Go server encrypts and the iOS team app decrypts this same vector.",
+  "valid": [
+    {
+      "name": "the vector's plaintext is a TeamPushContent",
+      "value": {
+        "v": 1,
+        "title": "Ayşe Demir",
+        "subtitle": "Clockwise",
+        "body": "The timer stops when I lock the phone 🙃",
+        "personId": "per_1",
+        "sentAt": "2026-11-03T09:41:00.000Z"
+      }
+    }
+  ],
+  "invalid": [],
+  "vector": {
+    "key": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8",
+    "nonce": "oKGio6Slpqeoqaqr",
+    "deviceId": "mdv_3",
+    "keyVersion": 1,
+    "aad": "mdv_3:1",
+    "plaintext": "{\"v\":1,\"title\":\"Ayşe Demir\",\"subtitle\":\"Clockwise\",\"body\":\"The timer stops when I lock the phone 🙃\",\"personId\":\"per_1\",\"sentAt\":\"2026-11-03T09:41:00.000Z\"}",
+    "content": "oKGio6SlpqeoqaqrnToKD3_6Lp0WDPO_Ylj6_DHVnI_3lwYJ8WdUpFOJBnSwAi6Lw0dxB33faKdqEfSQNH5kZECydRo4fDF88BjgkMDV6ApChZeUm5KMOPimqdTtQovIqqLyWpodW7rB8iL66qTbNJotrbe8q2Mi9ueDYUByW4yuUOljHu3yhscwnDmEZZJF8XCwJQF0z7o_eqKCuOCXX4_qyrzT_Y3F9eVJFJDWPVSfkP5GnXC_SEZAOg"
+  }
+}

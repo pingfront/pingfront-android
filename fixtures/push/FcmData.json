@@ -1,0 +1,44 @@
+{
+  "schema": "FcmData",
+  "description": "FCM data message: every value a string, keys prefixed pf_.",
+  "valid": [
+    {
+      "name": "defines versioned push payloads for FCM",
+      "value": {
+        "pf_v": "1",
+        "pf_kind": "message",
+        "pf_app_id": "app_1",
+        "pf_unread": "3"
+      }
+    },
+    {
+      "name": "a notification without sound",
+      "value": {
+        "pf_v": "1",
+        "pf_kind": "message",
+        "pf_app_id": "app_1",
+        "pf_unread": "3",
+        "pf_sound": "off"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "FCM data values are strings: a numeric pf_unread fails",
+      "value": {
+        "pf_v": "1",
+        "pf_kind": "message",
+        "pf_app_id": "app_1",
+        "pf_unread": 3
+      }
+    },
+    {
+      "name": "rejects pf_v as a number",
+      "value": {
+        "pf_v": 1,
+        "pf_kind": "message",
+        "pf_app_id": "app_1"
+      }
+    }
+  ]
+}

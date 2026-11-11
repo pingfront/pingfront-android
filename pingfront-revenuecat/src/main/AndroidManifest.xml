@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Shows a RevenueCat paywall for an offer card (not exported). -->
+        <activity
+            android:name="dev.pingfront.revenuecat.RevenueCatPaywallActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+    </application>
+</manifest>

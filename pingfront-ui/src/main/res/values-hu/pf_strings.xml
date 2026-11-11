@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Üzenet</string>
+    <string name="pf_send">Küldés</string>
+    <string name="pf_add_photo">Fotó hozzáadása</string>
+    <string name="pf_add_photo_or_report">Fotó hozzáadása vagy hiba jelentése</string>
+    <string name="pf_photos">Fotók</string>
+    <string name="pf_report_bug">Hiba jelentése</string>
+    <string name="pf_close_chat">Csevegés bezárása</string>
+    <string name="pf_delivered">Kézbesítve</string>
+    <string name="pf_read">Olvasva</string>
+    <string name="pf_not_delivered">Nincs kézbesítve</string>
+    <string name="pf_delete">Törlés</string>
+    <string name="pf_sending">Küldés…</string>
+    <string name="pf_ai">MI</string>
+    <string name="pf_assistant">Asszisztens</string>
+    <string name="pf_the_team">A csapat</string>
+    <string name="pf_team_title">%1$s csapata</string>
+    <string name="pf_messaged_you_first">%1$s üzent neked először</string>
+    <string name="pf_wrote_first">%1$s írt neked először.</string>
+    <string name="pf_why_message">Miért kaptad ezt az üzenetet</string>
+    <string name="pf_reply_if_you_like">Ha szeretnél, válaszolj, vagy hagyd figyelmen kívül.</string>
+    <string name="pf_ask_person">Beszélnék egy emberrel</string>
+    <string name="pf_ask_person_message">Szeretnék egy emberrel beszélni.</string>
+    <string name="pf_typing">%1$s éppen ír</string>
+    <string name="pf_jump_latest">Ugrás a legújabbra</string>
+    <string name="pf_load_earlier">Korábbi üzenetek betöltése</string>
+    <string name="pf_loading_earlier">Korábbi üzenetek betöltése folyamatban</string>
+    <string name="pf_today">Ma %1$s</string>
+    <string name="pf_yesterday">Tegnap %1$s</string>
+    <string name="pf_local_time">%2$s helyi ideje: %1$s</string>
+    <string name="pf_welcome_body">Kérdés, hiba vagy ötlet? %1$s készítői minden üzenetet elolvasnak, és itt válaszolnak.</string>
+    <string name="pf_topic_billing">Kérdés a számlázásról</string>
+    <string name="pf_topic_bug">Hiba jelentése</string>
+    <string name="pf_topic_idea">Ötlet megosztása</string>
+    <string name="pf_topic_question">Kérdés feltevése</string>
+    <string name="pf_topic_account">Segítség a fiókommal</string>
+    <string name="pf_topic_feedback">Visszajelzés küldése</string>
+    <string name="pf_topic_restore">Vásárlások visszaállítása</string>
+    <string name="pf_topic_privacy">Kérdés az adatvédelemről</string>
+    <string name="pf_topic_other">Valami más</string>
+    <string name="pf_offline">Nincs internetkapcsolat. Az üzenetek elmennek, amint újra online leszel.</string>
+    <string name="pf_unreachable">A csevegés most nem érhető el. Az üzenetek elmennek, amint újra elérhető.</string>
+    <string name="pf_couldnt_load">Nem sikerült betölteni a beszélgetést</string>
+    <string name="pf_try_again">Próbáld újra</string>
+    <string name="pf_setup_problem">Beállítási hiba</string>
+    <string name="pf_debug_only">Csak debug buildekben látszik.</string>
+    <string name="pf_chat_unavailable">A csevegés most nem érhető el.</string>
+    <string name="pf_draft_look">Vázlatos megjelenés</string>
+    <string name="pf_send_again_in">%1$s múlva küldhetsz újra.</string>
+    <string name="pf_sending_paused">A küldés egy ideig szünetel. Próbáld újra később.</string>
+    <string name="pf_photos_again_in">Fotót %1$s múlva küldhetsz újra. Szöveget továbbra is küldhetsz.</string>
+    <string name="pf_photos_paused">A fotók küldése egy ideig szünetel. Szöveget továbbra is küldhetsz.</string>
+    <string name="pf_blocked">Ebben a csevegésben nem küldhetsz üzenetet.</string>
+    <string name="pf_paused">Ez a csevegés egyelőre szünetel.</string>
+    <string name="pf_verification_required">Jelentkezz be az alkalmazásba, hogy üzenhess a csapatnak.</string>
+    <string name="pf_enjoying">%1$s: tetszik az alkalmazás?</string>
+    <string name="pf_review_helps">%1$s: az értékelésed segít, hogy mások is rátaláljanak.</string>
+    <string name="pf_includes_screenshot">Egy képernyőképet és a legutóbbi naplókat tartalmazza.</string>
+    <string name="pf_price_year">%1$s évente</string>
+    <string name="pf_price_month">%1$s havonta</string>
+    <string name="pf_price_week">%1$s hetente</string>
+    <string name="pf_first_month_free">%1$s, az első hónap ingyenes</string>
+    <string name="pf_first_week_free">%1$s, az első hét ingyenes</string>
+    <string name="pf_thanks_rating">Köszönjük az értékelést.</string>
+    <string name="pf_show_original">Eredeti megjelenítése</string>
+    <string name="pf_show_translation">Fordítás megjelenítése</string>
+    <string name="pf_unknown_content">Ehhez az üzenethez az alkalmazás újabb verziója kell.</string>
+    <string name="pf_remove_photo">%1$d. fotó eltávolítása</string>
+    <string name="pf_photo">Fotó</string>
+    <string name="pf_photo_removed">Fotó eltávolítva</string>
+    <string name="pf_what_went_wrong">Mi történt?</string>
+    <string name="pf_send_report">Jelentés küldése</string>
+    <string name="pf_cancel">Mégse</string>
+    <string name="pf_draw_hint">Rajzolj a képernyőképre, hogy megmutasd a hibát. A legutóbbi naplókat és az eszköz állapotát is csatoljuk.</string>
+    <string name="pf_include_screenshot">Képernyőkép csatolása</string>
+    <string name="pf_clear_marks">Jelölések törlése</string>
+    <string name="pf_screenshot">Képernyőkép</string>
+    <string name="pf_you">Te: %1$s</string>
+    <string name="pf_waiting_connection">Várakozás a kapcsolatra</string>
+    <string name="pf_topic_gift">Kérdés az ajándékokról</string>
+    <string name="pf_pending_photo">A fotó küldésre vár</string>
+    <string name="pf_current_plan">Jelenlegi csomag</string>
+    <string name="pf_share">Megosztás</string>
+    <string name="pf_close">Bezárás</string>
+    <string name="pf_open_photo">Fotó megnyitása</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%1$d / %2$d csillag</item>
+        <item quantity="other">%1$d / %2$d csillag</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d új üzenet</item>
+        <item quantity="other">%1$d új üzenet</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Kérdésem van a számlázással kapcsolatban: "</string>
+    <string name="pf_start_idea">"Van egy ötletem: "</string>
+    <string name="pf_start_question">"Kérdésem van: "</string>
+    <string name="pf_start_account">"Segítségre van szükségem a fiókommal: "</string>
+    <string name="pf_start_feedback">"Visszajelzés: "</string>
+    <string name="pf_start_restore">"Nem sikerült visszaállítani a vásárlásaimat: "</string>
+    <string name="pf_start_privacy">"Kérdésem van az adatvédelemmel kapcsolatban: "</string>
+    <string name="pf_start_gift">"Kérdésem van az ajándékokkal kapcsolatban: "</string>
+    <string name="pf_retrying">Még nincs elküldve. Hamarosan újrapróbáljuk.</string>
+    <string name="pf_opens_browser">A böngésződben nyílik meg</string>
+    <string name="pf_opens_store">Megnyitja a Google Playt</string>
+    <string name="pf_reply_expectation">Általában egy napon belül válaszolnak</string>
+    <string name="pf_after_first">%1$s. Nyugodtan bezárhatod, a válasz itt vár.</string>
+    <string name="pf_after_first_plain">Nyugodtan bezárhatod, a válasz itt vár.</string>
+    <string name="pf_turn_on_notifications">Értesítések bekapcsolása</string>
+    <string name="pf_assistant_mark">Asszisztens</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">%1$d fotó feltöltése</item>
+        <item quantity="other">%1$d fotó feltöltése</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Az előfizetésed</string>
+    <string name="pf_store_manage_detail">Módosítsd a csomagot, a fizetési módot vagy a megújítást.</string>
+    <string name="pf_store_manage_button">Előfizetés kezelése</string>
+    <string name="pf_store_billing_title">A fizetés nem sikerült</string>
+    <string name="pf_store_billing_detail">Frissítsd a fizetési módot, hogy megmaradjon az előfizetésed.</string>
+    <string name="pf_store_billing_button">Fizetési mód frissítése</string>
+    <string name="pf_store_refund_title">Visszatérítés kérése</string>
+    <string name="pf_store_refund_detail">A visszatérítést a Google Play intézi. Keresd meg a rendelést a rendelési előzményeid között.</string>
+    <string name="pf_store_refund_button">Rendelési előzmények megnyitása</string>
+    <string name="pf_store_redeem_title">Kód beváltása</string>
+    <string name="pf_store_redeem_detail">Add meg a kódodat a Google Playen.</string>
+    <string name="pf_store_redeem_button">Beváltás</string>
+    <string name="pf_store_restore_title">Vásárlások visszaállítása</string>
+    <string name="pf_store_restore_detail">Megkeresi a fiókhoz tartozó vásárlásokat a Google Playen.</string>
+    <string name="pf_store_restore_button">Vásárlások visszaállítása</string>
+    <string name="pf_store_receipt_restored">Vásárlások visszaállítva</string>
+    <string name="pf_store_receipt_nothing">Nincs visszaállítható vásárlás</string>
+    <string name="pf_store_receipt_up_to_date">A vásárlások naprakészek</string>
+    <string name="pf_store_receipt_updated">Előfizetés frissítve</string>
+    <string name="pf_store_unavailable">Nem sikerült elérni a Google Playt. Próbáld újra később.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s ingyen</string>
+    <string name="pf_phase_for">%1$s (%2$s)</string>
+    <string name="pf_phase_then">%1$s, utána %2$s</string>
+    <string name="pf_change_now">Azonnal leváltja a jelenlegi csomagodat. A fel nem használt időt jóváírjuk.</string>
+    <string name="pf_change_at_renewal">A jelenlegi csomagod megújulásakor indul.</string>
+    <string name="pf_waiting_for_payment">Fizetésre vár</string>
+    <string name="pf_pending_detail">A csomagod akkor indul, amikor a fizetés teljesül.</string>
+    <string name="pf_plan_renews">%1$s megújul: %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s automatikusan megújul</string>
+    <string name="pf_plan_ends">%1$s lejár: %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s nem újul meg</string>
+    <string name="pf_plan_ended">%1$s lejárt: %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s lejárt</string>
+    <string name="pf_plan_issue_by">Fizetési probléma – frissítési határidő: %1$s</string>
+    <string name="pf_plan_issue">Fizetési probléma: frissítsd a fizetési módot</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d nap</item>
+        <item quantity="other">%d nap</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d hét</item>
+        <item quantity="other">%d hét</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d hónap</item>
+        <item quantity="other">%d hónap</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d év</item>
+        <item quantity="other">%d év</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Fotó készítése</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">%d karakter maradt</item>
+        <item quantity="other">%d karakter maradt</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d karakterrel több a megengedettnél</item>
+        <item quantity="other">%d karakterrel több a megengedettnél</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">A csevegést a pingfront működteti</string>
+    <string name="pf_plan_test_purchase">%1$s (tesztvásárlás)</string>
+    <string name="pf_held_chat_back">Még nincs elküldve. Elküldjük, amikor a csevegés újra elérhető.</string>
+    <string name="pf_held_sign_in">Még nincs elküldve. Elküldjük, miután bejelentkeztél.</string>
+    <string name="pf_offer_replaced">Újabb ajánlat váltotta fel</string>
+    <string name="pf_offer_ended">Ez az ajánlat már nem érhető el.</string>
+</resources>

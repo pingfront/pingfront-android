@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The noun agrees with the rating (pf_stars' first number): see values/pf_stars.xml. -->
+    <integer name="pf_stars_plural_on">1</integer>
+</resources>

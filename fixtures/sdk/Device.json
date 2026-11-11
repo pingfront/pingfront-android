@@ -1,0 +1,70 @@
+{
+  "schema": "Device",
+  "description": "What an SDK says about the device on POST /v1/sessions.",
+  "valid": [
+    {
+      "name": "a full device",
+      "value": {
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "platform": "ios",
+        "sdk": {
+          "name": "pingfront-ios",
+          "version": "1.0.0"
+        },
+        "app": {
+          "version": "1.0",
+          "build": "1",
+          "bundleId": "com.example.clockwise"
+        },
+        "os": "iOS 27.1",
+        "model": "iPhone18,1",
+        "locale": "en_GB",
+        "language": "en",
+        "timeZone": "Europe/Istanbul"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an over-long model",
+      "value": {
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "platform": "ios",
+        "sdk": {
+          "name": "pingfront-ios",
+          "version": "1.0.0"
+        },
+        "app": {
+          "version": "1.0",
+          "build": "1",
+          "bundleId": "com.example.clockwise"
+        },
+        "os": "iOS 27.1",
+        "model": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "locale": "en_GB",
+        "language": "en",
+        "timeZone": "Europe/Istanbul"
+      }
+    },
+    {
+      "name": "requires the time zone",
+      "value": {
+        "installId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10",
+        "platform": "ios",
+        "sdk": {
+          "name": "pingfront-ios",
+          "version": "1.0.0"
+        },
+        "app": {
+          "version": "1.0",
+          "build": "1",
+          "bundleId": "com.example.clockwise"
+        },
+        "os": "iOS 27.1",
+        "model": "iPhone18,1",
+        "locale": "en_GB",
+        "language": "en"
+      }
+    }
+  ]
+}

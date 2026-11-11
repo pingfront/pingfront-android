@@ -1,0 +1,117 @@
+{
+  "schema": "ThreadResponse",
+  "description": "GET /v1/thread. thread is null before the first message.",
+  "valid": [
+    {
+      "name": "thread is null before the first message",
+      "value": {
+        "thread": null,
+        "messages": [],
+        "hasOlder": false,
+        "team": [],
+        "policy": {
+          "canSend": true
+        }
+      }
+    },
+    {
+      "name": "carries rev, teamReadSeq and status",
+      "value": {
+        "thread": {
+          "id": "thr_1",
+          "status": "open",
+          "lastSeq": 9,
+          "readSeq": 7,
+          "teamReadSeq": 8,
+          "unread": 1,
+          "rev": 2
+        },
+        "messages": [
+          {
+            "id": "msg_1",
+            "seq": 4,
+            "author": {
+              "kind": "team",
+              "name": "Deniz"
+            },
+            "createdAt": "2026-10-30T18:00:00Z",
+            "ping": {
+              "kind": "play",
+              "playId": "play_1",
+              "explanation": "Sent automatically after you closed Plans"
+            },
+            "parts": [
+              {
+                "type": "text",
+                "text": "Want a week more to decide?"
+              },
+              {
+                "type": "card",
+                "card": {
+                  "kind": "choices",
+                  "id": "c1",
+                  "options": [
+                    {
+                      "id": "yes",
+                      "label": "Yes please"
+                    },
+                    {
+                      "id": "no",
+                      "label": "No thanks"
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "receipt",
+                "action": "trial_extended",
+                "text": "Trial extended to 14 Nov"
+              }
+            ]
+          }
+        ],
+        "hasOlder": true,
+        "team": [
+          {
+            "id": "m1",
+            "name": "Deniz",
+            "role": "Maker of Clockwise",
+            "timeZone": "Europe/Istanbul"
+          }
+        ],
+        "policy": {
+          "canSend": false,
+          "reason": "app_paused"
+        }
+      }
+    },
+    {
+      "name": "closes sending until the person is verified",
+      "value": {
+        "thread": null,
+        "messages": [],
+        "hasOlder": false,
+        "team": [],
+        "policy": {
+          "canSend": false,
+          "reason": "verification_required"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unknown policy reason",
+      "value": {
+        "thread": null,
+        "messages": [],
+        "hasOlder": false,
+        "team": [],
+        "policy": {
+          "canSend": false,
+          "reason": "sleeping"
+        }
+      }
+    }
+  ]
+}

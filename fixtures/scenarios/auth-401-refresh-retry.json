@@ -1,0 +1,68 @@
+{
+  "scenario": "auth-401-refresh-retry",
+  "description": "Any 401 unauthorized triggers exactly one refresh and one retry of the same request, in the API client, for every bearer route (the protocol, Skew-safe sessions).",
+  "given": {
+    "installId": "0b6f3c1e-8a52-4c1f-9d7e-2f4a6b8c0d1e",
+    "installSecret": "is_test_scenario_secret",
+    "accessToken": "at_expired",
+    "thread": null
+  },
+  "action": "Open the chat (the SDK loads GET /v1/thread).",
+  "steps": [
+    {
+      "name": "the stale token is refused",
+      "request": {
+        "operation": "GET /v1/thread",
+        "path": "/v1/thread",
+        "headers": { "Authorization": "Bearer at_expired" }
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": {
+            "code": "unauthorized",
+            "message": "The access token expired. Refresh it with POST /v1/sessions/refresh.",
+            "docs": "https://pingfront.sh/docs/errors#unauthorized"
+          }
+        }
+      }
+    },
+    {
+      "name": "one refresh with the install's credentials",
+      "request": {
+        "operation": "POST /v1/sessions/refresh",
+        "path": "/v1/sessions/refresh",
+        "absentHeaders": [ "Authorization" ],
+        "body": { "installId": "0b6f3c1e-8a52-4c1f-9d7e-2f4a6b8c0d1e", "installSecret": "is_test_scenario_secret" }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "accessToken": "at_fresh",
+          "accessExpiresAt": "2026-11-02T12:15:00Z",
+          "accessExpiresIn": 900,
+          "person": { "id": "per_1", "level": "guest" },
+          "storeAccountToken": "6b1d8f0e-3c2a-4e5b-9f7d-1a2b3c4d5e6f"
+        }
+      }
+    },
+    {
+      "name": "the original request, retried once with the new token",
+      "request": {
+        "operation": "GET /v1/thread",
+        "path": "/v1/thread",
+        "headers": { "Authorization": "Bearer at_fresh" }
+      },
+      "response": {
+        "status": 200,
+        "body": { "thread": null, "messages": [], "hasOlder": false, "team": [], "policy": { "canSend": true } }
+      }
+    }
+  ],
+  "then": {
+    "requests": 3,
+    "accessToken": "at_fresh",
+    "refreshAt": "accessExpiresIn seconds after the refresh answered (900), never from the device clock",
+    "surfaced": "nothing: the chat shows the empty thread, no error"
+  }
+}

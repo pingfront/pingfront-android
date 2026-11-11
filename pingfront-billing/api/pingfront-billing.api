@@ -1,0 +1,7 @@
+public final class dev/pingfront/billing/Billing : dev/pingfront/PingFrontModule {
+	public static final field INSTANCE Ldev/pingfront/billing/Billing;
+	public fun install (Ldev/pingfront/ModuleContext;)V
+	public final fun invoke (Ljava/util/List;)Ldev/pingfront/PingFrontModule;
+	public final fun invoke (Ljava/util/List;Lkotlin/jvm/functions/Function2;)Ldev/pingfront/PingFrontModule;
+}
+

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">پیام</string>
+    <string name="pf_send">ارسال</string>
+    <string name="pf_add_photo">افزودن عکس</string>
+    <string name="pf_add_photo_or_report">افزودن عکس یا گزارش اشکال</string>
+    <string name="pf_photos">عکس‌ها</string>
+    <string name="pf_report_bug">گزارش اشکال</string>
+    <string name="pf_close_chat">بستن گفتگو</string>
+    <string name="pf_delivered">تحویل داده شد</string>
+    <string name="pf_read">خوانده شد</string>
+    <string name="pf_not_delivered">تحویل داده نشد</string>
+    <string name="pf_delete">حذف</string>
+    <string name="pf_sending">در حال ارسال…</string>
+    <string name="pf_ai">هوش مصنوعی</string>
+    <string name="pf_assistant">دستیار</string>
+    <string name="pf_the_team">تیم</string>
+    <string name="pf_team_title">تیم %1$s</string>
+    <string name="pf_messaged_you_first">%1$s اول به شما پیام داد</string>
+    <string name="pf_wrote_first">%1$s اول به شما نوشت.</string>
+    <string name="pf_why_message">چرا این پیام را دریافت کردید</string>
+    <string name="pf_reply_if_you_like">اگر خواستید پاسخ دهید، یا نادیده بگیرید.</string>
+    <string name="pf_ask_person">صحبت با یک نفر از تیم</string>
+    <string name="pf_ask_person_message">لطفاً می‌خواهم با یک نفر صحبت کنم.</string>
+    <string name="pf_typing">%1$s در حال نوشتن است</string>
+    <string name="pf_jump_latest">رفتن به جدیدترین</string>
+    <string name="pf_load_earlier">بارگیری پیام‌های قبلی</string>
+    <string name="pf_loading_earlier">در حال بارگیری پیام‌های قبلی</string>
+    <string name="pf_today">امروز %1$s</string>
+    <string name="pf_yesterday">دیروز %1$s</string>
+    <string name="pf_local_time">ساعت %1$s به وقت %2$s</string>
+    <string name="pf_welcome_body">سؤال، اشکال یا ایده: سازندگان %1$s همهٔ پیام‌ها را می‌خوانند و همین‌جا پاسخ می‌دهند.</string>
+    <string name="pf_topic_billing">سؤال دربارهٔ پرداخت</string>
+    <string name="pf_topic_bug">گزارش اشکال</string>
+    <string name="pf_topic_idea">پیشنهاد یک ایده</string>
+    <string name="pf_topic_question">پرسیدن سؤال</string>
+    <string name="pf_topic_account">کمک برای حسابم</string>
+    <string name="pf_topic_feedback">ارسال بازخورد</string>
+    <string name="pf_topic_restore">بازیابی خریدها</string>
+    <string name="pf_topic_privacy">سؤال دربارهٔ حریم خصوصی</string>
+    <string name="pf_topic_other">موضوعی دیگر</string>
+    <string name="pf_offline">آفلاین هستید. پیام‌ها وقتی دوباره آنلاین شوید ارسال می‌شوند.</string>
+    <string name="pf_unreachable">اکنون دسترسی به گفتگو ممکن نیست. پیام‌ها پس از بازگشت آن ارسال می‌شوند.</string>
+    <string name="pf_couldnt_load">گفتگو بارگیری نشد</string>
+    <string name="pf_try_again">امتحان دوباره</string>
+    <string name="pf_setup_problem">مشکل در راه‌اندازی</string>
+    <string name="pf_debug_only">فقط در نسخه‌های اشکال‌زدایی نمایش داده می‌شود.</string>
+    <string name="pf_chat_unavailable">گفتگو در حال حاضر در دسترس نیست.</string>
+    <string name="pf_draft_look">ظاهر پیش‌نویس</string>
+    <string name="pf_send_again_in">%1$s دیگر می‌توانید دوباره ارسال کنید.</string>
+    <string name="pf_sending_paused">ارسال برای مدتی متوقف شده است. بعداً دوباره امتحان کنید.</string>
+    <string name="pf_photos_again_in">%1$s دیگر می‌توانید دوباره عکس بفرستید. ارسال متن همچنان ممکن است.</string>
+    <string name="pf_photos_paused">ارسال عکس برای مدتی متوقف شده است. ارسال متن همچنان ممکن است.</string>
+    <string name="pf_blocked">نمی‌توانید در این گفتگو پیام بفرستید.</string>
+    <string name="pf_paused">این گفتگو فعلاً متوقف شده است.</string>
+    <string name="pf_verification_required">برای پیام دادن به تیم، وارد برنامه شوید.</string>
+    <string name="pf_enjoying">از %1$s راضی هستید؟</string>
+    <string name="pf_review_helps">نظر شما به دیگران کمک می‌کند %1$s را پیدا کنند.</string>
+    <string name="pf_includes_screenshot">شامل نماگرفت و گزارش‌های اخیر است.</string>
+    <string name="pf_price_year">سالانه %1$s</string>
+    <string name="pf_price_month">ماهانه %1$s</string>
+    <string name="pf_price_week">هفتگی %1$s</string>
+    <string name="pf_first_month_free">%1$s، ماه اول رایگان</string>
+    <string name="pf_first_week_free">%1$s، هفتهٔ اول رایگان</string>
+    <string name="pf_thanks_rating">از امتیازتان متشکریم.</string>
+    <string name="pf_show_original">نمایش متن اصلی</string>
+    <string name="pf_show_translation">نمایش ترجمه</string>
+    <string name="pf_unknown_content">برای دیدن این پیام به نسخهٔ جدیدتر برنامه نیاز دارید.</string>
+    <string name="pf_remove_photo">حذف عکس %1$d</string>
+    <string name="pf_photo">عکس</string>
+    <string name="pf_photo_removed">عکس حذف شد</string>
+    <string name="pf_what_went_wrong">چه مشکلی پیش آمد؟</string>
+    <string name="pf_send_report">ارسال گزارش</string>
+    <string name="pf_cancel">لغو</string>
+    <string name="pf_draw_hint">روی نماگرفت بکشید تا مشکل را نشان دهید. گزارش‌های اخیر و وضعیت دستگاه پیوست می‌شوند.</string>
+    <string name="pf_include_screenshot">پیوست کردن نماگرفت</string>
+    <string name="pf_clear_marks">پاک کردن علامت‌ها</string>
+    <string name="pf_screenshot">نماگرفت</string>
+    <string name="pf_you">شما: %1$s</string>
+    <string name="pf_waiting_connection">در انتظار اتصال</string>
+    <string name="pf_topic_gift">سؤال دربارهٔ هدیه</string>
+    <string name="pf_pending_photo">عکس در انتظار ارسال</string>
+    <string name="pf_current_plan">طرح فعلی</string>
+    <string name="pf_share">هم‌رسانی</string>
+    <string name="pf_close">بستن</string>
+    <string name="pf_open_photo">باز کردن عکس</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%1$d از %2$d ستاره</item>
+        <item quantity="other">%1$d از %2$d ستاره</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d پیام جدید</item>
+        <item quantity="other">%1$d پیام جدید</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"دربارهٔ پرداخت سؤالی دارم: "</string>
+    <string name="pf_start_idea">"ایده‌ای دارم: "</string>
+    <string name="pf_start_question">"سؤالی دارم: "</string>
+    <string name="pf_start_account">"برای حسابم کمک می‌خواهم: "</string>
+    <string name="pf_start_feedback">"بازخورد من: "</string>
+    <string name="pf_start_restore">"بازیابی خریدهایم انجام نشد: "</string>
+    <string name="pf_start_privacy">"دربارهٔ حریم خصوصی سؤالی دارم: "</string>
+    <string name="pf_start_gift">"دربارهٔ هدیه‌ها سؤالی دارم: "</string>
+    <string name="pf_retrying">هنوز ارسال نشده است. به‌زودی دوباره تلاش می‌شود.</string>
+    <string name="pf_opens_browser">در مرورگر باز می‌شود</string>
+    <string name="pf_opens_store">Google Play را باز می‌کند</string>
+    <string name="pf_reply_expectation">معمولاً ظرف یک روز پاسخ می‌دهند</string>
+    <string name="pf_after_first">%1$s. می‌توانید این را ببندید؛ پاسخ همین‌جا می‌ماند.</string>
+    <string name="pf_after_first_plain">می‌توانید این را ببندید؛ پاسخ همین‌جا می‌ماند.</string>
+    <string name="pf_turn_on_notifications">روشن کردن اعلان‌ها</string>
+    <string name="pf_assistant_mark">دستیار</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">در حال بارگذاری %1$d عکس</item>
+        <item quantity="other">در حال بارگذاری %1$d عکس</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">اشتراک شما</string>
+    <string name="pf_store_manage_detail">طرح، روش پرداخت یا تمدید را تغییر دهید.</string>
+    <string name="pf_store_manage_button">مدیریت اشتراک</string>
+    <string name="pf_store_billing_title">پرداخت انجام نشد</string>
+    <string name="pf_store_billing_detail">برای حفظ اشتراک، روش پرداخت خود را به‌روز کنید.</string>
+    <string name="pf_store_billing_button">به‌روزرسانی روش پرداخت</string>
+    <string name="pf_store_refund_title">درخواست بازپرداخت</string>
+    <string name="pf_store_refund_detail">رسیدگی به بازپرداخت با Google Play است. سفارش را در سابقهٔ سفارش‌هایتان پیدا کنید.</string>
+    <string name="pf_store_refund_button">باز کردن سابقهٔ سفارش‌ها</string>
+    <string name="pf_store_redeem_title">استفاده از یک کد</string>
+    <string name="pf_store_redeem_detail">کدتان را در Google Play وارد کنید.</string>
+    <string name="pf_store_redeem_button">استفاده از کد</string>
+    <string name="pf_store_restore_title">بازیابی خریدها</string>
+    <string name="pf_store_restore_detail">خریدهای این حساب را در Google Play بررسی می‌کند.</string>
+    <string name="pf_store_restore_button">بازیابی خریدها</string>
+    <string name="pf_store_receipt_restored">خریدها بازیابی شدند</string>
+    <string name="pf_store_receipt_nothing">خریدی برای بازیابی وجود ندارد</string>
+    <string name="pf_store_receipt_up_to_date">خریدها به‌روز هستند</string>
+    <string name="pf_store_receipt_updated">اشتراک به‌روز شد</string>
+    <string name="pf_store_unavailable">اتصال به Google Play برقرار نشد. بعداً دوباره امتحان کنید.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s رایگان</string>
+    <string name="pf_phase_for">%1$s به مدت %2$s</string>
+    <string name="pf_phase_then">%1$s، سپس %2$s</string>
+    <string name="pf_change_now">همین حالا جایگزین طرح فعلی‌تان می‌شود. زمان استفاده‌نشده به حسابتان منظور می‌شود.</string>
+    <string name="pf_change_at_renewal">با تمدید طرح فعلی‌تان شروع می‌شود.</string>
+    <string name="pf_waiting_for_payment">در انتظار پرداخت</string>
+    <string name="pf_pending_detail">طرح شما پس از انجام پرداخت شروع می‌شود.</string>
+    <string name="pf_plan_renews">%1$s در %2$s تمدید می‌شود</string>
+    <string name="pf_plan_renews_auto">%1$s به‌طور خودکار تمدید می‌شود</string>
+    <string name="pf_plan_ends">%1$s در %2$s به پایان می‌رسد</string>
+    <string name="pf_plan_wont_renew">%1$s تمدید نمی‌شود</string>
+    <string name="pf_plan_ended">%1$s در %2$s به پایان رسید</string>
+    <string name="pf_plan_ended_undated">%1$s به پایان رسیده است</string>
+    <string name="pf_plan_issue_by">مشکل پرداخت: روش پرداخت را تا %1$s به‌روز کنید</string>
+    <string name="pf_plan_issue">مشکل پرداخت: روش پرداخت را به‌روز کنید</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d روز</item>
+        <item quantity="other">%d روز</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d هفته</item>
+        <item quantity="other">%d هفته</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d ماه</item>
+        <item quantity="other">%d ماه</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d سال</item>
+        <item quantity="other">%d سال</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">گرفتن عکس</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">%d نویسه باقی مانده</item>
+        <item quantity="other">%d نویسه باقی مانده</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d نویسه بیش از حد مجاز</item>
+        <item quantity="other">%d نویسه بیش از حد مجاز</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">گفتگو از pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (خرید آزمایشی)</string>
+    <string name="pf_held_chat_back">هنوز ارسال نشده است. وقتی گفتگو برگردد، ارسال می‌شود.</string>
+    <string name="pf_held_sign_in">هنوز ارسال نشده است. پس از ورود، ارسال می‌شود.</string>
+    <string name="pf_offer_replaced">پیشنهاد جدیدتری جای آن را گرفت</string>
+    <string name="pf_offer_ended">این پیشنهاد دیگر در دسترس نیست.</string>
+</resources>

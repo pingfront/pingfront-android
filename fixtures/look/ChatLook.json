@@ -1,0 +1,276 @@
+{
+  "schema": "ChatLook",
+  "description": "The chat look. Only fields the customer set travel on the wire; Localized text needs a default entry.",
+  "valid": [
+    {
+      "name": "keeps unset fields unset on the wire, so code config is never overridden",
+      "value": {
+        "theme": {},
+        "header": {},
+        "welcome": {},
+        "topics": [],
+        "composer": {},
+        "messages": {}
+      },
+      "expect": {
+        "theme": {},
+        "header": {},
+        "welcome": {},
+        "topics": [],
+        "composer": {},
+        "messages": {}
+      }
+    },
+    {
+      "name": "requires a default entry in customer-written text: default, de and pt-BR",
+      "value": {
+        "theme": {},
+        "header": {},
+        "welcome": {
+          "title": {
+            "default": "Hi",
+            "de": "Hallo",
+            "pt-BR": "Oi"
+          }
+        },
+        "topics": [],
+        "composer": {},
+        "messages": {}
+      }
+    },
+    {
+      "name": "caps topics at six: six topics pass",
+      "value": {
+        "theme": {},
+        "header": {},
+        "welcome": {},
+        "topics": [
+          {
+            "id": "t1",
+            "label": {
+              "default": "Topic 1"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t2",
+            "label": {
+              "default": "Topic 2"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t3",
+            "label": {
+              "default": "Topic 3"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t4",
+            "label": {
+              "default": "Topic 4"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t5",
+            "label": {
+              "default": "Topic 5"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t6",
+            "label": {
+              "default": "Topic 6"
+            },
+            "symbol": "question"
+          }
+        ],
+        "composer": {},
+        "messages": {}
+      }
+    },
+    {
+      "name": "sets every theme field",
+      "value": {
+        "theme": {
+          "accent": {
+            "light": "#3550E6",
+            "dark": "#7D91FF"
+          },
+          "background": {
+            "light": "#FFFFFF",
+            "dark": "#000000"
+          },
+          "teamBubble": {
+            "light": "#EEEEEE",
+            "dark": "#222222"
+          },
+          "scheme": "dark",
+          "font": "rounded",
+          "corners": "square",
+          "density": "compact"
+        },
+        "header": {},
+        "welcome": {},
+        "topics": [],
+        "composer": {},
+        "messages": {},
+        "aiName": "Helper"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "requires a default entry in customer-written text: only de",
+      "value": {
+        "theme": {},
+        "header": {},
+        "welcome": {
+          "title": {
+            "de": "Hallo"
+          }
+        },
+        "topics": [],
+        "composer": {},
+        "messages": {}
+      }
+    },
+    {
+      "name": "caps topics at six: seven topics fail",
+      "value": {
+        "theme": {},
+        "header": {},
+        "welcome": {},
+        "topics": [
+          {
+            "id": "t1",
+            "label": {
+              "default": "Topic 1"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t2",
+            "label": {
+              "default": "Topic 2"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t3",
+            "label": {
+              "default": "Topic 3"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t4",
+            "label": {
+              "default": "Topic 4"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t5",
+            "label": {
+              "default": "Topic 5"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t6",
+            "label": {
+              "default": "Topic 6"
+            },
+            "symbol": "question"
+          },
+          {
+            "id": "t7",
+            "label": {
+              "default": "Topic 7"
+            },
+            "symbol": "question"
+          }
+        ],
+        "composer": {},
+        "messages": {}
+      }
+    },
+    {
+      "name": "validates topic symbols",
+      "value": {
+        "theme": {},
+        "header": {},
+        "welcome": {},
+        "topics": [
+          {
+            "id": "t1",
+            "label": {
+              "default": "Topic 1"
+            },
+            "symbol": "rocket"
+          }
+        ],
+        "composer": {},
+        "messages": {}
+      }
+    },
+    {
+      "name": "rejects a malformed language tag",
+      "value": {
+        "theme": {},
+        "header": {},
+        "welcome": {
+          "title": {
+            "default": "Hi",
+            "EN": "Hi"
+          }
+        },
+        "topics": [],
+        "composer": {},
+        "messages": {}
+      }
+    },
+    {
+      "name": "rejects a non-hex accent",
+      "value": {
+        "theme": {
+          "accent": {
+            "light": "blue",
+            "dark": "#000000"
+          }
+        },
+        "header": {},
+        "welcome": {},
+        "topics": [],
+        "composer": {},
+        "messages": {}
+      }
+    },
+    {
+      "name": "rejects an empty aiName",
+      "value": {
+        "theme": {},
+        "header": {},
+        "welcome": {},
+        "topics": [],
+        "composer": {},
+        "messages": {},
+        "aiName": ""
+      }
+    },
+    {
+      "name": "requires every section",
+      "value": {
+        "theme": {},
+        "header": {},
+        "welcome": {},
+        "topics": [],
+        "composer": {}
+      }
+    }
+  ]
+}

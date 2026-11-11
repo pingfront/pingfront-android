@@ -1,0 +1,65 @@
+{
+  "schema": "PersonWebPushPayload",
+  "description": "The decrypted body of a web push to a person's browser (the web widget's service worker).",
+  "valid": [
+    {
+      "name": "a team reply",
+      "value": {
+        "v": 1,
+        "kind": "message",
+        "appId": "app_1",
+        "threadId": "thr_1",
+        "messageId": "msg_1",
+        "unread": 1,
+        "title": "Deniz from Clockwise",
+        "body": "Yes, your streak is back",
+        "tag": "pf-thr_1"
+      }
+    },
+    {
+      "name": "a ping",
+      "value": {
+        "v": 1,
+        "kind": "ping",
+        "appId": "app_1",
+        "title": "Clockwise",
+        "body": "Want a week more to decide?"
+      }
+    },
+    {
+      "name": "a notification without sound",
+      "value": {
+        "v": 1,
+        "kind": "message",
+        "appId": "app_1",
+        "threadId": "thr_1",
+        "messageId": "msg_1",
+        "unread": 1,
+        "title": "Deniz from Clockwise",
+        "body": "Yes, your streak is back",
+        "tag": "pf-thr_1",
+        "silent": true
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "needs a title and body",
+      "value": {
+        "v": 1,
+        "kind": "message",
+        "appId": "app_1"
+      }
+    },
+    {
+      "name": "only v 1",
+      "value": {
+        "v": 2,
+        "kind": "message",
+        "appId": "app_1",
+        "title": "t",
+        "body": "b"
+      }
+    }
+  ]
+}

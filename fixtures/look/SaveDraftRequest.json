@@ -1,0 +1,35 @@
+{
+  "schema": "SaveDraftRequest",
+  "description": "PUT /dash/v1/apps/{appId}/look/draft body.",
+  "valid": [
+    {
+      "name": "saves a draft",
+      "value": {
+        "look": {
+          "theme": {},
+          "header": {},
+          "welcome": {},
+          "topics": [],
+          "composer": {},
+          "messages": {}
+        },
+        "baseRevision": 0
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "requires baseRevision",
+      "value": {
+        "look": {
+          "theme": {},
+          "header": {},
+          "welcome": {},
+          "topics": [],
+          "composer": {},
+          "messages": {}
+        }
+      }
+    }
+  ]
+}

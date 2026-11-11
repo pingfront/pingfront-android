@@ -1,0 +1,6 @@
+public final class dev/pingfront/revenuecat/RevenueCat : dev/pingfront/PingFrontModule {
+	public static final field $stable I
+	public static final field INSTANCE Ldev/pingfront/revenuecat/RevenueCat;
+	public fun install (Ldev/pingfront/ModuleContext;)V
+}
+

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Mesej</string>
+    <string name="pf_send">Hantar</string>
+    <string name="pf_add_photo">Tambah foto</string>
+    <string name="pf_add_photo_or_report">Tambah foto atau laporkan pepijat</string>
+    <string name="pf_photos">Foto</string>
+    <string name="pf_report_bug">Laporkan pepijat</string>
+    <string name="pf_close_chat">Tutup sembang</string>
+    <string name="pf_delivered">Dihantar</string>
+    <string name="pf_read">Dibaca</string>
+    <string name="pf_not_delivered">Tidak dihantar</string>
+    <string name="pf_delete">Padam</string>
+    <string name="pf_sending">Menghantar…</string>
+    <string name="pf_ai">AI</string>
+    <string name="pf_assistant">Pembantu</string>
+    <string name="pf_the_team">Pasukan</string>
+    <string name="pf_team_title">Pasukan %1$s</string>
+    <string name="pf_messaged_you_first">%1$s menghantar mesej kepada anda dahulu</string>
+    <string name="pf_wrote_first">%1$s menulis kepada anda dahulu.</string>
+    <string name="pf_why_message">Sebab anda menerima mesej ini</string>
+    <string name="pf_reply_if_you_like">Balas jika anda mahu, atau abaikan sahaja.</string>
+    <string name="pf_ask_person">Bercakap dengan pasukan</string>
+    <string name="pf_ask_person_message">Saya ingin bercakap terus dengan pasukan.</string>
+    <string name="pf_typing">%1$s sedang menaip</string>
+    <string name="pf_jump_latest">Pergi ke mesej terkini</string>
+    <string name="pf_load_earlier">Muatkan mesej terdahulu</string>
+    <string name="pf_loading_earlier">Memuatkan mesej terdahulu</string>
+    <string name="pf_today">Hari ini %1$s</string>
+    <string name="pf_yesterday">Semalam %1$s</string>
+    <string name="pf_local_time">Waktu tempatan %2$s: %1$s</string>
+    <string name="pf_welcome_body">Soalan, pepijat atau idea: orang yang membina %1$s membaca setiap mesej dan membalas di sini.</string>
+    <string name="pf_topic_billing">Tanya tentang pengebilan</string>
+    <string name="pf_topic_bug">Laporkan pepijat</string>
+    <string name="pf_topic_idea">Kongsi idea</string>
+    <string name="pf_topic_question">Tanya soalan</string>
+    <string name="pf_topic_account">Dapatkan bantuan untuk akaun saya</string>
+    <string name="pf_topic_feedback">Beri maklum balas</string>
+    <string name="pf_topic_restore">Pulihkan pembelian</string>
+    <string name="pf_topic_privacy">Tanya tentang privasi</string>
+    <string name="pf_topic_other">Perkara lain</string>
+    <string name="pf_offline">Anda di luar talian. Mesej akan dihantar apabila anda kembali dalam talian.</string>
+    <string name="pf_unreachable">Sembang tidak dapat dicapai sekarang. Mesej akan dihantar apabila ia kembali.</string>
+    <string name="pf_couldnt_load">Tidak dapat memuatkan perbualan</string>
+    <string name="pf_try_again">Cuba lagi</string>
+    <string name="pf_setup_problem">Masalah persediaan</string>
+    <string name="pf_debug_only">Hanya dipaparkan dalam binaan nyahpepijat.</string>
+    <string name="pf_chat_unavailable">Sembang tidak tersedia sekarang.</string>
+    <string name="pf_draft_look">Rupa draf</string>
+    <string name="pf_send_again_in">Anda boleh menghantar semula dalam %1$s.</string>
+    <string name="pf_sending_paused">Penghantaran dijeda buat seketika. Cuba lagi nanti.</string>
+    <string name="pf_photos_again_in">Foto boleh dihantar semula dalam %1$s. Teks masih boleh dihantar.</string>
+    <string name="pf_photos_paused">Foto dijeda buat seketika. Teks masih boleh dihantar.</string>
+    <string name="pf_blocked">Anda tidak boleh menghantar mesej dalam sembang ini.</string>
+    <string name="pf_paused">Sembang ini dijeda buat masa ini.</string>
+    <string name="pf_verification_required">Log masuk ke aplikasi untuk menghantar mesej kepada pasukan.</string>
+    <string name="pf_enjoying">Suka menggunakan %1$s?</string>
+    <string name="pf_review_helps">Ulasan anda membantu orang lain menemui %1$s.</string>
+    <string name="pf_includes_screenshot">Termasuk tangkapan skrin dan log terkini.</string>
+    <string name="pf_price_year">%1$s setahun</string>
+    <string name="pf_price_month">%1$s sebulan</string>
+    <string name="pf_price_week">%1$s seminggu</string>
+    <string name="pf_first_month_free">%1$s, bulan pertama percuma</string>
+    <string name="pf_first_week_free">%1$s, minggu pertama percuma</string>
+    <string name="pf_thanks_rating">Terima kasih atas penilaian anda.</string>
+    <string name="pf_show_original">Tunjukkan teks asal</string>
+    <string name="pf_show_translation">Tunjukkan terjemahan</string>
+    <string name="pf_unknown_content">Mesej ini memerlukan versi aplikasi yang lebih baharu.</string>
+    <string name="pf_remove_photo">Alih keluar foto %1$d</string>
+    <string name="pf_photo">Foto</string>
+    <string name="pf_photo_removed">Foto dialih keluar</string>
+    <string name="pf_what_went_wrong">Apakah masalahnya?</string>
+    <string name="pf_send_report">Hantar laporan</string>
+    <string name="pf_cancel">Batal</string>
+    <string name="pf_draw_hint">Lukis pada tangkapan skrin untuk menunjukkan masalahnya. Log terkini dan keadaan peranti turut dilampirkan.</string>
+    <string name="pf_include_screenshot">Sertakan tangkapan skrin</string>
+    <string name="pf_clear_marks">Kosongkan tanda</string>
+    <string name="pf_screenshot">Tangkapan skrin</string>
+    <string name="pf_you">Anda: %1$s</string>
+    <string name="pf_waiting_connection">Menunggu sambungan</string>
+    <string name="pf_topic_gift">Tanya tentang hadiah</string>
+    <string name="pf_pending_photo">Foto menunggu untuk dihantar</string>
+    <string name="pf_current_plan">Pelan semasa</string>
+    <string name="pf_share">Kongsi</string>
+    <string name="pf_close">Tutup</string>
+    <string name="pf_open_photo">Buka foto</string>
+    <plurals name="pf_stars">
+        <item quantity="other">%1$d daripada %2$d bintang</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="other">%1$d mesej baharu</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Saya ada soalan tentang pengebilan: "</string>
+    <string name="pf_start_idea">"Saya ada idea: "</string>
+    <string name="pf_start_question">"Saya ada soalan: "</string>
+    <string name="pf_start_account">"Saya perlukan bantuan untuk akaun saya: "</string>
+    <string name="pf_start_feedback">"Maklum balas saya: "</string>
+    <string name="pf_start_restore">"Pembelian saya tidak dapat dipulihkan: "</string>
+    <string name="pf_start_privacy">"Saya ada soalan tentang privasi: "</string>
+    <string name="pf_start_gift">"Saya ada soalan tentang hadiah: "</string>
+    <string name="pf_retrying">Belum dihantar. Akan dicuba semula sebentar lagi.</string>
+    <string name="pf_opens_browser">Dibuka dalam penyemak imbas anda</string>
+    <string name="pf_opens_store">Membuka Google Play</string>
+    <string name="pf_reply_expectation">Biasanya membalas dalam masa sehari</string>
+    <string name="pf_after_first">%1$s. Anda boleh menutup sembang ini; balasan akan dipaparkan di sini.</string>
+    <string name="pf_after_first_plain">Anda boleh menutup sembang ini; balasan akan dipaparkan di sini.</string>
+    <string name="pf_turn_on_notifications">Hidupkan pemberitahuan</string>
+    <string name="pf_assistant_mark">Pembantu</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="other">Memuat naik %1$d foto</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Langganan anda</string>
+    <string name="pf_store_manage_detail">Tukar pelan, kaedah pembayaran atau pembaharuan anda.</string>
+    <string name="pf_store_manage_button">Urus langganan</string>
+    <string name="pf_store_billing_title">Pembayaran tidak berjaya</string>
+    <string name="pf_store_billing_detail">Kemas kini kaedah pembayaran anda untuk mengekalkan langganan.</string>
+    <string name="pf_store_billing_button">Kemas kini kaedah pembayaran</string>
+    <string name="pf_store_refund_title">Minta bayaran balik</string>
+    <string name="pf_store_refund_detail">Google Play menguruskan bayaran balik. Cari pesanan itu dalam sejarah pesanan anda.</string>
+    <string name="pf_store_refund_button">Buka sejarah pesanan</string>
+    <string name="pf_store_redeem_title">Penebusan kod</string>
+    <string name="pf_store_redeem_detail">Masukkan kod anda dalam Google Play.</string>
+    <string name="pf_store_redeem_button">Tebus kod</string>
+    <string name="pf_store_restore_title">Pulihkan pembelian</string>
+    <string name="pf_store_restore_detail">Menyemak pembelian pada akaun ini dalam Google Play.</string>
+    <string name="pf_store_restore_button">Pulihkan pembelian</string>
+    <string name="pf_store_receipt_restored">Pembelian dipulihkan</string>
+    <string name="pf_store_receipt_nothing">Tiada pembelian untuk dipulihkan</string>
+    <string name="pf_store_receipt_up_to_date">Pembelian sudah dikemas kini</string>
+    <string name="pf_store_receipt_updated">Langganan dikemas kini</string>
+    <string name="pf_store_unavailable">Tidak dapat menghubungi Google Play. Cuba lagi nanti.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s percuma</string>
+    <string name="pf_phase_for">%1$s selama %2$s</string>
+    <string name="pf_phase_then">%1$s, kemudian %2$s</string>
+    <string name="pf_change_now">Menggantikan pelan semasa anda sekarang. Baki masa yang tidak digunakan akan dikreditkan.</string>
+    <string name="pf_change_at_renewal">Bermula apabila pelan semasa anda diperbaharui.</string>
+    <string name="pf_waiting_for_payment">Menunggu pembayaran</string>
+    <string name="pf_pending_detail">Pelan anda bermula sebaik sahaja pembayaran berjaya.</string>
+    <string name="pf_plan_renews">%1$s diperbaharui pada %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s diperbaharui secara automatik</string>
+    <string name="pf_plan_ends">%1$s tamat pada %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s tidak akan diperbaharui</string>
+    <string name="pf_plan_ended">%1$s telah tamat pada %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s telah tamat</string>
+    <string name="pf_plan_issue_by">Masalah pembayaran: kemas kini sebelum %1$s</string>
+    <string name="pf_plan_issue">Masalah pembayaran: kemas kini kaedah pembayaran anda</string>
+    <plurals name="pf_duration_day">
+        <item quantity="other">%d hari</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="other">%d minggu</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="other">%d bulan</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="other">%d tahun</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Ambil foto</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="other">%d aksara lagi</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="other">%d aksara melebihi had</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Sembang oleh pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (pembelian ujian)</string>
+    <string name="pf_held_chat_back">Belum dihantar. Akan dihantar apabila sembang kembali.</string>
+    <string name="pf_held_sign_in">Belum dihantar. Akan dihantar selepas anda log masuk.</string>
+    <string name="pf_offer_replaced">Diganti dengan tawaran yang lebih baharu</string>
+    <string name="pf_offer_ended">Tawaran ini tidak lagi tersedia.</string>
+</resources>

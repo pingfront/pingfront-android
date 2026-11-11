@@ -1,0 +1,13 @@
+public final class dev/pingfront/reports/ReportActivity : androidx/activity/ComponentActivity {
+	public static final field $stable I
+	public fun <init> ()V
+}
+
+public final class dev/pingfront/reports/Reports : dev/pingfront/PingFrontModule {
+	public static final field $stable I
+	public static final field INSTANCE Ldev/pingfront/reports/Reports;
+	public fun install (Ldev/pingfront/ModuleContext;)V
+	public final fun invoke (ZZ)Ldev/pingfront/PingFrontModule;
+	public static synthetic fun invoke$default (Ldev/pingfront/reports/Reports;ZZILjava/lang/Object;)Ldev/pingfront/PingFrontModule;
+}
+

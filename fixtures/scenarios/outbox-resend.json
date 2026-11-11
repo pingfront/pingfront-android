@@ -1,0 +1,46 @@
+{
+  "scenario": "outbox-resend",
+  "description": "A send whose response was lost stays in the outbox and is resent with the same clientId. The server stored the first one, so the resend answers 200 with the original message: one bubble, never two.",
+  "given": {
+    "accessToken": "at_ok",
+    "thread": { "id": "thr_1", "rev": 1, "messages": [ { "id": "msg_0", "seq": 1 } ] },
+    "outbox": []
+  },
+  "action": "Send \"Is my streak back?\", then the connection drops before the answer arrives; when it is back, the outbox flushes.",
+  "steps": [
+    {
+      "name": "the first attempt reaches the server, but its answer is lost",
+      "request": {
+        "operation": "POST /v1/thread/messages",
+        "path": "/v1/thread/messages",
+        "headers": { "Authorization": "Bearer at_ok", "PF-Thread-Rev": "1" },
+        "body": { "clientId": "2d0c5a8e-7b41-4f6a-9c3d-8e1f2a3b4c5d", "text": "Is my streak back?" }
+      },
+      "response": { "transport": "lost" },
+      "server": { "status": 201 }
+    },
+    {
+      "name": "the resend carries the same clientId and body",
+      "request": {
+        "operation": "POST /v1/thread/messages",
+        "path": "/v1/thread/messages",
+        "headers": { "Authorization": "Bearer at_ok", "PF-Thread-Rev": "1" },
+        "body": { "clientId": "2d0c5a8e-7b41-4f6a-9c3d-8e1f2a3b4c5d", "text": "Is my streak back?" }
+      },
+      "response": {
+        "status": 200,
+        "headers": { "PF-Thread-Rev": "1" },
+        "body": {
+          "threadId": "thr_1",
+          "message": { "id": "msg_1", "seq": 2, "clientId": "2d0c5a8e-7b41-4f6a-9c3d-8e1f2a3b4c5d", "author": { "kind": "person" }, "createdAt": "2026-11-02T12:00:00Z", "parts": [ { "type": "text", "text": "Is my streak back?" } ] }
+        }
+      }
+    }
+  ],
+  "then": {
+    "requests": 2,
+    "outbox": [],
+    "thread": { "id": "thr_1", "messageIds": [ "msg_0", "msg_1" ] },
+    "surfaced": "one bubble, Sent; it showed Sending (after 400 ms) while the outbox held it, never Not delivered"
+  }
+}

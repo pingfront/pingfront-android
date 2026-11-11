@@ -1,0 +1,20 @@
+public class dev/pingfront/push/PingFrontMessagingService : com/google/firebase/messaging/FirebaseMessagingService {
+	public fun <init> ()V
+	public fun onMessageReceived (Lcom/google/firebase/messaging/RemoteMessage;)V
+	public fun onRegistered (Ljava/lang/String;)V
+}
+
+public final class dev/pingfront/push/PingFrontPush {
+	public static final field BADGE_CHANNEL Ljava/lang/String;
+	public static final field CHANNEL Ljava/lang/String;
+	public static final field INSTANCE Ldev/pingfront/push/PingFrontPush;
+	public static final fun contentIntent (Landroid/content/Context;Ljava/util/Map;)Landroid/app/PendingIntent;
+	public static final fun handleMessage (Landroid/content/Context;Ljava/util/Map;)Z
+	public static final fun isPingFrontMessage (Ljava/util/Map;)Z
+}
+
+public final class dev/pingfront/push/Push : dev/pingfront/PingFrontModule {
+	public static final field INSTANCE Ldev/pingfront/push/Push;
+	public fun install (Ldev/pingfront/ModuleContext;)V
+}
+

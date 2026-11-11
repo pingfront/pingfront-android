@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Съобщение</string>
+    <string name="pf_send">Изпращане</string>
+    <string name="pf_add_photo">Добавяне на снимка</string>
+    <string name="pf_add_photo_or_report">Добавяне на снимка или съобщаване за грешка</string>
+    <string name="pf_photos">Снимки</string>
+    <string name="pf_report_bug">Съобщаване за грешка</string>
+    <string name="pf_close_chat">Затваряне на чата</string>
+    <string name="pf_delivered">Доставено</string>
+    <string name="pf_read">Прочетено</string>
+    <string name="pf_not_delivered">Не е доставено</string>
+    <string name="pf_delete">Изтриване</string>
+    <string name="pf_sending">Изпраща се…</string>
+    <string name="pf_ai">ИИ</string>
+    <string name="pf_assistant">Асистент</string>
+    <string name="pf_the_team">Екипът</string>
+    <string name="pf_team_title">Екипът на %1$s</string>
+    <string name="pf_messaged_you_first">%1$s започва разговора</string>
+    <string name="pf_wrote_first">%1$s започна разговора.</string>
+    <string name="pf_why_message">Защо получихте това съобщение</string>
+    <string name="pf_reply_if_you_like">Можете да отговорите или да го пренебрегнете.</string>
+    <string name="pf_ask_person">Разговор с човек</string>
+    <string name="pf_ask_person_message">Може ли да говоря с човек?</string>
+    <string name="pf_typing">%1$s пише</string>
+    <string name="pf_jump_latest">Към последните</string>
+    <string name="pf_load_earlier">Зареждане на по-ранни съобщения</string>
+    <string name="pf_loading_earlier">Зареждат се по-ранни съобщения</string>
+    <string name="pf_today">Днес %1$s</string>
+    <string name="pf_yesterday">Вчера %1$s</string>
+    <string name="pf_local_time">При %2$s часът е %1$s</string>
+    <string name="pf_welcome_body">Въпроси, грешки или идеи: хората, които създават %1$s, четат всяко съобщение и отговарят тук.</string>
+    <string name="pf_topic_billing">Въпрос за плащането</string>
+    <string name="pf_topic_bug">Съобщаване за грешка</string>
+    <string name="pf_topic_idea">Споделяне на идея</string>
+    <string name="pf_topic_question">Задаване на въпрос</string>
+    <string name="pf_topic_account">Помощ с профила</string>
+    <string name="pf_topic_feedback">Обратна връзка</string>
+    <string name="pf_topic_restore">Възстановяване на покупките</string>
+    <string name="pf_topic_privacy">Въпрос за поверителността</string>
+    <string name="pf_topic_other">Друго</string>
+    <string name="pf_offline">Нямате връзка с интернет. Съобщенията ще се изпратят, когато се свържете отново.</string>
+    <string name="pf_unreachable">Чатът не е достъпен в момента. Съобщенията ще се изпратят, когато се върне.</string>
+    <string name="pf_couldnt_load">Разговорът не можа да се зареди</string>
+    <string name="pf_try_again">Опитайте отново</string>
+    <string name="pf_setup_problem">Проблем с настройката</string>
+    <string name="pf_debug_only">Показва се само в компилации за отстраняване на грешки.</string>
+    <string name="pf_chat_unavailable">Чатът в момента не е достъпен.</string>
+    <string name="pf_draft_look">Чернова на изгледа</string>
+    <string name="pf_send_again_in">Можете да изпращате отново след %1$s.</string>
+    <string name="pf_sending_paused">Изпращането е спряно временно. Опитайте отново по-късно.</string>
+    <string name="pf_photos_again_in">Снимките ще може да се изпращат отново след %1$s. Текстовите съобщения се изпращат нормално.</string>
+    <string name="pf_photos_paused">Изпращането на снимки е спряно временно. Текстовите съобщения се изпращат нормално.</string>
+    <string name="pf_blocked">Не можете да изпращате съобщения в този чат.</string>
+    <string name="pf_paused">Този чат е спрян временно.</string>
+    <string name="pf_verification_required">Влезте в приложението, за да пишете на екипа.</string>
+    <string name="pf_enjoying">Харесва ли Ви %1$s?</string>
+    <string name="pf_review_helps">Отзивът Ви помага на други хора да открият %1$s.</string>
+    <string name="pf_includes_screenshot">Включва екранна снимка и скорошни логове.</string>
+    <string name="pf_price_year">%1$s на година</string>
+    <string name="pf_price_month">%1$s на месец</string>
+    <string name="pf_price_week">%1$s на седмица</string>
+    <string name="pf_first_month_free">%1$s, първият месец е безплатен</string>
+    <string name="pf_first_week_free">%1$s, първата седмица е безплатна</string>
+    <string name="pf_thanks_rating">Благодарим за оценката.</string>
+    <string name="pf_show_original">Показване на оригинала</string>
+    <string name="pf_show_translation">Показване на превода</string>
+    <string name="pf_unknown_content">За това съобщение е нужна по-нова версия на приложението.</string>
+    <string name="pf_remove_photo">Премахване на снимка %1$d</string>
+    <string name="pf_photo">Снимка</string>
+    <string name="pf_photo_removed">Снимката е премахната</string>
+    <string name="pf_what_went_wrong">Какво се обърка?</string>
+    <string name="pf_send_report">Изпращане на сигнала</string>
+    <string name="pf_cancel">Отказ</string>
+    <string name="pf_draw_hint">Рисувайте върху екранната снимка, за да посочите проблема. Прилагат се скорошните логове и състоянието на устройството.</string>
+    <string name="pf_include_screenshot">Прилагане на екранна снимка</string>
+    <string name="pf_clear_marks">Изчистване на маркирането</string>
+    <string name="pf_screenshot">Екранна снимка</string>
+    <string name="pf_you">Вие: %1$s</string>
+    <string name="pf_waiting_connection">Изчаква се връзка</string>
+    <string name="pf_topic_gift">Въпрос за подаръци</string>
+    <string name="pf_pending_photo">Снимката чака изпращане</string>
+    <string name="pf_current_plan">Текущ план</string>
+    <string name="pf_share">Споделяне</string>
+    <string name="pf_close">Затваряне</string>
+    <string name="pf_open_photo">Отваряне на снимката</string>
+    <plurals name="pf_stars">
+        <item quantity="one">Оценка: %1$d от %2$d</item>
+        <item quantity="other">Оценка: %1$d от %2$d</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d ново съобщение</item>
+        <item quantity="other">%1$d нови съобщения</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Имам въпрос за плащането: "</string>
+    <string name="pf_start_idea">"Имам идея: "</string>
+    <string name="pf_start_question">"Имам въпрос: "</string>
+    <string name="pf_start_account">"Нужна ми е помощ с профила: "</string>
+    <string name="pf_start_feedback">"Обратна връзка: "</string>
+    <string name="pf_start_restore">"Не успях да възстановя покупките си: "</string>
+    <string name="pf_start_privacy">"Имам въпрос за поверителността: "</string>
+    <string name="pf_start_gift">"Имам въпрос за подаръците: "</string>
+    <string name="pf_retrying">Още не е изпратено. Скоро ще опитаме отново.</string>
+    <string name="pf_opens_browser">Отваря се в браузъра</string>
+    <string name="pf_opens_store">Отваря Google Play</string>
+    <string name="pf_reply_expectation">Обикновено отговарят до един ден</string>
+    <string name="pf_after_first">%1$s. Можете да затворите чата, отговорът ще Ви чака тук.</string>
+    <string name="pf_after_first_plain">Можете да затворите чата, отговорът ще Ви чака тук.</string>
+    <string name="pf_turn_on_notifications">Включване на известията</string>
+    <string name="pf_assistant_mark">Асистент</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">Качва се %1$d снимка</item>
+        <item quantity="other">Качват се %1$d снимки</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Вашият абонамент</string>
+    <string name="pf_store_manage_detail">Сменете плана, начина на плащане или подновяването.</string>
+    <string name="pf_store_manage_button">Управление на абонамента</string>
+    <string name="pf_store_billing_title">Плащането не беше успешно</string>
+    <string name="pf_store_billing_detail">Актуализирайте начина на плащане, за да запазите абонамента си.</string>
+    <string name="pf_store_billing_button">Актуализиране на начина на плащане</string>
+    <string name="pf_store_refund_title">Заявка за възстановяване на сума</string>
+    <string name="pf_store_refund_detail">Възстановяването на суми се извършва от Google Play. Намерете поръчката в историята на поръчките.</string>
+    <string name="pf_store_refund_button">Отваряне на историята на поръчките</string>
+    <string name="pf_store_redeem_title">Активиране на код</string>
+    <string name="pf_store_redeem_detail">Въведете кода си в Google Play.</string>
+    <string name="pf_store_redeem_button">Активиране на кода</string>
+    <string name="pf_store_restore_title">Възстановяване на покупките</string>
+    <string name="pf_store_restore_detail">Проверява в Google Play за покупки в този профил.</string>
+    <string name="pf_store_restore_button">Възстановяване на покупките</string>
+    <string name="pf_store_receipt_restored">Покупките са възстановени</string>
+    <string name="pf_store_receipt_nothing">Няма покупки за възстановяване</string>
+    <string name="pf_store_receipt_up_to_date">Покупките са актуални</string>
+    <string name="pf_store_receipt_updated">Абонаментът е актуализиран</string>
+    <string name="pf_store_unavailable">Няма връзка с Google Play. Опитайте отново по-късно.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s безплатно</string>
+    <string name="pf_phase_for">%1$s за %2$s</string>
+    <string name="pf_phase_then">%1$s, след това %2$s</string>
+    <string name="pf_change_now">Заменя текущия Ви план веднага. Сумата за неизползваното време се приспада.</string>
+    <string name="pf_change_at_renewal">Започва, когато текущият Ви план се поднови.</string>
+    <string name="pf_waiting_for_payment">Изчаква се плащане</string>
+    <string name="pf_pending_detail">Планът ви започва, щом плащането премине.</string>
+    <string name="pf_plan_renews">%1$s се подновява на %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s се подновява автоматично</string>
+    <string name="pf_plan_ends">%1$s приключва на %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s няма да се поднови</string>
+    <string name="pf_plan_ended">%1$s приключи на %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s приключи</string>
+    <string name="pf_plan_issue_by">Проблем с плащането: актуализирайте до %1$s</string>
+    <string name="pf_plan_issue">Проблем с плащането: актуализирайте начина на плащане</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d ден</item>
+        <item quantity="other">%d дни</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d седмица</item>
+        <item quantity="other">%d седмици</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d месец</item>
+        <item quantity="other">%d месеца</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d година</item>
+        <item quantity="other">%d години</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Снимане</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">Остава %d знак</item>
+        <item quantity="other">Остават %d знака</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d знак над ограничението</item>
+        <item quantity="other">%d знака над ограничението</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Чат от pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (тестова покупка)</string>
+    <string name="pf_held_chat_back">Още не е изпратено. Ще бъде изпратено, когато чатът се върне.</string>
+    <string name="pf_held_sign_in">Още не е изпратено. Ще бъде изпратено, след като влезете.</string>
+    <string name="pf_offer_replaced">Заменено с по-нова оферта</string>
+    <string name="pf_offer_ended">Тази оферта вече не е налична.</string>
+</resources>

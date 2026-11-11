@@ -1,0 +1,63 @@
+{
+  "schema": "CreateUploadRequest",
+  "description": "POST /v1/uploads body. Images only, at most 2 MiB (over the limit is 413 too_large on the server).",
+  "valid": [
+    {
+      "name": "accepts images only for uploads: png",
+      "value": {
+        "requestId": "0b8a8d2e-7d5c-4b8e-9c7a-3f9d2a1b6c55",
+        "bytes": 10,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "contentType": "image/png"
+      }
+    },
+    {
+      "name": "accepts heic with dimensions",
+      "value": {
+        "requestId": "0b8a8d2e-7d5c-4b8e-9c7a-3f9d2a1b6c55",
+        "bytes": 2097152,
+        "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "contentType": "image/heic",
+        "width": 40,
+        "height": 30
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "accepts images only for uploads: text/plain is refused",
+      "value": {
+        "requestId": "0b8a8d2e-7d5c-4b8e-9c7a-3f9d2a1b6c55",
+        "bytes": 10,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "contentType": "text/plain"
+      }
+    },
+    {
+      "name": "rejects files over 2 MiB",
+      "value": {
+        "requestId": "0b8a8d2e-7d5c-4b8e-9c7a-3f9d2a1b6c55",
+        "bytes": 2097153,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "contentType": "image/png"
+      }
+    },
+    {
+      "name": "rejects an uppercase sha256",
+      "value": {
+        "requestId": "0b8a8d2e-7d5c-4b8e-9c7a-3f9d2a1b6c55",
+        "bytes": 10,
+        "sha256": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "contentType": "image/png"
+      }
+    },
+    {
+      "name": "requires requestId",
+      "value": {
+        "bytes": 10,
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "contentType": "image/png"
+      }
+    }
+  ]
+}

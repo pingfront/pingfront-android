@@ -1,0 +1,207 @@
+{
+  "schema": "ServerEvent",
+  "description": "Live server frames on /v1/live.",
+  "valid": [
+    {
+      "name": "carries thread identity in hello",
+      "value": {
+        "type": "hello",
+        "threadId": "thr_1",
+        "rev": 2,
+        "status": "open",
+        "lastSeq": 9,
+        "readSeq": 7,
+        "teamReadSeq": 8
+      }
+    },
+    {
+      "name": "hello before the first message has a null threadId",
+      "value": {
+        "type": "hello",
+        "threadId": null,
+        "lastSeq": 0,
+        "readSeq": 0
+      }
+    },
+    {
+      "name": "carries a full message",
+      "value": {
+        "type": "message",
+        "seq": 4,
+        "message": {
+          "id": "msg_1",
+          "seq": 4,
+          "author": {
+            "kind": "team",
+            "name": "Deniz"
+          },
+          "createdAt": "2026-10-30T18:00:00Z",
+          "ping": {
+            "kind": "play",
+            "playId": "play_1",
+            "explanation": "Sent automatically after you closed Plans"
+          },
+          "parts": [
+            {
+              "type": "text",
+              "text": "Want a week more to decide?"
+            },
+            {
+              "type": "card",
+              "card": {
+                "kind": "choices",
+                "id": "c1",
+                "options": [
+                  {
+                    "id": "yes",
+                    "label": "Yes please"
+                  },
+                  {
+                    "id": "no",
+                    "label": "No thanks"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "receipt",
+              "action": "trial_extended",
+              "text": "Trial extended to 14 Nov"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "parses the live config event",
+      "value": {
+        "type": "config",
+        "revision": 4,
+        "draft": true
+      }
+    },
+    {
+      "name": "typing from the team",
+      "value": {
+        "type": "typing",
+        "author": {
+          "kind": "team",
+          "name": "Deniz"
+        },
+        "on": true
+      }
+    },
+    {
+      "name": "reset",
+      "value": {
+        "type": "reset"
+      }
+    },
+    {
+      "name": "thread_reset: the team reset the conversation",
+      "value": {
+        "type": "thread_reset",
+        "threadId": "thr_01HZX3K8Q2"
+      }
+    },
+    {
+      "name": "reauth",
+      "value": {
+        "type": "reauth"
+      }
+    },
+    {
+      "name": "a team action for the host app (no seq)",
+      "value": {
+        "type": "team_action",
+        "action": {
+          "id": "tar_1",
+          "actionId": "repair_sync",
+          "name": "Repair bank sync",
+          "fields": {},
+          "ackRequired": true,
+          "createdAt": "2026-10-31T10:00:00.000Z",
+          "expiresAt": "2026-11-07T10:00:00.000Z"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unknown event type",
+      "value": {
+        "type": "explode"
+      }
+    },
+    {
+      "name": "message needs seq",
+      "value": {
+        "type": "message",
+        "message": {
+          "id": "msg_1",
+          "seq": 4,
+          "author": {
+            "kind": "team",
+            "name": "Deniz"
+          },
+          "createdAt": "2026-10-30T18:00:00Z",
+          "ping": {
+            "kind": "play",
+            "playId": "play_1",
+            "explanation": "Sent automatically after you closed Plans"
+          },
+          "parts": [
+            {
+              "type": "text",
+              "text": "Want a week more to decide?"
+            },
+            {
+              "type": "card",
+              "card": {
+                "kind": "choices",
+                "id": "c1",
+                "options": [
+                  {
+                    "id": "yes",
+                    "label": "Yes please"
+                  },
+                  {
+                    "id": "no",
+                    "label": "No thanks"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "receipt",
+              "action": "trial_extended",
+              "text": "Trial extended to 14 Nov"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "typing author must be team or ai",
+      "value": {
+        "type": "typing",
+        "author": {
+          "kind": "person"
+        },
+        "on": true
+      }
+    },
+    {
+      "name": "rejects a team action without its action",
+      "value": {
+        "type": "team_action"
+      }
+    },
+    {
+      "name": "thread_reset needs the threadId",
+      "value": {
+        "type": "thread_reset"
+      }
+    }
+  ]
+}

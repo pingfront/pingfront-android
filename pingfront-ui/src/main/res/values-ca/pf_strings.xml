@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Missatge</string>
+    <string name="pf_send">Envia</string>
+    <string name="pf_add_photo">Afegeix una foto</string>
+    <string name="pf_add_photo_or_report">Afegeix una foto o informa d’un error</string>
+    <string name="pf_photos">Fotos</string>
+    <string name="pf_report_bug">Informa d’un error</string>
+    <string name="pf_close_chat">Tanca el xat</string>
+    <string name="pf_delivered">Lliurat</string>
+    <string name="pf_read">Llegit</string>
+    <string name="pf_not_delivered">No lliurat</string>
+    <string name="pf_delete">Suprimeix</string>
+    <string name="pf_sending">S’està enviant…</string>
+    <string name="pf_ai">IA</string>
+    <string name="pf_assistant">Assistent</string>
+    <string name="pf_the_team">L’equip</string>
+    <string name="pf_team_title">L’equip de %1$s</string>
+    <string name="pf_messaged_you_first">%1$s t’ha escrit primer</string>
+    <string name="pf_wrote_first">%1$s t’ha escrit primer.</string>
+    <string name="pf_why_message">Per què has rebut aquest missatge</string>
+    <string name="pf_reply_if_you_like">Respon si vols, o ignora’l.</string>
+    <string name="pf_ask_person">Parla amb una persona</string>
+    <string name="pf_ask_person_message">Voldria parlar amb una persona, si us plau.</string>
+    <string name="pf_typing">%1$s està escrivint</string>
+    <string name="pf_jump_latest">Ves al més recent</string>
+    <string name="pf_load_earlier">Carrega missatges anteriors</string>
+    <string name="pf_loading_earlier">S’estan carregant missatges anteriors</string>
+    <string name="pf_today">Avui %1$s</string>
+    <string name="pf_yesterday">Ahir %1$s</string>
+    <string name="pf_local_time">Hora de %2$s: %1$s</string>
+    <string name="pf_welcome_body">Preguntes, errors o idees: les persones que fan %1$s llegeixen cada missatge i responen aquí.</string>
+    <string name="pf_topic_billing">Pregunta sobre la facturació</string>
+    <string name="pf_topic_bug">Informa d’un error</string>
+    <string name="pf_topic_idea">Comparteix una idea</string>
+    <string name="pf_topic_question">Fes una pregunta</string>
+    <string name="pf_topic_account">Ajuda amb el meu compte</string>
+    <string name="pf_topic_feedback">Dona la teva opinió</string>
+    <string name="pf_topic_restore">Restaura les compres</string>
+    <string name="pf_topic_privacy">Pregunta sobre la privadesa</string>
+    <string name="pf_topic_other">Una altra cosa</string>
+    <string name="pf_offline">No tens connexió. Els missatges s’enviaran quan tornis a estar en línia.</string>
+    <string name="pf_unreachable">Ara mateix no es pot accedir al xat. Els missatges s’enviaran quan torni.</string>
+    <string name="pf_couldnt_load">No s’ha pogut carregar la conversa</string>
+    <string name="pf_try_again">Torna-ho a provar</string>
+    <string name="pf_setup_problem">Problema de configuració</string>
+    <string name="pf_debug_only">Només es mostra a les compilacions de depuració.</string>
+    <string name="pf_chat_unavailable">El xat no està disponible ara mateix.</string>
+    <string name="pf_draft_look">Aspecte d’esborrany</string>
+    <string name="pf_send_again_in">Podràs tornar a enviar d’aquí a %1$s.</string>
+    <string name="pf_sending_paused">L’enviament està en pausa una estona. Torna-ho a provar més tard.</string>
+    <string name="pf_photos_again_in">Podràs tornar a enviar fotos d’aquí a %1$s. Mentrestant, pots enviar text.</string>
+    <string name="pf_photos_paused">L’enviament de fotos està en pausa una estona. Pots continuar enviant text.</string>
+    <string name="pf_blocked">No pots enviar missatges en aquest xat.</string>
+    <string name="pf_paused">Aquest xat està en pausa de moment.</string>
+    <string name="pf_verification_required">Inicia la sessió a l’app per escriure a l’equip.</string>
+    <string name="pf_enjoying">T’agrada %1$s?</string>
+    <string name="pf_review_helps">La teva ressenya ajuda altres persones a trobar %1$s.</string>
+    <string name="pf_includes_screenshot">Inclou una captura de pantalla i els registres recents.</string>
+    <string name="pf_price_year">%1$s l’any</string>
+    <string name="pf_price_month">%1$s al mes</string>
+    <string name="pf_price_week">%1$s a la setmana</string>
+    <string name="pf_first_month_free">%1$s, primer mes gratis</string>
+    <string name="pf_first_week_free">%1$s, primera setmana gratis</string>
+    <string name="pf_thanks_rating">Gràcies per la teva valoració.</string>
+    <string name="pf_show_original">Mostra l’original</string>
+    <string name="pf_show_translation">Mostra la traducció</string>
+    <string name="pf_unknown_content">Aquest missatge necessita una versió més recent de l’app.</string>
+    <string name="pf_remove_photo">Treu la foto %1$d</string>
+    <string name="pf_photo">Foto</string>
+    <string name="pf_photo_removed">Foto eliminada</string>
+    <string name="pf_what_went_wrong">Què ha fallat?</string>
+    <string name="pf_send_report">Envia l’informe</string>
+    <string name="pf_cancel">Cancel·la</string>
+    <string name="pf_draw_hint">Dibuixa sobre la captura per assenyalar el problema. S’hi adjunten els registres recents i l’estat del dispositiu.</string>
+    <string name="pf_include_screenshot">Inclou la captura de pantalla</string>
+    <string name="pf_clear_marks">Esborra les marques</string>
+    <string name="pf_screenshot">Captura de pantalla</string>
+    <string name="pf_you">Tu: %1$s</string>
+    <string name="pf_waiting_connection">S’està esperant la connexió</string>
+    <string name="pf_topic_gift">Pregunta sobre regals</string>
+    <string name="pf_pending_photo">Foto pendent d’enviar</string>
+    <string name="pf_current_plan">Pla actual</string>
+    <string name="pf_share">Comparteix</string>
+    <string name="pf_close">Tanca</string>
+    <string name="pf_open_photo">Obre la foto</string>
+    <plurals name="pf_stars">
+        <item quantity="one">%1$d de %2$d estrella</item>
+        <item quantity="many">%1$d de %2$d estrelles</item>
+        <item quantity="other">%1$d de %2$d estrelles</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d missatge nou</item>
+        <item quantity="many">%1$d missatges nous</item>
+        <item quantity="other">%1$d missatges nous</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Tinc una pregunta sobre la facturació: "</string>
+    <string name="pf_start_idea">"Tinc una idea: "</string>
+    <string name="pf_start_question">"Tinc una pregunta: "</string>
+    <string name="pf_start_account">"Necessito ajuda amb el meu compte: "</string>
+    <string name="pf_start_feedback">"La meva opinió: "</string>
+    <string name="pf_start_restore">"No he pogut restaurar les compres: "</string>
+    <string name="pf_start_privacy">"Tinc una pregunta sobre la privadesa: "</string>
+    <string name="pf_start_gift">"Tinc una pregunta sobre regals: "</string>
+    <string name="pf_retrying">Encara no s’ha enviat. Es tornarà a provar aviat.</string>
+    <string name="pf_opens_browser">S’obre al navegador</string>
+    <string name="pf_opens_store">Obre Google Play</string>
+    <string name="pf_reply_expectation">Sol respondre en menys d’un dia</string>
+    <string name="pf_after_first">%1$s. Pots tancar-ho; la resposta t’esperarà aquí.</string>
+    <string name="pf_after_first_plain">Pots tancar-ho; la resposta t’esperarà aquí.</string>
+    <string name="pf_turn_on_notifications">Activa les notificacions</string>
+    <string name="pf_assistant_mark">Assistent</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">S’està penjant %1$d foto</item>
+        <item quantity="many">S’estan penjant %1$d fotos</item>
+        <item quantity="other">S’estan penjant %1$d fotos</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">La teva subscripció</string>
+    <string name="pf_store_manage_detail">Canvia el pla, el mètode de pagament o la renovació.</string>
+    <string name="pf_store_manage_button">Gestiona la subscripció</string>
+    <string name="pf_store_billing_title">El pagament no s’ha completat</string>
+    <string name="pf_store_billing_detail">Actualitza el mètode de pagament per mantenir la subscripció.</string>
+    <string name="pf_store_billing_button">Actualitza el mètode de pagament</string>
+    <string name="pf_store_refund_title">Sol·licita un reemborsament</string>
+    <string name="pf_store_refund_detail">Google Play gestiona els reemborsaments. Busca la comanda a l’historial de comandes.</string>
+    <string name="pf_store_refund_button">Obre l’historial de comandes</string>
+    <string name="pf_store_redeem_title">Bescanvia un codi</string>
+    <string name="pf_store_redeem_detail">Introdueix el codi a Google Play.</string>
+    <string name="pf_store_redeem_button">Bescanvia el codi</string>
+    <string name="pf_store_restore_title">Restaura les compres</string>
+    <string name="pf_store_restore_detail">Busca a Google Play les compres fetes amb aquest compte.</string>
+    <string name="pf_store_restore_button">Restaura les compres</string>
+    <string name="pf_store_receipt_restored">Compres restaurades</string>
+    <string name="pf_store_receipt_nothing">No hi ha cap compra per restaurar</string>
+    <string name="pf_store_receipt_up_to_date">Les compres estan al dia</string>
+    <string name="pf_store_receipt_updated">Subscripció actualitzada</string>
+    <string name="pf_store_unavailable">No s’ha pogut connectar amb Google Play. Torna-ho a provar més tard.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s gratis</string>
+    <string name="pf_phase_for">%1$s durant %2$s</string>
+    <string name="pf_phase_then">%1$s i després %2$s</string>
+    <string name="pf_change_now">Substitueix ara el pla actual. El temps no utilitzat se t’abona.</string>
+    <string name="pf_change_at_renewal">Comença quan es renovi el pla actual.</string>
+    <string name="pf_waiting_for_payment">S’està esperant el pagament</string>
+    <string name="pf_pending_detail">El teu pla comença quan s’hagi completat el pagament.</string>
+    <string name="pf_plan_renews">%1$s es renova el %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s es renova automàticament</string>
+    <string name="pf_plan_ends">%1$s acaba el %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s no es renovarà</string>
+    <string name="pf_plan_ended">%1$s va acabar el %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s ha acabat</string>
+    <string name="pf_plan_issue_by">Problema amb el pagament: actualitza’l abans del %1$s</string>
+    <string name="pf_plan_issue">Problema amb el pagament: actualitza el mètode de pagament</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d dia</item>
+        <item quantity="many">%d dies</item>
+        <item quantity="other">%d dies</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d setmana</item>
+        <item quantity="many">%d setmanes</item>
+        <item quantity="other">%d setmanes</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d mes</item>
+        <item quantity="many">%d mesos</item>
+        <item quantity="other">%d mesos</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d any</item>
+        <item quantity="many">%d anys</item>
+        <item quantity="other">%d anys</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Fes una foto</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">Queda %d caràcter</item>
+        <item quantity="many">Queden %d caràcters</item>
+        <item quantity="other">Queden %d caràcters</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d caràcter per sobre del límit</item>
+        <item quantity="many">%d caràcters per sobre del límit</item>
+        <item quantity="other">%d caràcters per sobre del límit</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Xat de pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (compra de prova)</string>
+    <string name="pf_held_chat_back">Encara no s’ha enviat. S’enviarà quan el xat torni.</string>
+    <string name="pf_held_sign_in">Encara no s’ha enviat. S’enviarà quan iniciïs la sessió.</string>
+    <string name="pf_offer_replaced">Substituïda per una oferta més recent</string>
+    <string name="pf_offer_ended">Aquesta oferta ja no està disponible.</string>
+</resources>

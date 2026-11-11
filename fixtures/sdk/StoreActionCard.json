@@ -1,0 +1,117 @@
+{
+  "schema": "StoreActionCard",
+  "description": "A card whose button opens a native store screen (manage subscriptions, fix billing, refund, redeem a code, restore purchases). Unknown actions decode to unknown: show the text and the platform's subscription-management link.",
+  "valid": [
+    {
+      "name": "fix a failed payment, for an App Store subscription group",
+      "value": {
+        "kind": "store_action",
+        "id": "card_b1",
+        "action": "billing_issue",
+        "title": "Update your payment method",
+        "body": "Apple will retry the charge once it's fixed.",
+        "button": "Update payment",
+        "subscriptionGroupId": "21345678",
+        "store": "app_store"
+      }
+    },
+    {
+      "name": "a refund for a server-verified transaction",
+      "value": {
+        "kind": "store_action",
+        "id": "card_r1",
+        "action": "request_refund",
+        "productId": "pro.yearly",
+        "transactionId": "2000000412345678"
+      }
+    },
+    {
+      "name": "just the action (the SDK labels it)",
+      "value": {
+        "kind": "store_action",
+        "id": "card_m1",
+        "action": "manage_subscriptions"
+      }
+    },
+    {
+      "name": "redeem a code on Play",
+      "value": {
+        "kind": "store_action",
+        "id": "card_c1",
+        "action": "redeem_code",
+        "store": "play"
+      }
+    },
+    {
+      "name": "restore purchases",
+      "value": {
+        "kind": "store_action",
+        "id": "card_x1",
+        "action": "restore_purchases",
+        "title": "Bought it before? Restore it here"
+      }
+    },
+    {
+      "name": "title limits count code points: 80 emoji pass",
+      "value": {
+        "kind": "store_action",
+        "id": "card_e1",
+        "action": "manage_subscriptions",
+        "title": "🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "needs an action",
+      "value": {
+        "kind": "store_action",
+        "id": "card_1"
+      }
+    },
+    {
+      "name": "an unknown action is never sent by servers",
+      "value": {
+        "kind": "store_action",
+        "id": "card_1",
+        "action": "cancel_now"
+      }
+    },
+    {
+      "name": "a transaction id is numeric",
+      "value": {
+        "kind": "store_action",
+        "id": "card_1",
+        "action": "request_refund",
+        "transactionId": "GPA.1234"
+      }
+    },
+    {
+      "name": "a subscription group id is numeric",
+      "value": {
+        "kind": "store_action",
+        "id": "card_1",
+        "action": "manage_subscriptions",
+        "subscriptionGroupId": "group-1"
+      }
+    },
+    {
+      "name": "store is app_store or play",
+      "value": {
+        "kind": "store_action",
+        "id": "card_1",
+        "action": "manage_subscriptions",
+        "store": "web"
+      }
+    },
+    {
+      "name": "a title over 80 code points",
+      "value": {
+        "kind": "store_action",
+        "id": "card_1",
+        "action": "manage_subscriptions",
+        "title": "🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂"
+      }
+    }
+  ]
+}

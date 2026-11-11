@@ -1,0 +1,486 @@
+{
+  "schema": "Message",
+  "description": "A thread message as the server sends it.",
+  "valid": [
+    {
+      "name": "parses a ping with a receipt and a card",
+      "value": {
+        "id": "msg_1",
+        "seq": 4,
+        "author": {
+          "kind": "team",
+          "name": "Deniz"
+        },
+        "createdAt": "2026-10-30T18:00:00Z",
+        "ping": {
+          "kind": "play",
+          "playId": "play_1",
+          "explanation": "Sent automatically after you closed Plans"
+        },
+        "parts": [
+          {
+            "type": "text",
+            "text": "Want a week more to decide?"
+          },
+          {
+            "type": "card",
+            "card": {
+              "kind": "choices",
+              "id": "c1",
+              "options": [
+                {
+                  "id": "yes",
+                  "label": "Yes please"
+                },
+                {
+                  "id": "no",
+                  "label": "No thanks"
+                }
+              ]
+            }
+          },
+          {
+            "type": "receipt",
+            "action": "trial_extended",
+            "text": "Trial extended to 14 Nov"
+          }
+        ]
+      }
+    },
+    {
+      "name": "parses the AI teammate's hand-off line (a handed_off receipt; SDKs that don't know it show it as custom)",
+      "value": {
+        "id": "msg_7",
+        "seq": 9,
+        "author": {
+          "kind": "system"
+        },
+        "createdAt": "2026-11-01T10:00:00Z",
+        "parts": [
+          {
+            "type": "receipt",
+            "action": "handed_off",
+            "text": "Deniz will reply"
+          }
+        ]
+      }
+    },
+    {
+      "name": "carries a structured ping reason and fallback text",
+      "value": {
+        "id": "msg_2",
+        "seq": 1,
+        "author": {
+          "kind": "team"
+        },
+        "createdAt": "2026-10-30T18:00:00.000Z",
+        "parts": [
+          {
+            "type": "image",
+            "attachmentId": "att_1",
+            "width": 390,
+            "height": 844,
+            "url": "https://files.example/att_1"
+          }
+        ],
+        "ping": {
+          "kind": "manual",
+          "explanation": "Deniz reached out",
+          "reason": {
+            "code": "manual"
+          }
+        },
+        "fallback": "[Photo]"
+      }
+    },
+    {
+      "name": "card parts carry a result once the person acted",
+      "value": {
+        "id": "msg_3",
+        "seq": 2,
+        "author": {
+          "kind": "team"
+        },
+        "createdAt": "2026-10-30T18:00:00Z",
+        "parts": [
+          {
+            "type": "card",
+            "card": {
+              "kind": "rating",
+              "id": "r1",
+              "question": "How is it going?",
+              "scale": 5
+            },
+            "result": {
+              "at": "2026-10-30T18:05:00Z",
+              "rating": 4
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "an offer card carrying a store offer",
+      "value": {
+        "id": "msg_9",
+        "seq": 9,
+        "author": {
+          "kind": "team",
+          "name": "Deniz"
+        },
+        "createdAt": "2026-10-30T18:00:00.000Z",
+        "parts": [
+          {
+            "type": "card",
+            "card": {
+              "kind": "offer",
+              "id": "card_1",
+              "offerId": "yearly",
+              "title": "40% off yearly, just for you",
+              "button": "See offer",
+              "offer": {
+                "kind": "promotional",
+                "id": "yearly_40",
+                "productId": "pro.yearly"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "a team reply sent in the person's language, with the original kept",
+      "value": {
+        "id": "msg_9",
+        "seq": 9,
+        "author": {
+          "kind": "team",
+          "id": "mem_1",
+          "name": "Deniz"
+        },
+        "parts": [
+          {
+            "type": "text",
+            "text": "Fixed in 2.3.1, update when you can."
+          }
+        ],
+        "createdAt": "2026-10-31T10:00:00Z",
+        "translation": {
+          "language": "es",
+          "from": "en",
+          "parts": [
+            {
+              "type": "text",
+              "text": "Arreglado en 2.3.1, actualiza cuando puedas."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "needs at least one part",
+      "value": {
+        "id": "msg_1",
+        "seq": 4,
+        "author": {
+          "kind": "team",
+          "name": "Deniz"
+        },
+        "createdAt": "2026-10-30T18:00:00Z",
+        "ping": {
+          "kind": "play",
+          "playId": "play_1",
+          "explanation": "Sent automatically after you closed Plans"
+        },
+        "parts": []
+      }
+    },
+    {
+      "name": "rejects more than 12 parts",
+      "value": {
+        "id": "msg_1",
+        "seq": 4,
+        "author": {
+          "kind": "team",
+          "name": "Deniz"
+        },
+        "createdAt": "2026-10-30T18:00:00Z",
+        "ping": {
+          "kind": "play",
+          "playId": "play_1",
+          "explanation": "Sent automatically after you closed Plans"
+        },
+        "parts": [
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          },
+          {
+            "type": "text",
+            "text": "x"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rejects an unknown author kind",
+      "value": {
+        "id": "msg_1",
+        "seq": 4,
+        "author": {
+          "kind": "robot"
+        },
+        "createdAt": "2026-10-30T18:00:00Z",
+        "ping": {
+          "kind": "play",
+          "playId": "play_1",
+          "explanation": "Sent automatically after you closed Plans"
+        },
+        "parts": [
+          {
+            "type": "text",
+            "text": "Want a week more to decide?"
+          },
+          {
+            "type": "card",
+            "card": {
+              "kind": "choices",
+              "id": "c1",
+              "options": [
+                {
+                  "id": "yes",
+                  "label": "Yes please"
+                },
+                {
+                  "id": "no",
+                  "label": "No thanks"
+                }
+              ]
+            }
+          },
+          {
+            "type": "receipt",
+            "action": "trial_extended",
+            "text": "Trial extended to 14 Nov"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rejects a negative seq",
+      "value": {
+        "id": "msg_1",
+        "seq": -1,
+        "author": {
+          "kind": "team",
+          "name": "Deniz"
+        },
+        "createdAt": "2026-10-30T18:00:00Z",
+        "ping": {
+          "kind": "play",
+          "playId": "play_1",
+          "explanation": "Sent automatically after you closed Plans"
+        },
+        "parts": [
+          {
+            "type": "text",
+            "text": "Want a week more to decide?"
+          },
+          {
+            "type": "card",
+            "card": {
+              "kind": "choices",
+              "id": "c1",
+              "options": [
+                {
+                  "id": "yes",
+                  "label": "Yes please"
+                },
+                {
+                  "id": "no",
+                  "label": "No thanks"
+                }
+              ]
+            }
+          },
+          {
+            "type": "receipt",
+            "action": "trial_extended",
+            "text": "Trial extended to 14 Nov"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rejects a choices card with one option",
+      "value": {
+        "id": "msg_1",
+        "seq": 4,
+        "author": {
+          "kind": "team",
+          "name": "Deniz"
+        },
+        "createdAt": "2026-10-30T18:00:00Z",
+        "ping": {
+          "kind": "play",
+          "playId": "play_1",
+          "explanation": "Sent automatically after you closed Plans"
+        },
+        "parts": [
+          {
+            "type": "card",
+            "card": {
+              "kind": "choices",
+              "id": "c",
+              "options": [
+                {
+                  "id": "a",
+                  "label": "A"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "rejects a rating scale other than 5",
+      "value": {
+        "id": "msg_1",
+        "seq": 4,
+        "author": {
+          "kind": "team",
+          "name": "Deniz"
+        },
+        "createdAt": "2026-10-30T18:00:00Z",
+        "ping": {
+          "kind": "play",
+          "playId": "play_1",
+          "explanation": "Sent automatically after you closed Plans"
+        },
+        "parts": [
+          {
+            "type": "card",
+            "card": {
+              "kind": "rating",
+              "id": "r",
+              "question": "q",
+              "scale": 10
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "rejects a timestamp without an offset",
+      "value": {
+        "id": "msg_1",
+        "seq": 4,
+        "author": {
+          "kind": "team",
+          "name": "Deniz"
+        },
+        "createdAt": "2026-10-30T18:00:00",
+        "ping": {
+          "kind": "play",
+          "playId": "play_1",
+          "explanation": "Sent automatically after you closed Plans"
+        },
+        "parts": [
+          {
+            "type": "text",
+            "text": "Want a week more to decide?"
+          },
+          {
+            "type": "card",
+            "card": {
+              "kind": "choices",
+              "id": "c1",
+              "options": [
+                {
+                  "id": "yes",
+                  "label": "Yes please"
+                },
+                {
+                  "id": "no",
+                  "label": "No thanks"
+                }
+              ]
+            }
+          },
+          {
+            "type": "receipt",
+            "action": "trial_extended",
+            "text": "Trial extended to 14 Nov"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rejects a translation without parts",
+      "value": {
+        "id": "msg_9",
+        "seq": 9,
+        "author": {
+          "kind": "team"
+        },
+        "parts": [
+          {
+            "type": "text",
+            "text": "Hi"
+          }
+        ],
+        "createdAt": "2026-10-31T10:00:00Z",
+        "translation": {
+          "language": "es"
+        }
+      }
+    }
+  ]
+}

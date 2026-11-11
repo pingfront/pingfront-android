@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Správa</string>
+    <string name="pf_send">Odoslať</string>
+    <string name="pf_add_photo">Pridať fotku</string>
+    <string name="pf_add_photo_or_report">Pridať fotku alebo nahlásiť chybu</string>
+    <string name="pf_photos">Fotky</string>
+    <string name="pf_report_bug">Nahlásiť chybu</string>
+    <string name="pf_close_chat">Zavrieť chat</string>
+    <string name="pf_delivered">Doručené</string>
+    <string name="pf_read">Prečítané</string>
+    <string name="pf_not_delivered">Nedoručené</string>
+    <string name="pf_delete">Odstrániť</string>
+    <string name="pf_sending">Odosiela sa…</string>
+    <string name="pf_ai">AI</string>
+    <string name="pf_assistant">Asistent</string>
+    <string name="pf_the_team">Tím</string>
+    <string name="pf_team_title">Tím %1$s</string>
+    <string name="pf_messaged_you_first">%1$s začína rozhovor</string>
+    <string name="pf_wrote_first">Rozhovor začína %1$s.</string>
+    <string name="pf_why_message">Prečo ste dostali túto správu</string>
+    <string name="pf_reply_if_you_like">Môžete odpovedať alebo ju ignorovať.</string>
+    <string name="pf_ask_person">Hovoriť s človekom</string>
+    <string name="pf_ask_person_message">Môžem sa, prosím, porozprávať s človekom?</string>
+    <string name="pf_typing">%1$s píše</string>
+    <string name="pf_jump_latest">Prejsť na najnovšie</string>
+    <string name="pf_load_earlier">Načítať staršie správy</string>
+    <string name="pf_loading_earlier">Načítavajú sa staršie správy</string>
+    <string name="pf_today">Dnes %1$s</string>
+    <string name="pf_yesterday">Včera %1$s</string>
+    <string name="pf_local_time">%2$s: teraz je %1$s</string>
+    <string name="pf_welcome_body">Otázky, chyby alebo nápady: tvorcovia aplikácie %1$s čítajú každú správu a odpovedajú tu.</string>
+    <string name="pf_topic_billing">Opýtať sa na platby</string>
+    <string name="pf_topic_bug">Nahlásiť chybu</string>
+    <string name="pf_topic_idea">Zdieľať nápad</string>
+    <string name="pf_topic_question">Položiť otázku</string>
+    <string name="pf_topic_account">Pomoc s účtom</string>
+    <string name="pf_topic_feedback">Poslať spätnú väzbu</string>
+    <string name="pf_topic_restore">Obnoviť nákupy</string>
+    <string name="pf_topic_privacy">Opýtať sa na súkromie</string>
+    <string name="pf_topic_other">Niečo iné</string>
+    <string name="pf_offline">Ste offline. Správy sa odošlú, keď budete znova online.</string>
+    <string name="pf_unreachable">Chat je teraz nedostupný. Správy sa odošlú, keď bude znova dostupný.</string>
+    <string name="pf_couldnt_load">Rozhovor sa nepodarilo načítať</string>
+    <string name="pf_try_again">Skúsiť znova</string>
+    <string name="pf_setup_problem">Problém s nastavením</string>
+    <string name="pf_debug_only">Zobrazuje sa len v ladiacich zostavách.</string>
+    <string name="pf_chat_unavailable">Chat je teraz nedostupný.</string>
+    <string name="pf_draft_look">Vzhľad konceptu</string>
+    <string name="pf_send_again_in">Znova môžete posielať o %1$s.</string>
+    <string name="pf_sending_paused">Odosielanie je na chvíľu pozastavené. Skúste to neskôr.</string>
+    <string name="pf_photos_again_in">Fotky bude možné znova poslať o %1$s. Text sa odosiela ďalej.</string>
+    <string name="pf_photos_paused">Odosielanie fotiek je na chvíľu pozastavené. Text sa odosiela ďalej.</string>
+    <string name="pf_blocked">V tomto chate nemôžete posielať správy.</string>
+    <string name="pf_paused">Tento chat je zatiaľ pozastavený.</string>
+    <string name="pf_verification_required">Prihláste sa do aplikácie, aby ste mohli písať tímu.</string>
+    <string name="pf_enjoying">Páči sa vám %1$s?</string>
+    <string name="pf_review_helps">Vaša recenzia pomôže ďalším ľuďom nájsť aplikáciu %1$s.</string>
+    <string name="pf_includes_screenshot">Obsahuje snímku obrazovky a nedávne záznamy.</string>
+    <string name="pf_price_year">%1$s ročne</string>
+    <string name="pf_price_month">%1$s mesačne</string>
+    <string name="pf_price_week">%1$s týždenne</string>
+    <string name="pf_first_month_free">%1$s, prvý mesiac zadarmo</string>
+    <string name="pf_first_week_free">%1$s, prvý týždeň zadarmo</string>
+    <string name="pf_thanks_rating">Ďakujeme za hodnotenie.</string>
+    <string name="pf_show_original">Zobraziť originál</string>
+    <string name="pf_show_translation">Zobraziť preklad</string>
+    <string name="pf_unknown_content">Táto správa vyžaduje novšiu verziu aplikácie.</string>
+    <string name="pf_remove_photo">Odstrániť fotku %1$d</string>
+    <string name="pf_photo">Fotka</string>
+    <string name="pf_photo_removed">Fotka odstránená</string>
+    <string name="pf_what_went_wrong">Čo sa pokazilo?</string>
+    <string name="pf_send_report">Odoslať hlásenie</string>
+    <string name="pf_cancel">Zrušiť</string>
+    <string name="pf_draw_hint">Označte problém na snímke obrazovky. Priložíme nedávne záznamy a stav zariadenia.</string>
+    <string name="pf_include_screenshot">Priložiť snímku obrazovky</string>
+    <string name="pf_clear_marks">Vymazať značky</string>
+    <string name="pf_screenshot">Snímka obrazovky</string>
+    <string name="pf_you">Vy: %1$s</string>
+    <string name="pf_waiting_connection">Čaká sa na pripojenie</string>
+    <string name="pf_topic_gift">Opýtať sa na darčeky</string>
+    <string name="pf_pending_photo">Fotka čaká na odoslanie</string>
+    <string name="pf_current_plan">Aktuálny plán</string>
+    <string name="pf_share">Zdieľať</string>
+    <string name="pf_close">Zavrieť</string>
+    <string name="pf_open_photo">Otvoriť fotku</string>
+    <plurals name="pf_stars">
+        <item quantity="one">Hodnotenie: %1$d z %2$d</item>
+        <item quantity="few">Hodnotenie: %1$d z %2$d</item>
+        <item quantity="many">Hodnotenie: %1$d z %2$d</item>
+        <item quantity="other">Hodnotenie: %1$d z %2$d</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d nová správa</item>
+        <item quantity="few">%1$d nové správy</item>
+        <item quantity="many">%1$d novej správy</item>
+        <item quantity="other">%1$d nových správ</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Mám otázku k platbám: "</string>
+    <string name="pf_start_idea">"Mám nápad: "</string>
+    <string name="pf_start_question">"Mám otázku: "</string>
+    <string name="pf_start_account">"Potrebujem pomoc s účtom: "</string>
+    <string name="pf_start_feedback">"Spätná väzba: "</string>
+    <string name="pf_start_restore">"Nepodarilo sa mi obnoviť nákupy: "</string>
+    <string name="pf_start_privacy">"Mám otázku k súkromiu: "</string>
+    <string name="pf_start_gift">"Mám otázku k darčekom: "</string>
+    <string name="pf_retrying">Zatiaľ neodoslané. Čoskoro to skúsime znova.</string>
+    <string name="pf_opens_browser">Otvorí sa v prehliadači</string>
+    <string name="pf_opens_store">Otvorí Google Play</string>
+    <string name="pf_reply_expectation">Odpoveď zvyčajne do jedného dňa</string>
+    <string name="pf_after_first">%1$s. Chat môžete zavrieť, odpoveď na vás počká tu.</string>
+    <string name="pf_after_first_plain">Chat môžete zavrieť, odpoveď na vás počká tu.</string>
+    <string name="pf_turn_on_notifications">Zapnúť upozornenia</string>
+    <string name="pf_assistant_mark">Asistent</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">Nahrávanie fotiek: %1$d</item>
+        <item quantity="few">Nahrávanie fotiek: %1$d</item>
+        <item quantity="many">Nahrávanie fotiek: %1$d</item>
+        <item quantity="other">Nahrávanie fotiek: %1$d</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Vaše predplatné</string>
+    <string name="pf_store_manage_detail">Zmeňte plán, spôsob platby alebo obnovenie.</string>
+    <string name="pf_store_manage_button">Spravovať predplatné</string>
+    <string name="pf_store_billing_title">Platba neprešla</string>
+    <string name="pf_store_billing_detail">Aktualizujte spôsob platby, aby ste si zachovali predplatné.</string>
+    <string name="pf_store_billing_button">Aktualizovať spôsob platby</string>
+    <string name="pf_store_refund_title">Vrátenie peňazí</string>
+    <string name="pf_store_refund_detail">Vrátenie peňazí rieši Google Play. Nájdite objednávku v histórii objednávok.</string>
+    <string name="pf_store_refund_button">Otvoriť históriu objednávok</string>
+    <string name="pf_store_redeem_title">Uplatnenie kódu</string>
+    <string name="pf_store_redeem_detail">Zadajte kód v Google Play.</string>
+    <string name="pf_store_redeem_button">Uplatniť kód</string>
+    <string name="pf_store_restore_title">Obnoviť nákupy</string>
+    <string name="pf_store_restore_detail">Vyhľadá v Google Play nákupy v tomto účte.</string>
+    <string name="pf_store_restore_button">Obnoviť nákupy</string>
+    <string name="pf_store_receipt_restored">Nákupy obnovené</string>
+    <string name="pf_store_receipt_nothing">Žiadne nákupy na obnovenie</string>
+    <string name="pf_store_receipt_up_to_date">Nákupy sú aktuálne</string>
+    <string name="pf_store_receipt_updated">Predplatné aktualizované</string>
+    <string name="pf_store_unavailable">Nepodarilo sa spojiť s Google Play. Skúste to neskôr.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s zadarmo</string>
+    <string name="pf_phase_for">%1$s na %2$s</string>
+    <string name="pf_phase_then">%1$s, potom %2$s</string>
+    <string name="pf_change_now">Hneď nahradí váš súčasný plán. Nevyužitý čas sa započíta.</string>
+    <string name="pf_change_at_renewal">Začne sa pri obnovení súčasného plánu.</string>
+    <string name="pf_waiting_for_payment">Čaká sa na platbu</string>
+    <string name="pf_pending_detail">Váš plán začne platiť, keď platba prejde.</string>
+    <string name="pf_plan_renews">%1$s: obnovenie %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s: obnovuje sa automaticky</string>
+    <string name="pf_plan_ends">%1$s: koniec %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s: bez obnovenia</string>
+    <string name="pf_plan_ended">%1$s: ukončené %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s: ukončené</string>
+    <string name="pf_plan_issue_by">Problém s platbou: aktualizujte do %1$s</string>
+    <string name="pf_plan_issue">Problém s platbou: aktualizujte spôsob platby</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d deň</item>
+        <item quantity="few">%d dni</item>
+        <item quantity="many">%d dňa</item>
+        <item quantity="other">%d dní</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d týždeň</item>
+        <item quantity="few">%d týždne</item>
+        <item quantity="many">%d týždňa</item>
+        <item quantity="other">%d týždňov</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d mesiac</item>
+        <item quantity="few">%d mesiace</item>
+        <item quantity="many">%d mesiaca</item>
+        <item quantity="other">%d mesiacov</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d rok</item>
+        <item quantity="few">%d roky</item>
+        <item quantity="many">%d roka</item>
+        <item quantity="other">%d rokov</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Odfotiť</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">Zostáva %d znak</item>
+        <item quantity="few">Zostávajú %d znaky</item>
+        <item quantity="many">Zostáva %d znaku</item>
+        <item quantity="other">Zostáva %d znakov</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d znak nad limit</item>
+        <item quantity="few">%d znaky nad limit</item>
+        <item quantity="many">%d znaku nad limit</item>
+        <item quantity="other">%d znakov nad limit</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Chat od pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (testovací nákup)</string>
+    <string name="pf_held_chat_back">Zatiaľ neodoslané. Odošle sa, keď bude chat znova k dispozícii.</string>
+    <string name="pf_held_sign_in">Zatiaľ neodoslané. Odošle sa, keď sa prihlásite.</string>
+    <string name="pf_offer_replaced">Nahradené novšou ponukou</string>
+    <string name="pf_offer_ended">Táto ponuka už nie je dostupná.</string>
+</resources>

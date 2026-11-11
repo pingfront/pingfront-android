@@ -1,0 +1,27 @@
+{
+  "schema": "ClientEvent",
+  "description": "Live client frames on /v1/live.",
+  "valid": [
+    {
+      "name": "typing",
+      "value": {
+        "type": "typing",
+        "on": true
+      }
+    },
+    {
+      "name": "ping",
+      "value": {
+        "type": "ping"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "typing needs on",
+      "value": {
+        "type": "typing"
+      }
+    }
+  ]
+}

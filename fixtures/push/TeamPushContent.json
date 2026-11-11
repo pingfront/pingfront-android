@@ -1,0 +1,64 @@
+{
+  "schema": "TeamPushContent",
+  "description": "The decrypted preview inside a team notification (TeamPushData.content).",
+  "valid": [
+    {
+      "name": "a person's message",
+      "value": {
+        "v": 1,
+        "title": "Ayşe Demir",
+        "subtitle": "Clockwise",
+        "body": "The timer stops when I lock the phone 🙃",
+        "personId": "per_1",
+        "sentAt": "2026-11-03T09:41:00.000Z"
+      }
+    },
+    {
+      "name": "an assignment names who assigned, with no body",
+      "value": {
+        "v": 1,
+        "title": "Ayşe Demir",
+        "subtitle": "Clockwise",
+        "byName": "Mert",
+        "personId": "per_1",
+        "avatarUrl": "https://api.pingfront.sh/v1/avatars/att_1",
+        "sentAt": "2026-11-03T09:41:00.000Z"
+      }
+    },
+    {
+      "name": "a 200 code-point body passes (code points, not UTF-16 units)",
+      "value": {
+        "v": 1,
+        "title": "Deniz",
+        "body": "👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽👍🏽",
+        "sentAt": "2026-11-03T09:41:00.000Z"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "version 2 is a different payload",
+      "value": {
+        "v": 2,
+        "title": "Deniz",
+        "sentAt": "2026-11-03T09:41:00.000Z"
+      }
+    },
+    {
+      "name": "needs a title",
+      "value": {
+        "v": 1,
+        "sentAt": "2026-11-03T09:41:00.000Z"
+      }
+    },
+    {
+      "name": "a body over 200 code points",
+      "value": {
+        "v": 1,
+        "title": "Deniz",
+        "body": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "sentAt": "2026-11-03T09:41:00.000Z"
+      }
+    }
+  ]
+}

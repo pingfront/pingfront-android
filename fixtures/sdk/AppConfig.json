@@ -1,0 +1,292 @@
+{
+  "schema": "AppConfig",
+  "description": "GET /v1/config.",
+  "valid": [
+    {
+      "name": "parses a full app config",
+      "value": {
+        "schema": 1,
+        "revision": 3,
+        "draft": false,
+        "appName": "Clockwise",
+        "look": {
+          "theme": {
+            "accent": {
+              "light": "#3550E6",
+              "dark": "#7D91FF"
+            },
+            "corners": "soft"
+          },
+          "header": {
+            "style": "team"
+          },
+          "welcome": {},
+          "topics": [
+            {
+              "id": "billing",
+              "label": {
+                "default": "Billing",
+                "tr": "Ödeme"
+              },
+              "symbol": "billing"
+            }
+          ],
+          "composer": {
+            "photos": false
+          },
+          "messages": {}
+        },
+        "team": [
+          {
+            "id": "m1",
+            "name": "Deniz",
+            "role": "Maker of Clockwise",
+            "timeZone": "Europe/Istanbul"
+          }
+        ],
+        "features": {
+          "photos": true,
+          "reports": true,
+          "translation": false,
+          "ai": false
+        },
+        "liveUrl": "wss://api.pingfront.sh/v1/live"
+      }
+    },
+    {
+      "name": "Free: the branding line on the welcome screen",
+      "value": {
+        "schema": 1,
+        "revision": 3,
+        "draft": false,
+        "appName": "Clockwise",
+        "look": {
+          "theme": {
+            "accent": {
+              "light": "#3550E6",
+              "dark": "#7D91FF"
+            },
+            "corners": "soft"
+          },
+          "header": {
+            "style": "team"
+          },
+          "welcome": {},
+          "topics": [
+            {
+              "id": "billing",
+              "label": {
+                "default": "Billing",
+                "tr": "Ödeme"
+              },
+              "symbol": "billing"
+            }
+          ],
+          "composer": {
+            "photos": false
+          },
+          "messages": {}
+        },
+        "team": [
+          {
+            "id": "m1",
+            "name": "Deniz",
+            "role": "Maker of Clockwise",
+            "timeZone": "Europe/Istanbul"
+          }
+        ],
+        "features": {
+          "photos": true,
+          "reports": true,
+          "translation": false,
+          "ai": false,
+          "branding": true
+        },
+        "liveUrl": "wss://api.pingfront.sh/v1/live"
+      }
+    },
+    {
+      "name": "carries the App Store id for the review page",
+      "value": {
+        "schema": 1,
+        "revision": 3,
+        "draft": false,
+        "appName": "Clockwise",
+        "look": {
+          "theme": {
+            "accent": {
+              "light": "#3550E6",
+              "dark": "#7D91FF"
+            },
+            "corners": "soft"
+          },
+          "header": {
+            "style": "team"
+          },
+          "welcome": {},
+          "topics": [
+            {
+              "id": "billing",
+              "label": {
+                "default": "Billing",
+                "tr": "Ödeme"
+              },
+              "symbol": "billing"
+            }
+          ],
+          "composer": {
+            "photos": false
+          },
+          "messages": {}
+        },
+        "team": [
+          {
+            "id": "m1",
+            "name": "Deniz",
+            "role": "Maker of Clockwise",
+            "timeZone": "Europe/Istanbul"
+          }
+        ],
+        "features": {
+          "photos": true,
+          "reports": true,
+          "translation": false,
+          "ai": false
+        },
+        "liveUrl": "wss://api.pingfront.sh/v1/live",
+        "appStoreId": "6450012345"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects schema 2",
+      "value": {
+        "schema": 2,
+        "revision": 0,
+        "draft": false,
+        "appName": "x",
+        "look": {
+          "theme": {},
+          "header": {},
+          "welcome": {},
+          "topics": [],
+          "composer": {},
+          "messages": {}
+        },
+        "team": [],
+        "features": {
+          "photos": true,
+          "reports": true,
+          "translation": false,
+          "ai": false
+        },
+        "liveUrl": "wss://x/v1/live"
+      }
+    },
+    {
+      "name": "branding is a boolean",
+      "value": {
+        "schema": 1,
+        "revision": 3,
+        "draft": false,
+        "appName": "Clockwise",
+        "look": {
+          "theme": {
+            "accent": {
+              "light": "#3550E6",
+              "dark": "#7D91FF"
+            },
+            "corners": "soft"
+          },
+          "header": {
+            "style": "team"
+          },
+          "welcome": {},
+          "topics": [
+            {
+              "id": "billing",
+              "label": {
+                "default": "Billing",
+                "tr": "Ödeme"
+              },
+              "symbol": "billing"
+            }
+          ],
+          "composer": {
+            "photos": false
+          },
+          "messages": {}
+        },
+        "team": [
+          {
+            "id": "m1",
+            "name": "Deniz",
+            "role": "Maker of Clockwise",
+            "timeZone": "Europe/Istanbul"
+          }
+        ],
+        "features": {
+          "photos": true,
+          "reports": true,
+          "translation": false,
+          "ai": false,
+          "branding": "yes"
+        },
+        "liveUrl": "wss://api.pingfront.sh/v1/live"
+      }
+    },
+    {
+      "name": "rejects an App Store id that isn't digits",
+      "value": {
+        "schema": 1,
+        "revision": 3,
+        "draft": false,
+        "appName": "Clockwise",
+        "look": {
+          "theme": {
+            "accent": {
+              "light": "#3550E6",
+              "dark": "#7D91FF"
+            },
+            "corners": "soft"
+          },
+          "header": {
+            "style": "team"
+          },
+          "welcome": {},
+          "topics": [
+            {
+              "id": "billing",
+              "label": {
+                "default": "Billing",
+                "tr": "Ödeme"
+              },
+              "symbol": "billing"
+            }
+          ],
+          "composer": {
+            "photos": false
+          },
+          "messages": {}
+        },
+        "team": [
+          {
+            "id": "m1",
+            "name": "Deniz",
+            "role": "Maker of Clockwise",
+            "timeZone": "Europe/Istanbul"
+          }
+        ],
+        "features": {
+          "photos": true,
+          "reports": true,
+          "translation": false,
+          "ai": false
+        },
+        "liveUrl": "wss://api.pingfront.sh/v1/live",
+        "appStoreId": "id6450012345"
+      }
+    }
+  ]
+}

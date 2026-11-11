@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pf_message">Poruka</string>
+    <string name="pf_send">Pošalji</string>
+    <string name="pf_add_photo">Dodaj fotografiju</string>
+    <string name="pf_add_photo_or_report">Dodaj fotografiju ili prijavi pogrešku</string>
+    <string name="pf_photos">Fotografije</string>
+    <string name="pf_report_bug">Prijavi pogrešku</string>
+    <string name="pf_close_chat">Zatvori chat</string>
+    <string name="pf_delivered">Isporučeno</string>
+    <string name="pf_read">Pročitano</string>
+    <string name="pf_not_delivered">Nije isporučeno</string>
+    <string name="pf_delete">Izbriši</string>
+    <string name="pf_sending">Slanje…</string>
+    <string name="pf_ai">UI</string>
+    <string name="pf_assistant">Asistent</string>
+    <string name="pf_the_team">Tim</string>
+    <string name="pf_team_title">Tim aplikacije %1$s</string>
+    <string name="pf_messaged_you_first">%1$s započinje razgovor</string>
+    <string name="pf_wrote_first">Razgovor započinje %1$s.</string>
+    <string name="pf_why_message">Zašto ste dobili ovu poruku</string>
+    <string name="pf_reply_if_you_like">Možete odgovoriti ili je zanemariti.</string>
+    <string name="pf_ask_person">Razgovor s osobom</string>
+    <string name="pf_ask_person_message">Mogu li razgovarati s osobom?</string>
+    <string name="pf_typing">%1$s piše</string>
+    <string name="pf_jump_latest">Idi na najnovije</string>
+    <string name="pf_load_earlier">Učitaj ranije poruke</string>
+    <string name="pf_loading_earlier">Učitavanje ranijih poruka</string>
+    <string name="pf_today">Danas %1$s</string>
+    <string name="pf_yesterday">Jučer %1$s</string>
+    <string name="pf_local_time">%2$s: lokalno vrijeme %1$s</string>
+    <string name="pf_welcome_body">Pitanja, pogreške ili ideje: ljudi koji izrađuju aplikaciju %1$s čitaju svaku poruku i odgovaraju ovdje.</string>
+    <string name="pf_topic_billing">Pitanje o naplati</string>
+    <string name="pf_topic_bug">Prijavi pogrešku</string>
+    <string name="pf_topic_idea">Podijeli ideju</string>
+    <string name="pf_topic_question">Postavi pitanje</string>
+    <string name="pf_topic_account">Pomoć s računom</string>
+    <string name="pf_topic_feedback">Pošalji povratne informacije</string>
+    <string name="pf_topic_restore">Vrati kupnje</string>
+    <string name="pf_topic_privacy">Pitanje o privatnosti</string>
+    <string name="pf_topic_other">Nešto drugo</string>
+    <string name="pf_offline">Niste povezani s internetom. Poruke će se poslati kad se ponovno povežete.</string>
+    <string name="pf_unreachable">Chat trenutačno nije dostupan. Poruke će se poslati kad se vrati.</string>
+    <string name="pf_couldnt_load">Razgovor se nije mogao učitati</string>
+    <string name="pf_try_again">Pokušajte ponovno</string>
+    <string name="pf_setup_problem">Problem s postavljanjem</string>
+    <string name="pf_debug_only">Prikazuje se samo u verzijama za otklanjanje pogrešaka.</string>
+    <string name="pf_chat_unavailable">Chat trenutačno nije dostupan.</string>
+    <string name="pf_draft_look">Izgled skice</string>
+    <string name="pf_send_again_in">Ponovno možete slati za %1$s.</string>
+    <string name="pf_sending_paused">Slanje je privremeno pauzirano. Pokušajte ponovno kasnije.</string>
+    <string name="pf_photos_again_in">Fotografije ćete ponovno moći slati za %1$s. Tekst se i dalje šalje.</string>
+    <string name="pf_photos_paused">Slanje fotografija privremeno je pauzirano. Tekst se i dalje šalje.</string>
+    <string name="pf_blocked">U ovom chatu ne možete slati poruke.</string>
+    <string name="pf_paused">Ovaj je chat zasad pauziran.</string>
+    <string name="pf_verification_required">Prijavite se u aplikaciju da biste pisali timu.</string>
+    <string name="pf_enjoying">Sviđa li vam se aplikacija %1$s?</string>
+    <string name="pf_review_helps">Vaša recenzija pomaže drugima da pronađu aplikaciju %1$s.</string>
+    <string name="pf_includes_screenshot">Uključuje snimku zaslona i nedavne zapise.</string>
+    <string name="pf_price_year">%1$s godišnje</string>
+    <string name="pf_price_month">%1$s mjesečno</string>
+    <string name="pf_price_week">%1$s tjedno</string>
+    <string name="pf_first_month_free">%1$s, prvi mjesec besplatno</string>
+    <string name="pf_first_week_free">%1$s, prvi tjedan besplatno</string>
+    <string name="pf_thanks_rating">Hvala na ocjeni.</string>
+    <string name="pf_show_original">Prikaži izvornik</string>
+    <string name="pf_show_translation">Prikaži prijevod</string>
+    <string name="pf_unknown_content">Za ovu poruku potrebna je novija verzija aplikacije.</string>
+    <string name="pf_remove_photo">Ukloni fotografiju %1$d</string>
+    <string name="pf_photo">Fotografija</string>
+    <string name="pf_photo_removed">Fotografija je uklonjena</string>
+    <string name="pf_what_went_wrong">Što nije u redu?</string>
+    <string name="pf_send_report">Pošalji izvješće</string>
+    <string name="pf_cancel">Odustani</string>
+    <string name="pf_draw_hint">Crtajte po snimci zaslona da biste označili problem. Prilažu se nedavni zapisi i stanje uređaja.</string>
+    <string name="pf_include_screenshot">Priloži snimku zaslona</string>
+    <string name="pf_clear_marks">Izbriši oznake</string>
+    <string name="pf_screenshot">Snimka zaslona</string>
+    <string name="pf_you">Vi: %1$s</string>
+    <string name="pf_waiting_connection">Čeka se veza</string>
+    <string name="pf_topic_gift">Pitanje o poklonima</string>
+    <string name="pf_pending_photo">Fotografija čeka slanje</string>
+    <string name="pf_current_plan">Trenutačni plan</string>
+    <string name="pf_share">Dijeli</string>
+    <string name="pf_close">Zatvori</string>
+    <string name="pf_open_photo">Otvori fotografiju</string>
+    <plurals name="pf_stars">
+        <item quantity="one">Ocjena: %1$d od %2$d</item>
+        <item quantity="few">Ocjena: %1$d od %2$d</item>
+        <item quantity="other">Ocjena: %1$d od %2$d</item>
+    </plurals>
+    <plurals name="pf_new_messages">
+        <item quantity="one">%1$d nova poruka</item>
+        <item quantity="few">%1$d nove poruke</item>
+        <item quantity="other">%1$d novih poruka</item>
+    </plurals>
+    <string name="pf_message_from">%1$s: %2$s</string>
+    <string name="pf_start_billing">"Imam pitanje o naplati: "</string>
+    <string name="pf_start_idea">"Imam ideju: "</string>
+    <string name="pf_start_question">"Imam pitanje: "</string>
+    <string name="pf_start_account">"Trebam pomoć s računom: "</string>
+    <string name="pf_start_feedback">"Povratne informacije: "</string>
+    <string name="pf_start_restore">"Vraćanje kupnji nije uspjelo: "</string>
+    <string name="pf_start_privacy">"Imam pitanje o privatnosti: "</string>
+    <string name="pf_start_gift">"Imam pitanje o poklonima: "</string>
+    <string name="pf_retrying">Još nije poslano. Uskoro ćemo pokušati ponovno.</string>
+    <string name="pf_opens_browser">Otvara se u pregledniku</string>
+    <string name="pf_opens_store">Otvara Google Play</string>
+    <string name="pf_reply_expectation">Obično odgovaraju u roku od jednog dana</string>
+    <string name="pf_after_first">%1$s. Chat možete zatvoriti, odgovor će vas čekati ovdje.</string>
+    <string name="pf_after_first_plain">Chat možete zatvoriti, odgovor će vas čekati ovdje.</string>
+    <string name="pf_turn_on_notifications">Uključi obavijesti</string>
+    <string name="pf_assistant_mark">Asistent</string>
+    <plurals name="pf_uploading_photos">
+        <item quantity="one">Prijenos fotografija: %1$d</item>
+        <item quantity="few">Prijenos fotografija: %1$d</item>
+        <item quantity="other">Prijenos fotografija: %1$d</item>
+    </plurals>
+
+    <!-- Store action cards -->
+    <string name="pf_store_manage_title">Vaša pretplata</string>
+    <string name="pf_store_manage_detail">Promijenite plan, način plaćanja ili obnovu.</string>
+    <string name="pf_store_manage_button">Upravljaj pretplatom</string>
+    <string name="pf_store_billing_title">Plaćanje nije prošlo</string>
+    <string name="pf_store_billing_detail">Ažurirajte način plaćanja kako biste zadržali pretplatu.</string>
+    <string name="pf_store_billing_button">Ažuriraj način plaćanja</string>
+    <string name="pf_store_refund_title">Zatražite povrat novca</string>
+    <string name="pf_store_refund_detail">Povrate novca obrađuje Google Play. Pronađite narudžbu u povijesti narudžbi.</string>
+    <string name="pf_store_refund_button">Otvori povijest narudžbi</string>
+    <string name="pf_store_redeem_title">Iskoristite kod</string>
+    <string name="pf_store_redeem_detail">Unesite kod na Google Playu.</string>
+    <string name="pf_store_redeem_button">Iskoristi kod</string>
+    <string name="pf_store_restore_title">Vrati kupnje</string>
+    <string name="pf_store_restore_detail">Provjerava ima li na Google Playu kupnji za ovaj račun.</string>
+    <string name="pf_store_restore_button">Vrati kupnje</string>
+    <string name="pf_store_receipt_restored">Kupnje su vraćene</string>
+    <string name="pf_store_receipt_nothing">Nema kupnji za vraćanje</string>
+    <string name="pf_store_receipt_up_to_date">Kupnje su ažurne</string>
+    <string name="pf_store_receipt_updated">Pretplata je ažurirana</string>
+    <string name="pf_store_unavailable">Povezivanje s Google Playom nije uspjelo. Pokušajte ponovno kasnije.</string>
+
+    <!-- Play Billing surfaces: pricing phases, plan changes, pending payments, plan status -->
+    <string name="pf_phase_free">%1$s besplatno</string>
+    <string name="pf_phase_for">%1$s na %2$s</string>
+    <string name="pf_phase_then">%1$s, zatim %2$s</string>
+    <string name="pf_change_now">Odmah zamjenjuje vaš trenutačni plan. Neiskorišteno vrijeme bit će uračunato.</string>
+    <string name="pf_change_at_renewal">Počinje kad se vaš trenutačni plan obnovi.</string>
+    <string name="pf_waiting_for_payment">Čeka se plaćanje</string>
+    <string name="pf_pending_detail">Vaš plan počinje čim plaćanje prođe.</string>
+    <string name="pf_plan_renews">%1$s: obnavlja se %2$s</string>
+    <string name="pf_plan_renews_auto">%1$s: automatski se obnavlja</string>
+    <string name="pf_plan_ends">%1$s: završava %2$s</string>
+    <string name="pf_plan_wont_renew">%1$s: neće se obnoviti</string>
+    <string name="pf_plan_ended">%1$s: isteklo %2$s</string>
+    <string name="pf_plan_ended_undated">%1$s: isteklo</string>
+    <string name="pf_plan_issue_by">Problem s plaćanjem: ažurirajte do %1$s</string>
+    <string name="pf_plan_issue">Problem s plaćanjem: ažurirajte način plaćanja</string>
+    <plurals name="pf_duration_day">
+        <item quantity="one">%d dan</item>
+        <item quantity="few">%d dana</item>
+        <item quantity="other">%d dana</item>
+    </plurals>
+    <plurals name="pf_duration_week">
+        <item quantity="one">%d tjedan</item>
+        <item quantity="few">%d tjedna</item>
+        <item quantity="other">%d tjedana</item>
+    </plurals>
+    <plurals name="pf_duration_month">
+        <item quantity="one">%d mjesec</item>
+        <item quantity="few">%d mjeseca</item>
+        <item quantity="other">%d mjeseci</item>
+    </plurals>
+    <plurals name="pf_duration_year">
+        <item quantity="one">%d godinu</item>
+        <item quantity="few">%d godine</item>
+        <item quantity="other">%d godina</item>
+    </plurals>
+
+    <!-- Composer -->
+    <string name="pf_take_photo">Snimi fotografiju</string>
+    <string name="pf_character_count">%1$s / %2$s</string>
+    <plurals name="pf_characters_left">
+        <item quantity="one">Preostao je %d znak</item>
+        <item quantity="few">Preostala su %d znaka</item>
+        <item quantity="other">Preostalo je %d znakova</item>
+    </plurals>
+    <plurals name="pf_characters_over">
+        <item quantity="one">%d znak previše</item>
+        <item quantity="few">%d znaka previše</item>
+        <item quantity="other">%d znakova previše</item>
+    </plurals>
+
+    <!-- Free plan branding line on the welcome screen -->
+    <string name="pf_chat_by_pingfront">Chat pokreće pingfront</string>
+    <string name="pf_plan_test_purchase">%1$s (testna kupnja)</string>
+    <string name="pf_held_chat_back">Još nije poslano. Poslat će se kad se chat vrati.</string>
+    <string name="pf_held_sign_in">Još nije poslano. Poslat će se nakon što se prijavite.</string>
+    <string name="pf_offer_replaced">Zamijenjeno novijom ponudom</string>
+    <string name="pf_offer_ended">Ova ponuda više nije dostupna.</string>
+</resources>

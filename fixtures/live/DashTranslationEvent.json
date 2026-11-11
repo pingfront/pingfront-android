@@ -1,0 +1,14 @@
+{
+  "schema": "DashTranslationEvent",
+  "description": "A person's message got a copy in a teammate's language.",
+  "valid": [
+    {
+      "name": "Spanish to English",
+      "value": { "type": "translation", "threadId": "thr_1", "messageId": "msg_1", "translation": { "language": "en", "from": "es", "parts": [{ "type": "text", "text": "The timer stops when I lock the phone." }] } }
+    }
+  ],
+  "invalid": [
+    { "name": "rejects a missing translation", "value": { "type": "translation", "threadId": "thr_1", "messageId": "msg_1" } },
+    { "name": "rejects another type", "value": { "type": "message", "threadId": "thr_1", "messageId": "msg_1", "translation": { "language": "en", "parts": [] } } }
+  ]
+}

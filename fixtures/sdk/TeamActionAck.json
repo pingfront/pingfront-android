@@ -1,0 +1,25 @@
+{
+  "schema": "TeamActionAck",
+  "description": "POST /v1/team-actions/{id}/ack: the host app did, or could not do, the action.",
+  "valid": [
+    {
+      "name": "done",
+      "value": {
+        "ok": true
+      }
+    },
+    {
+      "name": "could not",
+      "value": {
+        "ok": false,
+        "message": "No bank linked"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects a missing ok",
+      "value": {}
+    }
+  ]
+}

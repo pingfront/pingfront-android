@@ -1,0 +1,34 @@
+{
+  "schema": "OfferSignatureRequest",
+  "description": "POST /v1/offers/signature body.",
+  "valid": [
+    {
+      "name": "a product and its promotional offer",
+      "value": {
+        "productId": "pro.yearly",
+        "offerId": "yearly_40"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "needs a product",
+      "value": {
+        "offerId": "yearly_40"
+      }
+    },
+    {
+      "name": "needs an offer",
+      "value": {
+        "productId": "pro.yearly"
+      }
+    },
+    {
+      "name": "an empty product",
+      "value": {
+        "productId": "",
+        "offerId": "yearly_40"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+        <activity
+            android:name="dev.pingfront.ui.PingFrontChatActivity"
+            android:exported="false"
+            android:theme="@style/PingFront.ChatActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:enableOnBackInvokedCallback="true"
+            tools:targetApi="33" />
+
+        <provider
+            android:name="dev.pingfront.ui.PingFrontShareProvider"
+            android:authorities="${applicationId}.pingfront.share"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/pf_share_paths" />
+        </provider>
+
+        <!-- Registers the chat UI with the SDK automatically (no code needed), like Firebase component discovery. -->
+        <meta-data
+            android:name="dev.pingfront.ui.ChatUi"
+            android:value="dev.pingfront.module" />
+    </application>
+</manifest>

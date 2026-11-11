@@ -1,0 +1,151 @@
+{
+  "description": "Checksummed keys: prefix + 22 base62 chars + 2 check chars. crc = CRC-32 (IEEE, reflected, poly 0xEDB88320) of the UTF-8 bytes of prefix+body; n = crc mod 3844; check = BASE62[floor(n/62)] + BASE62[n mod 62]. BASE62 = 0-9A-Za-z.",
+  "alphabet": "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
+  "crc32": [
+    {
+      "input": "123456789",
+      "expected": 3421780262
+    }
+  ],
+  "checkChars": [
+    {
+      "input": "pk_test_abcdefghijklmnopqrstuv",
+      "expected": "vd"
+    }
+  ],
+  "make": [
+    {
+      "name": "round-trips a generated key",
+      "kind": "pk",
+      "mode": "live",
+      "randomBytes": [
+        11,
+        48,
+        85,
+        122,
+        159,
+        196,
+        233,
+        14,
+        51,
+        88,
+        125,
+        162,
+        199,
+        236,
+        17,
+        54,
+        91,
+        128,
+        165,
+        202,
+        239,
+        20
+      ],
+      "expected": "pk_live_BmNyZAlEpQ1cDoHsT4fGrKpF"
+    },
+    {
+      "name": "pk test key from the same bytes",
+      "kind": "pk",
+      "mode": "test",
+      "randomBytes": [
+        11,
+        48,
+        85,
+        122,
+        159,
+        196,
+        233,
+        14,
+        51,
+        88,
+        125,
+        162,
+        199,
+        236,
+        17,
+        54,
+        91,
+        128,
+        165,
+        202,
+        239,
+        20
+      ],
+      "expected": "pk_test_BmNyZAlEpQ1cDoHsT4fGrKjP"
+    }
+  ],
+  "valid": [
+    {
+      "name": "published vector (pk_test)",
+      "key": "pk_test_abcdefghijklmnopqrstuvvd",
+      "kind": "pk",
+      "mode": "test",
+      "body": "abcdefghijklmnopqrstuv"
+    },
+    {
+      "name": "published vector (pk_live)",
+      "key": "pk_live_0123456789ABCDEFGHIJKLNy",
+      "kind": "pk",
+      "mode": "live",
+      "body": "0123456789ABCDEFGHIJKL"
+    },
+    {
+      "name": "round-trips a generated key",
+      "key": "pk_live_BmNyZAlEpQ1cDoHsT4fGrKpF",
+      "kind": "pk",
+      "mode": "live",
+      "body": "BmNyZAlEpQ1cDoHsT4fGrK"
+    }
+  ],
+  "invalid": [
+    {
+      "name": "published typo vector (pk_test)",
+      "key": "pk_test_abcdefghijklmnopqrstuwvd",
+      "kind": "pk",
+      "problem": "checksum_mismatch"
+    },
+    {
+      "name": "published typo vector (pk_live)",
+      "key": "pk_live_0123456789ABCDEFGHIJKLNz",
+      "kind": "pk",
+      "problem": "checksum_mismatch"
+    },
+    {
+      "name": "empty",
+      "key": "",
+      "kind": "pk",
+      "problem": "empty"
+    },
+    {
+      "name": "whitespace",
+      "key": " pk_test_BmNyZAlEpQ1cDoHsT4fGrKjP",
+      "kind": "pk",
+      "problem": "whitespace"
+    },
+    {
+      "name": "cut off",
+      "key": "pk_test_BmNyZAlEpQ1cDoHsT4fGrKj",
+      "kind": "pk",
+      "problem": "wrong_length"
+    },
+    {
+      "name": "published wrong-length vector",
+      "key": "pk_live_0123456789ABCDEFGHIJKLN",
+      "kind": "pk",
+      "problem": "wrong_length"
+    },
+    {
+      "name": "bad characters",
+      "key": "pk_test_BmNyZAlEpQ1cDoHsT4fGrK!!",
+      "kind": "pk",
+      "problem": "bad_characters"
+    },
+    {
+      "name": "a typo in the body",
+      "key": "pk_test_BmayZAlEpQ1cDoHsT4fGrKjP",
+      "kind": "pk",
+      "problem": "checksum_mismatch"
+    }
+  ]
+}

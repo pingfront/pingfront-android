@@ -1,0 +1,116 @@
+{
+  "schema": "LinkCard",
+  "description": "A link card: a URL, or a screen of the app (screen) with a fallback URL. savedLinkId is set by the server only.",
+  "valid": [
+    {
+      "name": "a web link",
+      "value": {
+        "kind": "link",
+        "id": "card_1",
+        "title": "How alarms work",
+        "url": "https://example.com/help/alarms",
+        "button": "Open"
+      }
+    },
+    {
+      "name": "a screen with params and a fallback",
+      "value": {
+        "kind": "link",
+        "id": "card_2",
+        "title": "Change the alarm sound",
+        "url": "https://example.com/help/sounds",
+        "button": "Open settings",
+        "screen": {
+          "id": "settings.sound",
+          "params": {
+            "tab": "tones"
+          }
+        },
+        "savedLinkId": "lnk_1"
+      }
+    },
+    {
+      "name": "a screen without a fallback carries an empty url",
+      "value": {
+        "kind": "link",
+        "id": "card_3",
+        "title": "See yearly",
+        "url": "",
+        "button": "Open",
+        "screen": {
+          "id": "plans/yearly"
+        },
+        "savedLinkId": "lnk_2"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects a card without url (older SDKs need it)",
+      "value": {
+        "kind": "link",
+        "id": "card_4",
+        "title": "x",
+        "button": "Open",
+        "screen": {
+          "id": "settings"
+        }
+      }
+    },
+    {
+      "name": "rejects a bad screen id",
+      "value": {
+        "kind": "link",
+        "id": "card_5",
+        "title": "x",
+        "url": "",
+        "button": "Open",
+        "screen": {
+          "id": "has space"
+        }
+      }
+    },
+    {
+      "name": "rejects a param that isn't a string",
+      "value": {
+        "kind": "link",
+        "id": "card_6",
+        "title": "x",
+        "url": "",
+        "button": "Open",
+        "screen": {
+          "id": "s",
+          "params": {
+            "n": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "rejects more than 10 params",
+      "value": {
+        "kind": "link",
+        "id": "card_7",
+        "title": "x",
+        "url": "",
+        "button": "Open",
+        "screen": {
+          "id": "s",
+          "params": {
+            "p0": "v",
+            "p1": "v",
+            "p2": "v",
+            "p3": "v",
+            "p4": "v",
+            "p5": "v",
+            "p6": "v",
+            "p7": "v",
+            "p8": "v",
+            "p9": "v",
+            "p10": "v"
+          }
+        }
+      }
+    }
+  ]
+}

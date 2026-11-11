@@ -1,0 +1,58 @@
+{
+  "scenario": "auth-refresh-revoked",
+  "description": "When the refresh itself answers 401 session_revoked, the SDK wipes local state (install secret, cache, outbox) and does not retry: the install starts over lazily, with a new session on the next trigger.",
+  "given": {
+    "installId": "0b6f3c1e-8a52-4c1f-9d7e-2f4a6b8c0d1e",
+    "installSecret": "is_test_scenario_secret",
+    "accessToken": "at_expired",
+    "thread": { "id": "thr_1", "rev": 1 },
+    "outbox": [ { "clientId": "6f1c1f43-4f5c-4c55-8b1e-7f3f3f0e9a10", "text": "are you there?" } ]
+  },
+  "action": "Mark the thread read (POST /v1/thread/read).",
+  "steps": [
+    {
+      "name": "the stale token is refused",
+      "request": {
+        "operation": "POST /v1/thread/read",
+        "path": "/v1/thread/read",
+        "headers": { "Authorization": "Bearer at_expired", "PF-Thread-Rev": "1" },
+        "body": { "upToSeq": 3 }
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": {
+            "code": "unauthorized",
+            "message": "The access token expired. Refresh it with POST /v1/sessions/refresh.",
+            "docs": "https://pingfront.sh/docs/errors#unauthorized"
+          }
+        }
+      }
+    },
+    {
+      "name": "the refresh is refused: the install was logged out or erased elsewhere",
+      "request": {
+        "operation": "POST /v1/sessions/refresh",
+        "path": "/v1/sessions/refresh",
+        "body": { "installId": "0b6f3c1e-8a52-4c1f-9d7e-2f4a6b8c0d1e", "installSecret": "is_test_scenario_secret" }
+      },
+      "response": {
+        "status": 401,
+        "body": {
+          "error": {
+            "code": "session_revoked",
+            "message": "This install's session was revoked or never existed. Clear local state and create a new session.",
+            "docs": "https://pingfront.sh/docs/errors#session_revoked"
+          }
+        }
+      }
+    }
+  ],
+  "then": {
+    "requests": 2,
+    "installSecret": null,
+    "thread": null,
+    "outbox": [],
+    "surfaced": "nothing to the person; the next chat open creates a new session (POST /v1/sessions without installSecret)"
+  }
+}

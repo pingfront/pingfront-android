@@ -1,0 +1,79 @@
+{
+  "schema": "CardActionRequest",
+  "description": "POST /v1/thread/cards/{cardId}/act body. clientId makes a report safe to retry (the protocol, Retrying writes).",
+  "valid": [
+    {
+      "name": "records a choice",
+      "value": {
+        "messageId": "msg_1",
+        "action": "chosen",
+        "choiceId": "yes"
+      }
+    },
+    {
+      "name": "reports that a link card opened",
+      "value": {
+        "messageId": "msg_1",
+        "action": "opened"
+      }
+    },
+    {
+      "name": "reports that a screen link wasn't handled",
+      "value": {
+        "messageId": "msg_1",
+        "action": "failed",
+        "failure": "not_handled"
+      }
+    },
+    {
+      "name": "reports a screen this build doesn't register",
+      "value": {
+        "messageId": "msg_1",
+        "action": "failed",
+        "failure": "unknown_screen"
+      }
+    },
+    {
+      "name": "a retried report carries the clientId it was first sent with",
+      "value": {
+        "clientId": "5c2e9a4b-1f3d-4b6e-8a7c-9d0e1f2a3b4c",
+        "messageId": "msg_1",
+        "action": "opened"
+      }
+    },
+    {
+      "name": "a rating with its clientId",
+      "value": {
+        "clientId": "5c2e9a4b-1f3d-4b6e-8a7c-9d0e1f2a3b4d",
+        "messageId": "msg_1",
+        "action": "rated",
+        "rating": 4
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unknown action",
+      "value": {
+        "messageId": "msg_1",
+        "action": "liked"
+      }
+    },
+    {
+      "name": "rejects an unknown failure",
+      "value": {
+        "messageId": "msg_1",
+        "action": "failed",
+        "failure": "crashed"
+      }
+    },
+    {
+      "name": "rejects a clientId that isn't a UUID",
+      "value": {
+        "clientId": "tap-1",
+        "messageId": "msg_1",
+        "action": "opened"
+      }
+    }
+  ]
+}

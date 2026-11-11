@@ -1,0 +1,86 @@
+{
+  "schema": "ErrorBody",
+  "description": "Every error response.",
+  "valid": [
+    {
+      "name": "a 429 names its scope",
+      "value": {
+        "error": {
+          "code": "rate_limited",
+          "message": "Too many messages requests. Try again in 12 s.",
+          "docs": "https://pingfront.sh/docs/errors#rate_limited",
+          "retryAfter": 12,
+          "scope": "messages"
+        }
+      }
+    },
+    {
+      "name": "a 422 lists its fields",
+      "value": {
+        "error": {
+          "code": "invalid_request",
+          "message": "Invalid request. text: At most 4000 characters",
+          "docs": "https://pingfront.sh/docs/errors#invalid_request",
+          "fields": [
+            {
+              "path": "text",
+              "message": "At most 4000 characters"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "POST /v1/sessions answers a verified-user switch with 409 identity_user_mismatch",
+      "value": {
+        "error": {
+          "code": "identity_user_mismatch",
+          "message": "This device is signed in as a different verified user. Call logout() before identifying another user.",
+          "docs": "https://pingfront.sh/docs/errors#identity_user_mismatch"
+        }
+      }
+    },
+    {
+      "name": "verification_required is a code (verified-only apps)",
+      "value": {
+        "error": {
+          "code": "verification_required",
+          "message": "x",
+          "docs": "https://pingfront.sh/docs/errors#verification_required"
+        }
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "requires docs",
+      "value": {
+        "error": {
+          "code": "not_found",
+          "message": "Nope"
+        }
+      }
+    },
+    {
+      "name": "identity token problems are not error codes (identityProblem carries them)",
+      "value": {
+        "error": {
+          "code": "identity_token_invalid",
+          "message": "x",
+          "docs": "https://pingfront.sh/docs/errors#identity_token_invalid"
+        }
+      }
+    },
+    {
+      "name": "rejects an unknown scope",
+      "value": {
+        "error": {
+          "code": "rate_limited",
+          "message": "x",
+          "docs": "https://pingfront.sh/docs/errors#rate_limited",
+          "scope": "everything"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "Entitlement",
+  "description": "The person's subscription state.",
+  "valid": [
+    {
+      "name": "an active RevenueCat entitlement",
+      "value": {
+        "state": "active",
+        "productId": "pro.yearly",
+        "renewsAt": "2027-01-01T00:00:00Z",
+        "source": "revenuecat"
+      }
+    },
+    {
+      "name": "active and renewing",
+      "value": {
+        "state": "active",
+        "productId": "pro.yearly",
+        "renewsAt": "2026-11-12T09:00:00.000Z",
+        "expiresAt": "2026-11-12T09:00:00.000Z",
+        "source": "revenuecat"
+      }
+    },
+    {
+      "name": "payment issue inside the grace period",
+      "value": {
+        "state": "grace",
+        "productId": "pro.monthly",
+        "expiresAt": "2026-10-30T09:00:00.000Z",
+        "gracePeriodEndsAt": "2026-11-03T09:00:00.000Z",
+        "source": "play"
+      }
+    },
+    {
+      "name": "cancelled: access until expiresAt",
+      "value": {
+        "state": "cancelled",
+        "productId": "pro.yearly",
+        "expiresAt": "2026-11-12T09:00:00.000Z",
+        "source": "storekit"
+      }
+    },
+    {
+      "name": "a test plan names its environment (sandbox, xcode); production is a real one",
+      "value": {
+        "state": "active",
+        "productId": "pro.monthly",
+        "renewsAt": "2026-12-02T10:00:00Z",
+        "source": "storekit",
+        "environment": "sandbox"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "rejects an unknown state",
+      "value": {
+        "state": "bogus"
+      }
+    },
+    {
+      "name": "rejects an unknown source",
+      "value": {
+        "state": "trial",
+        "source": "paypal"
+      }
+    },
+    {
+      "name": "dates are timestamps",
+      "value": {
+        "state": "grace",
+        "gracePeriodEndsAt": "3 Nov"
+      }
+    },
+    {
+      "name": "environment is at most 32 characters",
+      "value": {
+        "state": "active",
+        "environment": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      }
+    }
+  ]
+}

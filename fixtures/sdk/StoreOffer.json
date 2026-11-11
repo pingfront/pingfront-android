@@ -1,0 +1,90 @@
+{
+  "schema": "StoreOffer",
+  "description": "The store offer an offer card's button redeems (OfferCard.offer, PlayOfferCard.offer). Unknown kinds decode to unknown and the card just opens the paywall.",
+  "valid": [
+    {
+      "name": "an App Store promotional offer",
+      "value": {
+        "kind": "promotional",
+        "id": "yearly_40",
+        "productId": "pro.yearly"
+      }
+    },
+    {
+      "name": "an App Store win-back offer",
+      "value": {
+        "kind": "winback",
+        "id": "winback.50",
+        "productId": "pro.yearly"
+      }
+    },
+    {
+      "name": "an offer code campaign",
+      "value": {
+        "kind": "code",
+        "id": "SPRING26"
+      }
+    },
+    {
+      "name": "an introductory offer",
+      "value": {
+        "kind": "intro",
+        "id": "trial7"
+      }
+    },
+    {
+      "name": "a Google Play subscription offer",
+      "value": {
+        "kind": "promotional",
+        "id": "yearly-40",
+        "productId": "pro",
+        "basePlanId": "yearly",
+        "offerId": "yearly-40"
+      }
+    }
+  ],
+  "invalid": [
+    {
+      "name": "needs an id",
+      "value": {
+        "kind": "promotional"
+      }
+    },
+    {
+      "name": "needs a kind",
+      "value": {
+        "id": "yearly_40"
+      }
+    },
+    {
+      "name": "an unknown kind is not sent by servers",
+      "value": {
+        "kind": "lifetime",
+        "id": "x"
+      }
+    },
+    {
+      "name": "an id with spaces",
+      "value": {
+        "kind": "promotional",
+        "id": "40 off"
+      }
+    },
+    {
+      "name": "a Play base plan id with capitals",
+      "value": {
+        "kind": "promotional",
+        "id": "x",
+        "basePlanId": "Yearly"
+      }
+    },
+    {
+      "name": "a Play offer id that starts with a hyphen",
+      "value": {
+        "kind": "promotional",
+        "id": "x",
+        "offerId": "-yearly"
+      }
+    }
+  ]
+}
